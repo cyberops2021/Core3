@@ -1516,7 +1516,7 @@ INSERT INTO `faction` VALUES ('61', 'Trade Federation');
 INSERT INTO `faction` VALUES ('62', 'Tusken Raider');
 INSERT INTO `faction` VALUES ('63', 'Valarian');
 INSERT INTO `galaxy` VALUES ('2', 'Core3', '127.0.0.1', '44463', '44462', '0');
-INSERT INTO `guilds` VALUES ('3', 'DEFAULT', 'Default Guild', '0000', null, '0', null);
+INSERT INTO `guilds` VALUES ('0', 'DEFAULT', 'Default Guild', '0000', null, '0', null);
 INSERT INTO `guilds` VALUES ('1', 'SWGEMU', 'SWGEmu Test Guild', '0000', null, '0', null);
 INSERT INTO `guilds` VALUES ('2', 'DEV', 'Developers', '0000', null, '0', null);
 INSERT INTO `lootgroup_weight` VALUES ('1', '5', '3');
