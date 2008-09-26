@@ -40,50 +40,50 @@
 --gives permission to release a modified version without this exception; 
 --this exception also makes it possible to release a modified version 
 --which carries forward this exception.
-jindaLoremaster = Creature:new {
-      objectName = "jindaLoremaster",  -- Lua Object Name
+palpatine = Creature:new {
+      objectName = "palpatine",  -- Lua Object Name
       creatureType = "NPC",
-      faction = "Jinda Tribe",
+      faction = "Imperial",
       gender = "",
 
-      name = "Jinda loremaster",
-      objectCRC = 580211289, 
-      socialGroup = "Jinda Tribe",
-      named = FALSE, 
+      stfName = "Emperor Palpatine",
+      objectCRC = 3254768126, 
+      socialGroup = "Imperial",
+      named = TRUE, 
 
-      level = 40,
-      xp = 3915,
+      level = 700,
+      xp = 28549,
 
-      combatFlags = ATTACKABLE_FLAG + ENEMY_FLAG,
+      combatFlags = ATTACKABLE_FLAG + ENEMY_FLAG + AGGRESSIVE_FLAG,
 
-      healthMax = 11300,
-      healthMin = 9300,
-      strength = 0,
-      constitution = 0,
+      healthMax = 1200000,
+      healthMin = 1000000,
+      strength = 620000,
+      constitution = 620000,
 
-      actionMax = 11300,
-      actionMin = 9300,
-      quickness = 0,
-      stamina = 0,
+      actionMax = 1200000,
+      actionMin = 1000000,
+      quickness = 620000,
+      stamina = 620000,
 
-      mindMax = 11300,
-      mindMin = 9300,
-      focus = 0,
-      willpower = 0,
+      mindMax = 1200000,
+      mindMin = 620000,
+      focus = 620000,
+      willpower = 620000,
 
       height = 1, -- Size of creature
-      armor = 1, -- 0 = None; 1 = Light; 2 = Medium; 3 = Heavy
-      kinetic = 0,
-      energy = 0,
-      electricity = 0,
-      stun = 0,
-      blast = 0,
-      heat = 0,
-      cold = 0,
-      acid = 0,
-      lightsaber = 0,
+      armor = 3, -- Just a guess
+      kinetic = 98,
+      energy = 98,
+	  electricity = 98,
+      stun = 98,
+ 	  blast = 98,
+ 	  heat = 98,
+ 	  cold = 98,
+ 	  acid = 98,
+ 	  lightSaber = 98, 
 
-      accuracy = 200,
+      accuracy = 500,
 
       healer = 0,
 
@@ -92,20 +92,20 @@ jindaLoremaster = Creature:new {
       stalker = 0,
       killer = 0,
       aggressive = 0,
-      invincible = 0,
+      invincible = 1,
 
       attackCreatureOnSight = "", -- Enter socialGroups 
 
-      weapon = "", -- File path to weapon -> object\xxx\xxx\xx
-      weaponName = "", -- Name ex. 'a Vibrolance'
-      weaponTemp = "", -- Weapon Template ex. 'lance_vibrolance'
-      weaponClass = "", -- Weapon Class ex. 'PolearmMeleeWeapon'
-      weaponEquipped = 0,
-      weaponMinDamage = 0,
-      weaponMaxDamage = 0,
-      weaponAttackSpeed = 0,
-      weaponDamageType = "", -- ELECTRICITY, KINETIC, etc
-      weaponArmorPiercing = "", -- LIGHT, NONE, MEDIUM, HEAVY
+      weapon = "object/weapon/melee/sword/crafted_saber/shared_sword_lightsaber_one_handed_s4_gen4.iff", -- File path to weapon -> object\xxx\xxx\xx
+      weaponName = "Palpatine Saber", -- Name ex. 'a Vibrolance'
+      weaponTemp = "sword_lightsaber_one_handed_s4_gen4", -- Weapon Template ex. 'lance_vibrolance'
+      weaponClass = "OneHandedJediWeapon", -- Weapon Class ex. 'PolearmMeleeWeapon'
+      weaponEquipped = 1,
+      weaponMinDamage = 1500,
+      weaponMaxDamage = 2200,
+      weaponAttackSpeed = 0.5,
+      weaponDamageType = "LIGHTSABER", -- ELECTRICITY, KINETIC, etc
+      weaponArmorPiercing = "HEAVY", -- LIGHT, NONE, MEDIUM, HEAVY
 
       alternateWeapon = "", -- File path to weapon -> object\xxx\xxx\xx
       alternateWeaponName = "", -- Name ex. 'a Vibrolance'
@@ -120,7 +120,7 @@ jindaLoremaster = Creature:new {
 
       internalNPCDamageModifier = 0.3, -- Damage Modifier to other NPC's
 
-      lootGroup = "0,11,15,19,33,34", -- Group it belongs to for loot
+      lootGroup = "0,11,15,19,21,33,34,39,40,49,47,49,50", -- Group it belongs to for loot
 
       tame = 0,  -- Likely hood to be tamed
 
@@ -135,10 +135,10 @@ jindaLoremaster = Creature:new {
       meatType = "",
       meatMax = 0,
 
-      skills = { "jindaAttack01", "jindaAttack02", "jindaAttack03", "jindaAttack04", "jindaAttack05", "jindaAttack06", "jindaAttack07", "jindaAttack08", "jindaAttack09" },
-      respawnTimer = 300,
+      skills = { "darthAttack1", "darthAttack2", "darthAttack3", "darthAttack4", "darthAttack5", "darthAttack6", "darthAttack7", "darthAttack8" },
+      respawnTimer = 3600,
 
       behaviorScript = "", -- Link to the behavior script for this object
 }
 
-Creatures:addCreature(jindaLoremaster, 580211289) --  Add to Global Table
+Creatures:addCreature(palpatine, 3254768126) --  Add to Global Table

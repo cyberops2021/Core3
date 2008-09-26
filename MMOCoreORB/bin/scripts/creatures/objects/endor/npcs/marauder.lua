@@ -40,34 +40,34 @@
 --gives permission to release a modified version without this exception; 
 --this exception also makes it possible to release a modified version 
 --which carries forward this exception.
-jindaLoremaster = Creature:new {
-      objectName = "jindaLoremaster",  -- Lua Object Name
+marauder = Creature:new {
+      objectName = "marauder",  -- Lua Object Name
       creatureType = "NPC",
-      faction = "Jinda Tribe",
+      faction = "Marauder",
       gender = "",
 
-      name = "Jinda loremaster",
-      objectCRC = 580211289, 
-      socialGroup = "Jinda Tribe",
+      name = "Marauder",
+      objectCRC = 2107662910, 
+      socialGroup = "Marauder",
       named = FALSE, 
 
-      level = 40,
-      xp = 3915,
+      level = 44,
+      xp = 4370,
 
-      combatFlags = ATTACKABLE_FLAG + ENEMY_FLAG,
+      combatFlags = ATTACKABLE_FLAG + ENEMY_FLAG + AGGRESSIVE_FLAG,
 
-      healthMax = 11300,
-      healthMin = 9300,
+      healthMax = 11900,
+      healthMin = 9700,
       strength = 0,
       constitution = 0,
 
-      actionMax = 11300,
-      actionMin = 9300,
+      actionMax = 11900,
+      actionMin = 9700,
       quickness = 0,
       stamina = 0,
 
-      mindMax = 11300,
-      mindMin = 9300,
+      mindMax = 11900,
+      mindMin = 9700,
       focus = 0,
       willpower = 0,
 
@@ -75,52 +75,52 @@ jindaLoremaster = Creature:new {
       armor = 1, -- 0 = None; 1 = Light; 2 = Medium; 3 = Heavy
       kinetic = 0,
       energy = 0,
-      electricity = 0,
+      electricity = -1,
       stun = 0,
       blast = 0,
       heat = 0,
-      cold = 0,
+      cold = -1,
       acid = 0,
       lightsaber = 0,
 
-      accuracy = 200,
+      accuracy = 300,
 
       healer = 0,
 
       pack = 1,
       herd = 0,
       stalker = 0,
-      killer = 0,
-      aggressive = 0,
+      killer = 1,
+      aggressive = 1,
       invincible = 0,
 
       attackCreatureOnSight = "", -- Enter socialGroups 
 
-      weapon = "", -- File path to weapon -> object\xxx\xxx\xx
-      weaponName = "", -- Name ex. 'a Vibrolance'
-      weaponTemp = "", -- Weapon Template ex. 'lance_vibrolance'
-      weaponClass = "", -- Weapon Class ex. 'PolearmMeleeWeapon'
-      weaponEquipped = 0,
-      weaponMinDamage = 0,
-      weaponMaxDamage = 0,
-      weaponAttackSpeed = 0,
-      weaponDamageType = "", -- ELECTRICITY, KINETIC, etc
-      weaponArmorPiercing = "", -- LIGHT, NONE, MEDIUM, HEAVY
+      weapon = "object/weapon/melee/polearm/shared_polearm_vibro_axe.iff", -- File path to weapon -> object\xxx\xxx\xx
+      weaponName = "a Vibro Axe", -- Name ex. 'a Vibrolance'
+      weaponTemp = "polearm_vibro_axe", -- Weapon Template ex. 'lance_vibrolance'
+      weaponClass = "PolearmMeleeWeapon", -- Weapon Class ex. 'PolearmMeleeWeapon'
+      weaponEquipped = 1,
+      weaponMinDamage = 150,
+      weaponMaxDamage = 350,
+      weaponAttackSpeed = 3,
+      weaponDamageType = "KINETIC", -- ELECTRICITY, KINETIC, etc
+      weaponArmorPiercing = "NONE", -- LIGHT, NONE, MEDIUM, HEAVY
 
-      alternateWeapon = "", -- File path to weapon -> object\xxx\xxx\xx
-      alternateWeaponName = "", -- Name ex. 'a Vibrolance'
-      alternateWeaponTemp = "", -- Weapon Template ex. 'lance_vibrolance'
-      alternateWeaponClass = "", -- Weapon Class ex. 'PolearmMeleeWeapon'
-      alternateWeaponEquipped = 0,
-      alternateWeaponMinDamage = 0,
-      alternateWeaponMaxDamage = 0,
-      alternateWeaponAttackSpeed = 0,
-      alternateWeaponDamageType = "", -- ELECTRICITY, KINETIC, etc
-      alternateWeaponArmorPiercing = "", -- LIGHT, NONE, MEDIUM, HEAVY
+      alternateWeapon = "object/weapon/ranged/pistol/shared_pistol_dl44.iff", -- File path to weapon -> object\xxx\xxx\xx
+      alternateWeaponName = "DL44 Pistol", -- Name ex. 'a Vibrolance'
+      alternateWeaponTemp = "pistol_dl44", -- Weapon Template ex. 'lance_vibrolance'
+      alternateWeaponClass = "PistolRangedWeapon", -- Weapon Class ex. 'PolearmMeleeWeapon'
+      alternateWeaponEquipped = 1,
+      alternateWeaponMinDamage = 200,
+      alternateWeaponMaxDamage =400,
+      alternateWeaponAttackSpeed = 2,
+      alternateWeaponDamageType = "ENERGY", -- ELECTRICITY, KINETIC, etc
+      alternateWeaponArmorPiercing = "LIGHT", -- LIGHT, NONE, MEDIUM, HEAVY
 
       internalNPCDamageModifier = 0.3, -- Damage Modifier to other NPC's
 
-      lootGroup = "0,11,15,19,33,34", -- Group it belongs to for loot
+      lootGroup = 0, -- Group it belongs to for loot
 
       tame = 0,  -- Likely hood to be tamed
 
@@ -135,10 +135,11 @@ jindaLoremaster = Creature:new {
       meatType = "",
       meatMax = 0,
 
-      skills = { "jindaAttack01", "jindaAttack02", "jindaAttack03", "jindaAttack04", "jindaAttack05", "jindaAttack06", "jindaAttack07", "jindaAttack08", "jindaAttack09" },
+      skills = { "marauderAttack40", "marauderAttack41", "marauderAttack42", "marauderRangedAttack1", "marauderRangedAttack2", "marauderRangedAttack3" },
+
       respawnTimer = 300,
 
       behaviorScript = "", -- Link to the behavior script for this object
 }
 
-Creatures:addCreature(jindaLoremaster, 580211289) --  Add to Global Table
+Creatures:addCreature(marauder, 2107662910) --  Add to Global Table
