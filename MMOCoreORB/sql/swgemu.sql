@@ -4,7 +4,7 @@ Source Host: localhost
 Source Database: swgemu
 Target Host: localhost
 Target Database: swgemu
-Date: 9/26/2008 3:07:58 PM
+Date: 9/29/2008 8:43:11 AM
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -244,6 +244,25 @@ CREATE TABLE `customization_data` (
   `minScale` float(4,2) NOT NULL default '1.00',
   `maxScale` float(4,2) NOT NULL default '1.00',
   PRIMARY KEY  (`speciesGender`,`customizationGroup`,`customizationName`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for datapad
+-- ----------------------------
+DROP TABLE IF EXISTS `datapad`;
+CREATE TABLE `datapad` (
+  `inx` bigint(20) unsigned NOT NULL auto_increment,
+  `character_id` bigint(20) unsigned NOT NULL,
+  `name` text NOT NULL,
+  `itnocrc` bigint(10) unsigned NOT NULL,
+  `item_crc` bigint(20) unsigned NOT NULL,
+  `file_name` tinytext NOT NULL,
+  `attributes` text NOT NULL,
+  `appearance` mediumtext NOT NULL,
+  `itemMask` smallint(5) unsigned NOT NULL default '65535',
+  PRIMARY KEY  (`inx`),
+  KEY `char_ix` (`character_id`),
+  KEY `item_ix` (`inx`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
