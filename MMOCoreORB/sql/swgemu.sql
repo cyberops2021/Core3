@@ -266,6 +266,44 @@ CREATE TABLE `datapad` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
+-- Table structure for datapad
+-- ----------------------------
+DROP TABLE IF EXISTS `datapad`;
+CREATE TABLE `datapad` (
+  `inx` bigint(20) unsigned NOT NULL auto_increment,
+  `character_id` bigint(20) unsigned NOT NULL,
+  `name` text NOT NULL,
+  `itnocrc` bigint(10) unsigned NOT NULL,
+  `item_crc` bigint(20) unsigned NOT NULL,
+  `file_name` tinytext NOT NULL,
+  `attributes` text NOT NULL,
+  `appearance` mediumtext NOT NULL,
+  `itemMask` smallint(5) unsigned NOT NULL default '65535',
+  PRIMARY KEY  (`inx`),
+  KEY `char_ix` (`character_id`),
+  KEY `item_ix` (`inx`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- ----------------------------
+-- Table structure for datapad
+-- ----------------------------
+DROP TABLE IF EXISTS `datapad`;
+CREATE TABLE `datapad` (
+  `inx` bigint(20) unsigned NOT NULL auto_increment,
+  `character_id` bigint(20) unsigned NOT NULL,
+  `name` text NOT NULL,
+  `itnocrc` bigint(10) unsigned NOT NULL,
+  `item_crc` bigint(20) unsigned NOT NULL,
+  `file_name` tinytext NOT NULL,
+  `attributes` text NOT NULL,
+  `appearance` mediumtext NOT NULL,
+  `itemMask` smallint(5) unsigned NOT NULL default '65535',
+  PRIMARY KEY  (`inx`),
+  KEY `char_ix` (`character_id`),
+  KEY `item_ix` (`inx`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- ----------------------------
 -- Table structure for draft_schematics
 -- ----------------------------
 DROP TABLE IF EXISTS `draft_schematics`;
@@ -82695,7 +82733,7 @@ INSERT INTO `trainers` VALUES ('Kor Vella', 'trainer_merchant', 'crafting_mercha
 INSERT INTO `trainers` VALUES ('Tyrena', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '0', '0', '-5081', '-2307', '21', '0.919828', '0.392321', '8');
 INSERT INTO `trainers` VALUES ('Tyrena', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '0', '0', '-5300', '-2383', '21', '0.999308', '-0.0372055', '9');
 INSERT INTO `trainers` VALUES ('Tyrena', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '0', '1935454', '-5417', '-2756', '1.13306', '0.0259204', '0.999664', '10');
-INSERT INTO `trainers` VALUES ('Kaadara', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '5', '1741510', '5177', '6692', '1.13306', '-3.8899e-006', '1', '11');
+INSERT INTO `trainers` VALUES ('Kaadara', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '5', '1741510', '5177', '6692', '1.13306', '-3.8899e-06', '1', '11');
 INSERT INTO `trainers` VALUES ('Kaadara', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '5', '0', '5182', '6686', '-192', '0.933277', '0.359158', '12');
 INSERT INTO `trainers` VALUES ('Keren', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '5', '0', '1524', '2782', '25', '0.320035', '0.947406', '13');
 INSERT INTO `trainers` VALUES ('Keren', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '5', '1396874', '1751', '2613', '1.13306', '-0.00312865', '0.999995', '14');
@@ -82715,7 +82753,7 @@ INSERT INTO `trainers` VALUES ('Nashal', 'trainer_merchant', 'crafting_merchant'
 INSERT INTO `trainers` VALUES ('Nashal', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '7', '4265396', '4518', '5230', '1.13306', '0.000896588', '1', '28');
 INSERT INTO `trainers` VALUES ('Bestine', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '8', '1028562', '-1167', '-3490', '1.13306', '0.000118111', '1', '29');
 INSERT INTO `trainers` VALUES ('Bestine', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '8', '0', '-1266', '-3559', '12', '0.916902', '-0.399112', '30');
-INSERT INTO `trainers` VALUES ('Mos Eisley', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '8', '1279964', '3446', '-4703', '1.13306', '-4.59887e-005', '1', '31');
+INSERT INTO `trainers` VALUES ('Mos Eisley', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '8', '1279964', '3446', '-4703', '1.13306', '-4.59887e-05', '1', '31');
 INSERT INTO `trainers` VALUES ('Mos Eisley', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '8', '0', '3503', '-4809', '5', '0.357844', '0.933782', '32');
 INSERT INTO `trainers` VALUES ('Mos Entha', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '8', '0', '1273', '3151', '7', '0.984731', '0.174081', '33');
 INSERT INTO `trainers` VALUES ('Mos Entha', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '8', '0', '1324', '3141', '7', '0.818581', '-0.57439', '34');
@@ -83205,6 +83243,8 @@ INSERT INTO `trainers` VALUES ('Mos Entha', 'trainer_entertainer', 'social_enter
 INSERT INTO `trainers` VALUES ('Mos Entha', 'trainer_entertainer', 'social_entertainer', 'DE8F2635', '7762E27F', '2F6E7E8A', '8', '0', '1287', '3163', '7', '0.676311', '0.736616', '518');
 INSERT INTO `trainers` VALUES ('Mos Espa', 'trainer_entertainer', 'social_entertainer', 'DE8F2635', '7762E27F', '2F6E7E8A', '8', '0', '-2889', '2178', '5', '0.986429', '0.164186', '519');
 INSERT INTO `trainers` VALUES ('Mos Eisley', 'trainer_entertainer', 'social_entertainer', 'DE8F2635', '7762E27F', '2F6E7E8A', '8', '0', '3477.89', '-4791.6', '5', '0.952414', '-0.304806', '520');
+INSERT INTO `trainers` VALUES ('Rori', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '6', '4635772', '11.6338', '5.69637', '1.13306', '0.999642', '0.0267526', '521');
+INSERT INTO `trainers` VALUES ('Rori', 'trainer_brawler', 'combat_brawler', 'BB904423', '6087ECB4', '298A8B39', '6', '0', '5335.31', '5530.48', '80', '-0.349679', '0.93687', '522');
 INSERT INTO `transports` VALUES ('1', '0', 'Bela Vistal Shuttle A', '0', '6949', '-5543', '220', '0.2', '0.51', '6936', '-5537', '330.6', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('2', '0', 'Bela Vistal Shuttle B', '0', '6623', '-5923', '330', '0', '0.51', '6637', '-5921', '330.6', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('3', '0', 'Coronet Shuttle A', '0', '-323', '-4620', '28', '-0.71', '0.7', '-331.2', '-4639.2', '28.6', '1', '0', '1984806965');
