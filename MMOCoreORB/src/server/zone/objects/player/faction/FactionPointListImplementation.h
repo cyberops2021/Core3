@@ -42,4 +42,43 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#include "RebelRecruiterCreatureImplementation.h"
+
+#ifndef FACTIONPOINTLISTIMPLEMENTATION_H_
+#define FACTIONPOINTLISTIMPLEMENTATION_H_
+
+#include "engine/engine.h"
+#include "FactionPointList.h"
+
+class FactionPointListImplementation : public FactionPointListServant {
+	LinkedList<string> list;
+public:
+	FactionPointListImplementation() : FactionPointListServant() {
+
+	}
+
+	~FactionPointListImplementation() {
+		for (int i = list.size(); i > 0; i--)
+			list.remove(i-1);
+	}
+
+	void add(string& obj) {
+		list.add(obj);
+	}
+
+	string& get(int index) {
+		return list.get(index);
+	}
+
+	inline bool isEmpty() {
+		return list.isEmpty();
+	}
+
+	inline int size() {
+		return list.size();
+	}
+
+
+};
+
+
+#endif /* FACTIONPOINTLISTIMPLEMENTATION_H_ */
