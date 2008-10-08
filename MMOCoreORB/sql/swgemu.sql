@@ -263,10 +263,12 @@ CREATE TABLE `datapad` (
   `attributes` text NOT NULL,
   `appearance` mediumtext NOT NULL,
   `itemMask` smallint(5) unsigned NOT NULL default '65535',
+  `obj_id` bigint(20) unsigned NOT NULL,
   PRIMARY KEY  (`inx`),
   KEY `char_ix` (`character_id`),
   KEY `item_ix` (`inx`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
+
 
 -- ----------------------------
 -- Table structure for draft_schematics
