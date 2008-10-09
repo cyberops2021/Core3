@@ -4,14 +4,13 @@ Source Host: localhost
 Source Database: swgemu
 Target Host: localhost
 Target Database: swgemu
-Date: 10/3/2008 10:01:08 AM
+Date: 10/9/2008 3:06:41 PM
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for account
 -- ----------------------------
-DROP TABLE IF EXISTS `account`;
 CREATE TABLE `account` (
   `account_id` mediumint(8) unsigned NOT NULL auto_increment,
   `username` varchar(255) NOT NULL default '',
@@ -32,7 +31,6 @@ CREATE TABLE `account` (
 -- ----------------------------
 -- Table structure for badge
 -- ----------------------------
-DROP TABLE IF EXISTS `badge`;
 CREATE TABLE `badge` (
   `badge_id` mediumint(8) unsigned NOT NULL auto_increment,
   `name` varchar(255) NOT NULL default '',
@@ -43,7 +41,6 @@ CREATE TABLE `badge` (
 -- ----------------------------
 -- Table structure for bazaar_items
 -- ----------------------------
-DROP TABLE IF EXISTS `bazaar_items`;
 CREATE TABLE `bazaar_items` (
   `objectid` bigint(20) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
@@ -65,7 +62,6 @@ CREATE TABLE `bazaar_items` (
 -- ----------------------------
 -- Table structure for character_badge
 -- ----------------------------
-DROP TABLE IF EXISTS `character_badge`;
 CREATE TABLE `character_badge` (
   `character_id` mediumint(8) unsigned NOT NULL default '0',
   `bitmask0` mediumint(8) unsigned NOT NULL default '0',
@@ -79,7 +75,6 @@ CREATE TABLE `character_badge` (
 -- ----------------------------
 -- Table structure for character_faction_points
 -- ----------------------------
-DROP TABLE IF EXISTS `character_faction_points`;
 CREATE TABLE `character_faction_points` (
   `character_id` int(10) unsigned NOT NULL,
   `faction_name` varchar(25) NOT NULL,
@@ -91,7 +86,6 @@ CREATE TABLE `character_faction_points` (
 -- ----------------------------
 -- Table structure for character_items
 -- ----------------------------
-DROP TABLE IF EXISTS `character_items`;
 CREATE TABLE `character_items` (
   `item_id` bigint(20) unsigned NOT NULL,
   `character_id` bigint(20) unsigned NOT NULL,
@@ -111,7 +105,6 @@ CREATE TABLE `character_items` (
 -- ----------------------------
 -- Table structure for character_profession
 -- ----------------------------
-DROP TABLE IF EXISTS `character_profession`;
 CREATE TABLE `character_profession` (
   `character_id` mediumint(8) unsigned NOT NULL auto_increment,
   `profession_id` int(4) NOT NULL default '0',
@@ -121,7 +114,6 @@ CREATE TABLE `character_profession` (
 -- ----------------------------
 -- Table structure for character_structures
 -- ----------------------------
-DROP TABLE IF EXISTS `character_structures`;
 CREATE TABLE `character_structures` (
   `zoneid` tinyint(4) NOT NULL,
   `objectid` bigint(20) NOT NULL,
@@ -144,7 +136,6 @@ CREATE TABLE `character_structures` (
 -- ----------------------------
 -- Table structure for characters
 -- ----------------------------
-DROP TABLE IF EXISTS `characters`;
 CREATE TABLE `characters` (
   `character_id` mediumint(8) unsigned NOT NULL auto_increment,
   `account_id` mediumint(8) unsigned NOT NULL default '0',
@@ -212,7 +203,6 @@ CREATE TABLE `characters` (
 -- ----------------------------
 -- Table structure for consentlist
 -- ----------------------------
-DROP TABLE IF EXISTS `consentlist`;
 CREATE TABLE `consentlist` (
   `id` mediumint(8) unsigned NOT NULL auto_increment,
   `character_id` mediumint(8) unsigned NOT NULL default '0',
@@ -223,7 +213,6 @@ CREATE TABLE `consentlist` (
 -- ----------------------------
 -- Table structure for customization_data
 -- ----------------------------
-DROP TABLE IF EXISTS `customization_data`;
 CREATE TABLE `customization_data` (
   `speciesGender` varchar(30) NOT NULL default '',
   `customizationGroup` varchar(15) NOT NULL default '',
@@ -252,7 +241,6 @@ CREATE TABLE `customization_data` (
 -- ----------------------------
 -- Table structure for datapad
 -- ----------------------------
-DROP TABLE IF EXISTS `datapad`;
 CREATE TABLE `datapad` (
   `inx` bigint(20) unsigned NOT NULL auto_increment,
   `character_id` bigint(20) unsigned NOT NULL,
@@ -267,13 +255,11 @@ CREATE TABLE `datapad` (
   PRIMARY KEY  (`inx`),
   KEY `char_ix` (`character_id`),
   KEY `item_ix` (`inx`)
-) ENGINE=MyISAM AUTO_INCREMENT=0 DEFAULT CHARSET=latin1;
-
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for draft_schematics
 -- ----------------------------
-DROP TABLE IF EXISTS `draft_schematics`;
 CREATE TABLE `draft_schematics` (
   `draftschematic_id` bigint(20) unsigned NOT NULL,
   `name` text NOT NULL,
@@ -298,7 +284,6 @@ CREATE TABLE `draft_schematics` (
 -- ----------------------------
 -- Table structure for faction
 -- ----------------------------
-DROP TABLE IF EXISTS `faction`;
 CREATE TABLE `faction` (
   `faction_id` int(4) unsigned NOT NULL auto_increment,
   `faction` varchar(45) default NULL,
@@ -308,7 +293,6 @@ CREATE TABLE `faction` (
 -- ----------------------------
 -- Table structure for friendlist
 -- ----------------------------
-DROP TABLE IF EXISTS `friendlist`;
 CREATE TABLE `friendlist` (
   `character_id` mediumint(8) unsigned NOT NULL,
   `friend_id` mediumint(8) NOT NULL,
@@ -323,7 +307,6 @@ CREATE TABLE `friendlist` (
 -- ----------------------------
 -- Table structure for galaxy
 -- ----------------------------
-DROP TABLE IF EXISTS `galaxy`;
 CREATE TABLE `galaxy` (
   `galaxy_id` int(5) NOT NULL auto_increment,
   `name` varchar(50) NOT NULL default '',
@@ -337,7 +320,6 @@ CREATE TABLE `galaxy` (
 -- ----------------------------
 -- Table structure for guilds
 -- ----------------------------
-DROP TABLE IF EXISTS `guilds`;
 CREATE TABLE `guilds` (
   `guild_id` int(11) unsigned NOT NULL auto_increment,
   `guild_tag` varchar(255) NOT NULL default 'DEFAULT',
@@ -355,7 +337,6 @@ CREATE TABLE `guilds` (
 -- ----------------------------
 -- Table structure for guilds_sponsoring
 -- ----------------------------
-DROP TABLE IF EXISTS `guilds_sponsoring`;
 CREATE TABLE `guilds_sponsoring` (
   `guild_id` int(11) unsigned NOT NULL,
   `guild_name` varchar(255) NOT NULL default 'Default Guild',
@@ -372,7 +353,6 @@ CREATE TABLE `guilds_sponsoring` (
 -- ----------------------------
 -- Table structure for ignorelist
 -- ----------------------------
-DROP TABLE IF EXISTS `ignorelist`;
 CREATE TABLE `ignorelist` (
   `character_id` mediumint(8) unsigned NOT NULL,
   `ignore_id` mediumint(8) NOT NULL,
@@ -387,7 +367,6 @@ CREATE TABLE `ignorelist` (
 -- ----------------------------
 -- Table structure for lootgroup_weight
 -- ----------------------------
-DROP TABLE IF EXISTS `lootgroup_weight`;
 CREATE TABLE `lootgroup_weight` (
   `lootgroup` int(4) unsigned NOT NULL,
   `weight` tinyint(3) default NULL,
@@ -398,7 +377,6 @@ CREATE TABLE `lootgroup_weight` (
 -- ----------------------------
 -- Table structure for loottable
 -- ----------------------------
-DROP TABLE IF EXISTS `loottable`;
 CREATE TABLE `loottable` (
   `lootgroup` tinyint(4) default NULL,
   `name` text NOT NULL,
@@ -427,7 +405,6 @@ CREATE TABLE `loottable` (
 -- ----------------------------
 -- Table structure for mail
 -- ----------------------------
-DROP TABLE IF EXISTS `mail`;
 CREATE TABLE `mail` (
   `mail_id` int(11) NOT NULL auto_increment,
   `sender_name` text NOT NULL,
@@ -443,7 +420,6 @@ CREATE TABLE `mail` (
 -- ----------------------------
 -- Table structure for mail_attachment
 -- ----------------------------
-DROP TABLE IF EXISTS `mail_attachment`;
 CREATE TABLE `mail_attachment` (
   `attachment_id` mediumint(8) unsigned NOT NULL,
   `planet_id` mediumint(8) unsigned NOT NULL,
@@ -458,7 +434,6 @@ CREATE TABLE `mail_attachment` (
 -- ----------------------------
 -- Table structure for no_build_areas
 -- ----------------------------
-DROP TABLE IF EXISTS `no_build_areas`;
 CREATE TABLE `no_build_areas` (
   `zoneid` tinyint(3) unsigned NOT NULL,
   `uid` bigint(20) unsigned NOT NULL auto_increment,
@@ -474,7 +449,6 @@ CREATE TABLE `no_build_areas` (
 -- ----------------------------
 -- Table structure for npc_faction
 -- ----------------------------
-DROP TABLE IF EXISTS `npc_faction`;
 CREATE TABLE `npc_faction` (
   `npc_group_id` int(10) unsigned NOT NULL auto_increment,
   `faction_id` int(4) unsigned NOT NULL default '0',
@@ -485,7 +459,6 @@ CREATE TABLE `npc_faction` (
 -- ----------------------------
 -- Table structure for object_crc_string_table
 -- ----------------------------
-DROP TABLE IF EXISTS `object_crc_string_table`;
 CREATE TABLE `object_crc_string_table` (
   `decimal` bigint(20) NOT NULL default '0',
   `hex` varchar(15) NOT NULL default '',
@@ -496,7 +469,6 @@ CREATE TABLE `object_crc_string_table` (
 -- ----------------------------
 -- Table structure for performance
 -- ----------------------------
-DROP TABLE IF EXISTS `performance`;
 CREATE TABLE `performance` (
   `performanceName` varchar(11) default NULL,
   `instrumentAudioId` int(10) unsigned default NULL,
@@ -533,7 +505,6 @@ CREATE TABLE `performance` (
 -- ----------------------------
 -- Table structure for performance_effect
 -- ----------------------------
-DROP TABLE IF EXISTS `performance_effect`;
 CREATE TABLE `performance_effect` (
   `effectName` varchar(14) default NULL,
   `performanceType` varchar(11) default NULL,
@@ -547,7 +518,6 @@ CREATE TABLE `performance_effect` (
 -- ----------------------------
 -- Table structure for planet
 -- ----------------------------
-DROP TABLE IF EXISTS `planet`;
 CREATE TABLE `planet` (
   `planet_id` int(2) NOT NULL,
   `name` varchar(25) NOT NULL,
@@ -557,7 +527,6 @@ CREATE TABLE `planet` (
 -- ----------------------------
 -- Table structure for planetmap
 -- ----------------------------
-DROP TABLE IF EXISTS `planetmap`;
 CREATE TABLE `planetmap` (
   `index` int(10) unsigned NOT NULL auto_increment,
   `planet` varchar(45) NOT NULL,
@@ -573,7 +542,6 @@ CREATE TABLE `planetmap` (
 -- ----------------------------
 -- Table structure for profession
 -- ----------------------------
-DROP TABLE IF EXISTS `profession`;
 CREATE TABLE `profession` (
   `profession_id` int(4) unsigned NOT NULL auto_increment,
   `name` varchar(45) NOT NULL default '',
@@ -583,7 +551,6 @@ CREATE TABLE `profession` (
 -- ----------------------------
 -- Table structure for resource_data
 -- ----------------------------
-DROP TABLE IF EXISTS `resource_data`;
 CREATE TABLE `resource_data` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_name` varchar(255) NOT NULL,
@@ -624,7 +591,6 @@ CREATE TABLE `resource_data` (
 -- ----------------------------
 -- Table structure for resource_spawns
 -- ----------------------------
-DROP TABLE IF EXISTS `resource_spawns`;
 CREATE TABLE `resource_spawns` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_name` varchar(255) NOT NULL,
@@ -645,7 +611,6 @@ CREATE TABLE `resource_spawns` (
 -- ----------------------------
 -- Table structure for resource_tree
 -- ----------------------------
-DROP TABLE IF EXISTS `resource_tree`;
 CREATE TABLE `resource_tree` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_type` varchar(255) NOT NULL,
@@ -703,7 +668,6 @@ CREATE TABLE `resource_tree` (
 -- ----------------------------
 -- Table structure for skills
 -- ----------------------------
-DROP TABLE IF EXISTS `skills`;
 CREATE TABLE `skills` (
   `skill_id` int(10) unsigned NOT NULL auto_increment,
   `skill_name` varchar(52) default NULL,
@@ -740,7 +704,6 @@ CREATE TABLE `skills` (
 -- ----------------------------
 -- Table structure for starting_location
 -- ----------------------------
-DROP TABLE IF EXISTS `starting_location`;
 CREATE TABLE `starting_location` (
   `location_id` int(2) unsigned NOT NULL auto_increment,
   `location` varchar(45) NOT NULL,
@@ -757,7 +720,6 @@ CREATE TABLE `starting_location` (
 -- ----------------------------
 -- Table structure for staticobjects
 -- ----------------------------
-DROP TABLE IF EXISTS `staticobjects`;
 CREATE TABLE `staticobjects` (
   `zoneid` tinyint(4) NOT NULL,
   `objectid` bigint(20) NOT NULL,
@@ -779,7 +741,6 @@ CREATE TABLE `staticobjects` (
 -- ----------------------------
 -- Table structure for statictangibleobjects
 -- ----------------------------
-DROP TABLE IF EXISTS `statictangibleobjects`;
 CREATE TABLE `statictangibleobjects` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `zoneid` tinyint(4) NOT NULL,
@@ -803,7 +764,6 @@ CREATE TABLE `statictangibleobjects` (
 -- ----------------------------
 -- Table structure for template_items
 -- ----------------------------
-DROP TABLE IF EXISTS `template_items`;
 CREATE TABLE `template_items` (
   `template_id` mediumint(8) unsigned NOT NULL auto_increment,
   `name` varchar(128) NOT NULL,
@@ -813,7 +773,6 @@ CREATE TABLE `template_items` (
 -- ----------------------------
 -- Table structure for ticket_collectors
 -- ----------------------------
-DROP TABLE IF EXISTS `ticket_collectors`;
 CREATE TABLE `ticket_collectors` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `transport_id` int(11) NOT NULL,
@@ -825,12 +784,11 @@ CREATE TABLE `ticket_collectors` (
   `dir_w` float NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `SECONDARY` (`transport_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=43 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for ticket_terminals
 -- ----------------------------
-DROP TABLE IF EXISTS `ticket_terminals`;
 CREATE TABLE `ticket_terminals` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `transport_id` int(11) NOT NULL,
@@ -842,12 +800,11 @@ CREATE TABLE `ticket_terminals` (
   `dir_w` float NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `SECONDARY` (`transport_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=106 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for trainers
 -- ----------------------------
-DROP TABLE IF EXISTS `trainers`;
 CREATE TABLE `trainers` (
   `Location` varchar(64) default NULL,
   `Trainer Type` varchar(64) default NULL,
@@ -870,7 +827,6 @@ CREATE TABLE `trainers` (
 -- ----------------------------
 -- Table structure for transports
 -- ----------------------------
-DROP TABLE IF EXISTS `transports`;
 CREATE TABLE `transports` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `planet_id` tinyint(3) unsigned NOT NULL,
@@ -889,12 +845,11 @@ CREATE TABLE `transports` (
   `crc` bigint(20) unsigned NOT NULL default '1984806965',
   PRIMARY KEY  (`id`),
   KEY `SECONDARY` (`planet_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=43 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for warp
 -- ----------------------------
-DROP TABLE IF EXISTS `warp`;
 CREATE TABLE `warp` (
   `warp_id` int(2) unsigned NOT NULL auto_increment,
   `name` varchar(64) NOT NULL,
@@ -911,7 +866,6 @@ CREATE TABLE `warp` (
 -- ----------------------------
 -- Table structure for waypoints
 -- ----------------------------
-DROP TABLE IF EXISTS `waypoints`;
 CREATE TABLE `waypoints` (
   `waypoint_id` bigint(20) unsigned NOT NULL,
   `owner_id` mediumint(8) unsigned NOT NULL,
@@ -82646,14 +82600,14 @@ INSERT INTO `ticket_collectors` VALUES ('6', '6', '0', '-3783.5', '3240.5', '86.
 INSERT INTO `ticket_collectors` VALUES ('7', '7', '0', '-4992', '-2354', '21.6', '0', '0.8');
 INSERT INTO `ticket_collectors` VALUES ('8', '8', '0', '-5607', '-2799', '21.6', '0.75', '0.8');
 INSERT INTO `ticket_collectors` VALUES ('9', '9', '0', '-5560', '-6053', '16.6', '1', '0');
-INSERT INTO `ticket_collectors` VALUES ('10', '10', '0', '1589', '-6410.4', '4', '0', '1');
-INSERT INTO `ticket_collectors` VALUES ('11', '11', '0', '-4229', '-2355.5', '3', '1', '0');
-INSERT INTO `ticket_collectors` VALUES ('12', '12', '0', '-644', '2488', '3', '0.71', '0.69');
-INSERT INTO `ticket_collectors` VALUES ('13', '13', '0', '-68.9', '-1578', '18', '1', '0');
-INSERT INTO `ticket_collectors` VALUES ('14', '14', '0', '598', '3095', '6', '1', '0');
-INSERT INTO `ticket_collectors` VALUES ('15', '15', '0', '3222', '-3493', '24', '0', '1');
-INSERT INTO `ticket_collectors` VALUES ('16', '16', '0', '-970', '1563', '73', '1', '0');
-INSERT INTO `ticket_collectors` VALUES ('17', '17', '0', '459', '5503', '8.8', '1', '0');
+INSERT INTO `ticket_collectors` VALUES ('10', '10', '0', '1589', '-6410.4', '4', '-0.56', '0.82');
+INSERT INTO `ticket_collectors` VALUES ('11', '11', '0', '-4229', '-2355.5', '3', '0.83', '0.55');
+INSERT INTO `ticket_collectors` VALUES ('12', '12', '0', '-644', '2488', '3', '0.83', '0.55');
+INSERT INTO `ticket_collectors` VALUES ('13', '13', '0', '-68.9', '-1578', '18', '0.93', '0.34');
+INSERT INTO `ticket_collectors` VALUES ('14', '14', '0', '598', '3095', '6', '0.91', '0.43');
+INSERT INTO `ticket_collectors` VALUES ('15', '15', '0', '3222', '-3493', '24', '0.52', '-0.84');
+INSERT INTO `ticket_collectors` VALUES ('16', '16', '0', '-970', '1563', '73', '-0.52', '0.84');
+INSERT INTO `ticket_collectors` VALUES ('17', '17', '0', '459', '5503', '8.8', '0.78', '0.62');
 INSERT INTO `ticket_collectors` VALUES ('18', '18', '0', '5339', '-1567', '327.7', '-0.71', '0.7');
 INSERT INTO `ticket_collectors` VALUES ('19', '19', '0', '5134', '6616.4', '-191.4', '0.42', '-0.83');
 INSERT INTO `ticket_collectors` VALUES ('20', '20', '0', '2028', '2534', '19.7', '-0.71', '0.7');
@@ -82667,7 +82621,7 @@ INSERT INTO `ticket_collectors` VALUES ('27', '27', '0', '-5256.4', '-2150.4', '
 INSERT INTO `ticket_collectors` VALUES ('28', '28', '0', '3668', '-6409', '96', '1', '0');
 INSERT INTO `ticket_collectors` VALUES ('29', '29', '0', '5205', '5797', '80.7', '1', '0');
 INSERT INTO `ticket_collectors` VALUES ('30', '30', '0', '707', '-3047', '6.6', '0', '0.8');
-INSERT INTO `ticket_collectors` VALUES ('31', '31', '0', '-2222', '2298', '20', '0', '0.8');
+INSERT INTO `ticket_collectors` VALUES ('31', '31', '0', '-2222', '2298', '20', '0.17', '1');
 INSERT INTO `ticket_collectors` VALUES ('32', '32', '0', '4328', '5422', '10.6', '0.75', '0.8');
 INSERT INTO `ticket_collectors` VALUES ('33', '33', '0', '38', '-5332', '52.6', '1', '0');
 INSERT INTO `ticket_collectors` VALUES ('34', '34', '0', '-1090', '-3554.9', '12.6', '-0.64', '0.76');
@@ -82675,10 +82629,23 @@ INSERT INTO `ticket_collectors` VALUES ('35', '35', '0', '3427.5', '-4642', '5.6
 INSERT INTO `ticket_collectors` VALUES ('36', '36', '0', '1720', '3191', '7.6', '1', '0');
 INSERT INTO `ticket_collectors` VALUES ('37', '37', '0', '-2792', '2179', '5.6', '-0.15', '0.8');
 INSERT INTO `ticket_collectors` VALUES ('38', '38', '0', '-3116', '2165', '5.6', '0.6', '0.8');
-INSERT INTO `ticket_collectors` VALUES ('39', '39', '0', '4032', '-6222', '37', '1', '0');
-INSERT INTO `ticket_collectors` VALUES ('40', '40', '0', '-6927', '-5704', '73', '-0.71', '0.7');
-INSERT INTO `ticket_collectors` VALUES ('41', '41', '0', '-288', '4890', '35', '1', '0');
+INSERT INTO `ticket_collectors` VALUES ('39', '39', '0', '4032', '-6222', '37', '0.81', '0.57');
+INSERT INTO `ticket_collectors` VALUES ('40', '40', '0', '-6927', '-5704', '73', '1', '0.22');
+INSERT INTO `ticket_collectors` VALUES ('41', '41', '0', '-288', '4890', '35', '0.85', '0.52');
 INSERT INTO `ticket_collectors` VALUES ('42', '42', '1692104', '-3.20424', '2.9712', '7.9418', '0.933335', '0.35898');
+INSERT INTO `ticket_collectors` VALUES ('43', '43', '0', '4715.31', '-4656.65', '4.17', '0.996648', '-0.0818144');
+INSERT INTO `ticket_collectors` VALUES ('44', '44', '0', '1344.26', '2762.17', '13', '1', '0');
+INSERT INTO `ticket_collectors` VALUES ('45', '45', '0', '5290', '6655', '-192', '0', '1');
+INSERT INTO `ticket_collectors` VALUES ('46', '46', '0', '3367', '5612', '308', '0.64', '0.75');
+INSERT INTO `ticket_collectors` VALUES ('47', '47', '0', '-3149', '2895', '31', '0.8', '0.61');
+INSERT INTO `ticket_collectors` VALUES ('48', '48', '0', '-4986', '-2218', '21', '0.48', '0.87');
+INSERT INTO `ticket_collectors` VALUES ('49', '49', '9', '-51', '-4722', '28', '0.62', '0.78');
+INSERT INTO `ticket_collectors` VALUES ('52', '52', '0', '245', '-2940', '6', '1', '0');
+INSERT INTO `ticket_collectors` VALUES ('53', '53', '0', '4469', '5373', '2', '0.83', '-0.55');
+INSERT INTO `ticket_collectors` VALUES ('54', '54', '0', '1252', '3059', '7', '0.73', '0.67');
+INSERT INTO `ticket_collectors` VALUES ('55', '55', '0', '-2820', '2091', '5', '0.39', '1');
+INSERT INTO `ticket_collectors` VALUES ('56', '56', '0', '3621', '-4785', '5', '-0.15', '1');
+INSERT INTO `ticket_collectors` VALUES ('57', '57', '0', '-1377', '-3587', '12', '1', '0');
 INSERT INTO `ticket_terminals` VALUES ('1', '1', '0', '6935', '-5545', '330.6', '-0.64', '0.8');
 INSERT INTO `ticket_terminals` VALUES ('2', '2', '0', '6638', '-5912', '330.6', '0.75', '0.8');
 INSERT INTO `ticket_terminals` VALUES ('3', '3', '0', '-319.5', '-4634', '28.6', '1', '0');
@@ -82688,14 +82655,14 @@ INSERT INTO `ticket_terminals` VALUES ('6', '6', '0', '-3765.5', '3240.5', '86.6
 INSERT INTO `ticket_terminals` VALUES ('7', '7', '0', '-5011', '-2353', '21.6', '0', '0.8');
 INSERT INTO `ticket_terminals` VALUES ('8', '8', '0', '-5607', '-2781', '21.6', '0.75', '0.8');
 INSERT INTO `ticket_terminals` VALUES ('9', '9', '0', '-5542', '-6053', '16.6', '1', '0');
-INSERT INTO `ticket_terminals` VALUES ('10', '10', '0', '1583', '-6410', '4', '0', '1');
-INSERT INTO `ticket_terminals` VALUES ('11', '11', '0', '-4220', '-2356', '3', '1', '0');
-INSERT INTO `ticket_terminals` VALUES ('12', '12', '0', '-640', '2493', '3', '0.71', '0.69');
-INSERT INTO `ticket_terminals` VALUES ('13', '13', '0', '-63', '-1583', '18', '1', '0');
-INSERT INTO `ticket_terminals` VALUES ('14', '14', '0', '605', '3090', '6', '1', '0');
-INSERT INTO `ticket_terminals` VALUES ('15', '15', '0', '3213', '-3493', '24', '0', '1');
-INSERT INTO `ticket_terminals` VALUES ('16', '16', '0', '-962', '1556', '73', '1', '0');
-INSERT INTO `ticket_terminals` VALUES ('17', '17', '0', '464', '5502', '8.8', '1', '0');
+INSERT INTO `ticket_terminals` VALUES ('10', '10', '8565353', '3.19301', '-17.4439', '0.146595', '0.71', '-0.64');
+INSERT INTO `ticket_terminals` VALUES ('11', '11', '7105354', '-3.19301', '-17.4439', '0.146595', '0.71', '-0.64');
+INSERT INTO `ticket_terminals` VALUES ('12', '12', '2955586', '-3.19301', '-17.4439', '0.146595', '0.71', '-0.64');
+INSERT INTO `ticket_terminals` VALUES ('13', '13', '2835561', '-3.19301', '-17.4439', '0.146595', '0.71', '-0.64');
+INSERT INTO `ticket_terminals` VALUES ('14', '14', '6915359', '-3.19301', '17.4439', '0.146595', '0.71', '-0.64');
+INSERT INTO `ticket_terminals` VALUES ('15', '15', '9875354', '-3.19301', '-17.4439', '0.146595', '0.71', '-0.64');
+INSERT INTO `ticket_terminals` VALUES ('16', '16', '6705353', '-3.19301', '-17.4439', '0.146595', '0.71', '-0.64');
+INSERT INTO `ticket_terminals` VALUES ('17', '17', '4705365', '-3.19301', '-17.4439', '0.146595', '0.71', '-0.65');
 INSERT INTO `ticket_terminals` VALUES ('18', '18', '0', '5339', '-1585', '327.7', '-0.71', '0.7');
 INSERT INTO `ticket_terminals` VALUES ('19', '19', '0', '5122', '6605', '-191.4', '0.42', '-0.83');
 INSERT INTO `ticket_terminals` VALUES ('20', '20', '0', '2027.8', '2517', '19.7', '-0.71', '0.7');
@@ -82709,7 +82676,7 @@ INSERT INTO `ticket_terminals` VALUES ('27', '27', '0', '-5244', '-2163.1', '81.
 INSERT INTO `ticket_terminals` VALUES ('28', '28', '0', '3668', '-6412', '96', '1', '0');
 INSERT INTO `ticket_terminals` VALUES ('29', '29', '0', '5221', '5797', '80.7', '1', '0');
 INSERT INTO `ticket_terminals` VALUES ('30', '30', '0', '689', '-3047', '6.6', '0', '0.8');
-INSERT INTO `ticket_terminals` VALUES ('31', '31', '0', '-2219', '2297', '20', '0', '0.8');
+INSERT INTO `ticket_terminals` VALUES ('31', '31', '0', '-3.19301', '-17.4439', '0.14', '0.76', '0.64');
 INSERT INTO `ticket_terminals` VALUES ('32', '32', '0', '4328', '5439', '10.6', '0.75', '0.8');
 INSERT INTO `ticket_terminals` VALUES ('33', '33', '0', '54', '-5332', '52.6', '1', '0');
 INSERT INTO `ticket_terminals` VALUES ('34', '34', '0', '-1092', '-3570.9', '12.6', '-0.64', '0.76');
@@ -82717,13 +82684,73 @@ INSERT INTO `ticket_terminals` VALUES ('35', '35', '0', '3418.5', '-4657.5', '5.
 INSERT INTO `ticket_terminals` VALUES ('36', '36', '0', '1738.5', '3191', '7.6', '1', '0');
 INSERT INTO `ticket_terminals` VALUES ('37', '37', '0', '-2809.5', '2175', '5.6', '-0.15', '0.8');
 INSERT INTO `ticket_terminals` VALUES ('38', '38', '0', '-3121', '2183', '5.6', '0.6', '0.8');
-INSERT INTO `ticket_terminals` VALUES ('39', '39', '0', '4039', '-6222', '37', '1', '0');
-INSERT INTO `ticket_terminals` VALUES ('40', '40', '0', '-6927', '-5712', '73', '-0.71', '0.7');
-INSERT INTO `ticket_terminals` VALUES ('41', '41', '0', '-280', '4890', '35', '1', '0');
+INSERT INTO `ticket_terminals` VALUES ('39', '39', '1512720', '-3.19301', '-17.4439', '0.146595', '0.71', '-0.64');
+INSERT INTO `ticket_terminals` VALUES ('40', '40', '3035485', '-3.19301', '-17.4439', '0.146595', '0.71', '-0.64');
+INSERT INTO `ticket_terminals` VALUES ('41', '41', '7795549', '-3.19301', '-17.4439', '0.146595', '0.71', '-0.64');
 INSERT INTO `ticket_terminals` VALUES ('42', '42', '1692104', '-9.49707', '-45.2359', '7.97928', '-0.71', '1');
 INSERT INTO `ticket_terminals` VALUES ('43', '42', '1692104', '9.49707', '-45.2359', '7.97928', '-0.71', '1');
 INSERT INTO `ticket_terminals` VALUES ('44', '42', '1692103', '26.9453', '-67.1413', '0.749357', '1', '0');
 INSERT INTO `ticket_terminals` VALUES ('45', '42', '1692102', '-26.9453', '-67.1413', '0.749357', '1', '0');
+INSERT INTO `ticket_terminals` VALUES ('46', '43', '4215410', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('47', '43', '4215410', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('48', '43', '4215410', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('49', '43', '4215410', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('50', '45', '1741539', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('51', '45', '1741539', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('52', '45', '1741539', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('53', '45', '1741539', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('54', '44', '2125382', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('55', '44', '2125382', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('56', '44', '2125382', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('57', '44', '2125382', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('58', '46', '9665356', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('59', '46', '9665356', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('60', '46', '9665356', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('61', '46', '9665356', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('62', '47', '4255423', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('63', '47', '4255423', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('64', '47', '4255423', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('65', '47', '4255423', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('66', '48', '1935687', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('67', '48', '1935687', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('68', '48', '1935687', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('69', '48', '1935687', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('70', '49', '1855675', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('71', '49', '1855675', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('72', '49', '1855675', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('73', '49', '1855675', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('74', '50', '4635670', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('75', '50', '4635670', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('76', '50', '4635670', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('77', '50', '4635670', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('78', '51', '4635437', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('79', '51', '4635437', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('80', '51', '4635437', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('81', '51', '4635437', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('82', '52', '3175356', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('83', '52', '3175356', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('84', '52', '3175356', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('85', '52', '3175356', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('86', '53', '4265359', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('87', '53', '4265359', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('88', '53', '4265359', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('89', '53', '4265359', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('90', '54', '4005520', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('91', '54', '4005520', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('92', '54', '4005520', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('93', '54', '4005520', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('94', '55', '1261655', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('95', '55', '1261655', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('96', '55', '1261655', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('97', '55', '1261655', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('98', '56', '1106372', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('99', '56', '1106372', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('100', '56', '1106372', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('101', '56', '1106372', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
+INSERT INTO `ticket_terminals` VALUES ('102', '57', '1026828', '-2.7419', '48.1677', '0.639421', '1', '1');
+INSERT INTO `ticket_terminals` VALUES ('103', '57', '1026828', '12.6536', '51.1838', '0.639421', '-0.416129', '0.909306');
+INSERT INTO `ticket_terminals` VALUES ('104', '57', '1026828', '2.54505', '48.1693', '0.639421', '-1', '1');
+INSERT INTO `ticket_terminals` VALUES ('105', '57', '1026828', '-13.0021', '51.1865', '0.639421', '0.332372', '0.943148');
 INSERT INTO `trainers` VALUES ('Bela Vistal', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '0', '2365947', '6707', '-5510', '1.13306', '-0.002083', '0.999998', '1');
 INSERT INTO `trainers` VALUES ('Bela Vistal', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '0', '0', '6756', '-5655', '314.994', '0.712959', '-0.701206', '2');
 INSERT INTO `trainers` VALUES ('Coronet ', 'trainer_merchant', 'crafting_merchant', '48A9349C', '93BE9C0B', 'DAB3FB86', '0', '1855517', '-145', '-4389', '1.13306', '-0.00137752', '0.999999', '3');
@@ -83255,14 +83282,14 @@ INSERT INTO `transports` VALUES ('6', '0', 'Kor Vella Shuttleport', '0', '-3777'
 INSERT INTO `transports` VALUES ('7', '0', 'Tyrena Shuttle A', '0', '-5000', '-2367', '21.6', '-0.7', '0.51', '-5001', '-2355', '21.6', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('8', '0', 'Tyrena Shuttle B', '0', '-5621', '-2793', '21.6', '0', '0.51', '-5606', '-2790', '21.6', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('9', '0', 'Vreni Island', '0', '-5555', '-6039', '16.6', '0.7', '0.51', '-5551', '-6053', '16.6', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('10', '1', 'Agro Outpost', '0', '1589', '-6400', '11', '-0.71', '0.7', '1571', '-6413', '4', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('11', '1', 'Imperial Outpost', '0', '-4228', '-2364', '10', '-0.71', '0.7', '-4213', '-2350', '3', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('12', '1', 'Mining Outpost', '0', '-638', '2481', '10', '1', '0', '-636', '2504', '3', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('13', '2', 'Science Outpost', '0', '-74', '-1583', '25.086', '1', '0', '-52', '-1585', '18', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('14', '2', 'Trade Outpost', '0', '593.9', '3089', '13.1256', '-0.71', '0.7', '617', '3090', '6', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('15', '3', 'Research Outpost', '0', '3222', '-3482', '31', '-0.71', '0.7', '3222', '-3482', '24', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('16', '3', 'Smuggler Outpost', '0', '-978', '1554', '80', '-0.36', '0.93', '-978', '1554', '73', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('17', '4', 'Nyms Stronghold', '0', '458', '5496', '16.1', '-0.71', '0.7', '476', '5511', '8.8', '1', '0', '1984806965');
+INSERT INTO `transports` VALUES ('10', '1', 'Agro Outpost', '0', '1589', '-6400', '11', '-0.71', '0.7', '1571', '-6413', '4', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('11', '1', 'Imperial Outpost', '0', '-4228', '-2364', '10', '-0.71', '0.7', '-4213', '-2350', '3', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('12', '1', 'Mining Outpost', '0', '-638', '2481', '10', '1', '0', '-636', '2504', '3', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('13', '2', 'Science Outpost', '0', '-74', '-1583', '25.086', '1', '0', '-52', '-1585', '18', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('14', '2', 'Trade Outpost', '0', '593.9', '3089', '13.1256', '-0.71', '0.7', '617', '3090', '6', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('15', '3', 'Research Outpost', '0', '3222', '-3482', '31', '-0.71', '0.7', '3222', '-3482', '24', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('16', '3', 'Smuggler Outpost', '0', '-978', '1554', '80', '-0.36', '0.93', '-978', '1554', '73', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('17', '4', 'Nyms Stronghold', '0', '458', '5496', '16.1', '-0.71', '0.7', '476', '5511', '8.8', '1', '0', '773296996');
 INSERT INTO `transports` VALUES ('18', '5', 'Deeja Peak Shuttleport', '0', '5352', '-1571', '327.7', '1', '0', '5351', '-1577', '327.7', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('19', '5', 'Kaadara Shuttleport', '0', '5141', '6605', '-191.4', '-0.92', '0.39', '5137', '6601', '-191.4', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('20', '5', 'Keren Shuttle A', '0', '2041', '2531', '19.7', '1', '0', '2041', '2525', '19.7', '1', '0', '1984806965');
@@ -83273,10 +83300,10 @@ INSERT INTO `transports` VALUES ('24', '5', 'Theed Shuttle A', '0', '-5876', '41
 INSERT INTO `transports` VALUES ('25', '5', 'Theed Shuttle B', '0', '-5416', '4302', '6.8', '-0.71', '0.7', '-5411', '4302', '6.8', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('26', '5', 'Theed Shuttle C', '0', '-4983', '4086', '6.6', '0.47', '-0.8', '-4989', '4090', '6.6', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('27', '6', 'Narmle Shuttleport', '0', '-5236.4', '-2151', '81.3', '0.42', '-0.83', '-5241', '-2147', '81.3', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('28', '6', 'Rebel Outpost', '0', '3667', '-6418', '103', '0.71', '0.69', '3692', '-6403', '96', '1', '0', '1984806965');
+INSERT INTO `transports` VALUES ('28', '6', 'Rebel Outpost', '0', '3667', '-6418', '103', '0.71', '0.69', '3692', '-6403', '96', '1', '0', '773296996');
 INSERT INTO `transports` VALUES ('29', '6', 'Restuss Shuttleport', '0', '5207', '5810', '80.7', '0.71', '0.69', '5213', '5810', '80.7', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('30', '7', 'Dearic Shuttleport', '0', '701', '-3062', '6.6', '-0.7', '0.51', '699', '-3047', '6.6', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('31', '7', 'Imperial Outpost', '0', '-2214', '2301', '26.6', '0', '0.51', '-2228', '2321', '20', '1', '0', '1984806965');
+INSERT INTO `transports` VALUES ('31', '7', 'Imperial Outpost', '0', '-2214', '2301', '26.6', '0', '0.51', '-2228', '2321', '20', '1', '0', '773296996');
 INSERT INTO `transports` VALUES ('32', '7', 'Nashal Shuttleport', '0', '4313', '5427', '10.6', '0', '0.51', '4328', '5433', '10.6', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('33', '8', 'Anchorhead', '0', '47', '-5317', '52.6', '0.706544', '0.707669', '47', '-5333', '52.6', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('34', '8', 'Bestine Shuttleport', '0', '-1078', '-3564', '12.6', '0', '0', '-1093', '-3562', '12.6', '1', '0', '1984806965');
@@ -83284,10 +83311,25 @@ INSERT INTO `transports` VALUES ('35', '8', 'Mos Eisley Shuttleport', '0', '3433
 INSERT INTO `transports` VALUES ('36', '8', 'Mos Entha Shuttleport', '0', '1729', '3205', '7.6', '0.706544', '0.707669', '1728', '3199', '7.6', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('37', '8', 'Mos Espa Shuttle A', '0', '-2797', '2164', '5.6', '0.75', '-0.6', '-2800', '2176', '5.6', '1', '0', '1984806965');
 INSERT INTO `transports` VALUES ('38', '8', 'Mos Espa Shuttle B', '0', '-3131', '2169', '5.6', '0.15', '-0.75', '-3117', '2174', '5.6', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('39', '9', 'Imperial Outpost', '0', '4033', '-6234', '44', '-0.71', '0.7', '4033', '-6234', '37', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('40', '9', 'Labor Outpost', '0', '-6938', '-5706', '80', '1', '0', '-6939', '-5706', '73', '1', '0', '1984806965');
-INSERT INTO `transports` VALUES ('41', '9', 'Mining Outpost', '0', '-288', '4879', '42', '0.71', '0.69', '-288', '4879', '35', '1', '0', '1984806965');
+INSERT INTO `transports` VALUES ('39', '9', 'Imperial Outpost', '0', '4033', '-6234', '44', '-0.71', '0.7', '4033', '-6234', '37', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('40', '9', 'Labor Outpost', '0', '-6938', '-5706', '80', '1', '0', '-6939', '-5706', '73', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('41', '9', 'Mining Outpost', '0', '-288', '4879', '42', '0.71', '0.69', '-288', '4879', '35', '1', '0', '773296996');
 INSERT INTO `transports` VALUES ('42', '5', 'Theed Starport', '1692104', '-15.6958', '20.162', '7.9418', '0.71', '1', '-4852.44', '4171.5', '6.42631', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('43', '5', 'Moenia Starport', '0', '4727', '-4641', '4.17', '0.689877', '0.723926', '4727.88', '-4641.2', '4.17', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('44', '5', 'Keren Starport', '0', '1350', '2769', '13', '0.71', '0.7', '1350', '2769', '13', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('45', '5', 'Kaadara Starport', '0', '5301', '6662', '-192', '0.71', '0.7', '5301', '6662', '-192', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('46', '0', 'Doaba Guerfel Starport', '0', '3377', '5606', '308', '-0.71', '1', '3377', '5606', '-308', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('47', '0', 'Kor Vella Starport', '0', '-3138', '2897', '31', '0', '1', '-3138', '2897', '31', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('48', '0', 'Tyrena Starport', '0', '-4976', '-2224', '21', '0', '1', '-4976', '-2224', '21', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('49', '0', 'Coronet Starport', '0', '-52', '-4736', '28', '0.71', '0.75', '-52', '-4736', '28', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('50', '6', 'Restuss Starport', '0', '5366.71', '5754.58', '80', '-0.22', '1', '5366', '5754', '80', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('51', '6', 'Narmle Starport', '0', '-5371', '-2157', '80', '-0.51', '-0.85', '-5371', '-5754', '80', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('52', '7', 'Dearic Starport', '0', '243', '-2926', '6', '0.83', '-0.55', '243', '-2926', '6', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('53', '7', 'Nashal Starport', '0', '4483', '5369', '2', '-0.81', '1', '4483', '5369', '2', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('54', '8', 'Mos Entha Starport', '0', '1236', '3059', '7', '1', '0', '1236', '3059', '7', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('55', '8', 'Mos Espa Starport', '0', '-2824', '2081', '5', '0.73', '0.67', '-2824', '2081', '5', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('56', '8', 'Mos Eisley Starport', '0', '3624', '-4797', '5', '-0.53', '0.84', '3624', '-4797', '5', '1', '0', '773296996');
+INSERT INTO `transports` VALUES ('57', '8', 'Bestine Starport', '0', '-1377', '-3576', '12', '0.78', '-0.61', '-1377', '-3576', '12', '1', '0', '773296996');
 INSERT INTO `warp` VALUES ('1', 'coronet_starport', '0', '-67.000000', '28.000000', '-4711.000000', 'Coronet Starport, Corellia', '3', '180');
 INSERT INTO `warp` VALUES ('2', 'coronet_shuttle_a', '0', '-25.000000', '28.000000', '-4389.000000', 'Coronet Shuttle A, Corellia', '3', '180');
 INSERT INTO `warp` VALUES ('3', 'coronet_shuttle_b', '0', '-329.000000', '28.000000', '-4621.000000', 'Coronet Shuttle B, Corellia', '3', '180');
