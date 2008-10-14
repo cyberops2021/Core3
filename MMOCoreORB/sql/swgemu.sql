@@ -1,7 +1,7 @@
 -- MySQL Administrator dump 1.4
 --
 -- ------------------------------------------------------
--- Server version	5.0.32-Debian_7etch6-log
+-- Server version	5.0.51a
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -18354,6 +18354,21 @@ CREATE TABLE  `swgemu`.`profession` (
   `name` varchar(45) NOT NULL default '',
   PRIMARY KEY  (`profession_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE  `swgemu`.`recruiters` (
+  `id` int(10) unsigned NOT NULL auto_increment,
+  `planet_id` tinyint(1) unsigned NOT NULL,
+  `x` float NOT NULL,
+  `y` float NOT NULL,
+  `z` float NOT NULL,
+  `oY` float NOT NULL,
+  `oW` float NOT NULL,
+  `cell_id` bigint(20) unsigned NOT NULL default '0',
+  `type` tinyint(1) unsigned NOT NULL COMMENT '1 = imperial 2= rebel',
+  PRIMARY KEY  (`id`),
+  KEY `SECONDARY` (`planet_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+INSERT INTO `swgemu`.`recruiters` VALUES  (2,5,-4928,4231,0,1,0.053,0,2),
+ (1,5,-4936,4231,0,1,0.053,0,1);
 CREATE TABLE  `swgemu`.`resource_data` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_name` varchar(255) NOT NULL,
@@ -21633,7 +21648,7 @@ INSERT INTO `swgemu`.`staticobjects` VALUES  (1,6525385,0,'object/static/structu
  (1,6525389,0,'object/static/structure/dantooine/shared_dant_skull_lizard.iff',0,-0.228753,0,0.973485,-7055.11,4.2863,-3345.1,128),
  (1,6525390,0,'object/static/structure/dantooine/shared_dant_fire_pit.iff',0.0228163,0.999631,0.0147438,0.000336523,-7048.09,2.36988,-3333.72,200),
  (1,6525391,0,'object/static/structure/general/shared_campfire_fresh.iff',0.00659201,-0.243207,0.0125884,0.96987,-7048.34,2.35655,-3333.81,200),
- (1,6525392,0,'object/static/structure/general/shared_campfire_fresh.iff',0.010606,0.999899,-0.009457,-1e-04,-7048.05,2.35881,-3333.84,200);
+ (1,6525392,0,'object/static/structure/general/shared_campfire_fresh.iff',0.010606,0.999899,-0.009457,-0.0001,-7048.05,2.35881,-3333.84,200);
 INSERT INTO `swgemu`.`staticobjects` VALUES  (1,6525393,0,'object/static/particle/shared_particle_newbie_hanging_smoke.iff',0,1,0,0,-7048.11,8.58538,-3333.98,64),
  (1,6525394,0,'object/static/structure/general/shared_tato_cave_stalagmite_small.iff',-0.0810552,0.930545,0.0639801,-0.351316,-7044.58,1.90758,-3324.49,200),
  (1,6525395,0,'object/static/structure/general/shared_tato_cave_stalagmite_small.iff',-0.0741864,0.755465,0.194556,0.621222,-7037.66,2.11519,-3334.25,200),
