@@ -20,6 +20,12 @@
 
 CREATE DATABASE IF NOT EXISTS swgemu;
 USE swgemu;
+
+--
+-- Definition of table `swgemu`.`account`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`account`;
 CREATE TABLE  `swgemu`.`account` (
   `account_id` mediumint(8) unsigned NOT NULL auto_increment,
   `username` varchar(255) NOT NULL default '',
@@ -36,6 +42,13 @@ CREATE TABLE  `swgemu`.`account` (
   UNIQUE KEY `account_id` (`account_id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`account`
+--
+
+/*!40000 ALTER TABLE `account` DISABLE KEYS */;
+LOCK TABLES `account` WRITE;
 INSERT INTO `swgemu`.`account` VALUES  (1,'account1','e38ad214943daad1d64c102faec29de4afe9da3d',59692769,1,0,'test@test.com','0000-00-00 00:00:00',NULL,1,4),
  (2,'account2','2aa60a8ff7fcd473d321e0146afd9e26df395147',59692768,1,0,'test@test.com','0000-00-00 00:00:00',NULL,1,4),
  (3,'Ultyma','3f3f462976ce93a1d1bb42ce72454b374716834b',348769305,0,0,'ChangeMe@email.com','2007-06-13 01:52:06','2007-06-13 01:52:06',1,4),
@@ -55,12 +68,28 @@ INSERT INTO `swgemu`.`account` VALUES  (10,'th','da39a3ee5e6b4b0d3255bfef9560189
  (17,'a','86f7e437faa5a7fce15d1ddcb9eaeaea377667b8',652229224,0,0,'ChangeMe@email.com','2007-08-13 11:40:55','2007-08-13 11:40:55',1,4);
 INSERT INTO `swgemu`.`account` VALUES  (18,'t\'ea\'ae\'','86f7e437faa5a7fce15d1ddcb9eaeaea377667b8',2674250672,0,0,'ChangeMe@email.com','2007-08-20 21:07:41','2007-08-20 21:07:41',1,4),
  (19,'asdasd','fbac32d0893bbd77715492deaab11998212c8096',4266671789,0,0,'ChangeMe@email.com','2007-08-20 21:07:50','2007-08-20 21:07:50',1,4);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `account` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`badge`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`badge`;
 CREATE TABLE  `swgemu`.`badge` (
   `badge_id` mediumint(8) unsigned NOT NULL auto_increment,
   `name` varchar(255) NOT NULL default '',
   `value` varchar(255) NOT NULL default '',
   PRIMARY KEY  (`badge_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=115 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`badge`
+--
+
+/*!40000 ALTER TABLE `badge` DISABLE KEYS */;
+LOCK TABLES `badge` WRITE;
 INSERT INTO `swgemu`.`badge` VALUES  (1,'unused','...received an unused badge for an unknown reason.'),
  (2,'count_5','...has acquired 5 badges.'),
  (3,'count_10','...has acquired 10 badges.'),
@@ -173,6 +202,15 @@ INSERT INTO `swgemu`.`badge` VALUES  (99,'bdg_exp_ror_rebel_outpost','...has see
  (112,'bdg_thm_park_rebel_badge','...has earned the Rebel Badge of Courage.'),
  (113,'bdg_thm_park_nym_badge','...has earned Nym\'s Badge of Honor.');
 INSERT INTO `swgemu`.`badge` VALUES  (114,'bdg_swg_emu','...has earned the SWGEmu Dev Badge.');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `badge` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`bazaar_items`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`bazaar_items`;
 CREATE TABLE  `swgemu`.`bazaar_items` (
   `objectid` bigint(20) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
@@ -190,6 +228,22 @@ CREATE TABLE  `swgemu`.`bazaar_items` (
   `biddername` varchar(45) NOT NULL,
   PRIMARY KEY  (`objectid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`bazaar_items`
+--
+
+/*!40000 ALTER TABLE `bazaar_items` DISABLE KEYS */;
+LOCK TABLES `bazaar_items` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `bazaar_items` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`character_badge`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`character_badge`;
 CREATE TABLE  `swgemu`.`character_badge` (
   `character_id` mediumint(8) unsigned NOT NULL default '0',
   `bitmask0` mediumint(8) unsigned NOT NULL default '0',
@@ -199,6 +253,22 @@ CREATE TABLE  `swgemu`.`character_badge` (
   `bitmask4` mediumint(8) unsigned NOT NULL default '0',
   PRIMARY KEY  (`character_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`character_badge`
+--
+
+/*!40000 ALTER TABLE `character_badge` DISABLE KEYS */;
+LOCK TABLES `character_badge` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `character_badge` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`character_faction_points`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`character_faction_points`;
 CREATE TABLE  `swgemu`.`character_faction_points` (
   `character_id` int(10) unsigned NOT NULL,
   `faction_name` varchar(25) NOT NULL,
@@ -206,6 +276,22 @@ CREATE TABLE  `swgemu`.`character_faction_points` (
   `hash` varchar(32) NOT NULL,
   PRIMARY KEY  (`hash`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`character_faction_points`
+--
+
+/*!40000 ALTER TABLE `character_faction_points` DISABLE KEYS */;
+LOCK TABLES `character_faction_points` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `character_faction_points` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`character_items`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`character_items`;
 CREATE TABLE  `swgemu`.`character_items` (
   `item_id` bigint(20) unsigned NOT NULL,
   `character_id` bigint(20) unsigned NOT NULL,
@@ -221,11 +307,43 @@ CREATE TABLE  `swgemu`.`character_items` (
   `itemMask` smallint(5) unsigned NOT NULL default '65535',
   PRIMARY KEY  (`item_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`character_items`
+--
+
+/*!40000 ALTER TABLE `character_items` DISABLE KEYS */;
+LOCK TABLES `character_items` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `character_items` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`character_profession`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`character_profession`;
 CREATE TABLE  `swgemu`.`character_profession` (
   `character_id` mediumint(8) unsigned NOT NULL auto_increment,
   `profession_id` int(4) NOT NULL default '0',
   PRIMARY KEY  (`character_id`,`profession_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`character_profession`
+--
+
+/*!40000 ALTER TABLE `character_profession` DISABLE KEYS */;
+LOCK TABLES `character_profession` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `character_profession` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`character_structures`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`character_structures`;
 CREATE TABLE  `swgemu`.`character_structures` (
   `zoneid` tinyint(4) NOT NULL,
   `objectid` bigint(20) NOT NULL,
@@ -244,6 +362,22 @@ CREATE TABLE  `swgemu`.`character_structures` (
   `type` float NOT NULL,
   `noBuildArea` bigint(20) unsigned NOT NULL default '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`character_structures`
+--
+
+/*!40000 ALTER TABLE `character_structures` DISABLE KEYS */;
+LOCK TABLES `character_structures` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `character_structures` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`characters`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`characters`;
 CREATE TABLE  `swgemu`.`characters` (
   `character_id` mediumint(8) unsigned NOT NULL auto_increment,
   `account_id` mediumint(8) unsigned NOT NULL default '0',
@@ -307,12 +441,44 @@ CREATE TABLE  `swgemu`.`characters` (
   `factionRank` tinyint(1) unsigned NOT NULL default '0',
   PRIMARY KEY  (`character_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`characters`
+--
+
+/*!40000 ALTER TABLE `characters` DISABLE KEYS */;
+LOCK TABLES `characters` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `characters` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`consentlist`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`consentlist`;
 CREATE TABLE  `swgemu`.`consentlist` (
   `id` mediumint(8) unsigned NOT NULL auto_increment,
   `character_id` mediumint(8) unsigned NOT NULL default '0',
   `target_id` mediumint(8) unsigned NOT NULL default '0',
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data for table `swgemu`.`consentlist`
+--
+
+/*!40000 ALTER TABLE `consentlist` DISABLE KEYS */;
+LOCK TABLES `consentlist` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `consentlist` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`customization_data`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`customization_data`;
 CREATE TABLE  `swgemu`.`customization_data` (
   `speciesGender` varchar(30) NOT NULL default '',
   `customizationGroup` varchar(15) NOT NULL default '',
@@ -337,6 +503,13 @@ CREATE TABLE  `swgemu`.`customization_data` (
   `maxScale` float(4,2) NOT NULL default '1.00',
   PRIMARY KEY  (`speciesGender`,`customizationGroup`,`customizationName`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`customization_data`
+--
+
+/*!40000 ALTER TABLE `customization_data` DISABLE KEYS */;
+LOCK TABLES `customization_data` WRITE;
 INSERT INTO `swgemu`.`customization_data` VALUES  ('moncal_female','body','hslider','muscle','blend_muscle',0,0,'','','',0,0,1,0,0,'body',3,'physical',0,1.00,1.00),
  ('moncal_female','body','hslider','height','',1,0,'','','',0,0,1,0,0,'body',5,'physical',0,0.86,0.94),
  ('moncal_female','body','hslider','weight','blend_skinny,blend_fat',0,0,'','','',0,0,1,0,0,'body',7,'physical',0,1.00,1.00),
@@ -804,6 +977,15 @@ INSERT INTO `swgemu`.`customization_data` VALUES  ('sullustan_male','ears_chin_m
  ('sullustan_male','ears_chin_mouth','color','color_skin','index_color_skin',0,0,'','','',0,0,1,0,0,'body',9,'physical',0,1.00,1.00),
  ('sullustan_male','markings','hslider','pattern','index_patterns',0,0,'','','',250,1,1,0,0,'markings',5,'cosmetic',26,1.00,1.00),
  ('sullustan_male','markings','color','pattern_color','index_color_patterns',0,0,'','','',250,1,1,0,0,'markings',5,'cosmetic',0,1.00,1.00);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `customization_data` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`datapad`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`datapad`;
 CREATE TABLE  `swgemu`.`datapad` (
   `inx` bigint(20) unsigned NOT NULL auto_increment,
   `character_id` bigint(20) unsigned NOT NULL,
@@ -819,6 +1001,22 @@ CREATE TABLE  `swgemu`.`datapad` (
   KEY `char_ix` (`character_id`),
   KEY `item_ix` (`inx`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`datapad`
+--
+
+/*!40000 ALTER TABLE `datapad` DISABLE KEYS */;
+LOCK TABLES `datapad` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `datapad` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`draft_schematics`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`draft_schematics`;
 CREATE TABLE  `swgemu`.`draft_schematics` (
   `draftschematic_id` bigint(20) unsigned NOT NULL,
   `name` text NOT NULL,
@@ -839,6 +1037,13 @@ CREATE TABLE  `swgemu`.`draft_schematics` (
   `crafting_tool_tab` int(10) unsigned NOT NULL,
   PRIMARY KEY  (`draftschematic_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`draft_schematics`
+--
+
+/*!40000 ALTER TABLE `draft_schematics` DISABLE KEYS */;
+LOCK TABLES `draft_schematics` WRITE;
 INSERT INTO `swgemu`.`draft_schematics` VALUES  (1,'Bofa Treat',2207249955,'craftArtisanNewbieGroupA',3,1,'craft_food_ingredients_n, craft_food_ingredients_n, craft_food_ingredients_n','dried_fruit, crust, additive','0, 0, 1','organic, cereal, object/tangible/food/crafted/additive/shared_additive_light.iff','3, 8, 1','1, 1, 1, 2, 2, 2, 2','XX, XX, XX, OQ, PE, FL, OQ, DR, PE, DR, OQ','0, 0, 0, 1, 2, 2, 1, 1, 3, 3, 1','','',4),
  (2,'Advanced Chitin Armor Segment',892546099,'craftArtisanEngineeringGroupA',15,4,'craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n','armor_segment_chitin, armor_segment_tab_mounts, segment_enhancement','0, 0, 1','bone_mammal_dantooine, iron_doonium, object/tangible/component/armor/shared_armor_segment_chitin_advanced.iff','25, 8, 1','1, 1, 1, 2, 2, 2, 2, 2, 1, 1, 2, 2','XX, XX, XX, OQ, SR, OQ, UT, MA, OQ, MA, OQ, MA, OQ, XX, XX, OQ, SR, OQ, SR','0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1','','',2),
  (3,'Food and Chemical Crafting Station',697822739,'craftArtisanNewbieGroupA',20,5,'craft_item_ingredients_n, craft_item_ingredients_n, craft_item_ingredients_n, craft_item_ingredients_n, craft_item_ingredients_n','assembly_enclosure, thermal_shielding, electronic_control_unit, micro_sensor_suite, storage_compartment','0, 0, 1, 1, 1','metal, mineral, object/tangible/component/item/shared_electronic_control_unit.iff, object/tangible/component/item/shared_micro_sensor_suite.iff, object/tangible/component/droid/shared_droid_storage_compartment.iff','400, 50, 2, 2, 5','1, 1, 1, 1','XX, XX, XX, CD','0, 0, 0, 1','','',4096),
@@ -859,11 +1064,27 @@ INSERT INTO `swgemu`.`draft_schematics` VALUES  (15,'Deed for: Small Naboo House
 INSERT INTO `swgemu`.`draft_schematics` VALUES  (18,'Stun Baton',366533914,'craftWeaponMeleeGroupE',36,3,'craft_weapon_ingredients_n, craft_weapon_ingredients_n, craft_weapon_ingredients_n, craft_weapon_ingredients_n, craft_weapon_ingredients_n, craft_weapon_ingredients_n','unknown, unknown, unknown, unknown, unknown, unknown','0, 0, 0, 0, 0, 1','polysteel_copper, steel, metal, byrothsis_crystalline_gemstone, object/tangible/component/item/shared_electronic_power_conditioner.iff, object/tangible/component/weapon/shared_reinforcement_core.iff','18, 18, 10, 6, 2, 1','1, 1, 1, 1, 1, 1, 1, 1','XX, XX, SR, SR, SR, SR, SR, SR','0, 0, 1, 1, 1, 1, 1, 1','','',1),
  (19,'Composite Armor Chestplate',506032706,'craftArmorPersonalGroupF',15,3,'craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n','appearance_fragments, armor_core_frame, armor_core, load_bearing_harness, reinforcement, bio_enhancement_cartridge, appearance_enhancement, appearance_enhancement, unknown','0, 0, 0, 0, 0, 0, 0, 0, 1','petrochem_fuel_solid_known, ore_intrusive, aluminum, fiberplast_naboo, copper_beyrllius, hide_wooly, object/tangible/component/clothing/shared_synthetic_cloth.iff, object/tangible/component/clothing/shared_reinforced_fiber_panels.iff, object/tangible/component/armor/shared_armor_segment_composite_advanced.iff','100, 100, 60, 50, 50, 40, 1, 1, 4','1, 1, 1, 1, 2, 2, 2, 2, 2','XX, XX, XX, XX, OQ, UT, OQ, UT, OQ, SR, OQ, UT, OQ, SR','0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1','','',2),
  (20,'Tantel Armor Chestplate',1482977914,'craftArmorPersonalGroupC',30,3,'craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n','unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown','0, 0, 0, 0, 0, 0, 0, 0, 0','bone_avian, hide, hide_bristley, polymer, aluminum, hide_bristley, object/tangible/component/clothing/shared_synthetic_cloth.iff, object/tangible/component/clothing/shared_reinforced_fiber_panels.iff, object/tangible/component/armor/shared_armor_segment_zam.iff','40, 40, 40, 25, 25, 25, 1, 1, 4','1, 1, 1, 1, 2, 2, 2, 2, 2','XX, XX, XX, XX, OQ, UT, OQ, UT, OQ, SR, OQ, UT, OQ, SR','0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1','','',2);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `draft_schematics` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`faction`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`faction`;
 CREATE TABLE  `swgemu`.`faction` (
   `faction_id` int(4) unsigned NOT NULL auto_increment,
   `faction` varchar(45) default NULL,
   PRIMARY KEY  (`faction_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=64 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`faction`
+--
+
+/*!40000 ALTER TABLE `faction` DISABLE KEYS */;
+LOCK TABLES `faction` WRITE;
 INSERT INTO `swgemu`.`faction` VALUES  (1,'Aakuans'),
  (2,'Afarathu'),
  (3,'Alkhara'),
@@ -927,6 +1148,15 @@ INSERT INTO `swgemu`.`faction` VALUES  (51,'Singing Mountain Clan'),
  (61,'Trade Federation'),
  (62,'Tusken Raider'),
  (63,'Valarian');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `faction` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`friendlist`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`friendlist`;
 CREATE TABLE  `swgemu`.`friendlist` (
   `character_id` mediumint(8) unsigned NOT NULL,
   `friend_id` mediumint(8) NOT NULL,
@@ -937,6 +1167,22 @@ CREATE TABLE  `swgemu`.`friendlist` (
   KEY `friend_id` (`friend_id`),
   KEY `friend_galaxy_ix` (`friend_galaxy`)
 ) ENGINE=MyISAM AUTO_INCREMENT=222 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`friendlist`
+--
+
+/*!40000 ALTER TABLE `friendlist` DISABLE KEYS */;
+LOCK TABLES `friendlist` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `friendlist` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`galaxy`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`galaxy`;
 CREATE TABLE  `swgemu`.`galaxy` (
   `galaxy_id` int(5) NOT NULL auto_increment,
   `name` varchar(50) NOT NULL default '',
@@ -946,7 +1192,23 @@ CREATE TABLE  `swgemu`.`galaxy` (
   `population` int(4) NOT NULL default '0',
   PRIMARY KEY  (`galaxy_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`galaxy`
+--
+
+/*!40000 ALTER TABLE `galaxy` DISABLE KEYS */;
+LOCK TABLES `galaxy` WRITE;
 INSERT INTO `swgemu`.`galaxy` VALUES  (2,'Core3','127.0.0.1',44463,44462,0);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `galaxy` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`guilds`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`guilds`;
 CREATE TABLE  `swgemu`.`guilds` (
   `guild_id` int(11) unsigned NOT NULL auto_increment,
   `guild_tag` varchar(255) NOT NULL default 'DEFAULT',
@@ -960,9 +1222,25 @@ CREATE TABLE  `swgemu`.`guilds` (
   KEY `guidleader_ix` (`leader`),
   KEY `guildTag_ix` (`guild_tag`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `swgemu`.`guilds`
+--
+
+/*!40000 ALTER TABLE `guilds` DISABLE KEYS */;
+LOCK TABLES `guilds` WRITE;
 INSERT INTO `swgemu`.`guilds` VALUES  (4,'DEFAULT','Default Guild',0000,NULL,0,NULL),
  (1,'SWGEMU','SWGEmu Test Guild',0000,NULL,0,NULL),
  (2,'DEV','Developers',0000,NULL,0,NULL);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `guilds` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`guilds_sponsoring`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`guilds_sponsoring`;
 CREATE TABLE  `swgemu`.`guilds_sponsoring` (
   `guild_id` int(11) unsigned NOT NULL,
   `guild_name` varchar(255) NOT NULL default 'Default Guild',
@@ -975,6 +1253,22 @@ CREATE TABLE  `swgemu`.`guilds_sponsoring` (
   KEY `sponsor_ix` (`sponsored_by`),
   KEY `guild_ix` (`guild_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `swgemu`.`guilds_sponsoring`
+--
+
+/*!40000 ALTER TABLE `guilds_sponsoring` DISABLE KEYS */;
+LOCK TABLES `guilds_sponsoring` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `guilds_sponsoring` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`ignorelist`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`ignorelist`;
 CREATE TABLE  `swgemu`.`ignorelist` (
   `character_id` mediumint(8) unsigned NOT NULL,
   `ignore_id` mediumint(8) NOT NULL,
@@ -985,12 +1279,35 @@ CREATE TABLE  `swgemu`.`ignorelist` (
   KEY `ignore_id` (`ignore_id`),
   KEY `ignore_galaxy_ix` (`ignore_galaxy`)
 ) ENGINE=MyISAM AUTO_INCREMENT=279 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`ignorelist`
+--
+
+/*!40000 ALTER TABLE `ignorelist` DISABLE KEYS */;
+LOCK TABLES `ignorelist` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `ignorelist` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`lootgroup_weight`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`lootgroup_weight`;
 CREATE TABLE  `swgemu`.`lootgroup_weight` (
   `lootgroup` int(4) unsigned NOT NULL,
   `weight` tinyint(3) default NULL,
   `max_drop_from_this_group` tinyint(3) unsigned NOT NULL default '3',
   PRIMARY KEY  (`lootgroup`)
 ) ENGINE=MyISAM AUTO_INCREMENT=608 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`lootgroup_weight`
+--
+
+/*!40000 ALTER TABLE `lootgroup_weight` DISABLE KEYS */;
+LOCK TABLES `lootgroup_weight` WRITE;
 INSERT INTO `swgemu`.`lootgroup_weight` VALUES  (1,5,3),
  (2,5,3),
  (3,5,3),
@@ -1492,6 +1809,15 @@ INSERT INTO `swgemu`.`lootgroup_weight` VALUES  (496,5,3),
  (499,5,3),
  (500,5,3),
  (0,5,3);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `lootgroup_weight` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`loottable`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`loottable`;
 CREATE TABLE  `swgemu`.`loottable` (
   `lootgroup` tinyint(4) default NULL,
   `name` text NOT NULL,
@@ -1516,6 +1842,13 @@ CREATE TABLE  `swgemu`.`loottable` (
   KEY `lootlevel_ix` (`level`),
   FULLTEXT KEY `race_ix` (`race`)
 ) ENGINE=MyISAM AUTO_INCREMENT=168 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`loottable`
+--
+
+/*!40000 ALTER TABLE `loottable` DISABLE KEYS */;
+LOCK TABLES `loottable` WRITE;
 INSERT INTO `swgemu`.`loottable` VALUES  (0,'Shirt',235457924,16777230,'',0,'','',95,1,'0','0',0,0,'human,trandoshan,twilek,bothan,zabrak,rodian,moncal,wookiee,sullustan,ithorian',1,62975),
  (0,'Pants',489589658,16777228,'',0,'','',95,1,'0','0',0,0,'all',2,62975),
  (0,'Shoes',143099030,16777222,'',0,'','',95,1,'0','0',0,0,'all',3,62967),
@@ -1631,6 +1964,15 @@ INSERT INTO `swgemu`.`loottable` VALUES  (15,'Scythe',3006583634,131080,'',0,'po
  (15,'Flame Thrower',3238374228,131078,'',0,'pointBlankAccuracy=10:idealRange=50:maxDamage=377:range=45:category=32:maxRangeAccuracy=-120:attackSpeed=6.1:woundsRatio=36:idealAccuracy=-65:mindCost=35:maxRange=64:type=11:damageType=6:armorPiercing=0:condition=631/750:pointBlankRange=0:healthCost=64:minDamage=125:actionCost=25:cert=cert_rifle_flame_thrower:','',25,75,'0','0',0,0,'all',165,65535);
 INSERT INTO `swgemu`.`loottable` VALUES  (15,'Laser Carbine',2121432077,131083,'',0,'pointBlankAccuracy=-10:idealRange=50:maxDamage=185:range=65:category=32:maxRangeAccuracy=-40:attackSpeed=4.6:woundsRatio=10:idealAccuracy=3:mindCost=15:maxRange=64:type=5:damageType=2:armorPiercing=2:condition=750/750:pointBlankRange=0:healthCost=22:minDamage=10:actionCost=36:cert=cert_carbine_laser:','',25,75,'0','0',0,0,'all',166,65535),
  (15,'DE-10 Pistol',3368548007,131082,'',0,'pointBlankAccuracy=-2:idealRange=20:maxDamage=320:range=45:category=32:maxRangeAccuracy=-80:attackSpeed=5.6:woundsRatio=38.7:idealAccuracy=46:mindCost=17:maxRange=64:type=4:damageType=2:armorPiercing=1:condition=750/750:pointBlankRange=0:healthCost=17:minDamage=128:actionCost=30:cert=cert_pistol_dx2:','',25,75,'0','0',0,0,'all',167,65535);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `loottable` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`mail`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`mail`;
 CREATE TABLE  `swgemu`.`mail` (
   `mail_id` int(11) NOT NULL auto_increment,
   `sender_name` text NOT NULL,
@@ -1642,6 +1984,22 @@ CREATE TABLE  `swgemu`.`mail` (
   `read` tinyint(1) NOT NULL default '0',
   PRIMARY KEY  (`mail_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`mail`
+--
+
+/*!40000 ALTER TABLE `mail` DISABLE KEYS */;
+LOCK TABLES `mail` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `mail` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`mail_attachment`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`mail_attachment`;
 CREATE TABLE  `swgemu`.`mail_attachment` (
   `attachment_id` mediumint(8) unsigned NOT NULL,
   `planet_id` mediumint(8) unsigned NOT NULL,
@@ -1652,6 +2010,22 @@ CREATE TABLE  `swgemu`.`mail_attachment` (
   `z` float(10,6) NOT NULL,
   PRIMARY KEY  (`attachment_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`mail_attachment`
+--
+
+/*!40000 ALTER TABLE `mail_attachment` DISABLE KEYS */;
+LOCK TABLES `mail_attachment` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `mail_attachment` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`no_build_areas`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`no_build_areas`;
 CREATE TABLE  `swgemu`.`no_build_areas` (
   `zoneid` tinyint(3) unsigned NOT NULL,
   `uid` bigint(20) unsigned NOT NULL auto_increment,
@@ -1663,18 +2037,57 @@ CREATE TABLE  `swgemu`.`no_build_areas` (
   PRIMARY KEY  (`uid`),
   KEY `secondary` (`uid`)
 ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`no_build_areas`
+--
+
+/*!40000 ALTER TABLE `no_build_areas` DISABLE KEYS */;
+LOCK TABLES `no_build_areas` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `no_build_areas` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`npc_faction`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`npc_faction`;
 CREATE TABLE  `swgemu`.`npc_faction` (
   `npc_group_id` int(10) unsigned NOT NULL auto_increment,
   `faction_id` int(4) unsigned NOT NULL default '0',
   `value` int(5) NOT NULL default '0',
   PRIMARY KEY  (`npc_group_id`,`faction_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`npc_faction`
+--
+
+/*!40000 ALTER TABLE `npc_faction` DISABLE KEYS */;
+LOCK TABLES `npc_faction` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `npc_faction` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`object_crc_string_table`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`object_crc_string_table`;
 CREATE TABLE  `swgemu`.`object_crc_string_table` (
   `decimal` bigint(20) NOT NULL default '0',
   `hex` varchar(15) NOT NULL default '',
   `path` varchar(255) default NULL,
   PRIMARY KEY  (`decimal`,`hex`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`object_crc_string_table`
+--
+
+/*!40000 ALTER TABLE `object_crc_string_table` DISABLE KEYS */;
+LOCK TABLES `object_crc_string_table` WRITE;
 INSERT INTO `swgemu`.`object_crc_string_table` VALUES  (400647243,'17E1644B','object/battlefield_marker/shared_battlefield_marker.iff'),
  (772486765,'2E0B366D','object/battlefield_marker/shared_battlefield_marker_128m.iff'),
  (1675330696,'63DB8488','object/battlefield_marker/shared_battlefield_marker_192m.iff'),
@@ -17380,6 +17793,15 @@ INSERT INTO `swgemu`.`object_crc_string_table` VALUES  (1928416827,'72F14E3B','o
  (4214506567,'FB344447','object/weapon/ranged/turret/shared_turret_block_large.iff'),
  (2231868029,'85079A7D','object/weapon/ranged/vehicle/shared_vehicle_atst_ranged.iff');
 INSERT INTO `swgemu`.`object_crc_string_table` VALUES  (1619506188,'6087B40C','object/weapon/trap/shared_eqp_weapon_auto_laser_trap.iff');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `object_crc_string_table` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`performance`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`performance`;
 CREATE TABLE  `swgemu`.`performance` (
   `performanceName` varchar(11) default NULL,
   `instrumentAudioId` int(10) unsigned default NULL,
@@ -17412,6 +17834,13 @@ CREATE TABLE  `swgemu`.`performance` (
   KEY `iAudio_ix` (`instrumentAudioId`),
   KEY `iDance_ix` (`danceVisualId`)
 ) ENGINE=MyISAM AUTO_INCREMENT=155 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`performance`
+--
+
+/*!40000 ALTER TABLE `performance` DISABLE KEYS */;
+LOCK TABLES `performance` WRITE;
 INSERT INTO `swgemu`.`performance` VALUES  ('starwars1',2,'startMusic+starwars1','slitherhorn','',0,28,5,866729052,0,2,4,2,'healing_music_ability',5,'player_music/sound/song04_shorn_main.snd','player_music/sound/song04_shorn_flourish01.snd','player_music/sound/song04_shorn_flourish02.snd','player_music/sound/song04_shorn_flourish03.snd','player_music/sound/song04_shorn_flourish04.snd','player_music/sound/song04_shorn_flourish05.snd','player_music/sound/song04_shorn_flourish06.snd','player_music/sound/song04_shorn_flourish07.snd','player_music/sound/song04_shorn_flourish08.snd','player_music/sound/song04_shorn_intro.snd','player_music/sound/song04_shorn_outro.snd',1),
  ('starwars1',6,'startMusic+starwars1','fizz','',0,32,5,866729052,0,3,6,3,'healing_music_ability',5,'player_music/sound/song04_khorn_main.snd','player_music/sound/song04_khorn_flourish01.snd','player_music/sound/song04_khorn_flourish02.snd','player_music/sound/song04_khorn_flourish03.snd','player_music/sound/song04_khorn_flourish04.snd','player_music/sound/song04_khorn_flourish05.snd','player_music/sound/song04_khorn_flourish06.snd','player_music/sound/song04_khorn_flourish07.snd','player_music/sound/song04_khorn_flourish08.snd','player_music/sound/song04_khorn_intro.snd','player_music/sound/song04_khorn_outro.snd',2),
  ('starwars1',3,'startMusic+starwars1','fanfar','',0,36,5,866729052,0,6,6,3,'healing_music_ability',10,'player_music/sound/song04_shorn_main.snd','player_music/sound/song04_shorn_flourish01.snd','player_music/sound/song04_shorn_flourish02.snd','player_music/sound/song04_shorn_flourish03.snd','player_music/sound/song04_shorn_flourish04.snd','player_music/sound/song04_shorn_flourish05.snd','player_music/sound/song04_shorn_flourish06.snd','player_music/sound/song04_shorn_flourish07.snd','player_music/sound/song04_shorn_flourish08.snd','player_music/sound/song04_shorn_intro.snd','player_music/sound/song04_shorn_outro.snd',3);
@@ -17566,6 +17995,15 @@ INSERT INTO `swgemu`.`performance` VALUES  ('breakdance',0,'','','startDance+bre
  ('breakdance2',0,'','','startDance+breakdance2',30,44,10,-1788534963,0,26,10,5,'healing_dance_ability',70,'','','','','','','','','','','',152),
  ('tumble',0,'','','startDance+tumble',31,44,10,-1788534963,0,30,10,6,'healing_dance_ability',80,'','','','','','','','','','','',153),
  ('tumble2',0,'','','startDance+tumble2',32,48,10,-1788534963,0,34,10,6,'healing_dance_ability',90,'','','','','','','','','','','',154);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `performance` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`performance_effect`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`performance_effect`;
 CREATE TABLE  `swgemu`.`performance_effect` (
   `effectName` varchar(14) default NULL,
   `performanceType` varchar(11) default NULL,
@@ -17575,6 +18013,13 @@ CREATE TABLE  `swgemu`.`performance_effect` (
   `effectDuration` float default NULL,
   `effectActionCost` int(10) unsigned default NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`performance_effect`
+--
+
+/*!40000 ALTER TABLE `performance_effect` DISABLE KEYS */;
+LOCK TABLES `performance_effect` WRITE;
 INSERT INTO `swgemu`.`performance_effect` VALUES  ('Dazzle1','music,dance',10,1,'self',5,30),
  ('Dazzle2','music,dance',30,1,'self',5,60),
  ('Dazzle3','music,dance',75,1,'self',5,90),
@@ -17596,11 +18041,27 @@ INSERT INTO `swgemu`.`performance_effect` VALUES  ('Dazzle1','music,dance',10,1,
  ('Ventriloquism1','music',30,1,'target',10,30),
  ('Ventriloquism2','music',50,1,'target',10,60),
  ('Ventriloquism3','music',75,1,'target',10,90);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `performance_effect` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`planet`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`planet`;
 CREATE TABLE  `swgemu`.`planet` (
   `planet_id` int(2) NOT NULL,
   `name` varchar(25) NOT NULL,
   PRIMARY KEY  (`planet_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`planet`
+--
+
+/*!40000 ALTER TABLE `planet` DISABLE KEYS */;
+LOCK TABLES `planet` WRITE;
 INSERT INTO `swgemu`.`planet` VALUES  (0,'corellia'),
  (1,'dantooine'),
  (2,'dathomir'),
@@ -17626,6 +18087,15 @@ INSERT INTO `swgemu`.`planet` VALUES  (0,'corellia'),
  (22,'space_tatooine'),
  (23,'space_tatooine_2'),
  (24,'space_yavin4');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `planet` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`planetmap`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`planetmap`;
 CREATE TABLE  `swgemu`.`planetmap` (
   `index` int(10) unsigned NOT NULL auto_increment,
   `planet` varchar(45) NOT NULL,
@@ -17637,6 +18107,13 @@ CREATE TABLE  `swgemu`.`planetmap` (
   `type3` int(10) unsigned NOT NULL,
   PRIMARY KEY  (`index`)
 ) ENGINE=MyISAM AUTO_INCREMENT=717 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`planetmap`
+--
+
+/*!40000 ALTER TABLE `planetmap` DISABLE KEYS */;
+LOCK TABLES `planetmap` WRITE;
 INSERT INTO `swgemu`.`planetmap` VALUES  (1,'tatooine','Mission Terminal',161,-5332,41,44,0),
  (2,'tatooine','Mission Terminal',161,-5332,41,44,0),
  (3,'tatooine','Bank Terminal',67,-5351,41,42,0),
@@ -18349,11 +18826,36 @@ INSERT INTO `swgemu`.`planetmap` VALUES  (713,'tatooine','Mos Entha',1322,3290,1
  (714,'tatooine','Mos Taike',3773,2316,6,0,0),
  (715,'tatooine','Bestine',-1437,-3698,57,0,0),
  (716,'tatooine','Mos Entha',1320,3456,5,0,0);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `planetmap` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`profession`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`profession`;
 CREATE TABLE  `swgemu`.`profession` (
   `profession_id` int(4) unsigned NOT NULL auto_increment,
   `name` varchar(45) NOT NULL default '',
   PRIMARY KEY  (`profession_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`profession`
+--
+
+/*!40000 ALTER TABLE `profession` DISABLE KEYS */;
+LOCK TABLES `profession` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `profession` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`recruiters`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`recruiters`;
 CREATE TABLE  `swgemu`.`recruiters` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `planet_id` tinyint(1) unsigned NOT NULL,
@@ -18367,8 +18869,24 @@ CREATE TABLE  `swgemu`.`recruiters` (
   PRIMARY KEY  (`id`),
   KEY `SECONDARY` (`planet_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`recruiters`
+--
+
+/*!40000 ALTER TABLE `recruiters` DISABLE KEYS */;
+LOCK TABLES `recruiters` WRITE;
 INSERT INTO `swgemu`.`recruiters` VALUES  (2,5,-4928,4231,0,1,0.053,0,2),
  (1,5,-4936,4231,0,1,0.053,0,1);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `recruiters` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`resource_data`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`resource_data`;
 CREATE TABLE  `swgemu`.`resource_data` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_name` varchar(255) NOT NULL,
@@ -18405,6 +18923,22 @@ CREATE TABLE  `swgemu`.`resource_data` (
   KEY `class_ix_6` (`class_6`),
   KEY `class_ix_7` (`class_7`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`resource_data`
+--
+
+/*!40000 ALTER TABLE `resource_data` DISABLE KEYS */;
+LOCK TABLES `resource_data` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `resource_data` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`resource_spawns`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`resource_spawns`;
 CREATE TABLE  `swgemu`.`resource_spawns` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_name` varchar(255) NOT NULL,
@@ -18421,6 +18955,22 @@ CREATE TABLE  `swgemu`.`resource_spawns` (
   KEY `name_ix` (`resource_name`),
   KEY `pool_ix` (`pool`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data for table `swgemu`.`resource_spawns`
+--
+
+/*!40000 ALTER TABLE `resource_spawns` DISABLE KEYS */;
+LOCK TABLES `resource_spawns` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `resource_spawns` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`resource_tree`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`resource_tree`;
 CREATE TABLE  `swgemu`.`resource_tree` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_type` varchar(255) NOT NULL,
@@ -18474,6 +19024,13 @@ CREATE TABLE  `swgemu`.`resource_tree` (
   `weight` smallint(6) NOT NULL,
   PRIMARY KEY  (`INDEX`)
 ) ENGINE=MyISAM AUTO_INCREMENT=906 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+
+--
+-- Dumping data for table `swgemu`.`resource_tree`
+--
+
+/*!40000 ALTER TABLE `resource_tree` DISABLE KEYS */;
+LOCK TABLES `resource_tree` WRITE;
 INSERT INTO `swgemu`.`resource_tree` VALUES  (1,'milk_domesticated_corellia','Organic','Creature Resources','Creature Food','Milk','Domesticated Milk','','Corellian Domesticated Milk',1,1,1,1,'res_decay_resist','res_quality','res_flavor','res_potential_energy','','','','','','','',1,1000,1,1000,1,700,300,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'object/resource_container/bottle_milk.iff',3072418635,'plain_resource',0),
  (2,'milk_domesticated_dantooine','Organic','Creature Resources','Creature Food','Milk','Domesticated Milk','','Dantooine Domesticated Milk',1,1,1,1,'res_decay_resist','res_quality','res_flavor','res_potential_energy','','','','','','','',1,1000,1,1000,1,700,300,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'object/resource_container/bottle_milk.iff',3072418635,'plain_resource',0),
  (3,'milk_domesticated_dathomir','Organic','Creature Resources','Creature Food','Milk','Domesticated Milk','','Dathomirian  Domesticated Milk',1,1,1,1,'res_decay_resist','res_quality','res_flavor','res_potential_energy','','','','','','','',1,1000,1,1000,1,700,300,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'object/resource_container/bottle_milk.iff',3072418635,'plain_resource',0),
@@ -19069,6 +19626,15 @@ INSERT INTO `swgemu`.`resource_tree` VALUES  (587,'aluminum_perovskitic','Inorga
  (588,'gas_reactive_organometallic','Inorganic','Gas','Inert Gas','Reactive Gas','Known Reactive Gas','JTL','Unstable Organometallic Reactive Gas',1,1,1,1,'res_decay_resist','res_quality','','','','','','','','','',1,1000,1,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'object/resource_container/energy_gas.iff',2640304325,'reactive_gas_resource',0),
  (589,'fiberplast_gravitonic','Inorganic','Chemical','Fiberplast','','','JTL','Gravitonic Fiberplast',1,1,1,1,'res_decay_resist','res_quality','res_malleability','res_toughness','res_shock_resistance','','','','','','',1,1000,1,1000,1,1000,1,1000,1,1000,0,0,0,0,0,0,0,0,0,0,0,0,'object/resource_container/inorganic_chemicals.iff',422061124,'plain_resource',0),
  (590,'radioactive_polymetric','Energy','Radioactive Energy','Radioactive ','Known Radioactive','','JTL','High Grade Polymetric Radioactive',1,1,1,1,'res_decay_resist','res_quality','res_potential_energy','','','','','','','','',1,1000,1,1000,1,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'object/resource_container/energy_radioactive.iff',3244320243,'mineral_resource',0);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `resource_tree` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`skills`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`skills`;
 CREATE TABLE  `swgemu`.`skills` (
   `skill_id` int(10) unsigned NOT NULL auto_increment,
   `skill_name` varchar(52) default NULL,
@@ -19101,6 +19667,13 @@ CREATE TABLE  `swgemu`.`skills` (
   PRIMARY KEY  (`skill_id`),
   UNIQUE KEY `skill_id` (`skill_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1069 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`skills`
+--
+
+/*!40000 ALTER TABLE `skills` DISABLE KEYS */;
+LOCK TABLES `skills` WRITE;
 INSERT INTO `swgemu`.`skills` VALUES  (1,'combat_melee_basic',' ','fourByFour',0,0,0,0,0,0,0,' ',' ',' ',0,0,' ',0,' ',' ','none',' ',' ',' ',' ',' ',1,0),
  (2,'combat_ranged_weapons_basic',' ','fourByFour',0,0,0,0,0,0,0,' ',' ',' ',0,0,' ',0,' ',' ','none',' ',' ',' ',' ',' ',1,0),
  (3,'demo_combat',' ','fourByFour',0,0,0,0,0,0,0,' ',' ',' ',0,0,' ',0,' ',' ','none',' ',' ',' ',' ',' ',1,0),
@@ -20169,6 +20742,15 @@ INSERT INTO `swgemu`.`skills` VALUES  (1064,'pilot_neutral_droid_01','pilot_neut
  (1066,'pilot_neutral_droid_03','pilot_neutral_droid_02','fourByFour',0,0,0,0,3000,0,0,'pilot_neutral_starships_02,pilot_neutral_weapons_02,pilot_neutral_procedures_02,pilot_neutral_droid_02',' ','space_combat_general',200000,1000000,' ',0,' ',' ','none',' ','private_neutral_droid_3,droidcommand_reactoroverloadthree,cert_droid_astromech_4,droidcommand_weapcappowerupthree,droidcommand_weapcaptoshieldthree',' ',' ',' ',1,0),
  (1067,'pilot_neutral_droid_04','pilot_neutral_droid_03','fourByFour',0,1,0,0,4000,0,0,'pilot_neutral_starships_03,pilot_neutral_weapons_03,pilot_neutral_procedures_03,pilot_neutral_droid_03',' ','space_combat_general',1000000,7500000,' ',0,' ',' ','none',' ','private_neutral_droid_4,droidcommand_reactoroverloadfour,cert_droid_astromech_5,droidcommand_weapcappowerupfour,droidcommand_weapcaptoshieldfour',' ',' ',' ',1,0);
 INSERT INTO `swgemu`.`skills` VALUES  (1068,'pilot_spacetest','pilot','fourByFour',1,1,0,0,0,0,0,' ',' ',' ',0,0,' ',0,' ',' ','none',' ','droid+droidcommand_testweaponoverload1,droidcommand_testweaponoverload2,droidcommand_testweaponoverload3,droidcommand_testweaponoverload4,droidcommand_testweaponnormalize,droidcommand_testfronttobackfifty,droidcommand_testbacktofrontfifty',' ',' ',' ',1,0);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `skills` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`starting_location`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`starting_location`;
 CREATE TABLE  `swgemu`.`starting_location` (
   `location_id` int(2) unsigned NOT NULL auto_increment,
   `location` varchar(45) NOT NULL,
@@ -20181,11 +20763,27 @@ CREATE TABLE  `swgemu`.`starting_location` (
   `heading` int(3) unsigned NOT NULL,
   PRIMARY KEY  (`location_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`starting_location`
+--
+
+/*!40000 ALTER TABLE `starting_location` DISABLE KEYS */;
+LOCK TABLES `starting_location` WRITE;
 INSERT INTO `swgemu`.`starting_location` VALUES  (3,'mos_eisley',9,3528.000000,0.000000,-4804.000000,'Mos Eisley, Tatooine',3,180),
  (5,'coronet',1,-137.000000,0.000000,-4723.000000,'Coronet, Corellia',3,180),
  (9,'dearic',8,335.000000,0.000000,-2931.000000,'Dearic, Talus',3,180),
  (11,'narmle',7,-5310.000000,0.000000,-2221.000000,'Narmle, Rori',3,180),
  (13,'theed',6,-4856.000000,0.000000,4162.000000,'Theed, Naboo',3,180);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `starting_location` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`staticobjects`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`staticobjects`;
 CREATE TABLE  `swgemu`.`staticobjects` (
   `zoneid` tinyint(4) NOT NULL,
   `objectid` bigint(20) NOT NULL,
@@ -20203,6 +20801,13 @@ CREATE TABLE  `swgemu`.`staticobjects` (
   KEY `zone_id` (`zoneid`),
   FULLTEXT KEY `file_ix` (`file`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`staticobjects`
+--
+
+/*!40000 ALTER TABLE `staticobjects` DISABLE KEYS */;
+LOCK TABLES `staticobjects` WRITE;
 INSERT INTO `swgemu`.`staticobjects` VALUES  (1,162,0,'object/static/structure/dantooine/shared_dant_jedi_temple_pillar_med.iff',0,0.841686,0,-0.539968,4231.65,8,5242.03,512),
  (1,163,0,'object/static/structure/dantooine/shared_dant_jedi_temple_pillar_sm.iff',0,0.539966,0,0.841687,4241.58,8,5263.79,512),
  (1,164,0,'object/static/structure/dantooine/shared_dant_jedi_wall_2.iff',0,0.976976,0,0.213347,4239.58,8,5259.36,256),
@@ -75175,6 +75780,15 @@ INSERT INTO `swgemu`.`staticobjects` VALUES  (9,9835453,0,'object/static/structu
  (9,9835460,0,'object/static/item/shared_item_container_organic_structure.iff',0,1,0,0,-312.792,35.1265,4843.54,32),
  (9,9835461,0,'object/static/item/shared_item_container_organic_structure.iff',0,1,0,0,-312.102,35.1265,4843.55,32),
  (9,9835464,0,'object/static/item/shared_item_container_energy_gas.iff',0,3.20013e-08,0,1,-312.464,35.1265,4842.85,32);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `staticobjects` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`statictangibleobjects`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`statictangibleobjects`;
 CREATE TABLE  `swgemu`.`statictangibleobjects` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `zoneid` tinyint(4) NOT NULL,
@@ -75194,12 +75808,35 @@ CREATE TABLE  `swgemu`.`statictangibleobjects` (
   KEY `zone_id` (`zoneid`),
   FULLTEXT KEY `file_ix` (`template_file`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`statictangibleobjects`
+--
+
+/*!40000 ALTER TABLE `statictangibleobjects` DISABLE KEYS */;
+LOCK TABLES `statictangibleobjects` WRITE;
 INSERT INTO `swgemu`.`statictangibleobjects` VALUES  (1,5,0,'Jeff Freeman Memorial Fountain','object/tangible/furniture/city/shared_fountain_heroic.iff',8203,'fountain_heroic',0,-0.401868,0,0.915698,-4879.48,6,4139.49);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `statictangibleobjects` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`template_items`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`template_items`;
 CREATE TABLE  `swgemu`.`template_items` (
   `template_id` mediumint(8) unsigned NOT NULL auto_increment,
   `name` varchar(128) NOT NULL,
   PRIMARY KEY  (`template_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=7150 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`template_items`
+--
+
+/*!40000 ALTER TABLE `template_items` DISABLE KEYS */;
+LOCK TABLES `template_items` WRITE;
 INSERT INTO `swgemu`.`template_items` VALUES  (1,'object/tangible/ship/components/droid_interface/shared_ddi_rss_deluxe_imperial_2.iff'),
  (2,'object/tangible/mission/quest_item/shared_lilas_dinhint_q4_needed.iff'),
  (3,'object/tangible/mission/quest_item/shared_haleen_snowline_q2_needed.iff'),
@@ -82349,6 +82986,15 @@ INSERT INTO `swgemu`.`template_items` VALUES  (7146,'object/weapon/melee/sword/c
  (7147,'object/weapon/melee/sword/crafted_saber/shared_sword_lightsaber_one_handed_s2_gen3.iff'),
  (7148,'object/weapon/melee/sword/crafted_saber/shared_sword_lightsaber_one_handed_s9_gen1.iff'),
  (7149,'object/weapon/ranged/creature/shared_creature_spit_large_green.iff');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `template_items` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`ticket_collectors`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`ticket_collectors`;
 CREATE TABLE  `swgemu`.`ticket_collectors` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `transport_id` int(11) NOT NULL,
@@ -82361,6 +83007,13 @@ CREATE TABLE  `swgemu`.`ticket_collectors` (
   PRIMARY KEY  (`id`),
   KEY `SECONDARY` (`transport_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`ticket_collectors`
+--
+
+/*!40000 ALTER TABLE `ticket_collectors` DISABLE KEYS */;
+LOCK TABLES `ticket_collectors` WRITE;
 INSERT INTO `swgemu`.`ticket_collectors` VALUES  (1,1,0,6938,-5528,330.6,-0.64,0.8),
  (2,2,0,6637,-5931,330.6,0.75,0.8),
  (3,3,0,-338,-4634,28.6,1,0),
@@ -82416,8 +83069,17 @@ INSERT INTO `swgemu`.`ticket_collectors` VALUES  (30,30,0,707,-3047,6.6,0,0.8),
  (55,55,0,-2820,2091,5,0.39,1),
  (56,56,0,3621,-4785,5,-0.15,1),
  (57,57,0,-1377,-3587,12,1,0),
- (50,50,0,5356,5752,80,0.74,-6.76),
+ (50,50,0,5356,5752,80,0.82,-0.565),
  (51,51,0,-5388,-2173,80,0.98,-0.19);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `ticket_collectors` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`ticket_terminals`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`ticket_terminals`;
 CREATE TABLE  `swgemu`.`ticket_terminals` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `transport_id` int(11) NOT NULL,
@@ -82430,6 +83092,13 @@ CREATE TABLE  `swgemu`.`ticket_terminals` (
   PRIMARY KEY  (`id`),
   KEY `SECONDARY` (`transport_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=106 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`ticket_terminals`
+--
+
+/*!40000 ALTER TABLE `ticket_terminals` DISABLE KEYS */;
+LOCK TABLES `ticket_terminals` WRITE;
 INSERT INTO `swgemu`.`ticket_terminals` VALUES  (1,1,0,6935,-5545,330.6,-0.64,0.8),
  (2,2,0,6638,-5912,330.6,0.75,0.8),
  (3,3,0,-319.5,-4634,28.6,1,0),
@@ -82535,6 +83204,15 @@ INSERT INTO `swgemu`.`ticket_terminals` VALUES  (87,53,4265359,12.6536,51.1838,0
  (103,57,1026828,12.6536,51.1838,0.639421,-0.416129,0.909306),
  (104,57,1026828,2.54505,48.1693,0.639421,-1,1),
  (105,57,1026828,-13.0021,51.1865,0.639421,0.332372,0.943148);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `ticket_terminals` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`trainers`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`trainers`;
 CREATE TABLE  `swgemu`.`trainers` (
   `Location` varchar(64) default NULL,
   `Trainer Type` varchar(64) default NULL,
@@ -82553,6 +83231,13 @@ CREATE TABLE  `swgemu`.`trainers` (
   PRIMARY KEY  (`pix`),
   KEY `planetIX` (`Planet`)
 ) ENGINE=MyISAM AUTO_INCREMENT=523 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`trainers`
+--
+
+/*!40000 ALTER TABLE `trainers` DISABLE KEYS */;
+LOCK TABLES `trainers` WRITE;
 INSERT INTO `swgemu`.`trainers` VALUES  ('Bela Vistal','trainer_merchant','crafting_merchant','48A9349C','93BE9C0B','DAB3FB86',0,2365947,6707,-5510,1.13306,-0.002083,0.999998,1),
  ('Bela Vistal','trainer_merchant','crafting_merchant','48A9349C','93BE9C0B','DAB3FB86',0,0,6756,-5655,314.994,0.712959,-0.701206,2),
  ('Coronet ','trainer_merchant','crafting_merchant','48A9349C','93BE9C0B','DAB3FB86',0,1855517,-145,-4389,1.13306,-0.00137752,0.999999,3),
@@ -83075,6 +83760,15 @@ INSERT INTO `swgemu`.`trainers` VALUES  ('Mos Entha','trainer_entertainer','soci
  ('Mos Eisley','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',8,0,3477.89,-4791.6,5,0.952414,-0.304806,520),
  ('Rori','trainer_merchant','crafting_merchant','48A9349C','93BE9C0B','DAB3FB86',6,4635772,11.6338,5.69637,1.13306,0.999642,0.0267526,521),
  ('Rori','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',6,0,5335.31,5530.48,80,-0.349679,0.93687,522);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `trainers` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`transports`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`transports`;
 CREATE TABLE  `swgemu`.`transports` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `planet_id` tinyint(3) unsigned NOT NULL,
@@ -83094,6 +83788,13 @@ CREATE TABLE  `swgemu`.`transports` (
   PRIMARY KEY  (`id`),
   KEY `SECONDARY` (`planet_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`transports`
+--
+
+/*!40000 ALTER TABLE `transports` DISABLE KEYS */;
+LOCK TABLES `transports` WRITE;
 INSERT INTO `swgemu`.`transports` VALUES  (1,0,'Bela Vistal Shuttle A',0,6949,-5543,220,0.2,0.51,6936,-5537,330.6,0,0,1984806965),
  (2,0,'Bela Vistal Shuttle B',0,6623,-5923,330,0,0.51,6637,-5921,330.6,0,0,1984806965),
  (3,0,'Coronet Shuttle A',0,-323,-4620,28,-0.71,0.7,-331.2,-4639.2,28.6,0,0,1984806965),
@@ -83151,6 +83852,15 @@ INSERT INTO `swgemu`.`transports` VALUES  (53,7,'Nashal Starport',0,4483,5369,2,
  (55,8,'Mos Espa Starport',0,-2824,2081,5,0.73,0.67,-2824,2081,5,1,0,1196401137),
  (56,8,'Mos Eisley Starport',0,3624,-4797,5,-0.53,0.84,3624,-4797,5,1,0,1196401137),
  (57,8,'Bestine Starport',0,-1377,-3576,12,0.78,-0.61,-1377,-3576,12,1,0,1196401137);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `transports` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`warp`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`warp`;
 CREATE TABLE  `swgemu`.`warp` (
   `warp_id` int(2) unsigned NOT NULL auto_increment,
   `name` varchar(64) NOT NULL,
@@ -83163,6 +83873,13 @@ CREATE TABLE  `swgemu`.`warp` (
   `heading` int(3) unsigned NOT NULL default '180',
   PRIMARY KEY  (`warp_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`warp`
+--
+
+/*!40000 ALTER TABLE `warp` DISABLE KEYS */;
+LOCK TABLES `warp` WRITE;
 INSERT INTO `swgemu`.`warp` VALUES  (1,'coronet_starport',0,-67.000000,28.000000,-4711.000000,'Coronet Starport, Corellia',3,180),
  (2,'coronet_shuttle_a',0,-25.000000,28.000000,-4389.000000,'Coronet Shuttle A, Corellia',3,180),
  (3,'coronet_shuttle_b',0,-329.000000,28.000000,-4621.000000,'Coronet Shuttle B, Corellia',3,180),
@@ -83221,6 +83938,15 @@ INSERT INTO `swgemu`.`warp` VALUES  (48,'bestine_shuttle',8,-1081.000000,12.0000
  (56,'yavin_mining_op',9,-268.000000,35.000000,4897.000000,'Mining Outpost, Yavin IV',3,180),
  (57,'yavin_imperial_op',9,4051.000000,37.000000,-6215.000000,'Imperial Outpost, Yavin IV',3,180),
  (58,'yavin_labor_op',9,-6921.000000,73.000000,-5726.000000,'Labor Outpost, Yavin IV',3,180);
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `warp` ENABLE KEYS */;
+
+
+--
+-- Definition of table `swgemu`.`waypoints`
+--
+
+DROP TABLE IF EXISTS `swgemu`.`waypoints`;
 CREATE TABLE  `swgemu`.`waypoints` (
   `waypoint_id` bigint(20) unsigned NOT NULL,
   `owner_id` mediumint(8) unsigned NOT NULL,
@@ -83234,6 +83960,16 @@ CREATE TABLE  `swgemu`.`waypoints` (
   PRIMARY KEY  (`ix`),
   KEY `objplid` (`waypoint_id`,`owner_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=190 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `swgemu`.`waypoints`
+--
+
+/*!40000 ALTER TABLE `waypoints` DISABLE KEYS */;
+LOCK TABLES `waypoints` WRITE;
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `waypoints` ENABLE KEYS */;
+
 
 
 
