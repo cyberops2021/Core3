@@ -198,6 +198,8 @@ CREATE TABLE `characters` (
   `factionStatus` tinyint(1) unsigned NOT NULL default '0',
   `factionRank` tinyint(1) unsigned NOT NULL default '0',
   `experience` text NOT NULL,
+  `posture` tinyint(1) unsigned NOT NULL default '0',
+  `rezExpires` int(8) unsigned NOT NULL default '0',
   PRIMARY KEY  (`character_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=latin1;
 
