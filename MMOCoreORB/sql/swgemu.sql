@@ -4,14 +4,13 @@ Source Host: localhost
 Source Database: swgemu
 Target Host: localhost
 Target Database: swgemu
-Date: 11/1/2008 7:00:50 PM
+Date: 11/5/2008 3:06:31 PM
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for account
 -- ----------------------------
-DROP TABLE IF EXISTS `account`;
 CREATE TABLE `account` (
   `account_id` mediumint(8) unsigned NOT NULL auto_increment,
   `username` varchar(255) NOT NULL default '',
@@ -32,7 +31,6 @@ CREATE TABLE `account` (
 -- ----------------------------
 -- Table structure for badge
 -- ----------------------------
-DROP TABLE IF EXISTS `badge`;
 CREATE TABLE `badge` (
   `badge_id` mediumint(8) unsigned NOT NULL auto_increment,
   `name` varchar(255) NOT NULL default '',
@@ -43,7 +41,6 @@ CREATE TABLE `badge` (
 -- ----------------------------
 -- Table structure for bazaar_items
 -- ----------------------------
-DROP TABLE IF EXISTS `bazaar_items`;
 CREATE TABLE `bazaar_items` (
   `objectid` bigint(20) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
@@ -65,7 +62,6 @@ CREATE TABLE `bazaar_items` (
 -- ----------------------------
 -- Table structure for character_badge
 -- ----------------------------
-DROP TABLE IF EXISTS `character_badge`;
 CREATE TABLE `character_badge` (
   `character_id` mediumint(8) unsigned NOT NULL default '0',
   `bitmask0` mediumint(8) unsigned NOT NULL default '0',
@@ -79,7 +75,6 @@ CREATE TABLE `character_badge` (
 -- ----------------------------
 -- Table structure for character_faction_points
 -- ----------------------------
-DROP TABLE IF EXISTS `character_faction_points`;
 CREATE TABLE `character_faction_points` (
   `character_id` int(10) unsigned NOT NULL,
   `faction_name` varchar(25) NOT NULL,
@@ -91,7 +86,6 @@ CREATE TABLE `character_faction_points` (
 -- ----------------------------
 -- Table structure for character_items
 -- ----------------------------
-DROP TABLE IF EXISTS `character_items`;
 CREATE TABLE `character_items` (
   `item_id` bigint(20) unsigned NOT NULL,
   `character_id` bigint(20) unsigned NOT NULL,
@@ -111,7 +105,6 @@ CREATE TABLE `character_items` (
 -- ----------------------------
 -- Table structure for character_profession
 -- ----------------------------
-DROP TABLE IF EXISTS `character_profession`;
 CREATE TABLE `character_profession` (
   `character_id` mediumint(8) unsigned NOT NULL auto_increment,
   `profession_id` int(4) NOT NULL default '0',
@@ -121,7 +114,6 @@ CREATE TABLE `character_profession` (
 -- ----------------------------
 -- Table structure for character_structures
 -- ----------------------------
-DROP TABLE IF EXISTS `character_structures`;
 CREATE TABLE `character_structures` (
   `zoneid` tinyint(4) NOT NULL,
   `objectid` bigint(20) NOT NULL,
@@ -144,7 +136,6 @@ CREATE TABLE `character_structures` (
 -- ----------------------------
 -- Table structure for characters
 -- ----------------------------
-DROP TABLE IF EXISTS `characters`;
 CREATE TABLE `characters` (
   `character_id` mediumint(8) unsigned NOT NULL auto_increment,
   `account_id` mediumint(8) unsigned NOT NULL default '0',
@@ -215,7 +206,6 @@ CREATE TABLE `characters` (
 -- ----------------------------
 -- Table structure for consentlist
 -- ----------------------------
-DROP TABLE IF EXISTS `consentlist`;
 CREATE TABLE `consentlist` (
   `id` mediumint(8) unsigned NOT NULL auto_increment,
   `character_id` mediumint(8) unsigned NOT NULL default '0',
@@ -226,7 +216,6 @@ CREATE TABLE `consentlist` (
 -- ----------------------------
 -- Table structure for customization_data
 -- ----------------------------
-DROP TABLE IF EXISTS `customization_data`;
 CREATE TABLE `customization_data` (
   `speciesGender` varchar(30) NOT NULL default '',
   `customizationGroup` varchar(15) NOT NULL default '',
@@ -255,7 +244,6 @@ CREATE TABLE `customization_data` (
 -- ----------------------------
 -- Table structure for datapad
 -- ----------------------------
-DROP TABLE IF EXISTS `datapad`;
 CREATE TABLE `datapad` (
   `inx` bigint(20) unsigned NOT NULL auto_increment,
   `character_id` bigint(20) unsigned NOT NULL,
@@ -275,7 +263,6 @@ CREATE TABLE `datapad` (
 -- ----------------------------
 -- Table structure for draft_schematics
 -- ----------------------------
-DROP TABLE IF EXISTS `draft_schematics`;
 CREATE TABLE `draft_schematics` (
   `draftschematic_id` bigint(20) unsigned NOT NULL,
   `name` text NOT NULL,
@@ -300,7 +287,6 @@ CREATE TABLE `draft_schematics` (
 -- ----------------------------
 -- Table structure for faction
 -- ----------------------------
-DROP TABLE IF EXISTS `faction`;
 CREATE TABLE `faction` (
   `faction_id` int(4) unsigned NOT NULL auto_increment,
   `faction` varchar(45) default NULL,
@@ -310,7 +296,6 @@ CREATE TABLE `faction` (
 -- ----------------------------
 -- Table structure for friendlist
 -- ----------------------------
-DROP TABLE IF EXISTS `friendlist`;
 CREATE TABLE `friendlist` (
   `character_id` mediumint(8) unsigned NOT NULL,
   `friend_id` mediumint(8) NOT NULL,
@@ -325,7 +310,6 @@ CREATE TABLE `friendlist` (
 -- ----------------------------
 -- Table structure for galaxy
 -- ----------------------------
-DROP TABLE IF EXISTS `galaxy`;
 CREATE TABLE `galaxy` (
   `galaxy_id` int(5) NOT NULL auto_increment,
   `name` varchar(50) NOT NULL default '',
@@ -339,7 +323,6 @@ CREATE TABLE `galaxy` (
 -- ----------------------------
 -- Table structure for guilds
 -- ----------------------------
-DROP TABLE IF EXISTS `guilds`;
 CREATE TABLE `guilds` (
   `guild_id` int(11) unsigned NOT NULL auto_increment,
   `guild_tag` varchar(255) NOT NULL default 'DEFAULT',
@@ -357,7 +340,6 @@ CREATE TABLE `guilds` (
 -- ----------------------------
 -- Table structure for guilds_sponsoring
 -- ----------------------------
-DROP TABLE IF EXISTS `guilds_sponsoring`;
 CREATE TABLE `guilds_sponsoring` (
   `guild_id` int(11) unsigned NOT NULL,
   `guild_name` varchar(255) NOT NULL default 'Default Guild',
@@ -374,7 +356,6 @@ CREATE TABLE `guilds_sponsoring` (
 -- ----------------------------
 -- Table structure for ignorelist
 -- ----------------------------
-DROP TABLE IF EXISTS `ignorelist`;
 CREATE TABLE `ignorelist` (
   `character_id` mediumint(8) unsigned NOT NULL,
   `ignore_id` mediumint(8) NOT NULL,
@@ -389,7 +370,6 @@ CREATE TABLE `ignorelist` (
 -- ----------------------------
 -- Table structure for lootgroup_weight
 -- ----------------------------
-DROP TABLE IF EXISTS `lootgroup_weight`;
 CREATE TABLE `lootgroup_weight` (
   `lootgroup` int(4) unsigned NOT NULL,
   `weight` tinyint(3) default NULL,
@@ -400,7 +380,6 @@ CREATE TABLE `lootgroup_weight` (
 -- ----------------------------
 -- Table structure for loottable
 -- ----------------------------
-DROP TABLE IF EXISTS `loottable`;
 CREATE TABLE `loottable` (
   `lootgroup` tinyint(4) default NULL,
   `name` text NOT NULL,
@@ -429,7 +408,6 @@ CREATE TABLE `loottable` (
 -- ----------------------------
 -- Table structure for mail
 -- ----------------------------
-DROP TABLE IF EXISTS `mail`;
 CREATE TABLE `mail` (
   `mail_id` int(11) NOT NULL auto_increment,
   `sender_name` text NOT NULL,
@@ -445,7 +423,6 @@ CREATE TABLE `mail` (
 -- ----------------------------
 -- Table structure for mail_attachment
 -- ----------------------------
-DROP TABLE IF EXISTS `mail_attachment`;
 CREATE TABLE `mail_attachment` (
   `attachment_id` mediumint(8) unsigned NOT NULL,
   `planet_id` mediumint(8) unsigned NOT NULL,
@@ -460,7 +437,6 @@ CREATE TABLE `mail_attachment` (
 -- ----------------------------
 -- Table structure for no_build_areas
 -- ----------------------------
-DROP TABLE IF EXISTS `no_build_areas`;
 CREATE TABLE `no_build_areas` (
   `zoneid` tinyint(3) unsigned NOT NULL,
   `uid` bigint(20) unsigned NOT NULL auto_increment,
@@ -476,7 +452,6 @@ CREATE TABLE `no_build_areas` (
 -- ----------------------------
 -- Table structure for npc_faction
 -- ----------------------------
-DROP TABLE IF EXISTS `npc_faction`;
 CREATE TABLE `npc_faction` (
   `npc_group_id` int(10) unsigned NOT NULL auto_increment,
   `faction_id` int(4) unsigned NOT NULL default '0',
@@ -487,7 +462,6 @@ CREATE TABLE `npc_faction` (
 -- ----------------------------
 -- Table structure for object_crc_string_table
 -- ----------------------------
-DROP TABLE IF EXISTS `object_crc_string_table`;
 CREATE TABLE `object_crc_string_table` (
   `decimal` bigint(20) NOT NULL default '0',
   `hex` varchar(15) NOT NULL default '',
@@ -498,7 +472,6 @@ CREATE TABLE `object_crc_string_table` (
 -- ----------------------------
 -- Table structure for performance
 -- ----------------------------
-DROP TABLE IF EXISTS `performance`;
 CREATE TABLE `performance` (
   `performanceName` varchar(11) default NULL,
   `instrumentAudioId` int(10) unsigned default NULL,
@@ -535,7 +508,6 @@ CREATE TABLE `performance` (
 -- ----------------------------
 -- Table structure for performance_effect
 -- ----------------------------
-DROP TABLE IF EXISTS `performance_effect`;
 CREATE TABLE `performance_effect` (
   `effectName` varchar(14) default NULL,
   `performanceType` varchar(11) default NULL,
@@ -549,7 +521,6 @@ CREATE TABLE `performance_effect` (
 -- ----------------------------
 -- Table structure for planet
 -- ----------------------------
-DROP TABLE IF EXISTS `planet`;
 CREATE TABLE `planet` (
   `planet_id` int(2) NOT NULL,
   `name` varchar(25) NOT NULL,
@@ -559,7 +530,6 @@ CREATE TABLE `planet` (
 -- ----------------------------
 -- Table structure for planetmap
 -- ----------------------------
-DROP TABLE IF EXISTS `planetmap`;
 CREATE TABLE `planetmap` (
   `index` int(10) unsigned NOT NULL auto_increment,
   `planet` varchar(45) NOT NULL,
@@ -575,7 +545,6 @@ CREATE TABLE `planetmap` (
 -- ----------------------------
 -- Table structure for profession
 -- ----------------------------
-DROP TABLE IF EXISTS `profession`;
 CREATE TABLE `profession` (
   `profession_id` int(4) unsigned NOT NULL auto_increment,
   `name` varchar(45) NOT NULL default '',
@@ -585,7 +554,6 @@ CREATE TABLE `profession` (
 -- ----------------------------
 -- Table structure for recruiters
 -- ----------------------------
-DROP TABLE IF EXISTS `recruiters`;
 CREATE TABLE `recruiters` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `planet_id` tinyint(1) unsigned NOT NULL,
@@ -603,7 +571,6 @@ CREATE TABLE `recruiters` (
 -- ----------------------------
 -- Table structure for resource_data
 -- ----------------------------
-DROP TABLE IF EXISTS `resource_data`;
 CREATE TABLE `resource_data` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_name` varchar(255) NOT NULL,
@@ -644,7 +611,6 @@ CREATE TABLE `resource_data` (
 -- ----------------------------
 -- Table structure for resource_spawns
 -- ----------------------------
-DROP TABLE IF EXISTS `resource_spawns`;
 CREATE TABLE `resource_spawns` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_name` varchar(255) NOT NULL,
@@ -665,7 +631,6 @@ CREATE TABLE `resource_spawns` (
 -- ----------------------------
 -- Table structure for resource_tree
 -- ----------------------------
-DROP TABLE IF EXISTS `resource_tree`;
 CREATE TABLE `resource_tree` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_type` varchar(255) NOT NULL,
@@ -723,7 +688,6 @@ CREATE TABLE `resource_tree` (
 -- ----------------------------
 -- Table structure for skills
 -- ----------------------------
-DROP TABLE IF EXISTS `skills`;
 CREATE TABLE `skills` (
   `skill_id` int(10) unsigned NOT NULL auto_increment,
   `skill_name` varchar(52) default NULL,
@@ -760,7 +724,6 @@ CREATE TABLE `skills` (
 -- ----------------------------
 -- Table structure for starting_location
 -- ----------------------------
-DROP TABLE IF EXISTS `starting_location`;
 CREATE TABLE `starting_location` (
   `location_id` int(2) unsigned NOT NULL auto_increment,
   `location` varchar(45) NOT NULL,
@@ -777,7 +740,6 @@ CREATE TABLE `starting_location` (
 -- ----------------------------
 -- Table structure for staticobjects
 -- ----------------------------
-DROP TABLE IF EXISTS `staticobjects`;
 CREATE TABLE `staticobjects` (
   `zoneid` tinyint(4) NOT NULL,
   `objectid` bigint(20) NOT NULL,
@@ -799,7 +761,6 @@ CREATE TABLE `staticobjects` (
 -- ----------------------------
 -- Table structure for statictangibleobjects
 -- ----------------------------
-DROP TABLE IF EXISTS `statictangibleobjects`;
 CREATE TABLE `statictangibleobjects` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `zoneid` tinyint(4) NOT NULL,
@@ -823,7 +784,6 @@ CREATE TABLE `statictangibleobjects` (
 -- ----------------------------
 -- Table structure for template_items
 -- ----------------------------
-DROP TABLE IF EXISTS `template_items`;
 CREATE TABLE `template_items` (
   `template_id` mediumint(8) unsigned NOT NULL auto_increment,
   `name` varchar(128) NOT NULL,
@@ -833,7 +793,6 @@ CREATE TABLE `template_items` (
 -- ----------------------------
 -- Table structure for ticket_collectors
 -- ----------------------------
-DROP TABLE IF EXISTS `ticket_collectors`;
 CREATE TABLE `ticket_collectors` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `transport_id` int(11) NOT NULL,
@@ -850,7 +809,6 @@ CREATE TABLE `ticket_collectors` (
 -- ----------------------------
 -- Table structure for ticket_terminals
 -- ----------------------------
-DROP TABLE IF EXISTS `ticket_terminals`;
 CREATE TABLE `ticket_terminals` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `transport_id` int(11) NOT NULL,
@@ -867,7 +825,6 @@ CREATE TABLE `ticket_terminals` (
 -- ----------------------------
 -- Table structure for trainers
 -- ----------------------------
-DROP TABLE IF EXISTS `trainers`;
 CREATE TABLE `trainers` (
   `Location` varchar(64) default NULL,
   `Trainer Type` varchar(64) default NULL,
@@ -890,7 +847,6 @@ CREATE TABLE `trainers` (
 -- ----------------------------
 -- Table structure for transports
 -- ----------------------------
-DROP TABLE IF EXISTS `transports`;
 CREATE TABLE `transports` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `planet_id` tinyint(3) unsigned NOT NULL,
@@ -914,7 +870,6 @@ CREATE TABLE `transports` (
 -- ----------------------------
 -- Table structure for warp
 -- ----------------------------
-DROP TABLE IF EXISTS `warp`;
 CREATE TABLE `warp` (
   `warp_id` int(2) unsigned NOT NULL auto_increment,
   `name` varchar(64) NOT NULL,
@@ -931,7 +886,6 @@ CREATE TABLE `warp` (
 -- ----------------------------
 -- Table structure for waypoints
 -- ----------------------------
-DROP TABLE IF EXISTS `waypoints`;
 CREATE TABLE `waypoints` (
   `waypoint_id` bigint(20) unsigned NOT NULL,
   `owner_id` mediumint(8) unsigned NOT NULL,
@@ -1730,8 +1684,8 @@ INSERT INTO `lootgroup_weight` VALUES ('93', '5', '3');
 INSERT INTO `lootgroup_weight` VALUES ('94', '5', '3');
 INSERT INTO `lootgroup_weight` VALUES ('95', '5', '3');
 INSERT INTO `lootgroup_weight` VALUES ('96', '1', '1');
-INSERT INTO `lootgroup_weight` VALUES ('97', '5', '3');
-INSERT INTO `lootgroup_weight` VALUES ('98', '5', '3');
+INSERT INTO `lootgroup_weight` VALUES ('97', '1', '1');
+INSERT INTO `lootgroup_weight` VALUES ('98', '1', '1');
 INSERT INTO `lootgroup_weight` VALUES ('99', '1', '1');
 INSERT INTO `lootgroup_weight` VALUES ('100', '5', '3');
 INSERT INTO `lootgroup_weight` VALUES ('101', '5', '3');
