@@ -45,14 +45,8 @@ which carries forward this exception.
 #ifndef INSTALLATIONSPAWNEVENT_H_
 #define INSTALLATIONSPAWNEVENT_H_
 
-#include "../PlanetManagerImplementation.h"
-#include "../../../objects/installation/InstallationObjectImplementation.h"
-
+#include "../StructureManagerImplementation.h"
 #include "../../../../chat/ChatManagerImplementation.h"
-
-//class InstallationObject;
-//class Zone;
-//class Player;
 
 class InstallationSpawnEvent : public Event {
 
@@ -76,65 +70,6 @@ public:
 			inso->wlock();
 			// need to lock inso
 			inso->insertToZone(z);
-
-			/*
-			try {
-				stringstream query;
-*/
-/*
- *
-zoneid  	tinyint(4)  	 	  	No  	 	 	  Browse distinct values   	  Change   	  Drop   	  Primary   	  Unique   	  Index   	 Fulltext
-	objectid 	bigint(20) 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	parentid 	bigint(20) 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	owner_id 	mediumint(8) 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	name 	varchar(200) 	latin1_swedish_ci 		No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	template 	varchar(255) 	latin1_swedish_ci 		No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	crc 	bigint(20) 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	file 	varchar(200) 	latin1_swedish_ci 		No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	oX 	float 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	oY 	float 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	oZ 	float 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	oW 	float 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	X 	float 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	Z 	float 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	Y 	float 			No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	attributes 	text 	latin1_swedish_ci 		No 			Browse distinct values 	Change 	Drop 	Primary 	Unique 	Index 	Fulltext
-	noBuildArea
- */
-/*
-				query << "INSERT into `character_structures` (zone_id, objectid, parent_id, owner_id, name, template, "
-				<< " crc, file, oX, oY, oZ, oW, X, Z, Y, attributes, noBuildArea) "
-				<< "VALUES (" << player->getZoneID() << ", " << inso->getObjectID() << ", 0, ", " << player->getCharacterID() << ", '\\" << inso->getName()
-				<< "','" << inso->getName << "',"
-				<< inso->getTemplateName() << "',"
-				<< inso->getObjectCRC() << ", '"
-				<< inso->getFileName() << "', "
-				<< inso->getooX(), ", "
-				<< inso->getooY(), ", "
-				<< inso->getooZ(), ", "
-				<< inso->getooW(), ", "
-				<< inso->getoX(), ", "
-				<< inso->getoZ(), ", "
-				<< inso->getoY(), ", "
-
-				player->getCharacterID() << itemType << ","
-				<< player->getObjectID() << ",'" << playername << "'," << price << "," << auctionout << ",0,"
-				<< expire << "," << bazaarid << "," << planet << ",0,'');";
-
-				ServerDatabase::instance()->executeStatement(query2);
-
-				stringstream query3;
-				query3 << "UPDATE `character_items` SET character_id = 0 where item_id = " << objectid << ";";
-
-				ServerDatabase::instance()->executeStatement(query3);
-
-			} catch (DatabaseException& e) {
-				stringstream err;
-				err << "Can't add bazaar_item " << objectid;
-				error(err);
-				return;
-			}*/
-
 
 			inso->unlock();
 		} catch (...) {

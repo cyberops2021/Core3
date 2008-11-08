@@ -123,13 +123,16 @@ CREATE TABLE `character_profession` (
 -- ----------------------------
 DROP TABLE IF EXISTS `character_structures`;
 CREATE TABLE `character_structures` (
-  `zoneid` tinyint(4) NOT NULL,
-  `objectid` bigint(20) NOT NULL,
-  `parentid` bigint(20) NOT NULL,
-  `title` varchar(200) NOT NULL,
-  `template` varchar(255) NOT NULL,
-  `crc` bigint(20) NOT NULL,
-  `file` varchar(200) NOT NULL,
+  `zone_id` tinyint(4) NOT NULL default '0',
+  `object_id` bigint(20) NOT NULL,
+  `parent_id` bigint(20) NOT NULL,
+  `cell_number` tinyint(4) NOT NULL default '0',
+  `owner_id` mediumint(8) NOT NULL,
+  `name` text NOT NULL,
+  `template_crc` bigint(20) NOT NULL,
+  `template_type` int(10) NOT NULL,
+  `template_subtype` int(10) NOT NULL,
+  `template_name` tinytext NOT NULL,
   `oX` float NOT NULL,
   `oY` float NOT NULL,
   `oZ` float NOT NULL,
@@ -137,8 +140,10 @@ CREATE TABLE `character_structures` (
   `X` float NOT NULL,
   `Z` float NOT NULL,
   `Y` float NOT NULL,
-  `type` float NOT NULL,
-  `noBuildArea` bigint(20) unsigned NOT NULL default '0'
+  `deleted` tinyint(1) NOT NULL default '0',
+  `attributes` text NOT NULL,
+  `noBuildArea` bigint(20) unsigned NOT NULL default '0',
+  UNIQUE KEY `object_id` (`object_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------

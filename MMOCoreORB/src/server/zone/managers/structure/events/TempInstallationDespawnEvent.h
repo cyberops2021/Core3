@@ -1,9 +1,7 @@
 #ifndef TEMPINSTALLATIONDESPAWNEVENT_H_
 #define TEMPINSTALLATIONDESPAWNEVENT_H_
 
-#include "engine/engine.h"
-
-//class InstallationObject;
+#include "../StructureManagerImplementation.h"
 
 class TempInstallationDespawnEvent : public Event {
 	InstallationObject * inso;
@@ -36,7 +34,7 @@ public:
 
 	bool activate() {
 
-		cout << "TempInstallationDespawnEvent::activate()" << endl;
+		//cout << "TempInstallationDespawnEvent::activate()" << endl;
 
 
 
@@ -44,25 +42,26 @@ public:
 		inso->finalize();
 
 		PlanetManager *planetManager = player->getZone()->getPlanetManager();
+		StructureManager *structureManager = planetManager->getStructureManager();
 
-		cout << "TempInstallationDespawnEvent::activate() Deed object type is = " << deed->getObjectType() << " sub object type = " << deed->getObjectType() << endl;
+		//cout << "TempInstallationDespawnEvent::activate() Deed object type is = " << deed->getObjectType() << " sub object type = " << deed->getObjectType() << endl;
 		switch(deed->getObjectSubType()) {
 			case TangibleObjectImplementation::INSTALLATIONDEED:
 
 				switch(DeedObjectImplementation::getSubType(deed->getObjectCRC())){
 					case TangibleObjectImplementation::HARVESTER:
-						planetManager->spawnHarvester(player, (HarvesterDeed*)deed, x, z, y, oX, oZ, oY, oW);
+						structureManager->spawnHarvester(player, deed, x, z, y, oX, oZ, oY, oW);
 						break;
 					case TangibleObjectImplementation::FACTORY:
 					case TangibleObjectImplementation::GENERATOR:
 					case TangibleObjectImplementation::TURRET:
 					case TangibleObjectImplementation::MINEFIELD:
-						planetManager->spawnInstallation(player, deed, x, z, y, oX, oZ, oY, oW);
+						structureManager->spawnInstallation(player, deed, x, z, y, oX, oZ, oY, oW);
 						break;
 				}
 				break;
 			case TangibleObjectImplementation::BUILDINGDEED:
-				planetManager->spawnBuilding(player, deed, x, z, y, oX, oZ, oY, oW);
+				structureManager->spawnBuilding(player, deed, x, z, y, oX, oZ, oY, oW);
 				break;
 
 			default:

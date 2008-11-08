@@ -42,77 +42,27 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#ifndef INSTALLATIONOBJECTDELTAMESSAGE7_H_
-#define INSTALLATIONOBJECTDELTAMESSAGE7_H_
+
+#ifndef CELLOBJECTDELTAMESSAGE3_H_
+#define CELLOBJECTDELTAMESSAGE3_H_
 
 #include "../../packets/DeltaMessage.h"
 
-#include "../../objects/installation/InstallationObject.h"
-#include "../../objects/installation/harvester/HarvesterObject.h"
+#include "../../objects/building/cell/CellObject.h"
 
-class InstallationObjectDeltaMessage7 : public DeltaMessage {
-	InstallationObject* inso;
+class CellObjectDeltaMessage3 : public DeltaMessage {
+	CellObject* cell;
 
 public:
-	InstallationObjectDeltaMessage7(InstallationObject* ins)
-			: DeltaMessage(ins->getObjectID(), 0x494E534F, 7) {
-		inso = ins;
+	CellObjectDeltaMessage3(CellObject* co)
+			: DeltaMessage(co->getObjectID(), 0x53434C54, 3) {
+		cell = co;
 	}
 
-	void updateExtractionRate(float rate) {
-		addFloatUpdate(0x09, rate);
+	void updateCellNumber(int cellNumber) {
+		addIntUpdate(5, cellNumber);
 	}
-
-	void setNoHopperUpdate() {
-		addByteUpdate(0x0C, 0);
-	}
-
-	void updateActiveResource(uint64 oid) {
-
-		if(inso->getObjectSubType() == TangibleObjectImplementation::HARVESTER && ((HarvesterObject*)inso)->getActiveResourceID() != oid)
-			((HarvesterObject*)inso)->changeActiveResourceID(oid);
-
-		// Active Resource
-		addLongUpdate(0x05, oid);
-		//cout << "Adding 0x05 update for oid: " << hex << oid << endl;
-
-	}
-
-	void updateOperating(bool state) {
-		inso->setOperating(state);
-		addByteUpdate(0x06, state);
-	}
-
-	void updateHopper() {
-		addByteUpdate(0x0C, 1); // think about incrementing like a counter
-	}
-
-	void updateHopperSize() {
-		addFloatUpdate(0x0A, inso->getHopperSize());
-	}
-
-	void updateHopperItem(uint64 rId) {
-
-		startUpdate(0x0D); // hopper
-		insertInt(1); // list size
-		insertInt(inso->getNewHopperUpdateCounter(1));
-		insertByte(0x02); // change
-		insertShort(0x00);
-		insertLong(rId); // ID
-		insertFloat(inso->getHopperItemQuantity(rId)); // size
-	}
-
-	void addHopperItem(uint64 rId) {
-		startUpdate(0x0D); // hopper
-		insertInt(1); // list size
-		insertInt(inso->getNewHopperUpdateCounter(1));
-		insertByte(0x01); // add
-		insertShort(0x00);
-		insertLong(rId); // ID
-		insertFloat(inso->getHopperItemQuantity(rId)); // size
-	}
-
-
 };
 
-#endif /* INSTALLATIONOBJECTDELTAMESSAGE7_H_ */
+
+#endif /* CELLOBJECTDELTAMESSAGE3_H_ */

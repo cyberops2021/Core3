@@ -42,83 +42,24 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#ifndef CELLOBJECTIMPLEMENTATION_H_
-#define CELLOBJECTIMPLEMENTATION_H_
+#ifndef BUILDINGMAP_H_
+#define BUILDINGMAP_H_
 
-#include "../../../packets.h"
+#include "engine/engine.h"
+#include "../../objects/building/BuildingObject.h"
 
-#include "CellObject.h"
-#include "../../scene/SceneObject.h"
+class BuildingMap : public HashTable<uint64, BuildingObject*>, public HashTableIterator<uint64, BuildingObject*> {
 
-#include "../../player/Player.h"
-#include "../../player/PlayerImplementation.h"
-#include "../../../Zone.h"
+	int hash(const uint64& key) {
+        return Long::hashCode(key);
+	}
 
-#include "../../tangible/ItemAttributes.h"
-
-#include "../../../ZoneClientSessionImplementation.h"
-
-class Player;
-class BuildingObject;
-class Zone;
-
-class CellObjectImplementation : public CellObjectServant {
-	SortedVector<SceneObject*> children;
-	int cellNumber;
-
-	string templateName;
-
-	ItemAttributes* itemAttributes;
-	string attributeString;
 public:
-	CellObjectImplementation(uint64 objID, BuildingObject* buio);
-	CellObjectImplementation(uint64 objID, BuildingObject* buio, int number);
-	~CellObjectImplementation();
-
-	void addChild(SceneObject* obj, bool doLock = true);
-	void removeChild(SceneObject* obj, bool doLock = true);
-
-	inline void setAttributes(string& attributestring) {
-		itemAttributes->setAttributes(attributestring);
+	BuildingMap(int initsize) : HashTable<uint64, BuildingObject*>(initsize), HashTableIterator<uint64, BuildingObject*>(this) {
+		setNullValue(NULL);
 	}
-
-	inline string& getAttributes() {
-		itemAttributes->getAttributeString(attributeString);
-		return attributeString;
-	}
-
-	void parseItemAttributes();
-
-	inline int getCellNumber() {
-		return cellNumber;
-	}
-	inline void setCellNumber(int i) {
-		cellNumber = i;
-		string attr("cellNumber");
-		itemAttributes->setIntAttribute(attr, i);
-	}
-
-	void sendTo(Player* player, bool doClose = true) {
-
-	}
-
-	inline string& getTemplateName() {
-		templateName = "";
-		return templateName;
-	}
-
-	void sendDestroyTo(Player* player) {
-	}
-
-	inline SceneObject* getChild(int idx) {
-		return children.get(idx);
-	}
-
-	inline int getChildrenSize() {
-		return children.size();
-	}
-
 
 };
 
-#endif /*CELLOBJECTIMPLEMENTATION_H_*/
+
+#endif /*BUILDINGMAP_H_*/

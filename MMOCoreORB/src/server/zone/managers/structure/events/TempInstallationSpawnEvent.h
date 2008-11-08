@@ -1,10 +1,7 @@
 #ifndef TEMPINSTALLATIONSPAWNEVENT_H_
 #define TEMPINSTALLATIONSPAWNEVENT_H_
 
-#include "../../../objects/installation/InstallationObjectImplementation.h"
-
-//class InstallationObject;
-//class Zone;
+#include "../StructureManagerImplementation.h"
 
 class TempInstallationSpawnEvent : public Event {
 	//Player* player;
@@ -28,7 +25,6 @@ public:
 
 			inso->insertToZone(zone);
 
-			cout << "TempInstallationSpawnEvent complete" << endl;
 		//	player->unlock();
 		//} catch (...) {
 		//	player->unlock();
