@@ -42,91 +42,31 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#ifndef BASEAREAIMPLEMENTATION_H_
-#define BASEAREAIMPLEMENTATION_H_
+#ifndef NOBUILDAREAMAP_H_
+#define NOBUILDAREAMAP_H_
 
+#include "../../objects/area/Area.h"
 #include "engine/engine.h"
-#include "Area.h"
-#include "ActiveArea.h"
-#include "NoBuildArea.h"
-#include "BaseArea.h"
 
-#include "AreaImplementation.h"
-
-class BaseAreaImplementation : public BaseAreaServant {
-protected:
-	Vector<ActiveArea *> activeAreas;
-	Vector<NoBuildArea *> noBuildAreas;
-
+class NoBuildAreaMap : public Vector<Area *> {
 public:
-	BaseAreaImplementation(Coordinate * center, float width, float height) : BaseAreaServant(center, width, height) {
+	NoBuildAreaMap() { }
 
-	}
-
-	BaseAreaImplementation(float minXPos, float maxXPos, float minYPos, float maxYPos) : BaseAreaServant(minXPos, maxXPos, minYPos, maxYPos) {
-
-	}
-
-	~BaseAreaImplementation() {
-		activeAreas.removeAll();
-		noBuildAreas.removeAll();
-	}
-
-	inline uint8 getType() {
-		return BASE;
-	}
-
-	inline bool containsActiveAreas() {
-		return !activeAreas.isEmpty();
-	}
-
-	inline bool containsNoBuildAreas() {
-		return !noBuildAreas.isEmpty();
-	}
-
-	void addArea(Area * ar) {
-		if (!this->contains(ar))
-			return;
-
-		switch (ar->getType()) {
-		case ACTIVE:
-			activeAreas.add((ActiveArea *) ar);
-		case NOBUILD:
-			noBuildAreas.add((NoBuildArea *) ar);
-		}
-	}
-
-	void removeArea(Area * ar) {
-		if (!this->contains(ar))
-			return;
-
-		switch (ar->getType()) {
-		case ACTIVE:
-			activeAreas.removeElement((ActiveArea *) ar);
-		case NOBUILD:
-			noBuildAreas.removeElement((NoBuildArea *) ar);
-		}
-	}
-
-	NoBuildArea * getNoBuildArea(float x, float y) {
-		for (uint32 i = 0; i < noBuildAreas.size(); i++) {
-			NoBuildArea * temp = noBuildAreas.get(i);
-			if (temp->contains(x,y))
-				return temp;
+	~NoBuildAreaMap() {
+		for (int i = 0; i < size(); i++) {
+			delete get(i);
 		}
 
-		return NULL;
+		removeAll();
 	}
 
-	ActiveArea * getNoActiveArea(float x, float y) {
-		for (uint32 i = 0; i < activeAreas.size(); i++) {
-			ActiveArea * temp = activeAreas.get(i);
-			if (temp->contains(x,y))
-				return temp;
+	bool isNoBuildArea(float x, float y) {
+		for (int i = 0; i < size(); i++) {
+			if (get(i)->containsPoint(x,y))
+				return true;
 		}
 
-		return NULL;
+		return false;
 	}
 };
-
-#endif /* BASEAREAIMPLEMENTATION_H_ */
+#endif /* NOBUILDAREAMAP_H_ */
