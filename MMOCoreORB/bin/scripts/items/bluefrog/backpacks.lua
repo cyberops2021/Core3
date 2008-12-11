@@ -40,25 +40,6 @@
 --this exception also makes it possible to release a modified version 
 --which carries forward this exception.
 
-RunItemLUAFile("bluefrog/compositeArmorSet.lua");
-RunItemLUAFile("bluefrog/ithArmorSet.lua");
-RunItemLUAFile("bluefrog/wookieeArmorSet.lua");
+backpacks = {backpack1,backpack2,backpack3}
 
-RunItemLUAFile("bluefrog/enhancePackSet.lua");
-RunItemLUAFile("bluefrog/stimPackSet.lua");
-RunItemLUAFile("bluefrog/woundPackSet.lua");
-RunItemLUAFile("bluefrog/statePackSet.lua");
-RunItemLUAFile("bluefrog/curePackSet.lua");
-
-RunItemLUAFile("bluefrog/clothingSets.lua");
-
-RunItemLUAFile("bluefrog/instrumentSet.lua");
-
---RunItemLUAFile("bluefrog/vehicleDeedSet.lua");
---RunItemLUAFile("bluefrog/housingDeedSet.lua");
-
-RunItemLUAFile("bluefrog/weaponSet.lua");
-
-RunItemLUAFile("bluefrog/surveyingKit.lua");
-
-
+addBFItemSet("Backpacks" , backpacks);

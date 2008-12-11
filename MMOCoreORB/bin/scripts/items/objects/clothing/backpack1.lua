@@ -40,25 +40,18 @@
 --this exception also makes it possible to release a modified version 
 --which carries forward this exception.
 
-RunItemLUAFile("bluefrog/compositeArmorSet.lua");
-RunItemLUAFile("bluefrog/ithArmorSet.lua");
-RunItemLUAFile("bluefrog/wookieeArmorSet.lua");
+backpack1 = Clothing:new {
 
-RunItemLUAFile("bluefrog/enhancePackSet.lua");
-RunItemLUAFile("bluefrog/stimPackSet.lua");
-RunItemLUAFile("bluefrog/woundPackSet.lua");
-RunItemLUAFile("bluefrog/statePackSet.lua");
-RunItemLUAFile("bluefrog/curePackSet.lua");
+	objectName = "Backpack1",
 
-RunItemLUAFile("bluefrog/clothingSets.lua");
+	templateName = "backpack_s01",
 
-RunItemLUAFile("bluefrog/instrumentSet.lua");
+	objectCRC = "4059441362",
 
---RunItemLUAFile("bluefrog/vehicleDeedSet.lua");
---RunItemLUAFile("bluefrog/housingDeedSet.lua");
+	objectType = WEARABLECONTAINER,
+	
+	slots = 50,
 
-RunItemLUAFile("bluefrog/weaponSet.lua");
-
-RunItemLUAFile("bluefrog/surveyingKit.lua");
-
+	equipped = "0"
+}
 
