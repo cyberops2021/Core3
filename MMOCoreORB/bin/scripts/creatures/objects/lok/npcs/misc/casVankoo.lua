@@ -40,89 +40,95 @@
 --gives permission to release a modified version without this exception; 
 --this exception also makes it possible to release a modified version 
 --which carries forward this exception.
-singingMtnClanArchWitch = Creature:new {
-	objectName = "singingMtnClanArchWitch",  -- Lua Object Name
+casVankoo = Creature:new {
+	objectName = "casVankoo",  -- Lua Object Name
 	creatureType = "NPC",
-	faction = "mtn_clan", 
-	factionPoints = 20,
+	
 	gender = "",
 
-	speciesName = "singing_mtn_clan_arch_witch",
-	stfName = "mob/creature_names", 
-	objectCRC = 1806425280, 
-	socialGroup = "mtn_clan",
+	speciesName = "cas_vankoo",
+	
+	stfName = "mob/creature_names",
+	objectCRC = 475806339, 
+	socialGroup = "Kimogila",
+	
 	level = 107,
 
+	
+	
 	combatFlags = ATTACKABLE_FLAG + ENEMY_FLAG + AGGRESSIVE_FLAG,
 
-	healthMax = 30000,
-	healthMin = 24000,
+	healthMax = 50000,
+	healthMin = 42000,
 	strength = 5000,
 	constitution = 5000,
 
-	actionMax = 30000,
-	actionMin = 24000,
+	actionMax = 50000,
+	actionMin = 42000,
 	quickness = 5000,
 	stamina = 5000,
 
-	mindMax = 30000,
-	mindMin = 24000,
+	mindMax = 50000,
+	mindMin = 42000,
 	focus = 5000,
 	willpower = 5000,
 
 	height = 1, -- Size of creature
 	armor = 2, -- 0 = None; 1 = Light; 2 = Medium; 3 = Heavy
-	kinetic = 100,
-	energy = 10,
-	electricity = 100,
-	stun = 100,
-	blast = 10,
-	heat = 100,
-	cold = 100,
-	acid = 100,
+	kinetic = 75,
+	energy = 75,
+	electricity = 10,
+	stun = -1,
+	blast = -1,
+	heat = 10,
+	cold = 10,
+	acid = 10,
 	lightsaber = 0,
 
-	accuracy = 370,
+	accuracy = 375,
 
-	healer = 1,
+	healer = 0,
 
 	pack = 1,
 	herd = 0,
-	stalker = 0,
+	stalker = 1,
 	killer = 1,
 	aggressive = 1,
 	invincible = 0, 
 
+	
+
 	meleeDefense = 1,  
+	
 	rangedDefense = 1,
 
 	attackCreatureOnSight = "", -- Enter socialGroups 
 
-	weapon = "object/weapon/melee/polearm/shared_lance_vibrolance.iff", -- File path to weapon -> object\xxx\xxx\xx
-	weaponName = "a Vibrolance", -- Name ex. 'a Vibrolance'
-	weaponTemp = "lance_vibrolance", -- Weapon Template ex. 'lance_vibrolance'
-	weaponClass = "PolearmMeleeWeapon", -- Weapon Class ex. 'PolearmMeleeWeapon'
-	weaponEquipped = 1,
-	weaponMinDamage = 300,
-	weaponMaxDamage = 850,
-	weaponAttackSpeed = 1.5,
-	weaponDamageType = "ELECTRICITY", -- ELECTRICITY, KINETIC, etc
-	weaponArmorPiercing = "LIGHT", -- LIGHT, NONE, MEDIUM, HEAVY
+	weapon = "object/weapon/ranged/pistol/shared_pistol_launcher.iff", -- File path to weapon -> object\xxx\xxx\xx
+      	weaponName = "Launcher Pistol", -- Name ex. 'a Vibrolance'
+      	weaponTemp = "pistol_launcher", -- Weapon Template ex. 'lance_vibrolance'
+     	weaponClass = "PistolRangedWeapon", -- Weapon Class ex. 'PolearmMeleeWeapon'
+      	weaponEquipped = 1,
+      	weaponMinDamage = 600,
+      	weaponMaxDamage = 1200,
+      	weaponAttackSpeed = 1,
+      	weaponDamageType = "BLAST", -- ELECTRICITY, KINETIC, etc
+      	weaponArmorPiercing = "LIGHT", -- LIGHT, NONE, MEDIUM, HEAVY
 
-	alternateWeapon = "object/weapon/melee/polearm/shared_polearm_vibro_axe.iff", -- File path to weapon -> object\xxx\xxx\xx
-	alternateWeaponName = "a Long Vibro Axe", -- Name ex. 'a Vibrolance'
-	alternateWeaponTemp = "lance_vibro_axe", -- Weapon Template ex. 'lance_vibrolance'
-	alternateWeaponClass = "PolearmMeleeWeapon", -- Weapon Class ex. 'PolearmMeleeWeapon'
-	alternateWeaponEquipped = 1,
-	alternateWeaponMinDamage = 350,
-	alternateWeaponMaxDamage = 800,
-	alternateWeaponAttackSpeed = 1.5,
-	alternateWeaponDamageType = "KINETIC", -- ELECTRICITY, KINETIC, etc
-	alternateWeaponArmorPiercing = "LIGHT", -- LIGHT, NONE, MEDIUM, HEAVY
+	alternateWeapon = "", -- File path to weapon -> object\xxx\xxx\xx
+	alternateWeaponName = "", -- Name ex. 'a Vibrolance'
+	alternateWeaponTemp = "", -- Weapon Template ex. 'lance_vibrolance'
+	alternateWeaponClass = "", -- Weapon Class ex. 'PolearmMeleeWeapon'
+	alternateWeaponEquipped = 0,
+	alternateWeaponMinDamage = 0,
+	alternateWeaponMaxDamage = 0,
+	alternateWeaponAttackSpeed = 0,
+	alternateWeaponDamageType = "", -- ELECTRICITY, KINETIC, etc
+	alternateWeaponArmorPiercing = "", -- LIGHT, NONE, MEDIUM, HEAVY
 
 	internalNPCDamageModifier = 0.3, -- Damage Modifier to other NPC's
 
-	lootGroup = "0,1,3,4,11,15,19,33,39,40,99", -- Group it belongs to for loot
+	lootGroup = "0,1,3,4,11,15,19", -- Group it belongs to for loot
 
 	tame = 0,  -- Likely hood to be tamed
 
@@ -137,10 +143,10 @@ singingMtnClanArchWitch = Creature:new {
 	meatType = "",
 	meatMax = 0,
 
-	skills = { "singingMountainClanAttack20", "singingMountainClanAttack21", "singingMountainClanAttack22", "singingMountainClanAttack23", "singingMountainClanAttack24",  "singingMountainClanAttack25", "singingMountainClanAttack26", "singingMountainClanAttack27", "singingMountainClanAttack28", "singingMountainClanAttack29", "singingMountainClanAttack30", "singingMountainClanAttack31" },
-	respawnTimer = 300,
+	skills = { "casVankooAttack1", "casVankooAttack2", "casVankooAttack3" },
+	respawnTimer = 600,
 
 	behaviorScript = "", -- Link to the behavior script for this object
 }
 
-Creatures:addCreature(singingMtnClanArchWitch, 1806425280) --  Add to Global Table
+Creatures:addCreature(casVankoo, 475806339) --  Add to Global Table

@@ -41,16 +41,16 @@
 --which carries forward this exception.
 
 
-rebelLieutenantColonelAttack1 = { 
-	attackname = "rebelLieutenantColonelAttack1",
+rebelWarrantOfficerAttack1 = { 
+	attackname = "rebelWarrantOfficerAttack1",
 	animation = "fire_1_special_single_light",
 
 	requiredWeaponType = PISTOL,
 	
-	range = 65,
-	damageRatio = 70,
-	speedRatio = 1,
-	areaRange = 0,
+	range = 64,
+	damageRatio = 5,
+	speedRatio = 2,
+	coneAngle = 30,
 	accuracyBonus = 0,
 
 	healthAttackChance = 100,
@@ -79,20 +79,20 @@ rebelLieutenantColonelAttack1 = {
 	CbtSpamMiss = "sapblast_miss",
 }
 
-AddDotPoolAttackTargetSkill(rebelLieutenantColonelAttack1)
+AddDotPoolAttackTargetSkill(rebelWarrantOfficerAttack1)
 
 -----------------------------------------------------------------------
 
-rebelLieutenantColonelAttack2 = { 
-	attackname = "rebelLieutenantColonelAttack2",
-	animation = "creature_attack_light",
+rebelWarrantOfficerAttack2 = { 
+	attackname = "rebelWarrantOfficerAttack2",
+	animation = "fire_1_special_single_light",
 
-	requiredWeaponType = ONEHANDED,
+	requiredWeaponType = PISTOL,
 	
-	range = 11,
-	damageRatio = 5.5,
-	speedRatio = 1.25,
-	areaRange = 0,
+	range = 64,
+	damageRatio = 5,
+	speedRatio = 2,
+	coneAngle = 30,
 	accuracyBonus = 0,
 		
 	knockdownChance = 0,
@@ -103,14 +103,14 @@ rebelLieutenantColonelAttack2 = {
 	stunChance = 0,
 	intimidateChance = 0,
 	
-	CbtSpamBlock = "melee_block",
-	CbtSpamCounter = "melee_counter",
-	CbtSpamEvade = "melee_evade",
-	CbtSpamHit = "melee_hit",
-	CbtSpamMiss = "melee_miss",
+	CbtSpamBlock = "attack_block",
+	CbtSpamCounter = "attack_counter",
+	CbtSpamEvade = "attack_evade",
+	CbtSpamHit = "attack_hit",
+	CbtSpamMiss = "attack_miss",
 }
 
-AddRandomPoolAttackTargetSkill(rebelLieutenantColonelAttack2)
+AddRandomPoolAttackTargetSkill(rebelWarrantOfficerAttack2)
 
 -----------------------------------------------------------------------
 
