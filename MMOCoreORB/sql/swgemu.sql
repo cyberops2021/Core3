@@ -1,4 +1,4 @@
--- MySQL Administrator dump 1.4
+﻿-- MySQL Administrator dump 1.4
 --
 -- ------------------------------------------------------
 -- Server version	5.0.67-0ubuntu6
@@ -40738,7 +40738,7 @@ INSERT INTO `swgemu`.`skills` (`skill_id`,`skill_name`,`skill_parent`,`skill_gra
  (602,'social_imagedesigner_markings_04','social_imagedesigner_markings_03','fourByFour',0,1,0,0,9000,1,0,'social_imagedesigner_markings_03',' ','imagedesigner',40000,80000,' ',0,' ',' ','none',' ',' ','markings=2',' ',' ',1,0);
 INSERT INTO `swgemu`.`skills` (`skill_id`,`skill_name`,`skill_parent`,`skill_graph_type`,`skill_god_only`,`skill_is_title`,`skill_is_profession`,`skill_is_hidden`,`skill_money_required`,`skill_points_required`,`skill_requirements_count`,`skill_requirements`,`skill_preclusions`,`skill_xp_type`,`skill_xp_cost`,`skill_xp_cap`,`skill_required_missions`,`skill_apprenticeships_required`,`skill_stats_required`,`skill_species_required`,`skill_jedi_state_required`,`skill_abilities`,`skill_commands`,`skill_mods`,`skill_schematics_granted`,`skill_schematics_revoked`,`skill_is_searchable`,`skill_ender`) VALUES 
  (603,'outdoors_squadleader','outdoors','fourByFour',0,0,1,0,0,0,0,' ',' ',' ',0,0,' ',0,' ',' ','none',' ',' ',' ',' ',' ',1,0),
- (604,'outdoors_squadleader_novice','outdoors_squadleader','fourByFour',0,1,0,0,5000,6,0,'outdoors_scout_movement_04,outdoors_scout_camp_04,combat_marksman_support_04',' ','combat_general',7500,20000,' ',0,' ',' ','none',' ','sysgroup',' ',' ',' ',1,0),
+ (604,'outdoors_squadleader_novice','outdoors_squadleader','fourByFour',0,1,0,0,5000,6,0,'outdoors_scout_movement_04,outdoors_scout_camp_04,combat_marksman_support_04',' ','combat_general',7500,20000,' ',0,' ',' ','none',' ','serversysgroup',' ',' ',' ',1,0),
  (605,'outdoors_squadleader_master','outdoors_squadleader','fourByFour',0,1,0,0,10000,1,0,'outdoors_squadleader_movement_04,outdoors_squadleader_offense_04,outdoors_squadleader_defense_04,outdoors_squadleader_support_04',' ',' ',0,0,' ',0,' ',' ','none',' ',' ','group_melee_defense=5,group_ranged_defense=5,group_burst_run=10,group_slope_move=10',' ',' ',1,0),
  (606,'outdoors_squadleader_movement_01','outdoors_squadleader','fourByFour',0,0,0,0,6000,5,0,'outdoors_squadleader_novice',' ','squadleader',175000,500000,' ',0,' ',' ','none',' ',' ','group_slope_move=25',' ',' ',1,0);
 INSERT INTO `swgemu`.`skills` (`skill_id`,`skill_name`,`skill_parent`,`skill_graph_type`,`skill_god_only`,`skill_is_title`,`skill_is_profession`,`skill_is_hidden`,`skill_money_required`,`skill_points_required`,`skill_requirements_count`,`skill_requirements`,`skill_preclusions`,`skill_xp_type`,`skill_xp_cost`,`skill_xp_cap`,`skill_required_missions`,`skill_apprenticeships_required`,`skill_stats_required`,`skill_species_required`,`skill_jedi_state_required`,`skill_abilities`,`skill_commands`,`skill_mods`,`skill_schematics_granted`,`skill_schematics_revoked`,`skill_is_searchable`,`skill_ender`) VALUES 
