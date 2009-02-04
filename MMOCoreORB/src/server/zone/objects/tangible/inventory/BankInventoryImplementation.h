@@ -42,66 +42,39 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#ifndef CONTAINERIMPLEMENTATION_H_
-#define CONTAINERIMPLEMENTATION_H_
+#ifndef BANKNVENTORYIMPLEMENTATION_H_
+#define BANKNVENTORYIMPLEMENTATION_H_
 
-#include "TangibleObject.h"
+#include "BankInventory.h"
+#include "../Container.h"
 
-#include "Container.h"
-
-class Player;
-
-class ContainerImplementation : public ContainerServant {
-//protected:
-//	VectorMap<uint64, SceneObject*>* items;
-
+class BankInventoryImplementation : public BankInventoryServant {
 public:
-	//VectorMap<uint64, SceneObject*> items;
+	BankInventoryImplementation(CreatureObject* creature);
 
-	//int slots;
+	~BankInventoryImplementation();
 
-	ContainerImplementation(uint64 oid);
-
-	virtual ~ContainerImplementation();
-
-	//I think its safe to finally delete all commented stuff here
-	/*void addObject(SceneObject* obj);
-
-	void openTo(Player* player);
-
-	SceneObject* getObject(int index) {
-		return items.get(index);
-	}
-
-	SceneObject* getObject(uint64 oid) {
-		return items.get(oid);
-	}
-
-	void removeObject(int index);
-
-	void removeObject(uint64 oid);
-
-	int objectsSize() {
-		return items.size();
-	}
-
-	bool isEmpty() {
-		return items.isEmpty();
-	}*/
+	const static int MAXITEMCOUNT = 100;
 
 	void sendTo(Player* player, bool doClose = true);
 
-	/*void sendItemsTo(Player* player);
+	void sendItemsTo(Player* player);
 
-	int getSlots() {
-		return slots;
-	}*/
+	bool isLoaded;
 
-	//void setSlots(int attributeSlots);
+	void setBankIsLoaded() {
+		isLoaded = true;
+	}
 
-	void parseItemAttributes();
+	bool getBankIsLoaded() {
+		return isLoaded;
+	}
 
-	void sendRadialResponseTo(Player* player, ObjectMenuResponse* omr);
+	bool addObject(SceneObject* obj);
+
+	bool removeObject(int index);
+
+	bool removeObject(uint64 oid);
 };
 
-#endif /*CONTAINERIMPLEMENTATION_H_*/
+#endif /*BANKNVENTORYIMPLEMENTATION_H_*/

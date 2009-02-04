@@ -42,66 +42,15 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#ifndef CONTAINERIMPLEMENTATION_H_
-#define CONTAINERIMPLEMENTATION_H_
+import "../../creature/CreatureObject";
 
-#include "TangibleObject.h"
+import "../Container";
 
-#include "Container.h"
-
-class Player;
-
-class ContainerImplementation : public ContainerServant {
-//protected:
-//	VectorMap<uint64, SceneObject*>* items;
-
-public:
-	//VectorMap<uint64, SceneObject*> items;
-
-	//int slots;
-
-	ContainerImplementation(uint64 oid);
-
-	virtual ~ContainerImplementation();
-
-	//I think its safe to finally delete all commented stuff here
-	/*void addObject(SceneObject* obj);
-
-	void openTo(Player* player);
-
-	SceneObject* getObject(int index) {
-		return items.get(index);
+interface BankInventory implements Container {
+	BankInventory(CreatureObject creature) {
+		super(unsigned long oid);
 	}
-
-	SceneObject* getObject(uint64 oid) {
-		return items.get(oid);
-	}
-
-	void removeObject(int index);
-
-	void removeObject(uint64 oid);
-
-	int objectsSize() {
-		return items.size();
-	}
-
-	bool isEmpty() {
-		return items.isEmpty();
-	}*/
-
-	void sendTo(Player* player, bool doClose = true);
-
-	/*void sendItemsTo(Player* player);
-
-	int getSlots() {
-		return slots;
-	}*/
-
-	//void setSlots(int attributeSlots);
-
-	void parseItemAttributes();
-
-	void sendRadialResponseTo(Player* player, ObjectMenuResponse* omr);
-};
-
-#endif /*CONTAINERIMPLEMENTATION_H_*/
+	
+	void setBankIsLoaded();
+	boolean getBankIsLoaded();
+}

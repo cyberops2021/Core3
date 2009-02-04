@@ -42,66 +42,103 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#ifndef CONTAINERIMPLEMENTATION_H_
-#define CONTAINERIMPLEMENTATION_H_
+#include "BankInventory.h"
+#include "BankInventoryImplementation.h"
 
-#include "TangibleObject.h"
+#include "../../creature/CreatureObject.h"
 
-#include "Container.h"
+#include "../../../packets.h"
 
-class Player;
+BankInventoryImplementation::BankInventoryImplementation(CreatureObject* creature) :
+	BankInventoryServant(creature->getObjectID() + 0x004) {
 
-class ContainerImplementation : public ContainerServant {
-//protected:
-//	VectorMap<uint64, SceneObject*>* items;
+	objectCRC = 0x70FD1394;
 
-public:
-	//VectorMap<uint64, SceneObject*> items;
+	objectType = BANKINVENTORYSTORAGE;
 
-	//int slots;
+    customName = UnicodeString("Bank Storage");
+    templateTypeName = "item_n";
+    templateName = "bank";
 
-	ContainerImplementation(uint64 oid);
+    parent = creature;
 
-	virtual ~ContainerImplementation();
+    isLoaded = false;
+}
 
-	//I think its safe to finally delete all commented stuff here
-	/*void addObject(SceneObject* obj);
+BankInventoryImplementation::~BankInventoryImplementation() {
+	setParent(NULL);
+}
 
-	void openTo(Player* player);
+void BankInventoryImplementation::sendTo(Player* player, bool doClose) {
+	ZoneClientSession* client = player->getClient();
 
-	SceneObject* getObject(int index) {
-		return items.get(index);
+	if (client == NULL)
+		return;
+
+	SceneObjectImplementation::create(client);
+
+	if (parent != NULL)
+		link(client, parent);
+
+	BaseMessage* tano3 = new TangibleObjectMessage3((TangibleObject*) _this);
+	client->sendMessage(tano3);
+
+	BaseMessage* tano6 = new TangibleObjectMessage6((TangibleObject*) _this);
+	client->sendMessage(tano6);
+
+	sendItemsTo(player);
+
+	if (doClose)
+		SceneObjectImplementation::close(client);
+}
+
+void BankInventoryImplementation::sendItemsTo(Player* player) {
+	for (int i = 0; i < getContainerObjectsSize(); ++i) {
+		SceneObject* item = getObject(i);
+
+		item->sendTo(player);
+	}
+}
+
+bool BankInventoryImplementation::addObject(SceneObject* obj) {
+	uint64 oid = obj->getObjectID();
+
+	if (!objects.contains(oid)) {
+		obj->acquire();
 	}
 
-	SceneObject* getObject(uint64 oid) {
-		return items.get(oid);
-	}
+	obj->setParent(_this, 0xFFFFFFFF);
 
-	void removeObject(int index);
+	objects.put(oid, obj);
 
-	void removeObject(uint64 oid);
+	return true;
+}
 
-	int objectsSize() {
-		return items.size();
-	}
+bool BankInventoryImplementation::removeObject(int index) {
+	SceneObject* item = objects.get(index);
 
-	bool isEmpty() {
-		return items.isEmpty();
-	}*/
+	if (item == NULL)
+		return false;
 
-	void sendTo(Player* player, bool doClose = true);
+	objects.remove(index);
 
-	/*void sendItemsTo(Player* player);
+	item->setParent(NULL);
+	item->release();
 
-	int getSlots() {
-		return slots;
-	}*/
+	return true;
+}
 
-	//void setSlots(int attributeSlots);
+bool BankInventoryImplementation::removeObject(uint64 oid) {
+	SceneObject* item = objects.get(oid);
 
-	void parseItemAttributes();
+	if (item == NULL)
+		return false;
 
-	void sendRadialResponseTo(Player* player, ObjectMenuResponse* omr);
-};
+	objects.drop(oid);
 
-#endif /*CONTAINERIMPLEMENTATION_H_*/
+	item->setParent(NULL);
+	item->release();
+
+	return true;
+}
+

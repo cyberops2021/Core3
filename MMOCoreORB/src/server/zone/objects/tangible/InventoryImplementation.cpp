@@ -42,53 +42,119 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#include "ContainerObject.h"
+#include "Inventory.h"
+#include "InventoryImplementation.h"
 
-#include "../tangible/TangibleObject.h"
-#include "../player/Player.h"
-
-#include "../../packets/scene/ClientOpenContainerMessage.h"
+#include "../creature/CreatureObject.h"
 
 #include "../../packets.h"
 
-ContainerObject::ContainerObject(SceneObjectImplementation* obj) {
-	sceneObject = obj;
+InventoryImplementation::InventoryImplementation(CreatureObject* creature) :
+	InventoryServant(creature->getObjectID() + 0x01) {
 
-	containerType = 0;
-	containerVolumeLimit = 0;
+	objectType = INVENTORYOBJECT;
 
-	objects.setInsertPlan(SortedVector<VectorMapEntry<uint64, SceneObject*>*>::NO_DUPLICATE);
-	objects.setNullValue(NULL);
+	customName = UnicodeString("");
+
+	templateTypeName = "item_n";
+	templateName = "inventory";
+
+	parent = (SceneObject*) creature;
 }
 
-ContainerObject::~ContainerObject() {
-	while (objects.size() > 0) {
-		SceneObject* item = objects.get(0);
+InventoryImplementation::~InventoryImplementation() {
+	setParent(NULL);
+}
 
-		objects.drop(item->getObjectID());
+TangibleObject* InventoryImplementation::getItemByMisoKey(String& misKey) {
+	TangibleObject* retTano = NULL;
+	TangibleObject* tano = NULL;
 
-		item->release();
-		item->setParent(NULL);
+	for (int i = 0; i < getContainerObjectsSize(); ++i) {
+		SceneObject* obj = getObject(i);
 
-		item->finalize();
+		if (obj->isTangible()) {
+			tano = (TangibleObject*)obj;
+
+			if ((tano->getMisoAsocKey() == misKey) && !tano->isEquipped()) {
+				break;
+			} else {
+				tano = NULL;
+			}
+		}
+	}
+
+	if (tano != NULL) {
+		retTano = tano;
+	}
+
+	return retTano;
+}
+
+void InventoryImplementation::removeAllByMisoKey(CreatureObject* owner, String& misKey) {
+	TangibleObject* tano = NULL;
+
+	for (int i = 0; i < getContainerObjectsSize(); ++i) {
+		SceneObject* obj = getObject(i);
+
+		if (obj->isTangible()) {
+			tano = (TangibleObject*)obj;
+
+			if ((tano->getMisoAsocKey() == misKey) && (!tano->isEquipped())) {
+				if (tano != NULL) {
+					removeObject(tano->getObjectID());
+
+					if (owner->isPlayer()) {
+						tano->sendDestroyTo((Player*) owner);
+					}
+
+					tano->finalize();
+				}
+			} else {
+				tano = NULL;
+			}
+		}
 	}
 }
 
-bool ContainerObject::addObject(SceneObject* obj) {
+int InventoryImplementation::getUnequippedItemCount() {
+	int count = 0;
+
+	for (int i = 0; i < getContainerObjectsSize(); ++i) {
+		SceneObject* obj = getObject(i);
+
+		if (obj->isTangible()) {
+			TangibleObject* tano = (TangibleObject*) obj;
+
+			if (!tano->isEquipped()) {
+				++count;
+
+				if (tano->isContainer())
+					count = count + tano->getContainerObjectsWithChildsSize();
+			}
+		}
+	}
+
+	return count;
+}
+
+bool InventoryImplementation::addObject(SceneObject* obj) {
 	uint64 oid = obj->getObjectID();
 
 	if (!objects.contains(oid)) {
 		obj->acquire();
 	}
 
-	objects.put(oid, obj);
+	//Make sure, this item isn't linked already to the inventory, since eg. weapons are link type 0x04 !
+	if (obj->getParent() == NULL || obj->getParent() != _this)
+		obj->setParent(_this, 0xFFFFFFFF);
 
-	obj->setParent((SceneObject*)sceneObject->_getStub());
+	objects.put(oid, obj);
 
 	return true;
 }
 
-bool ContainerObject::removeObject(int index) {
+bool InventoryImplementation::removeObject(int index) {
 	SceneObject* item = objects.get(index);
 
 	if (item == NULL)
@@ -102,7 +168,7 @@ bool ContainerObject::removeObject(int index) {
 	return true;
 }
 
-bool ContainerObject::removeObject(uint64 oid) {
+bool InventoryImplementation::removeObject(uint64 oid) {
 	SceneObject* item = objects.get(oid);
 
 	if (item == NULL)
@@ -114,32 +180,4 @@ bool ContainerObject::removeObject(uint64 oid) {
 	item->release();
 
 	return true;
-}
-
-void ContainerObject::openTo(Player* player) {
-	if (player != sceneObject->getParent() && player->getInventory() != sceneObject->getParent())
-		sendItemsTo(player);
-
-	ClientOpenContainerMessage* msg = new ClientOpenContainerMessage(sceneObject);
-	player->sendMessage(msg);
-}
-
-void ContainerObject::sendItemsTo(Player* player) {
-	for (int i = 0; i < getContainerObjectsSize(); ++i) {
-		SceneObject* item = getObject(i);
-
-		item->sendTo(player);
-	}
-}
-
-int ContainerObject::getContainerObjectsWithChildsSize() {
-	int offset = objects.size();
-
-	for (int i = 0; i < getContainerObjectsSize(); ++i) {
-		TangibleObject* nestedItem = (TangibleObject*) getObject(i);
-		if (nestedItem->isContainer())
-			offset = offset + nestedItem->getContainerObjectsSize();
-	}
-
-	return offset;
 }
