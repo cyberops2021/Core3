@@ -314,7 +314,7 @@ CREATE TABLE  `swgemu`.`character_items` (
   `appearance` mediumtext NOT NULL,
   `itemMask` smallint(5) unsigned NOT NULL default '65535',
   `optionsBitmask` int(10) unsigned NOT NULL default '0',
-  `in_bank` tinyint(3) unsigned default NULL,
+  `in_bank` tinyint(3) unsigned NOT NULL default '0',
   PRIMARY KEY  (`item_id`),
   KEY `container_ix` (`container`),
   KEY `deleted_ix` (`deleted`),
