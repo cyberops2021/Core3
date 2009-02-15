@@ -20,8 +20,6 @@
 
 CREATE DATABASE IF NOT EXISTS swgemu;
 USE swgemu;
-
-DROP TABLE IF EXISTS `swgemu`.`account`;
 CREATE TABLE  `swgemu`.`account` (
   `account_id` mediumint(8) unsigned NOT NULL auto_increment,
   `username` varchar(255) NOT NULL default '',
@@ -42,8 +40,6 @@ CREATE TABLE  `swgemu`.`account` (
 /*!40000 ALTER TABLE `account` DISABLE KEYS */;
 /*!40000 ALTER TABLE `account` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`badge`;
 CREATE TABLE  `swgemu`.`badge` (
   `badge_id` mediumint(8) unsigned NOT NULL auto_increment,
   `name` varchar(255) NOT NULL default '',
@@ -175,8 +171,6 @@ INSERT INTO `swgemu`.`badge` (`badge_id`,`name`,`value`) VALUES
  (114,'bdg_swg_emu','...has earned the SWGEmu Dev Badge.');
 /*!40000 ALTER TABLE `badge` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`badge_areas`;
 CREATE TABLE  `swgemu`.`badge_areas` (
   `uid` tinyint(1) unsigned NOT NULL auto_increment,
   `planet_id` tinyint(1) unsigned NOT NULL,
@@ -238,8 +232,6 @@ INSERT INTO `swgemu`.`badge_areas` (`uid`,`planet_id`,`x`,`y`,`z`,`badge_id`) VA
  (45,9,519,-646,81,21);
 /*!40000 ALTER TABLE `badge_areas` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`bazaar_items`;
 CREATE TABLE  `swgemu`.`bazaar_items` (
   `objectid` bigint(20) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
@@ -261,8 +253,6 @@ CREATE TABLE  `swgemu`.`bazaar_items` (
 /*!40000 ALTER TABLE `bazaar_items` DISABLE KEYS */;
 /*!40000 ALTER TABLE `bazaar_items` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`character_badge`;
 CREATE TABLE  `swgemu`.`character_badge` (
   `character_id` mediumint(8) unsigned NOT NULL default '0',
   `bitmask0` mediumint(8) unsigned NOT NULL default '0',
@@ -285,8 +275,6 @@ INSERT INTO `swgemu`.`character_badge` (`character_id`,`bitmask0`,`bitmask1`,`bi
  (32,0,524288,3,0,0,3,0,0,0,3,0,0);
 /*!40000 ALTER TABLE `character_badge` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`character_faction_points`;
 CREATE TABLE  `swgemu`.`character_faction_points` (
   `character_id` int(10) unsigned NOT NULL,
   `faction_name` varchar(25) NOT NULL,
@@ -298,8 +286,6 @@ CREATE TABLE  `swgemu`.`character_faction_points` (
 /*!40000 ALTER TABLE `character_faction_points` DISABLE KEYS */;
 /*!40000 ALTER TABLE `character_faction_points` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`character_items`;
 CREATE TABLE  `swgemu`.`character_items` (
   `item_id` bigint(20) unsigned NOT NULL,
   `character_id` bigint(20) unsigned NOT NULL,
@@ -324,8 +310,6 @@ CREATE TABLE  `swgemu`.`character_items` (
 /*!40000 ALTER TABLE `character_items` DISABLE KEYS */;
 /*!40000 ALTER TABLE `character_items` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`character_profession`;
 CREATE TABLE  `swgemu`.`character_profession` (
   `character_id` mediumint(8) unsigned NOT NULL auto_increment,
   `profession_id` int(4) NOT NULL default '0',
@@ -335,8 +319,6 @@ CREATE TABLE  `swgemu`.`character_profession` (
 /*!40000 ALTER TABLE `character_profession` DISABLE KEYS */;
 /*!40000 ALTER TABLE `character_profession` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`character_structures`;
 CREATE TABLE  `swgemu`.`character_structures` (
   `zone_id` tinyint(4) NOT NULL default '0',
   `object_id` bigint(20) NOT NULL,
@@ -364,8 +346,6 @@ CREATE TABLE  `swgemu`.`character_structures` (
 /*!40000 ALTER TABLE `character_structures` DISABLE KEYS */;
 /*!40000 ALTER TABLE `character_structures` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`characters`;
 CREATE TABLE  `swgemu`.`characters` (
   `character_id` mediumint(8) unsigned NOT NULL auto_increment,
   `account_id` mediumint(8) unsigned NOT NULL default '0',
@@ -441,8 +421,6 @@ CREATE TABLE  `swgemu`.`characters` (
 /*!40000 ALTER TABLE `characters` DISABLE KEYS */;
 /*!40000 ALTER TABLE `characters` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`clone_spawn_points`;
 CREATE TABLE  `swgemu`.`clone_spawn_points` (
   `id` int(11) NOT NULL auto_increment,
   `oX` float NOT NULL default '0',
@@ -616,8 +594,6 @@ INSERT INTO `swgemu`.`clone_spawn_points` (`id`,`oX`,`oZ`,`oY`,`oW`,`X`,`Z`,`Y`,
  (157,0,0,0.7,-0.7,3.1,0.125,-3.7,3035598,9);
 /*!40000 ALTER TABLE `clone_spawn_points` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`consentlist`;
 CREATE TABLE  `swgemu`.`consentlist` (
   `id` mediumint(8) unsigned NOT NULL auto_increment,
   `character_id` mediumint(8) unsigned NOT NULL default '0',
@@ -628,8 +604,6 @@ CREATE TABLE  `swgemu`.`consentlist` (
 /*!40000 ALTER TABLE `consentlist` DISABLE KEYS */;
 /*!40000 ALTER TABLE `consentlist` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`cs_tickets`;
 CREATE TABLE  `swgemu`.`cs_tickets` (
   `ticket_id` int(10) unsigned NOT NULL auto_increment,
   `category_main` int(10) unsigned NOT NULL default '0',
@@ -656,8 +630,6 @@ CREATE TABLE  `swgemu`.`cs_tickets` (
 /*!40000 ALTER TABLE `cs_tickets` DISABLE KEYS */;
 /*!40000 ALTER TABLE `cs_tickets` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`customization_data`;
 CREATE TABLE  `swgemu`.`customization_data` (
   `speciesGender` varchar(30) NOT NULL default '',
   `customizationGroup` varchar(15) NOT NULL default '',
@@ -1228,8 +1200,6 @@ INSERT INTO `swgemu`.`customization_data` (`speciesGender`,`customizationGroup`,
  ('sullustan_male','markings','color','pattern_color','index_color_patterns',0,0,'','','',250,1,1,0,0,'markings',5,'cosmetic',0,1.00,1.00);
 /*!40000 ALTER TABLE `customization_data` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`datapad`;
 CREATE TABLE  `swgemu`.`datapad` (
   `inx` bigint(20) unsigned NOT NULL auto_increment,
   `character_id` bigint(20) unsigned NOT NULL,
@@ -1249,8 +1219,6 @@ CREATE TABLE  `swgemu`.`datapad` (
 /*!40000 ALTER TABLE `datapad` DISABLE KEYS */;
 /*!40000 ALTER TABLE `datapad` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`draft_schematics`;
 CREATE TABLE  `swgemu`.`draft_schematics` (
   `draftschematic_id` bigint(20) unsigned NOT NULL,
   `name` text NOT NULL,
@@ -1302,8 +1270,6 @@ INSERT INTO `swgemu`.`draft_schematics` (`draftschematic_id`,`name`,`object_crc`
  (20,'Tantel Armor Chestplate',1482977914,'craftArmorPersonalGroupC',30,3,'craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n, craft_armor_ingredients_n','unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown, unknown','0, 0, 0, 0, 0, 0, 0, 0, 0','bone_avian, hide, hide_bristley, polymer, aluminum, hide_bristley, object/tangible/component/clothing/shared_synthetic_cloth.iff, object/tangible/component/clothing/shared_reinforced_fiber_panels.iff, object/tangible/component/armor/shared_armor_segment_zam.iff','40, 40, 40, 25, 25, 25, 1, 1, 4','1, 1, 1, 1, 2, 2, 2, 2, 2','XX, XX, XX, XX, OQ, UT, OQ, UT, OQ, SR, OQ, UT, OQ, SR','0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1','','',2);
 /*!40000 ALTER TABLE `draft_schematics` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`faction`;
 CREATE TABLE  `swgemu`.`faction` (
   `faction_id` int(4) unsigned NOT NULL auto_increment,
   `faction` varchar(45) default NULL,
@@ -1378,8 +1344,6 @@ INSERT INTO `swgemu`.`faction` (`faction_id`,`faction`) VALUES
  (63,'Valarian');
 /*!40000 ALTER TABLE `faction` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`friendlist`;
 CREATE TABLE  `swgemu`.`friendlist` (
   `character_id` mediumint(8) unsigned NOT NULL,
   `friend_id` mediumint(8) NOT NULL,
@@ -1394,8 +1358,6 @@ CREATE TABLE  `swgemu`.`friendlist` (
 /*!40000 ALTER TABLE `friendlist` DISABLE KEYS */;
 /*!40000 ALTER TABLE `friendlist` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`friendlist_reverse`;
 CREATE TABLE  `swgemu`.`friendlist_reverse` (
   `charID` mediumint(8) unsigned NOT NULL auto_increment,
   `gotMePOID` bigint(20) NOT NULL default '0',
@@ -1405,8 +1367,6 @@ CREATE TABLE  `swgemu`.`friendlist_reverse` (
 /*!40000 ALTER TABLE `friendlist_reverse` DISABLE KEYS */;
 /*!40000 ALTER TABLE `friendlist_reverse` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`galaxy`;
 CREATE TABLE  `swgemu`.`galaxy` (
   `galaxy_id` int(5) NOT NULL auto_increment,
   `name` varchar(50) NOT NULL default '',
@@ -1422,8 +1382,6 @@ INSERT INTO `swgemu`.`galaxy` (`galaxy_id`,`name`,`address`,`port`,`pingport`,`p
  (2,'Core3','127.0.0.1',44463,44462,0);
 /*!40000 ALTER TABLE `galaxy` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`guilds`;
 CREATE TABLE  `swgemu`.`guilds` (
   `guild_id` int(11) unsigned NOT NULL auto_increment,
   `guild_tag` varchar(255) NOT NULL default 'DEFAULT',
@@ -1445,8 +1403,6 @@ INSERT INTO `swgemu`.`guilds` (`guild_id`,`guild_tag`,`guild_name`,`members`,`cr
  (2,'DEV','Developers',0000,NULL,0,NULL);
 /*!40000 ALTER TABLE `guilds` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`guilds_sponsoring`;
 CREATE TABLE  `swgemu`.`guilds_sponsoring` (
   `guild_id` int(11) unsigned NOT NULL,
   `guild_name` varchar(255) NOT NULL default 'Default Guild',
@@ -1463,8 +1419,6 @@ CREATE TABLE  `swgemu`.`guilds_sponsoring` (
 /*!40000 ALTER TABLE `guilds_sponsoring` DISABLE KEYS */;
 /*!40000 ALTER TABLE `guilds_sponsoring` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`ignorelist`;
 CREATE TABLE  `swgemu`.`ignorelist` (
   `character_id` mediumint(8) unsigned NOT NULL,
   `ignore_id` mediumint(8) NOT NULL,
@@ -1479,8 +1433,6 @@ CREATE TABLE  `swgemu`.`ignorelist` (
 /*!40000 ALTER TABLE `ignorelist` DISABLE KEYS */;
 /*!40000 ALTER TABLE `ignorelist` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`knowledgebase`;
 CREATE TABLE  `swgemu`.`knowledgebase` (
   `article_id` int(11) NOT NULL auto_increment,
   `article_title` varchar(45) NOT NULL default 'Empty Title',
@@ -1494,8 +1446,6 @@ INSERT INTO `swgemu`.`knowledgebase` (`article_id`,`article_title`,`article_text
  (2,'Test Title 2','Empty Body');
 /*!40000 ALTER TABLE `knowledgebase` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`lootgroup_weight`;
 CREATE TABLE  `swgemu`.`lootgroup_weight` (
   `lootgroup` int(4) unsigned NOT NULL,
   `weight` tinyint(3) default NULL,
@@ -2014,8 +1964,6 @@ INSERT INTO `swgemu`.`lootgroup_weight` (`lootgroup`,`weight`,`max_drop_from_thi
  (0,3,3);
 /*!40000 ALTER TABLE `lootgroup_weight` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`loottable`;
 CREATE TABLE  `swgemu`.`loottable` (
   `lootgroup` tinyint(4) default NULL,
   `name` text NOT NULL,
@@ -2450,8 +2398,6 @@ INSERT INTO `swgemu`.`loottable` (`lootgroup`,`name`,`template_crc`,`template_ty
  (30,'Vibro Lance',22784428,131081,'',0,'pointBlankAccuracy=-24:idealRange=3:maxDamage=196:cert=cert_lance_vibrolance:category=16:maxRangeAccuracy=-24:attackSpeed=7:woundsRatio=26:idealAccuracy=-24:mindCost=38:maxRange=5:type=3:damageType=3:armorPiercing=1:condition=600/750:pointBlankRange=0:healthCost=58:minDamage=50:actionCost=65:','',15,70,'0','0',0,0,'all',426,65535);
 /*!40000 ALTER TABLE `loottable` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`mail`;
 CREATE TABLE  `swgemu`.`mail` (
   `mail_id` int(11) NOT NULL auto_increment,
   `sender_name` text NOT NULL,
@@ -2467,8 +2413,6 @@ CREATE TABLE  `swgemu`.`mail` (
 /*!40000 ALTER TABLE `mail` DISABLE KEYS */;
 /*!40000 ALTER TABLE `mail` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`mail_attachment`;
 CREATE TABLE  `swgemu`.`mail_attachment` (
   `attachment_id` mediumint(8) unsigned NOT NULL,
   `planet_id` mediumint(8) unsigned NOT NULL,
@@ -2483,8 +2427,6 @@ CREATE TABLE  `swgemu`.`mail_attachment` (
 /*!40000 ALTER TABLE `mail_attachment` DISABLE KEYS */;
 /*!40000 ALTER TABLE `mail_attachment` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`no_build_areas`;
 CREATE TABLE  `swgemu`.`no_build_areas` (
   `zoneid` tinyint(3) unsigned NOT NULL,
   `x` float NOT NULL,
@@ -2678,8 +2620,6 @@ INSERT INTO `swgemu`.`no_build_areas` (`zoneid`,`x`,`y`,`radius`) VALUES
  (9,-3226,-3139,300);
 /*!40000 ALTER TABLE `no_build_areas` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`no_build_zones`;
 CREATE TABLE  `swgemu`.`no_build_zones` (
   `nbz_id` int(11) unsigned NOT NULL auto_increment,
   `planet_id` int(11) NOT NULL default '0',
@@ -2885,8 +2825,6 @@ INSERT INTO `swgemu`.`no_build_zones` (`nbz_id`,`planet_id`,`zone_name`,`zone_fi
  (181,9,'massassi','yavin4','poi',-3226,-3139,300);
 /*!40000 ALTER TABLE `no_build_zones` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`npc_faction`;
 CREATE TABLE  `swgemu`.`npc_faction` (
   `npc_group_id` int(10) unsigned NOT NULL auto_increment,
   `faction_id` int(4) unsigned NOT NULL default '0',
@@ -2897,8 +2835,6 @@ CREATE TABLE  `swgemu`.`npc_faction` (
 /*!40000 ALTER TABLE `npc_faction` DISABLE KEYS */;
 /*!40000 ALTER TABLE `npc_faction` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`object_crc_string_table`;
 CREATE TABLE  `swgemu`.`object_crc_string_table` (
   `decimal` bigint(20) NOT NULL default '0',
   `hex` varchar(15) NOT NULL default '',
@@ -19962,8 +19898,6 @@ INSERT INTO `swgemu`.`object_crc_string_table` (`decimal`,`hex`,`path`) VALUES
  (1619506188,'6087B40C','object/weapon/trap/shared_eqp_weapon_auto_laser_trap.iff');
 /*!40000 ALTER TABLE `object_crc_string_table` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`performance`;
 CREATE TABLE  `swgemu`.`performance` (
   `performanceName` varchar(11) default NULL,
   `instrumentAudioId` int(10) unsigned default NULL,
@@ -20224,8 +20158,6 @@ INSERT INTO `swgemu`.`performance` (`performanceName`,`instrumentAudioId`,`requi
  ('tumble2',0,'','','startDance+tumble2',32,48,10,-1788534963,0,34,10,6,'healing_dance_ability',90,'','','','','','','','','','','',154);
 /*!40000 ALTER TABLE `performance` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`performance_effect`;
 CREATE TABLE  `swgemu`.`performance_effect` (
   `effectName` varchar(14) default NULL,
   `performanceType` varchar(11) default NULL,
@@ -20262,8 +20194,6 @@ INSERT INTO `swgemu`.`performance_effect` (`effectName`,`performanceType`,`requi
  ('Ventriloquism3','music',75,1,'target',10,90);
 /*!40000 ALTER TABLE `performance_effect` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`planet`;
 CREATE TABLE  `swgemu`.`planet` (
   `planet_id` int(2) NOT NULL,
   `name` varchar(25) NOT NULL,
@@ -20299,8 +20229,6 @@ INSERT INTO `swgemu`.`planet` (`planet_id`,`name`) VALUES
  (24,'space_yavin4');
 /*!40000 ALTER TABLE `planet` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`planetmap`;
 CREATE TABLE  `swgemu`.`planetmap` (
   `index` int(10) unsigned NOT NULL auto_increment,
   `planet` varchar(45) NOT NULL,
@@ -21072,8 +21000,6 @@ INSERT INTO `swgemu`.`planetmap` (`index`,`planet`,`location_name`,`x`,`y`,`type
  (721,'naboo','Theed',-5885,4305,5,0,0);
 /*!40000 ALTER TABLE `planetmap` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`player_storage`;
 CREATE TABLE  `swgemu`.`player_storage` (
   `item_id` bigint(20) unsigned NOT NULL,
   `structure_id` bigint(20) unsigned NOT NULL,
@@ -21104,8 +21030,6 @@ CREATE TABLE  `swgemu`.`player_storage` (
 /*!40000 ALTER TABLE `player_storage` DISABLE KEYS */;
 /*!40000 ALTER TABLE `player_storage` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`profession`;
 CREATE TABLE  `swgemu`.`profession` (
   `profession_id` int(4) unsigned NOT NULL auto_increment,
   `name` varchar(45) NOT NULL default '',
@@ -21115,8 +21039,6 @@ CREATE TABLE  `swgemu`.`profession` (
 /*!40000 ALTER TABLE `profession` DISABLE KEYS */;
 /*!40000 ALTER TABLE `profession` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`recruiters`;
 CREATE TABLE  `swgemu`.`recruiters` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `planet_id` tinyint(1) unsigned NOT NULL,
@@ -21152,8 +21074,6 @@ INSERT INTO `swgemu`.`recruiters` (`id`,`planet_id`,`x`,`y`,`z`,`oY`,`oW`,`cell_
  (17,5,4826,-4696,0,0.72,-0.69,0,2);
 /*!40000 ALTER TABLE `recruiters` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`resource_data`;
 CREATE TABLE  `swgemu`.`resource_data` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_name` varchar(255) NOT NULL,
@@ -22504,8 +22424,6 @@ INSERT INTO `swgemu`.`resource_data` (`INDEX`,`resource_name`,`resource_type`,`c
  (1047,'Zoefu','fiberplast_yavin4','Inorganic','Chemical','Fiberplast','','','','Yavinian Fiberplast','945','945','0','0','37','1','291','0','0','0','0',1232689190,0,'object/resource_container/inorganic_chemicals.iff',422061124);
 /*!40000 ALTER TABLE `resource_data` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`resource_spawns`;
 CREATE TABLE  `swgemu`.`resource_spawns` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_name` varchar(255) NOT NULL,
@@ -36928,8 +36846,6 @@ INSERT INTO `swgemu`.`resource_spawns` (`INDEX`,`resource_name`,`planet_id`,`x`,
  (38505,'Zoefu',9,4511,-5129,967,50,1233256023,'native');
 /*!40000 ALTER TABLE `resource_spawns` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`resource_tree`;
 CREATE TABLE  `swgemu`.`resource_tree` (
   `INDEX` int(11) NOT NULL auto_increment,
   `resource_type` varchar(255) NOT NULL,
@@ -37875,8 +37791,6 @@ INSERT INTO `swgemu`.`resource_tree` (`INDEX`,`resource_type`,`class_1`,`class_2
  (590,'radioactive_polymetric','Energy','Radioactive Energy','Radioactive ','Known Radioactive','','JTL','High Grade Polymetric Radioactive',1,1,1,1,'res_decay_resist','res_quality','res_potential_energy','','','','','','','','',1,1000,1,1000,1,1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,'object/resource_container/energy_radioactive.iff',3244320243,'mineral_resource',0);
 /*!40000 ALTER TABLE `resource_tree` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`skills`;
 CREATE TABLE  `swgemu`.`skills` (
   `skill_id` int(10) unsigned NOT NULL auto_increment,
   `skill_name` varchar(52) default NULL,
@@ -39369,8 +39283,6 @@ INSERT INTO `swgemu`.`skills` (`skill_id`,`skill_name`,`skill_parent`,`skill_gra
  (1068,'pilot_spacetest','pilot','fourByFour',1,1,0,0,0,0,0,' ',' ',' ',0,0,' ',0,' ',' ','none',' ','droid+droidcommand_testweaponoverload1,droidcommand_testweaponoverload2,droidcommand_testweaponoverload3,droidcommand_testweaponoverload4,droidcommand_testweaponnormalize,droidcommand_testfronttobackfifty,droidcommand_testbacktofrontfifty',' ',' ',' ',1,0,NULL);
 /*!40000 ALTER TABLE `skills` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`starting_location`;
 CREATE TABLE  `swgemu`.`starting_location` (
   `location_id` int(2) unsigned NOT NULL auto_increment,
   `location` varchar(45) NOT NULL,
@@ -39393,8 +39305,6 @@ INSERT INTO `swgemu`.`starting_location` (`location_id`,`location`,`planet_id`,`
  (13,'theed',6,-4856.000000,0.000000,4162.000000,'Theed, Naboo',3,180);
 /*!40000 ALTER TABLE `starting_location` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`staticobjects`;
 CREATE TABLE  `swgemu`.`staticobjects` (
   `zoneid` tinyint(4) NOT NULL,
   `objectid` bigint(20) NOT NULL,
@@ -100781,8 +100691,6 @@ INSERT INTO `swgemu`.`staticobjects` (`zoneid`,`objectid`,`parentid`,`file`,`oX`
  (42,2203318222975,2203318222974,'object/cell/shared_cell.iff',0,0,0,1,0,0,0,0,0);
 /*!40000 ALTER TABLE `staticobjects` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`statictangibleobjects`;
 CREATE TABLE  `swgemu`.`statictangibleobjects` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `zoneid` tinyint(4) NOT NULL,
@@ -100808,8 +100716,6 @@ INSERT INTO `swgemu`.`statictangibleobjects` (`id`,`zoneid`,`parentid`,`name`,`t
  (1,5,0,'Jeff Freeman Memorial Fountain','object/tangible/furniture/city/shared_fountain_heroic.iff',8203,'fountain_heroic',0,-0.401868,0,0.915698,-4879.48,6,4139.49);
 /*!40000 ALTER TABLE `statictangibleobjects` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`template_items`;
 CREATE TABLE  `swgemu`.`template_items` (
   `template_id` mediumint(8) unsigned NOT NULL auto_increment,
   `name` varchar(128) NOT NULL,
@@ -108508,8 +108414,6 @@ INSERT INTO `swgemu`.`template_items` (`template_id`,`name`) VALUES
  (7149,'object/weapon/ranged/creature/shared_creature_spit_large_green.iff');
 /*!40000 ALTER TABLE `template_items` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`terminals`;
 CREATE TABLE  `swgemu`.`terminals` (
   `id` int(11) NOT NULL auto_increment,
   `parentid` bigint(20) NOT NULL default '0',
@@ -108627,8 +108531,6 @@ INSERT INTO `swgemu`.`terminals` (`id`,`parentid`,`type`,`oX`,`oZ`,`oY`,`oW`,`X`
  (102,0,2,0,0,0.340543,0.940229,-5129.6,6.4,4164.21,5,'');
 /*!40000 ALTER TABLE `terminals` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`ticket_collectors`;
 CREATE TABLE  `swgemu`.`ticket_collectors` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `transport_id` int(11) NOT NULL,
@@ -108705,8 +108607,6 @@ INSERT INTO `swgemu`.`ticket_collectors` (`id`,`transport_id`,`parent`,`pos_x`,`
  (51,51,0,-5388,-2173,80,0.98,-0.19);
 /*!40000 ALTER TABLE `ticket_collectors` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`ticket_terminals`;
 CREATE TABLE  `swgemu`.`ticket_terminals` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `transport_id` int(11) NOT NULL,
@@ -108834,8 +108734,6 @@ INSERT INTO `swgemu`.`ticket_terminals` (`id`,`transport_id`,`parent`,`pos_x`,`p
  (105,57,1026828,-13.0021,51.1865,0.639421,0.332372,0.943148);
 /*!40000 ALTER TABLE `ticket_terminals` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`trainers`;
 CREATE TABLE  `swgemu`.`trainers` (
   `Location` varchar(64) default NULL,
   `Trainer Type` varchar(64) default NULL,
@@ -108853,7 +108751,7 @@ CREATE TABLE  `swgemu`.`trainers` (
   `pix` int(10) unsigned NOT NULL auto_increment,
   PRIMARY KEY  (`pix`),
   KEY `planetIX` (`Planet`)
-) ENGINE=MyISAM AUTO_INCREMENT=523 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=530 DEFAULT CHARSET=latin1;
 
 /*!40000 ALTER TABLE `trainers` DISABLE KEYS */;
 INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
@@ -108947,8 +108845,8 @@ INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`
  ('Bela Vista','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',0,2365770,-10.9732,-13.174,1.13306,-0.048996,0.998799,79),
  ('Kor Vella','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',0,2955427,-11.4485,-13.1718,1.13306,0.456552,0.889697,80),
  ('Kor Vella','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',0,0,-3193,2799,31,0.983168,-0.182703,81),
- ('Keren','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',5,1650635,-11.4606,-12.651,1.13306,-0.03451,0.999404,82),
- ('Keren','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',5,1650535,-10.9094,-12.1238,1.13306,-0.0136103,0.999907,83);
+ ('Keren','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',5,0,1890,2725,1.13306,0,1,82),
+ ('Keren','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',5,1650535,-11,-12.5,1.13306,0,1,83);
 INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Theed','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',5,1692075,-11,-13,1,0,1,84),
  ('Moenia','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',5,1717535,-11.0386,-13.0273,1.13306,0.0021525,0.999998,85),
@@ -109175,278 +109073,283 @@ INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`
  ('Narmle','trainer_combatmedic','science_combatmedic','8695A7A6','7320190E','9EA14EDE',6,4635420,26.6041,5.45989,0.26,0.662055,0.749455,282),
  ('Restuss','trainer_combatmedic','science_combatmedic','8695A7A6','7320190E','9EA14EDE',6,4635728,26.6144,5.52845,0.26,0.66869,0.743541,283),
  ('Restuss','trainer_combatmedic','science_combatmedic','8695A7A6','7320190E','9EA14EDE',6,4635732,-16.3425,10.8489,0.26,0.994935,0.100523,284),
- ('Dee\'ja Peak','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,4980,-1425,0,0,0,285);
+ ('Dee\'ja Peak','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,4980,-1425,0,1,0,285);
 INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
- ('Dee\'ja Peak','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,4872.5,-1443.54,360.6,-0.0138238,0.999904,286),
- ('Kaadara','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,174164,-0.143279,-14.2486,1.13306,-0.0278408,0.999612,287),
- ('Moenia','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,4793.99,-4730.01,4.17,-0.112939,0.993602,288),
- ('Moenia','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,1717534,-0.153872,-14.2719,1.13306,-0.00189265,0.999998,289),
+ ('Dee\'ja Peak','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,4874,-1444,360.6,0,1,286),
+ ('Kaadara','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,1741461,0,-13,1.13306,0,1,287),
+ ('Moenia','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,4794,-4730,4.17,0,1,288),
+ ('Moenia','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,1717534,0,-13,1.13306,0,1,289),
  ('Theed','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,-4674,3995,0,0,0,290),
  ('Theed','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,-5982,4254,0,0,0,291),
- ('Theed','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,-4863.97,4080.07,6,-0.0214281,0.99977,292),
- ('Theed','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,1692074,0.010459,-14.2572,1.13306,0.0506794,0.998715,293);
+ ('Theed','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,-4863,4079,6,0,1,292),
+ ('Theed','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,1692074,0,-13,1.13306,0,1,293),
+ ('Keren','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,1538,2751,0,0,0,294);
 INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
- ('Keren','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,1538,2751,0,0,0,294),
- ('Keren','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,1823,2614,0,0,0,295),
- ('Keren','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,1992,2515,0,0,0,296),
- ('Dearic','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',7,0,540,-2885,0,0,0,297),
+ ('Keren','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,1650534,0,-13,0,0,1,295),
+ ('Keren','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,1992,2515,0,1,0,296),
+ ('Dearic','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',7,0,540,-2885,0,0,1,297),
  ('Dearic','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',7,0,586,-2873,6,0,1,298),
- ('Nashal','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',7,0,4365.85,5294.42,2,0.707353,-0.70686,299),
+ ('Nashal','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',7,0,4366,5384,2,0.7,-0.7,299),
  ('Bela Vistal','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,0,6770,-5714,0,0,0,300),
- ('Bela Vistal','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,2365769,-0.188502,-14.1206,1.13306,0.0676083,0.997712,301),
- ('Kor Vella','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,0,-3410,3396,0,0,0,302);
+ ('Bela Vistal','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,2365769,0,-13,1.13306,0,1,301),
+ ('Kor Vella','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,2955426,0,-13,0,0,1,302),
+ ('Kor Vella','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,0,-3130,2791,0,0,0,303);
 INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
- ('Kor Vella','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,0,-3130,2791,0,0,0,303),
  ('Coronet','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,0,-165,-4746,28,0.717277,0.696708,304),
- ('Coronet','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,1855507,0.0381822,-13.9475,1.13306,0.0725504,0.997365,305),
- ('Doaba Guerfel','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,3075360,0.00582435,-14.1713,1.13306,-0.0660034,0.997819,306),
- ('Tyrena ','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,1935444,-0.167819,-13.7891,1.13306,-0.0213495,0.999772,307),
- ('Bestine','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,0,-1272,-3538,0,0,0,308),
- ('Bestine','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,1028552,-0.236837,-13.0978,1.13306,-0.0649631,0.997888,309),
- ('Mos Eisley','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,0,3506,-4760,5,0.987238,-0.159249,310);
+ ('Coronet','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,1855507,0,-13,1.13306,0,1,305),
+ ('Doaba Guerfel','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,3075360,0,-13,1.13306,0,1,306),
+ ('Tyrena ','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,1935444,0,-13,1.13306,0,1,307),
+ ('Bestine','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,0,-1272,-3538,0,1,0,308),
+ ('Bestine','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,1028552,0,-13,1.13306,0,1,309),
+ ('Mos Eisley','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,0,3506,-4760,5,1,0,310),
+ ('Mos Eisley','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,1189638,0,-13,1.13306,0,1,311),
+ ('Mos Entha','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,1153565,0,-13,0,0,1,312);
 INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
- ('Mos Eisley','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,1189638,0.235454,-13.034,1.13306,0.525455,0.850821,311),
- ('Mos Entha','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,0,1376,3044,0,0,0,312),
  ('Mos Entha','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,0,1321,3105,0,0,0,313),
- ('Mos Espa','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,1255993,0.0360254,-14.1855,1.13306,0.000208771,1,314),
- ('Mos Espa','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,0,-2930.96,2120.13,5,0.684345,0.729159,315),
- ('Narmle','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',6,4615374,-0.168973,-14.1272,1.13306,0.99589,0.0905709,316),
- ('Restuss','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,5446,5815,0,0,0,317),
- ('Restuss','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',6,0,5528,5641,80.7357,0.56351,0.82495,318);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
- ('Rebel Outpost','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',6,4505601,-2.5,2.8018,2.01003,0.718515,0.695512,319),
+ ('Mos Espa','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,1255993,0,-13,1.13306,0,1,314),
+ ('Mos Espa','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',8,0,-2931,2121,5,0.7,0.7,315),
+ ('Narmle','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',6,4615374,0,-13,1.13306,0,1,316),
+ ('Restuss','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',6,4635690,0,-13,0,0,1,317),
+ ('Restuss','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',6,0,5528,5641,80.7357,0.7,0.7,318),
+ ('Rebel Outpost','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',6,4505601,-2.5,3,2.01003,0.7,0.7,319),
  ('Moenia','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,0,4808,-4724,4.17,0,1,320),
- ('Moenia','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1717506,-17.2255,-1.2311,0.26,0.96553,0.26029,321),
+ ('Moenia','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1717506,-17.2255,-1.2311,0.26,0.96553,0.26029,321);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Moenia','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1717502,16.6671,5.91467,0.26,0.99975,0.0223254,322),
  ('Theed','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1697360,13.7645,4.7703,0.26,0.96395,0.26605,323),
  ('Theed','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,0,-4592,4125,6,0.94709,-0.32074,324),
  ('Theed','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1697364,-17.1613,-0.82884,0.26,0.994029,0.109115,325),
- ('Kaadara','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1741443,-16.43,0.33,0.26,0.998,0.057,326);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Kaadara','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1741443,-16.43,0.33,0.26,0.998,0.057,326),
  ('Kaadara','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1741439,15.4875,6.2929,0.26,-0.1694,0.9855,327),
  ('Karen','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,0,1982,2598,12,0,1,328),
- ('Keren','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1661370,-16.956,1.559,0.26,-0.2213,0.9774,329),
+ ('Keren','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1661370,-16.956,1.559,0.26,-0.2213,0.9774,329);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Keren','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',5,1661366,14.1386,3.567,0.26,0.8991,0.4377,330),
  ('Mos Entha','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',8,1153582,14.1436,4.6585,0.26,0.99626,-0.08629,331),
  ('Mos Entha','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',8,1153586,-17.0194,-1.8269,0.26,0.97629,0.2643,332),
  ('Mos Espa','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',8,0,-3158,2122,5,0.04266,0.99908,333),
- ('Mos Espa','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',8,0,-2931,2116,5,0.53889,0.84237,334);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Mos Espa','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',8,0,-2931,2116,5,0.53889,0.84237,334),
  ('Mos Eisley','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',8,0,3522,-4774,5,0.98418,-0.17712,335),
  ('Wayfar','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',8,1499420,-8.4035,8.19643,1.00421,0.82032,0.571892,336),
- ('Nym\'s Stronghold','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',4,2745870,-16.0068,-2.42861,0.26,0.854309,0.519765,337),
+ ('Nym\'s Stronghold','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',4,2745870,-16.0068,-2.42861,0.26,0.854309,0.519765,337);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Narmle','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',6,4635420,13.545,5.01144,0.26,0.991878,0.127195,338),
  ('Narmle','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',6,4635424,-17.4597,0.00620247,0.26,0.031729,0.999496,339),
  ('Restuss','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',6,4635728,13.2069,4.92654,0.26,0.991233,0.132125,340),
  ('Dearic','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',7,3305354,-1.8295,0.51949,0.184067,-0.688502,0.725234,341),
- ('Kor Vella','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,0,-3139,2792,31,0,1,342);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Kor Vella','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,0,-3139,2792,31,0,1,342),
  ('Kor Vella','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,3375392,-12.6494,2.16918,0.18406,0.82221,0.56917,343),
  ('Coronet','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,1855535,-17.7359,-0.58142,0.26,0.92937,0.36913,344),
- ('Coronet','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,1855531,14.2688,4.66124,0.26,0.983456,0.181149,345),
+ ('Coronet','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,1855531,14.2688,4.66124,0.26,0.983456,0.181149,345);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Coronet','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,0,-33,-4422,28,0.58742,0.80917,346),
  ('Doaba Guerfel','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,0,3341,5517,308,-0.40101,0.91607,347),
  ('Tyrena','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,1935835,-15.9755,0.30427,0.26,0.13124,0.99135,348),
  ('Tyrena','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,1935831,13.8906,3.8275,0.26,0.99968,-0.02512,349),
- ('Tyrena','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,0,-5027,-2311,21,0.72954,-0.683928,350);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Tyrena','trainer_medic','science_medic','6C377A13','B720D284','FE2DB509',0,0,-5027,-2311,21,0.72954,-0.683928,350),
  ('Bela Vistal','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',0,2365799,6872,-5429,331,0.698149,0.715952,351),
  ('Coronet','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',0,0,37,-4455,29,0.745399,0.666619,352),
- ('Doaba Guerfel','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',0,3075411,3127,5291,301,0.628578,0.777747,353),
+ ('Doaba Guerfel','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',0,3075411,3127,5291,301,0.628578,0.777747,353);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Kor Vella','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',0,2955399,-3701,3071,86,0.652466,0.757818,354),
  ('Tyrena','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',0,0,-5118,-2337,21,0.908741,0.41736,355),
  ('Tyrena','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',0,1935462,-5521,-2666,21,0.714135,0.700008,356),
  ('Deeja Peak','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',5,0,4771,-1272,0,0,0,357),
- ('Deeja Peak','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',5,1685237,4745,-1275,330,0.737778,-0.675043,358);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Deeja Peak','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',5,1685237,4745,-1275,330,0.737778,-0.675043,358),
  ('Kaadara','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',5,1741469,5139,6813,-192,0.937155,-0.348914,359),
  ('Keren','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',5,0,1890,2767,0,0,0,360),
- ('Keren','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',5,1650642,1801,2565,12,0.762712,-0.646738,361),
+ ('Keren','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',5,1650642,1801,2565,12,0.762712,-0.646738,361);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Moenia','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',5,1717554,4792,-5000,3.8,0.616422,0.715629,362),
  ('Theed','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',5,1692092,-5465,3996,6,0.656207,0.754581,363),
  ('Dearic','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',7,0,351,-2875.9,6,-0.0205642,0.999789,364),
  ('Dearic','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',7,3175560,-12.427,3.69917,1.13306,0.988756,0.149535,365),
- ('Nashal','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',7,4265414,-12.3664,3.6764,1.13306,0.996777,0.0802227,366);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Nashal','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',7,4265414,-12.3664,3.6764,1.13306,0.996777,0.0802227,366),
  ('Bestine','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',8,1028580,-12.8138,3.64955,1.13306,0.946147,0.0323737,367),
  ('Mos Eisley','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',8,1189577,-12.2888,3.6161,1.13306,0.99684,0.0794398,368),
- ('Mos Entha','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',8,0,1247,3248,4,0.140535,0.990073,369),
+ ('Mos Entha','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',8,0,1247,3248,4,0.140535,0.990073,369);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Mos Entha','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',8,1154182,-12.6959,3.59178,1.13306,0.973241,0.229786,370),
  ('Mos Espa','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',8,1256020,-12.5142,3.63893,1.13306,0.991316,0.131503,371),
  ('Narmle','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',6,4635412,12.3529,3.8187,1.13306,0.998368,0.0571081,372),
- ('Narmle','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',6,0,-5248,-2358,80,0.311946,0.9501,373);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Narmle','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',6,0,-5248,-2358,80,0.311946,0.9501,373),
  ('Restuss','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',6,4635773,-12.491,3.55001,1.13306,0.979196,0.202916,374),
  ('Rebel Outpost','trainer_armorsmith','crafting_armorsmith','3EBD5107','E5AAF990','ACA79E1D',6,0,3676,-6419,94.2,0.479154,0.877731,375),
- ('Moenia','trainer_tailor','crafting_tailor','A4D79FB6','7FC03721','36CD50AC',5,0,4858,-4799,0,0,0,376),
+ ('Moenia','trainer_tailor','crafting_tailor','A4D79FB6','7FC03721','36CD50AC',5,0,4858,-4799,0,0,0,376);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Restuss','trainer_tailor','crafting_tailor','A4D79FB6','7FC03721','36CD50AC',6,0,5209,5729,0,0,0,377),
  ('Dearic','trainer_tailor','crafting_tailor','A4D79FB6','7FC03721','36CD50AC',7,0,369,-2877,0,0,0,378),
  ('Bestine','trainer_tailor','crafting_tailor','A4D79FB6','7FC03721','36CD50AC',8,0,-1348,-3677,0,0,0,379),
  ('Doaba Guerfel','trainer_tailor','crafting_tailor','A4D79FB6','7FC03721','36CD50AC',0,0,3077,5251,300,0,1,380),
  ('Nashal','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',7,4265415,11,-14.5,1.133,0,1,381),
- ('Nashal','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',7,0,4220,5127,0,0.557713,0.830034,382);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Nashal','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',7,0,4220,5127,0,0.557713,0.830034,382),
  ('Dearic','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',7,3175561,11,-14.5,1.133,0,1,383),
  ('Dee\'ja Peak ','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',5,1685238,11,-14.5,1.133,0,1,384),
- ('Keren','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',5,1650543,11,-14.5,1.133,0,1,385),
+ ('Keren','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',5,1650543,11,-14.5,1.133,0,1,385);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Kaadara','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',5,1741470,11,-14.5,1.133,0,1,386),
  ('Moenia','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',5,1717555,11,-14.5,1.133,0,1,387),
  ('Moenia','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',5,0,4779,-4973,3.75,0,1,388),
  ('Theed','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',5,1692093,11,-14.5,1.133,0,1,389),
  ('Theed','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',5,0,-4931,4020,0,0.332242,0.943194,390),
- ('Bela Vistal','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',0,2365800,11,-14.5,1.133,0,1,391);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Bela Vistal','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',0,2365800,11,-14.5,1.133,0,1,391),
  ('Coronet','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',0,1855526,11,-14.5,1.133,0,1,392),
  ('Doaba Guefel','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',0,3075412,11,-14.5,1.133,0,1,393),
- ('Kor Vella','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',0,2955400,11,-14.5,1.133,0,1,394),
+ ('Kor Vella','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',0,2955400,11,-14.5,1.133,0,1,394);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Tyrena','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',0,1935463,11,-14.5,1.133,0,1,395),
  ('Bestine','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',8,1028581,11,-14.5,1.133,0,1,396),
  ('Mos Eisley','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',8,1189578,11,-14.5,1.133,0,1,397),
  ('Mos Entha','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',8,1154183,11,-14.5,1.133,0,1,398),
- ('Mos Espa','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',8,1256021,11,-14.5,1.133,0,1,399);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Mos Espa','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',8,1256021,11,-14.5,1.133,0,1,399),
  ('Mos Espa','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',8,0,2872,2159,5,1,0,400),
  ('Narmle','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',6,4635413,11,-14.5,1.133,0,1,401),
  ('Restuss','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',6,4635774,11,-14.5,1.133,0,1,402),
- ('Restuss','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',6,0,5510,5663,80,0.957,-0.29,403),
+ ('Restuss','trainer_architect','crafting_architect','2F37A26E','F4200AF9','BD2D6D74',6,0,5510,5663,80,0.957,-0.29,403);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Coronet','trainer_creaturehandler','outdoors_creaturehandler','B1603614','20722775','8A1354DF',0,0,-55,-4566,28,0,1,404),
  ('Doaba Guerfel','trainer_creaturehandler','outdoors_creaturehandler','B1603614','20722775','8A1354DF',0,0,3162,5191,300,0,1,405),
  ('Kaadara','trainer_creaturehandler','outdoors_creaturehandler','B1603614','20722775','8A1354DF',5,0,5181,6806,-192,0,1,406),
- ('Mos Entha','trainer_creaturehandler','outdoors_creaturehandler','B1603614','20722775','8A1354DF',8,0,1374,3262,7,1,0,407);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Mos Entha','trainer_creaturehandler','outdoors_creaturehandler','B1603614','20722775','8A1354DF',8,0,1374,3262,7,1,0,407),
  ('Mos Espa','trainer_creaturehandler','outdoors_creaturehandler','B1603614','20722775','8A1354DF',8,0,-2994,2530,5,0.5,1,408),
  ('Restuss','trainer_creaturehandler','outdoors_creaturehandler','B1603614','20722775','8A1354DF',6,0,5134,5749,80,1,0,409),
  ('Bela Vistal','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,2365947,-0.000991189,-14.7559,1.13306,-0.002083,0.999998,410),
- ('Bela Vistal','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,0,6755.99,-5655.01,314.994,0.712959,-0.701206,411),
+ ('Bela Vistal','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,0,6755.99,-5655.01,314.994,0.712959,-0.701206,411);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Coronet','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,1855517,0.0128083,-14.5595,1.13306,-0.00137752,0.999999,412),
  ('Coronet','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,0,-187,-4700,28,0.717733,0.696318,413),
  ('Doaba Guerfel','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,3055771,0.012511,-14.4747,1.13306,-0.000465585,1,414),
- ('Doaba Guerfel','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,0,3311,5530,308,0.664487,0.7473,415);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Doaba Guerfel','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,0,3311,5530,308,0.664487,0.7473,415),
  ('Kor Vella','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,2955416,0.0409756,-14.347,1.13306,0.000649384,1,416),
  ('Tyrena','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,0,-5081,-2307,21,0.919828,0.392321,417),
  ('Tyrena','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,0,-5300.07,-2383,21,0.999308,-0.0372055,418),
- ('Tyrena','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,1935454,-0.0379898,-13.6721,1.13306,0.0259204,0.999664,419),
+ ('Tyrena','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',0,1935454,-0.0379898,-13.6721,1.13306,0.0259204,0.999664,419);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Kaadara','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,1741510,-0.031573,-14.1498,1.13306,0,1,420),
  ('Kaadara','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,0,5182,6686,-192,0.933277,0.359158,421),
  ('Keren','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,0,1517.65,2782.26,25,0.320035,0.947406,422),
- ('Keren','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,1396874,0.0976721,-13.6995,1.13306,-0.00312865,0.999995,423);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Keren','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,1396874,0.0976721,-13.6995,1.13306,-0.00312865,0.999995,423),
  ('Keren','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,0,2003.71,2484.06,12,0.852886,-0.522097,424),
  ('Moenia','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,0,4823.13,-4705.34,4.17,-0.650473,0.75953,425),
  ('Moenia','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,1717546,-0.0177415,-13.3088,1.13306,0.000709873,1,426),
- ('Theed','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,0,-4946,4131,6,0.933799,0.357798,427),
+ ('Theed','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,0,-4946,4131,6,0.933799,0.357798,427);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Theed','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,1692084,0.0417929,-13.5584,1.13306,0.0134915,0.999909,428),
  ('Theed','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',5,0,-5996.85,4287.56,6,0.566754,0.823887,429),
  ('Narmle','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',6,0,-5160.97,-2325.27,80,0.931801,0.362969,430),
- ('Narmle','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',6,4615384,-0.124425,-13.6473,1.13306,0.0020789,0.999998,431);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Narmle','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',6,4615384,-0.124425,-13.6473,1.13306,0.0020789,0.999998,431),
  ('Restuss','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',6,4635664,-0.112948,-14.1468,1.13306,0.000880786,1,432),
  ('Restuss','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',6,0,5256,5600,80,-0.108968,0.994045,433),
  ('Dearic','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',7,3175386,-0.0376376,-13.9533,1.13306,0.00114352,0.999999,434),
- ('Dearic','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',7,0,500,-3043,6,0.0672449,0.997737,435),
+ ('Dearic','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',7,0,500,-3043,6,0.0672449,0.997737,435);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Nashal','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',7,0,4410,5309,2,0.698237,0.715866,436),
  ('Nashal','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',7,4265396,0.0424266,-14.6324,1.13306,0.000896588,1,437),
  ('Bestine','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,1028562,-0.0507306,-13.747,1.13306,0.000118111,1,438),
- ('Bestine','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,0,-1266,-3559,12,0.916902,-0.399112,439);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Bestine','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,0,-1266,-3559,12,0.916902,-0.399112,439),
  ('Mos Eisley','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,1279964,-0.0585386,-13.9039,1.13306,-4.59887,1,440),
  ('Mos Eisley','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,0,3503,-4809,5,0.357844,0.933782,441),
  ('Mos Entha','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,0,1276.55,3153.11,7,0.984731,0.174081,442),
- ('Mos Entha','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,0,1324,3141,7,0.818581,-0.57439,443),
+ ('Mos Entha','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,0,1324,3141,7,0.818581,-0.57439,443);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Mos Entha','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,0,1335,3487,7,0.940895,0.338699,444),
  ('Mos Entha','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,1153493,-0.0475945,-14.1102,1.13306,-0.00318113,0.999995,445),
  ('Mos Espa','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,1256011,-0.0885271,-14.0283,1.13306,0.0149073,0.999889,446),
- ('Mos Espa','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,0,-2890,2142,5,-0.166686,0.98601,447);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Mos Espa','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,0,-2890,2142,5,-0.166686,0.98601,447),
  ('Wayfar','trainer_artisan','crafting_artisan','06A44300','DDB3EB97','94BE8C1A',8,0,-5274,-6547,75,0.937074,0.349132,448),
  ('Bestine','trainer_industrialist','social_politician','A924E07','D185E690','9888811D',8,0,-1125,-3616,12.2,0.99121,0.1223,449),
  ('Narmle','trainer_industrialist','social_politician','A924E07','D185E690','9888811D',6,0,-5165,-2461,80,0.943042,0.332675,450),
- ('Coronet','trainer_industrialist','social_politician','A924E07','D185E690','9888811D',0,0,-218,-4500,28,0.294557,0.955634,451),
+ ('Coronet','trainer_industrialist','social_politician','A924E07','D185E690','9888811D',0,0,-218,-4500,28,0.294557,0.955634,451);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Dee\'ja Peak','trainer_industrialist','social_politician','A924E07','D185E690','9888811D',5,0,4702,-1368,330,0.884584,0.466381,452),
  ('Dee\'ja Peak','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',5,0,4733,-1267,0,0,0,453),
  ('Kaadara','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',5,0,5124,6813,0,0,0,454),
- ('Keren','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',5,0,1788,2473,0,0,0,455);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Keren','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',5,0,1788,2473,0,0,0,455),
  ('Keren','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',5,0,1905,2767,0,0,0,456),
  ('Moenia','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',5,0,4802,-5009,0,0,0,457),
  ('Dearic','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',7,0,516,-2912,0,0,0,458),
  ('Dearic','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',7,0,613,-3068,0,0,0,459),
- ('Nashal','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',7,0,4288,5109,0,0,0,460),
+ ('Nashal','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',7,0,4288,5109,0,0,0,460);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Narmle','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',6,0,-5013,-2426,0,0,0,461),
  ('Narmle','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',6,0,-5274,-2424,0,0,0,462),
  ('Restuss','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',6,0,5382,5599,0,0,0,463),
- ('Rebel Outpost','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',6,0,3681,-6420,0,0,0,464);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Rebel Outpost','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',6,0,3681,-6420,0,0,0,464),
  ('Bela Vistal','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',0,0,6862,-5416,0,0,0,465),
  ('Coronet','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',0,0,47,-4442,0,0,0,466),
  ('Doaba Guerfel','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',0,0,3113,5293,0,0,0,467),
  ('Kor Vella','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',0,0,-3696,3059,0,0,0,468),
- ('Tyrena','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',0,0,-5106,-2324,0,0,0,469),
+ ('Tyrena','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',0,0,-5106,-2324,0,0,0,469);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Tyrena','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',0,0,-5530,-2676,0,0,0,470),
  ('Mos Entha','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',8,0,1210,3273,7.4,0.996437,0.084394,471),
  ('Mos Entha','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',8,0,1290,3448,7,0.738336,0.674433,472),
- ('Mos Espa','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',8,1256022,-2.95975,-8.77207,1.13306,0.815981,0.578078,473);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Mos Espa','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',8,1256022,-2.95975,-8.77207,1.13306,0.815981,0.578078,473),
  ('Mos Espa','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',8,0,-2869,2146,5,0.0656768,0.997841,474),
  ('Mos Eisley','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',8,1189579,-2.87328,-8.72939,1.13306,0.872882,0.48793,475),
  ('Dearic','trainer_weaponsmith','crafting_weaponsmith','FFEC8060','24FB28F7','6DF64F7A',7,0,515,-2914.2,6,0.999165,0.0408507,476),
- ('Keren','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',5,0,1798,2578,0,0,0,477),
+ ('Keren','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',5,0,1798,2578,0,0,0,477);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Theed','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',5,0,-5463,3983,0,0,0,478),
  ('Moenia','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',5,1717557,-11.5102,-13.7835,1.13306,0.0206685,0.999786,479),
  ('Kaadara','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',5,1741472,-10.8596,-14.4116,1.13306,0.00522962,0.999986,480),
- ('Dee\'ja Peak','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',5,1685240,-11.3655,-13.793,1.13306,0.884445,-0.466643,481);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Dee\'ja Peak','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',5,1685240,-11.3655,-13.793,1.13306,0.884445,-0.466643,481),
  ('Tyrena','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',0,0,-5535,-2669,0,0,0,482),
  ('Kor Vella','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',0,2955402,-11.7981,-12.9639,1.13306,-0.0106134,0.999944,483),
- ('Coronet','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',0,1855528,-11.1287,-14.2254,1.13306,-0.075815,0.997122,484),
+ ('Coronet','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',0,1855528,-11.1287,-14.2254,1.13306,-0.075815,0.997122,484);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Bela Vistal','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',0,2365802,-10.9165,-12.7851,1.13306,-0.00626652,0.99998,485),
  ('Doaba Guerfel','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',0,3075414,-10.9893,-12.393,1.13306,0.000293973,1,486),
  ('Bestine','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',8,1028583,-11.6346,-13.252,1.13306,0.019427,0.999811,487),
- ('Mos Entha','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',8,1154185,-11.2719,-13.4562,1.13306,-0.00121323,0.999999,488);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Mos Entha','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',8,1154185,-11.2719,-13.4562,1.13306,-0.00121323,0.999999,488),
  ('Mos Espa','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',8,1256023,-11.5362,-12.6351,1.13306,0.012226,0.999925,489),
  ('Mos Eisley','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',8,1189580,-10.9183,-14.2845,1.13306,-0.0457645,0.998952,490),
- ('Dearic','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',7,3175563,-11.7587,-13.3207,1.13306,0.0581525,0.998308,491),
+ ('Dearic','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',7,3175563,-11.7587,-13.3207,1.13306,0.0581525,0.998308,491);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Nashal','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',7,4265417,-11.088,-14.0044,1.13306,-0.00650418,0.999979,492),
  ('Restuss','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',6,4635776,-11.4803,-13.6866,1.13306,-0.0387217,0.99925,493),
  ('Narmle','trainer_droidengineer','crafting_droidengineer','E22886FA','AB646426','B7E29CF7',6,4635415,-10.6439,-12.5741,1.13306,-0.0719766,0.997406,494),
- ('Bela Vistal','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,0,6829,-5429,330,0.999286,-0.0377764,495);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Bela Vistal','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,0,6829,-5429,330,0.999286,-0.0377764,495),
  ('Doaba Guerfel','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,4395403,30.358,73.5895,2.12878,0.737371,-0.675488,496),
  ('Doaba Guerfel','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,0,3305,5525,308,0.967509,0.252836,497),
- ('Kor Vella','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,0,-3152,2807,31,0.999826,0.0186444,498),
+ ('Kor Vella','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,0,-3152,2807,31,0.999826,0.0186444,498);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Kor Vella','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,3005399,26.1909,10.2549,-0.894994,0.766435,-0.642322,499),
  ('Tyrena','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,0,-5661,-2599.57,21.6,-0.122204,0.992505,500),
  ('Tyrena','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,2625358,6.15345,-19.3905,-0.894992,0.00181555,0.999998,501),
- ('Tyrena','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,0,-5062,-2291,21,0.882297,0.470693,502);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Tyrena','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,0,-5062,-2291,21,0.882297,0.470693,502),
  ('Vreni Island','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',0,3005697,22.0446,11.7787,-0.894993,0.996665,-0.0816027,503),
  ('Kaadara','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',5,0,5209.69,6661.65,-192,0.783581,-0.621289,504),
- ('Keren','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',5,0,1772.77,2744.98,12,0.999915,0.013024,505),
+ ('Keren','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',5,0,1772.77,2744.98,12,0.999915,0.013024,505);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Keren','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',5,4045383,29.6396,74.0291,2.12878,0.708765,-0.705445,506),
  ('Moenia','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',5,0,4846,-4658,4.17,0.777062,-0.629424,507),
  ('Theed','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',5,5475487,28.3235,73.5353,2.12854,0.708389,0.705822,508),
  ('Narmle','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',6,4635403,29.5159,73.6413,2.12878,-0.697109,0.716966,509),
- ('Narmle','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',6,0,-5078,-2354,80,0.957408,0.288739,510);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Narmle','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',6,0,-5078,-2354,80,0.957408,0.288739,510),
  ('Restuss','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',6,4635754,30.0595,73.1945,2.12878,-0.618294,0.785947,511),
  ('Restuss','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',6,0,5433,5558,80.6,0.718484,-0.695543,512),
- ('Dearic','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',7,3175572,29.7003,73.0836,2.12878,-0.697745,0.716347,513),
+ ('Dearic','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',7,3175572,29.7003,73.0836,2.12878,-0.697745,0.716347,513);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
  ('Nashal','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',7,0,4366,5350,2,0.761549,-0.648109,514),
  ('Nashal','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',7,4265375,23.5446,11.6472,-0.894993,0.99854,0.05402,515),
  ('Bestine','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',8,0,-1265.51,3630.06,12,-0.192217,0.981353,516),
  ('Mos Entha','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',8,1153603,29.9638,73.0406,2.12878,-0.703631,0.716565,517),
- ('Mos Entha','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',8,0,1287,3163,7,0.676311,0.736616,518);
-INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Mos Entha','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',8,0,1287,3163,7,0.676311,0.736616,518),
  ('Mos Espa','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',8,0,-2889,2178,5,0.986429,0.164186,519),
  ('Mos Eisley','trainer_entertainer','social_entertainer','DE8F2635','7762E27F','2F6E7E8A',8,0,3477.89,-4791.6,5,0.952414,-0.304806,520),
- ('Rori','trainer_merchant','crafting_merchant','48A9349C','93BE9C0B','DAB3FB86',6,4635772,11.6338,5.69637,1.13306,0.999642,0.0267526,521),
- ('Rori','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',6,0,5335.31,5530.48,80,-0.349679,0.93687,522);
+ ('Rori','trainer_merchant','crafting_merchant','48A9349C','93BE9C0B','DAB3FB86',6,4635772,11.6338,5.69637,1.13306,0.999642,0.0267526,521);
+INSERT INTO `swgemu`.`trainers` (`Location`,`Trainer Type`,`Profession`,`CRC1`,`CRC2`,`CRC3`,`Planet`,`Cell`,`X`,`Y`,`Z`,`oY`,`oW`,`pix`) VALUES 
+ ('Rori','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',6,0,5335.31,5530.48,80,-0.349679,0.93687,522),
+ ('Keren','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',5,0,1537,2757,25,0,1,523),
+ ('Keren','trainer_brawler','combat_brawler','BB904423','6087ECB4','298A8B39',5,0,1537,2757,25,0,1,524),
+ ('Kaadara','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',5,0,5182,6632,-192,0,1,525),
+ ('Coronet','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,0,-35,-4372,0,0.7,-0.7,526),
+ ('Doaba Guerfel','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,0,3338,5516,0,0,1,527),
+ ('Tyrena','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,0,-5041,-2324,0,-0.7,0.7,528),
+ ('Tyrena','trainer_marksman','combat_marksman','D9101851','0207B0C6','4B0AD74B',0,0,-5249,-2306,21,1,0,529);
 /*!40000 ALTER TABLE `trainers` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`transports`;
 CREATE TABLE  `swgemu`.`transports` (
   `id` int(10) unsigned NOT NULL auto_increment,
   `planet_id` tinyint(3) unsigned NOT NULL,
@@ -109532,8 +109435,6 @@ INSERT INTO `swgemu`.`transports` (`id`,`planet_id`,`name`,`parent`,`pos_x`,`pos
  (57,8,'Bestine Starport',0,-1377,-3576,12,0.78,-0.61,-1377,-3576,12,1,0,1196401137);
 /*!40000 ALTER TABLE `transports` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`warp`;
 CREATE TABLE  `swgemu`.`warp` (
   `warp_id` int(2) unsigned NOT NULL auto_increment,
   `name` varchar(64) NOT NULL,
@@ -109614,8 +109515,6 @@ INSERT INTO `swgemu`.`warp` (`warp_id`,`name`,`planet_id`,`x`,`y`,`z`,`descripti
  (58,'yavin_labor_op',9,-6921.000000,73.000000,-5726.000000,'Labor Outpost, Yavin IV',3,180);
 /*!40000 ALTER TABLE `warp` ENABLE KEYS */;
 
-
-DROP TABLE IF EXISTS `swgemu`.`waypoints`;
 CREATE TABLE  `swgemu`.`waypoints` (
   `waypoint_id` bigint(20) unsigned NOT NULL,
   `owner_id` mediumint(8) unsigned NOT NULL,
