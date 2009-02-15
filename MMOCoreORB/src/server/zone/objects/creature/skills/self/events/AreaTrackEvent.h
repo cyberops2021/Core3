@@ -42,22 +42,42 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#ifndef SKILLBOXMAP_H_
-#define SKILLBOXMAP_H_
+#ifndef AREATRACKEVENT_H_
+#define AREATRACKEVENT_H_
 
-#include "engine/engine.h"
+#include "../../../CreatureObjectImplementation.h"
+#include "../../self/AreaTrackSelfSkill.h"
 
-#include "SkillBox.h"
-
-class SkillBoxMap : public HashTable<String, SkillBox*> , public HashTableIterator<String, SkillBox*> {
-	int hash(const String& key) {
-	    return key.hashCode();
-	}
+class AreaTrackEvent : public Event {
+	ManagedReference<CreatureObject> creo;
+	int type;
 
 public:
-	SkillBoxMap() : HashTable<String, SkillBox*>(50) , HashTableIterator<String, SkillBox*>(this) {
-		setNullValue(NULL);
+	AreaTrackEvent(CreatureObject* cr, int delay, int type) : Event(delay) {
+		this->creo = cr;
+		this->type = type;
 	}
+
+	bool activate() {
+		try {
+			creo->wlock();
+
+			SkillManager* sm = creo->getZoneProcessServer()->getSkillManager();
+			Skill* skill = sm->getSkill("areatrack");
+			if(skill != NULL) {
+				AreaTrackSelfSkill* areatrack = (AreaTrackSelfSkill*) skill;
+				areatrack->showTrackedObjects(creo, type);
+			}
+
+			creo->unlock();
+		} catch (...) {
+			creo->error("unreported exception caught in AreaTrackEvent::activate");
+			creo->unlock();
+		}
+
+		return true;
+	}
+
 };
 
-#endif /*SKILLBOXMAP_H_*/
+#endif /* AREATRACKEVENT_H_ */
