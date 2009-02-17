@@ -1201,19 +1201,19 @@ INSERT INTO `swgemu`.`customization_data` (`speciesGender`,`customizationGroup`,
 /*!40000 ALTER TABLE `customization_data` ENABLE KEYS */;
 
 CREATE TABLE  `swgemu`.`datapad` (
-  `inx` bigint(20) unsigned NOT NULL auto_increment,
+  `item_id` bigint(20) unsigned NOT NULL,
   `character_id` bigint(20) unsigned NOT NULL,
   `name` text NOT NULL,
-  `itnocrc` bigint(10) unsigned NOT NULL,
-  `item_crc` bigint(20) unsigned NOT NULL,
-  `file_name` tinytext NOT NULL,
+  `itno_crc` bigint(10) unsigned NOT NULL,
+  `tano_crc` bigint(20) unsigned NOT NULL,
+  `tano_type` int(10) unsigned NOT NULL,
+  `tano_name` tinytext NOT NULL,
   `attributes` text NOT NULL,
   `appearance` mediumtext NOT NULL,
   `itemMask` smallint(5) unsigned NOT NULL default '65535',
-  `obj_id` bigint(20) unsigned NOT NULL,
-  PRIMARY KEY  (`inx`),
+  PRIMARY KEY  (`item_id`),
   KEY `char_ix` (`character_id`),
-  KEY `item_ix` (`inx`)
+  KEY `item_ix` (`item_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=185 DEFAULT CHARSET=latin1;
 
 /*!40000 ALTER TABLE `datapad` DISABLE KEYS */;
