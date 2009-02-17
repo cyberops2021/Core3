@@ -42,56 +42,22 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#ifndef CREATUREOBJECTMESSAGE1_H_
-#define CREATUREOBJECTMESSAGE1_H_
+#ifndef SKILLBOXMAP_H_
+#define SKILLBOXMAP_H_
 
-#include "../../packets/BaseLineMessage.h"
+#include "engine/engine.h"
 
-#include "../../objects/creature/CreatureObjectImplementation.h"
-#include "../../objects/player/PlayerImplementation.h"
+#include "SkillBox.h"
 
-class CreatureObjectMessage1 : public BaseLineMessage {
+class SkillBoxMap : public HashTable<String, SkillBox*> , public HashTableIterator<String, SkillBox*> {
+	int hash(const String& key) {
+	    return key.hashCode();
+	}
+
 public:
-	CreatureObjectMessage1(CreatureObjectImplementation* creo)
-			: BaseLineMessage(creo->getObjectID(), 0x4352454F, 1, 0x04) {
-		insertInt(creo->bankCredits);
-		insertInt(creo->cashCredits);
-
-		// Base HAM
-		insertInt(9);
-		insertInt(creo->getHAMBaseUpdateCounter());
-		insertInt(creo->getBaseHealth());
-		insertInt(creo->getBaseStrength());
-		insertInt(creo->getBaseConstitution());
-		insertInt(creo->getBaseAction());
-		insertInt(creo->getBaseQuickness());
-		insertInt(creo->getBaseStamina());
-		insertInt(creo->getBaseMind());
-		insertInt(creo->getBaseFocus());
-		insertInt(creo->getBaseWillpower());
-
-		insertSkillBoxes(creo);
-
-		setSize();
-
-		setCompression(true);
+	SkillBoxMap() : HashTable<String, SkillBox*>(50) , HashTableIterator<String, SkillBox*>(this) {
+		setNullValue(NULL);
 	}
-
-	void insertSkillBoxes(CreatureObjectImplementation* creo) {
-		PlayerImplementation* player = (PlayerImplementation*)creo;
-
-		int size = player->skillBoxes.size();
-		player->skillBoxes.resetIterator();
-
-		insertInt(size);
-		insertInt(creo->skillBoxesUpdateCounter);
-
-		while (player->skillBoxes.hasNext()) {
-			SkillBox* skillBox = player->skillBoxes.getNextValue();
-			insertAscii(skillBox->getName());
-		}
-	}
-
 };
 
-#endif /*CREATUREOBJECTMESSAGE1_H_*/
+#endif /*SKILLBOXMAP_H_*/
