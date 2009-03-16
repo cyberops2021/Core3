@@ -1,30 +1,29 @@
 /*
 MySQL Data Transfer
-Source Host: localhost
+Source Host: 192.168.1.180
 Source Database: swgemu
-Target Host: localhost
+Target Host: 192.168.1.180
 Target Database: swgemu
-Date: 08/03/2009 10:10:41 PM
+Date: 3/15/2009 2:5d5:19 PM
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 -- ----------------------------
 -- Table structure for account
 -- ----------------------------
-DROP TABLE IF EXISTS `account`;
 CREATE TABLE `account` (
-  `account_id` mediumint(8) unsigned NOT NULL auto_increment,
-  `username` varchar(255) NOT NULL default '',
-  `password` varchar(255) NOT NULL default '',
-  `station_id` int(10) unsigned NOT NULL default '0',
-  `gm` int(2) unsigned NOT NULL default '0',
-  `banned` tinyint(1) NOT NULL default '0',
-  `email` varchar(255) NOT NULL default '',
-  `joindate` datetime NOT NULL default '0000-00-00 00:00:00',
-  `lastlogin` timestamp NULL default NULL,
-  `active` tinyint(1) default '1',
-  `adminLevel` tinyint(1) unsigned NOT NULL default '4',
-  PRIMARY KEY  (`account_id`),
+  `account_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL DEFAULT '',
+  `password` varchar(255) NOT NULL DEFAULT '',
+  `station_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `gm` int(2) unsigned NOT NULL DEFAULT '0',
+  `banned` tinyint(1) NOT NULL DEFAULT '0',
+  `email` varchar(255) NOT NULL DEFAULT '',
+  `joindate` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `lastlogin` timestamp NULL DEFAULT NULL,
+  `active` tinyint(1) DEFAULT '1',
+  `adminLevel` tinyint(1) unsigned NOT NULL DEFAULT '4',
+  PRIMARY KEY (`account_id`),
   UNIQUE KEY `account_id` (`account_id`),
   UNIQUE KEY `username` (`username`)
 ) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
@@ -32,33 +31,30 @@ CREATE TABLE `account` (
 -- ----------------------------
 -- Table structure for badge
 -- ----------------------------
-DROP TABLE IF EXISTS `badge`;
 CREATE TABLE `badge` (
-  `badge_id` mediumint(8) unsigned NOT NULL auto_increment,
-  `name` varchar(255) NOT NULL default '',
-  `value` varchar(255) NOT NULL default '',
-  PRIMARY KEY  (`badge_id`)
+  `badge_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `value` varchar(255) NOT NULL DEFAULT '',
+  PRIMARY KEY (`badge_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=115 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for badge_areas
 -- ----------------------------
-DROP TABLE IF EXISTS `badge_areas`;
 CREATE TABLE `badge_areas` (
-  `uid` tinyint(1) unsigned NOT NULL auto_increment,
+  `uid` tinyint(1) unsigned NOT NULL AUTO_INCREMENT,
   `planet_id` tinyint(1) unsigned NOT NULL,
   `x` float NOT NULL,
   `y` float NOT NULL,
-  `z` float NOT NULL default '0',
+  `z` float NOT NULL DEFAULT '0',
   `badge_id` tinyint(1) unsigned NOT NULL,
-  PRIMARY KEY  (`uid`),
+  PRIMARY KEY (`uid`),
   KEY `SECONDARY` (`planet_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for bazaar_items
 -- ----------------------------
-DROP TABLE IF EXISTS `bazaar_items`;
 CREATE TABLE `bazaar_items` (
   `objectid` bigint(20) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
@@ -68,68 +64,66 @@ CREATE TABLE `bazaar_items` (
   `ownername` varchar(45) NOT NULL,
   `price` int(10) unsigned NOT NULL,
   `auction` tinyint(1) NOT NULL,
-  `sold` tinyint(1) NOT NULL default '0',
+  `sold` tinyint(1) NOT NULL DEFAULT '0',
   `expire` bigint(20) unsigned NOT NULL,
   `terminalid` bigint(20) unsigned NOT NULL,
   `planet` smallint(5) unsigned NOT NULL,
-  `buyerid` bigint(20) unsigned NOT NULL default '0',
+  `buyerid` bigint(20) unsigned NOT NULL DEFAULT '0',
   `biddername` varchar(45) NOT NULL,
-  PRIMARY KEY  (`objectid`)
+  PRIMARY KEY (`objectid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for character_badge
 -- ----------------------------
-DROP TABLE IF EXISTS `character_badge`;
 CREATE TABLE `character_badge` (
-  `character_id` mediumint(8) unsigned NOT NULL default '0',
-  `bitmask0` mediumint(8) unsigned NOT NULL default '0',
-  `bitmask1` mediumint(8) unsigned NOT NULL default '0',
-  `bitmask2` mediumint(8) unsigned NOT NULL default '0',
-  `bitmask3` mediumint(8) unsigned NOT NULL default '0',
-  `bitmask4` mediumint(8) unsigned NOT NULL default '0',
-  `totalCount` tinyint(3) unsigned NOT NULL default '0',
-  `count0` tinyint(3) unsigned NOT NULL default '0',
-  `count1` tinyint(3) unsigned NOT NULL default '0',
-  `count2` tinyint(3) unsigned default '0',
-  `count3` tinyint(3) unsigned NOT NULL default '0',
-  `count4` tinyint(3) unsigned NOT NULL default '0',
-  `count5` tinyint(3) unsigned NOT NULL default '0',
-  PRIMARY KEY  (`character_id`)
+  `character_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `bitmask0` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `bitmask1` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `bitmask2` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `bitmask3` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `bitmask4` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `totalCount` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `count0` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `count1` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `count2` tinyint(3) unsigned DEFAULT '0',
+  `count3` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `count4` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `count5` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`character_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for character_faction_points
 -- ----------------------------
-DROP TABLE IF EXISTS `character_faction_points`;
 CREATE TABLE `character_faction_points` (
   `character_id` int(10) unsigned NOT NULL,
   `faction_name` varchar(25) NOT NULL,
   `faction_points` int(11) NOT NULL,
   `hash` varchar(32) NOT NULL,
-  PRIMARY KEY  (`hash`)
+  PRIMARY KEY (`hash`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for character_items
 -- ----------------------------
-DROP TABLE IF EXISTS `character_items`;
 CREATE TABLE `character_items` (
   `item_id` bigint(20) unsigned NOT NULL,
   `character_id` bigint(20) unsigned NOT NULL,
   `name` text NOT NULL,
   `template_crc` bigint(20) unsigned NOT NULL,
   `template_type` int(10) unsigned NOT NULL,
+  `template_type_name` tinytext NOT NULL,
   `template_name` tinytext NOT NULL,
-  `container` bigint(20) unsigned NOT NULL default '0',
+  `container` bigint(20) unsigned NOT NULL DEFAULT '0',
   `equipped` tinyint(1) unsigned NOT NULL,
-  `deleted` tinyint(1) unsigned NOT NULL default '0',
+  `deleted` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `attributes` text NOT NULL,
   `appearance` mediumtext NOT NULL,
-  `itemMask` smallint(5) unsigned NOT NULL default '65535',
-  `optionsBitmask` int(10) unsigned NOT NULL default '0',
-  `in_bank` tinyint(3) unsigned NOT NULL default '0',
-  PRIMARY KEY  (`item_id`),
+  `itemMask` smallint(5) unsigned NOT NULL DEFAULT '65535',
+  `optionsBitmask` int(10) unsigned NOT NULL DEFAULT '0',
+  `in_bank` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`item_id`),
   KEY `container_ix` (`container`),
   KEY `deleted_ix` (`deleted`),
   KEY `char_ix` (`character_id`)
@@ -138,22 +132,20 @@ CREATE TABLE `character_items` (
 -- ----------------------------
 -- Table structure for character_profession
 -- ----------------------------
-DROP TABLE IF EXISTS `character_profession`;
 CREATE TABLE `character_profession` (
-  `character_id` mediumint(8) unsigned NOT NULL auto_increment,
-  `profession_id` int(4) NOT NULL default '0',
-  PRIMARY KEY  (`character_id`,`profession_id`)
+  `character_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `profession_id` int(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`character_id`,`profession_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for character_structures
 -- ----------------------------
-DROP TABLE IF EXISTS `character_structures`;
 CREATE TABLE `character_structures` (
-  `zone_id` tinyint(4) NOT NULL default '0',
+  `zone_id` tinyint(4) NOT NULL DEFAULT '0',
   `object_id` bigint(20) NOT NULL,
   `parent_id` bigint(20) NOT NULL,
-  `cell_number` tinyint(4) NOT NULL default '0',
+  `cell_number` tinyint(4) NOT NULL DEFAULT '0',
   `owner_id` mediumint(8) NOT NULL,
   `name` text NOT NULL,
   `template_crc` bigint(20) NOT NULL,
@@ -167,197 +159,217 @@ CREATE TABLE `character_structures` (
   `X` float NOT NULL,
   `Z` float NOT NULL,
   `Y` float NOT NULL,
-  `deleted` tinyint(1) NOT NULL default '0',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
   `attributes` text NOT NULL,
-  `noBuildArea` bigint(20) unsigned NOT NULL default '0',
+  `noBuildArea` bigint(20) unsigned NOT NULL DEFAULT '0',
   UNIQUE KEY `object_id` (`object_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for characters
 -- ----------------------------
-DROP TABLE IF EXISTS `characters`;
 CREATE TABLE `characters` (
-  `character_id` mediumint(8) unsigned NOT NULL auto_increment,
-  `account_id` mediumint(8) unsigned NOT NULL default '0',
-  `galaxy_id` int(5) unsigned NOT NULL default '0',
-  `firstname` varchar(15) NOT NULL default '',
-  `surname` varchar(20) default NULL,
+  `character_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `account_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `galaxy_id` int(5) unsigned NOT NULL DEFAULT '0',
+  `firstname` varchar(15) NOT NULL DEFAULT '',
+  `surname` varchar(20) DEFAULT NULL,
   `appearance` mediumtext NOT NULL,
   `professions` varbinary(110) NOT NULL,
-  `race` tinyint(2) NOT NULL default '0',
-  `gender` tinyint(1) NOT NULL default '0',
-  `lots` int(2) NOT NULL default '10',
-  `credits_inv` int(11) unsigned default '10000',
-  `credits_bank` int(11) unsigned default '0',
+  `race` tinyint(2) NOT NULL DEFAULT '0',
+  `gender` tinyint(1) NOT NULL DEFAULT '0',
+  `lots` int(2) NOT NULL DEFAULT '10',
+  `credits_inv` int(11) unsigned DEFAULT '10000',
+  `credits_bank` int(11) unsigned DEFAULT '0',
   `guild` smallint(5) NOT NULL,
-  `x` float(10,6) default NULL,
-  `y` float(10,6) default NULL,
-  `z` float(10,6) default NULL,
-  `zoneid` int(10) default NULL,
-  `planet_id` int(2) default NULL,
-  `lfg` tinyint(1) default '0',
-  `helper` tinyint(1) default '0',
-  `roleplayer` tinyint(1) default '0',
-  `faction_id` int(4) unsigned default NULL,
-  `archived` tinyint(1) default '0',
-  `scale` float(4,2) default '1.00',
+  `x` float(10,6) DEFAULT NULL,
+  `y` float(10,6) DEFAULT NULL,
+  `z` float(10,6) DEFAULT NULL,
+  `zoneid` int(10) DEFAULT NULL,
+  `planet_id` int(2) DEFAULT NULL,
+  `lfg` tinyint(1) DEFAULT '0',
+  `helper` tinyint(1) DEFAULT '0',
+  `roleplayer` tinyint(1) DEFAULT '0',
+  `faction_id` int(4) unsigned DEFAULT NULL,
+  `archived` tinyint(1) DEFAULT '0',
+  `scale` float(4,2) DEFAULT '1.00',
   `biography` text NOT NULL,
-  `appearancelen` int(11) NOT NULL default '0',
+  `appearancelen` int(11) NOT NULL DEFAULT '0',
   `infofield` text NOT NULL,
   `hair` text NOT NULL,
   `hairData` text NOT NULL,
-  `hairDataLen` int(8) NOT NULL default '0',
+  `hairDataLen` int(8) NOT NULL DEFAULT '0',
   `playermodel` text NOT NULL,
-  `CRC` bigint(20) NOT NULL default '0',
+  `CRC` bigint(20) NOT NULL DEFAULT '0',
   `Title` tinytext NOT NULL,
-  `parentid` bigint(20) NOT NULL default '0',
-  `itemShift` int(11) NOT NULL default '100',
-  `Health` mediumint(8) unsigned NOT NULL default '900',
-  `Strength` mediumint(8) unsigned NOT NULL default '450',
-  `Constitution` mediumint(8) unsigned NOT NULL default '450',
-  `Action` mediumint(8) unsigned NOT NULL default '900',
-  `Quickness` mediumint(8) unsigned NOT NULL default '450',
-  `Stamina` mediumint(8) unsigned NOT NULL default '450',
-  `Mind` mediumint(8) unsigned NOT NULL default '900',
-  `Focus` mediumint(8) unsigned NOT NULL default '450',
-  `Willpower` mediumint(8) unsigned NOT NULL default '450',
-  `HealthWounds` mediumint(8) unsigned NOT NULL default '0',
-  `StrengthWounds` mediumint(8) unsigned NOT NULL default '0',
-  `ConstitutionWounds` mediumint(8) unsigned NOT NULL default '0',
-  `ActionWounds` mediumint(8) unsigned NOT NULL default '0',
-  `QuicknessWounds` mediumint(8) unsigned NOT NULL default '0',
-  `StaminaWounds` mediumint(8) unsigned NOT NULL default '0',
-  `MindWounds` mediumint(8) unsigned NOT NULL default '0',
-  `FocusWounds` mediumint(8) unsigned NOT NULL default '0',
-  `WillpowerWounds` mediumint(8) unsigned NOT NULL default '0',
-  `BattleFatigue` mediumint(8) unsigned NOT NULL default '0',
-  `PvpRating` smallint(5) unsigned NOT NULL default '1200',
-  `adminLevel` tinyint(1) unsigned NOT NULL default '4',
-  `guildpermission` tinyint(3) unsigned NOT NULL default '0',
-  `public` tinyint(1) unsigned NOT NULL default '0',
-  `factionStatus` tinyint(1) unsigned NOT NULL default '0',
-  `factionRank` tinyint(1) unsigned NOT NULL default '0',
+  `parentid` bigint(20) NOT NULL DEFAULT '0',
+  `itemShift` int(11) NOT NULL DEFAULT '100',
+  `Health` mediumint(8) unsigned NOT NULL DEFAULT '900',
+  `Strength` mediumint(8) unsigned NOT NULL DEFAULT '450',
+  `Constitution` mediumint(8) unsigned NOT NULL DEFAULT '450',
+  `Action` mediumint(8) unsigned NOT NULL DEFAULT '900',
+  `Quickness` mediumint(8) unsigned NOT NULL DEFAULT '450',
+  `Stamina` mediumint(8) unsigned NOT NULL DEFAULT '450',
+  `Mind` mediumint(8) unsigned NOT NULL DEFAULT '900',
+  `Focus` mediumint(8) unsigned NOT NULL DEFAULT '450',
+  `Willpower` mediumint(8) unsigned NOT NULL DEFAULT '450',
+  `HealthWounds` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `StrengthWounds` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `ConstitutionWounds` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `ActionWounds` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `QuicknessWounds` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `StaminaWounds` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `MindWounds` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `FocusWounds` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `WillpowerWounds` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `BattleFatigue` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `PvpRating` smallint(5) unsigned NOT NULL DEFAULT '1200',
+  `adminLevel` tinyint(1) unsigned NOT NULL DEFAULT '4',
+  `guildpermission` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  `public` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `factionStatus` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `factionRank` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `experience` text NOT NULL,
-  `posture` tinyint(1) unsigned NOT NULL default '0',
-  `timeOfDeath` bigint(20) unsigned NOT NULL default '0',
+  `posture` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  `timeOfDeath` bigint(20) unsigned NOT NULL DEFAULT '0',
   `currentMissionKeys` text,
   `finishedMissionKeys` text,
-  `cloningFacility` bigint(20) NOT NULL default '0',
-  `home_location` tinyint(3) unsigned default NULL,
-  `bank_location` tinyint(3) unsigned default NULL,
-  PRIMARY KEY  (`character_id`)
+  `cloningFacility` bigint(20) NOT NULL DEFAULT '0',
+  `home_location` tinyint(3) unsigned DEFAULT NULL,
+  `bank_location` tinyint(3) unsigned DEFAULT NULL,
+  PRIMARY KEY (`character_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for clone_spawn_points
 -- ----------------------------
-DROP TABLE IF EXISTS `clone_spawn_points`;
 CREATE TABLE `clone_spawn_points` (
-  `id` int(11) NOT NULL auto_increment,
-  `oX` float NOT NULL default '0',
-  `oZ` float NOT NULL default '0',
-  `oY` float NOT NULL default '0',
-  `oW` float NOT NULL default '0',
-  `X` float NOT NULL default '0',
-  `Z` float NOT NULL default '0',
-  `Y` float NOT NULL default '0',
-  `parentID` bigint(20) NOT NULL default '0',
-  `zoneid` tinyint(4) NOT NULL default '0',
-  PRIMARY KEY  (`id`)
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `oX` float NOT NULL DEFAULT '0',
+  `oZ` float NOT NULL DEFAULT '0',
+  `oY` float NOT NULL DEFAULT '0',
+  `oW` float NOT NULL DEFAULT '0',
+  `X` float NOT NULL DEFAULT '0',
+  `Z` float NOT NULL DEFAULT '0',
+  `Y` float NOT NULL DEFAULT '0',
+  `parentID` bigint(20) NOT NULL DEFAULT '0',
+  `zoneid` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=165 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for consentlist
 -- ----------------------------
-DROP TABLE IF EXISTS `consentlist`;
 CREATE TABLE `consentlist` (
-  `id` mediumint(8) unsigned NOT NULL auto_increment,
-  `character_id` mediumint(8) unsigned NOT NULL default '0',
-  `target_id` mediumint(8) unsigned NOT NULL default '0',
-  PRIMARY KEY  (`id`)
+  `id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `character_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  `target_id` mediumint(8) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Table structure for cs_tickets
 -- ----------------------------
-DROP TABLE IF EXISTS `cs_tickets`;
 CREATE TABLE `cs_tickets` (
-  `ticket_id` int(10) unsigned NOT NULL auto_increment,
-  `category_main` int(10) unsigned NOT NULL default '0',
-  `category_sub` int(10) unsigned NOT NULL default '0',
-  `player_name` varchar(45) NOT NULL default 'default',
-  `station_id` int(10) unsigned NOT NULL default '0',
-  `bug_type` varchar(45) NOT NULL default 'default',
-  `repeatable` tinyint(1) NOT NULL default '0',
-  `game_system` varchar(45) NOT NULL default 'default',
-  `severity` tinyint(1) unsigned zerofill NOT NULL default '0',
-  `position_x` float(10,6) NOT NULL default '0.000000',
-  `position_y` float(10,6) NOT NULL default '0.000000',
-  `position_z` float(10,6) NOT NULL default '0.000000',
-  `position_heading` float(10,6) NOT NULL default '0.000000',
-  `planet` varchar(20) NOT NULL default 'default',
-  `cluster` varchar(45) NOT NULL default 'default',
-  `race` varchar(20) NOT NULL default 'default',
-  `client_version` varchar(45) NOT NULL default 'default',
-  `date_time` varchar(45) NOT NULL default 'default',
-  `other_info` varchar(45) NOT NULL default 'default',
-  PRIMARY KEY  (`ticket_id`)
+  `ticket_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `category_main` int(10) unsigned NOT NULL DEFAULT '0',
+  `category_sub` int(10) unsigned NOT NULL DEFAULT '0',
+  `player_name` varchar(45) NOT NULL DEFAULT 'default',
+  `station_id` int(10) unsigned NOT NULL DEFAULT '0',
+  `bug_type` varchar(45) NOT NULL DEFAULT 'default',
+  `repeatable` tinyint(1) NOT NULL DEFAULT '0',
+  `game_system` varchar(45) NOT NULL DEFAULT 'default',
+  `severity` tinyint(1) unsigned zerofill NOT NULL DEFAULT '0',
+  `position_x` float(10,6) NOT NULL DEFAULT '0.000000',
+  `position_y` float(10,6) NOT NULL DEFAULT '0.000000',
+  `position_z` float(10,6) NOT NULL DEFAULT '0.000000',
+  `position_heading` float(10,6) NOT NULL DEFAULT '0.000000',
+  `planet` varchar(20) NOT NULL DEFAULT 'default',
+  `cluster` varchar(45) NOT NULL DEFAULT 'default',
+  `race` varchar(20) NOT NULL DEFAULT 'default',
+  `client_version` varchar(45) NOT NULL DEFAULT 'default',
+  `date_time` varchar(45) NOT NULL DEFAULT 'default',
+  `other_info` varchar(45) NOT NULL DEFAULT 'default',
+  PRIMARY KEY (`ticket_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Table structure for customization_data
 -- ----------------------------
-DROP TABLE IF EXISTS `customization_data`;
 CREATE TABLE `customization_data` (
-  `speciesGender` varchar(30) NOT NULL default '',
-  `customizationGroup` varchar(15) NOT NULL default '',
-  `type` varchar(7) default NULL,
-  `customizationName` varchar(20) NOT NULL default '',
-  `variables` varchar(255) default NULL,
-  `isScale` tinyint(1) default '0',
-  `reverse` tinyint(1) default '0',
-  `colorLinked` varchar(255) default NULL,
-  `colorLinkedtoSelf0` varchar(255) default NULL,
-  `colorLinkedtoSelf1` varchar(255) default NULL,
-  `cameraYaw` int(10) unsigned default NULL,
-  `discrete` tinyint(1) default '0',
-  `randomizable` tinyint(1) default '0',
-  `randomizableGroup` tinyint(1) default '0',
-  `isVarHairColor` tinyint(1) default '0',
-  `imageDesignSkillMod` varchar(15) default NULL,
-  `skillModValue` int(10) unsigned default '0',
-  `modificationType` varchar(10) default NULL,
-  `maxChoices` int(10) unsigned default '0',
-  `minScale` float(4,2) NOT NULL default '1.00',
-  `maxScale` float(4,2) NOT NULL default '1.00',
-  PRIMARY KEY  (`speciesGender`,`customizationGroup`,`customizationName`)
+  `speciesGender` varchar(30) NOT NULL DEFAULT '',
+  `customizationGroup` varchar(15) NOT NULL DEFAULT '',
+  `type` varchar(7) DEFAULT NULL,
+  `customizationName` varchar(20) NOT NULL DEFAULT '',
+  `variables` varchar(255) DEFAULT NULL,
+  `isScale` tinyint(1) DEFAULT '0',
+  `reverse` tinyint(1) DEFAULT '0',
+  `colorLinked` varchar(255) DEFAULT NULL,
+  `colorLinkedtoSelf0` varchar(255) DEFAULT NULL,
+  `colorLinkedtoSelf1` varchar(255) DEFAULT NULL,
+  `cameraYaw` int(10) unsigned DEFAULT NULL,
+  `discrete` tinyint(1) DEFAULT '0',
+  `randomizable` tinyint(1) DEFAULT '0',
+  `randomizableGroup` tinyint(1) DEFAULT '0',
+  `isVarHairColor` tinyint(1) DEFAULT '0',
+  `imageDesignSkillMod` varchar(15) DEFAULT NULL,
+  `skillModValue` int(10) unsigned DEFAULT '0',
+  `modificationType` varchar(10) DEFAULT NULL,
+  `maxChoices` int(10) unsigned DEFAULT '0',
+  `minScale` float(4,2) NOT NULL DEFAULT '1.00',
+  `maxScale` float(4,2) NOT NULL DEFAULT '1.00',
+  PRIMARY KEY (`speciesGender`,`customizationGroup`,`customizationName`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for datapad
 -- ----------------------------
-DROP TABLE IF EXISTS `datapad`;
 CREATE TABLE `datapad` (
+  `object_id` bigint(20) unsigned NOT NULL,
+  `character_id` bigint(20) unsigned NOT NULL,
+  `object_type` bigint(20) NOT NULL,
+  `custom_name` tinytext NOT NULL,
+  `stringFile` tinytext NOT NULL,
+  `stringName` tinytext NOT NULL,
+  `object_crc` bigint(10) unsigned NOT NULL,
+  `attributes` text NOT NULL,
+  `appearance` mediumtext NOT NULL,
+  `linked_tano_id` bigint(20) unsigned NOT NULL,
+  `deleted` bit(1) NOT NULL DEFAULT '\0',
+  PRIMARY KEY (`object_id`),
+  KEY `char_ix` (`character_id`),
+  KEY `item_ix` (`object_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=185 DEFAULT CHARSET=latin1;
+
+
+-- ----------------------------
+-- Table structure for datapad_items
+-- ----------------------------
+CREATE TABLE `datapad_items` (
   `item_id` bigint(20) unsigned NOT NULL,
   `character_id` bigint(20) unsigned NOT NULL,
   `name` text NOT NULL,
-  `itno_crc` bigint(10) unsigned NOT NULL,
-  `tano_crc` bigint(20) unsigned NOT NULL,
-  `tano_type` int(10) unsigned NOT NULL,
-  `tano_name` tinytext NOT NULL,
+  `template_crc` bigint(20) unsigned NOT NULL,
+  `template_type` int(10) unsigned NOT NULL,
+  `template_type_name` tinytext NOT NULL,
+  `template_name` tinytext NOT NULL,
+  `container` bigint(20) unsigned NOT NULL DEFAULT '0',
+  `equipped` tinyint(1) unsigned NOT NULL,
+  `deleted` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `attributes` text NOT NULL,
   `appearance` mediumtext NOT NULL,
-  `itemMask` smallint(5) unsigned NOT NULL default '65535',
-  PRIMARY KEY  (`item_id`),
-  KEY `char_ix` (`character_id`),
-  KEY `item_ix` (`item_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=185 DEFAULT CHARSET=latin1;
+  `itemMask` smallint(5) unsigned NOT NULL DEFAULT '65535',
+  `optionsBitmask` int(10) unsigned NOT NULL DEFAULT '0',
+  `in_bank` tinyint(3) unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`item_id`),
+  KEY `container_ix` (`container`),
+  KEY `deleted_ix` (`deleted`),
+  KEY `char_ix` (`character_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for draft_schematics
 -- ----------------------------
-DROP TABLE IF EXISTS `draft_schematics`;
 CREATE TABLE `draft_schematics` (
   `draftschematic_id` bigint(20) unsigned NOT NULL,
   `name` text NOT NULL,
@@ -376,29 +388,27 @@ CREATE TABLE `draft_schematics` (
   `experimental_group_title` text NOT NULL,
   `tano_attributes` text NOT NULL,
   `crafting_tool_tab` int(10) unsigned NOT NULL,
-  PRIMARY KEY  (`draftschematic_id`)
+  PRIMARY KEY (`draftschematic_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for faction
 -- ----------------------------
-DROP TABLE IF EXISTS `faction`;
 CREATE TABLE `faction` (
-  `faction_id` int(4) unsigned NOT NULL auto_increment,
-  `faction` varchar(45) default NULL,
-  PRIMARY KEY  (`faction_id`)
+  `faction_id` int(4) unsigned NOT NULL AUTO_INCREMENT,
+  `faction` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`faction_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=64 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for friendlist
 -- ----------------------------
-DROP TABLE IF EXISTS `friendlist`;
 CREATE TABLE `friendlist` (
   `character_id` mediumint(8) unsigned NOT NULL,
   `friend_id` mediumint(8) NOT NULL,
   `friend_galaxy` varchar(50) NOT NULL,
-  `ix` int(10) unsigned NOT NULL auto_increment,
-  PRIMARY KEY  (`ix`),
+  `ix` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ix`),
   KEY `char_id_ix` (`character_id`),
   KEY `friend_id` (`friend_id`),
   KEY `friend_galaxy_ix` (`friend_galaxy`)
@@ -407,40 +417,37 @@ CREATE TABLE `friendlist` (
 -- ----------------------------
 -- Table structure for friendlist_reverse
 -- ----------------------------
-DROP TABLE IF EXISTS `friendlist_reverse`;
 CREATE TABLE `friendlist_reverse` (
-  `charID` mediumint(8) unsigned NOT NULL auto_increment,
-  `gotMePOID` bigint(20) NOT NULL default '0',
-  PRIMARY KEY  (`charID`)
+  `charID` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `gotMePOID` bigint(20) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`charID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for galaxy
 -- ----------------------------
-DROP TABLE IF EXISTS `galaxy`;
 CREATE TABLE `galaxy` (
-  `galaxy_id` int(5) NOT NULL auto_increment,
-  `name` varchar(50) NOT NULL default '',
-  `address` varchar(100) NOT NULL default '',
-  `port` int(8) NOT NULL default '0',
-  `pingport` int(8) default NULL,
-  `population` int(4) NOT NULL default '0',
-  PRIMARY KEY  (`galaxy_id`)
+  `galaxy_id` int(5) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL DEFAULT '',
+  `address` varchar(100) NOT NULL DEFAULT '',
+  `port` int(8) NOT NULL DEFAULT '0',
+  `pingport` int(8) DEFAULT NULL,
+  `population` int(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`galaxy_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for guilds
 -- ----------------------------
-DROP TABLE IF EXISTS `guilds`;
 CREATE TABLE `guilds` (
-  `guild_id` int(11) unsigned NOT NULL auto_increment,
-  `guild_tag` varchar(255) NOT NULL default 'DEFAULT',
-  `guild_name` varchar(255) NOT NULL default 'Default Guild',
-  `members` int(4) unsigned zerofill NOT NULL default '0000',
-  `created` varchar(10) default NULL,
-  `leader` bigint(11) default NULL,
-  `last_name_change` varchar(10) default NULL,
-  PRIMARY KEY  (`guild_id`),
+  `guild_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `guild_tag` varchar(255) NOT NULL DEFAULT 'DEFAULT',
+  `guild_name` varchar(255) NOT NULL DEFAULT 'Default Guild',
+  `members` int(4) unsigned zerofill NOT NULL DEFAULT '0000',
+  `created` varchar(10) DEFAULT NULL,
+  `leader` bigint(11) DEFAULT NULL,
+  `last_name_change` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`guild_id`),
   KEY `guildID_ix` (`guild_id`),
   KEY `guidleader_ix` (`leader`),
   KEY `guildTag_ix` (`guild_tag`)
@@ -449,15 +456,14 @@ CREATE TABLE `guilds` (
 -- ----------------------------
 -- Table structure for guilds_sponsoring
 -- ----------------------------
-DROP TABLE IF EXISTS `guilds_sponsoring`;
 CREATE TABLE `guilds_sponsoring` (
   `guild_id` int(11) unsigned NOT NULL,
-  `guild_name` varchar(255) NOT NULL default 'Default Guild',
-  `sponsored_time` varchar(10) default NULL,
-  `sponsored_by` bigint(11) unsigned default NULL,
-  `sponsored` bigint(11) unsigned default NULL,
-  `pix` bigint(11) unsigned NOT NULL auto_increment,
-  PRIMARY KEY  (`pix`),
+  `guild_name` varchar(255) NOT NULL DEFAULT 'Default Guild',
+  `sponsored_time` varchar(10) DEFAULT NULL,
+  `sponsored_by` bigint(11) unsigned DEFAULT NULL,
+  `sponsored` bigint(11) unsigned DEFAULT NULL,
+  `pix` bigint(11) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`pix`),
   KEY `sponsored_ix` (`sponsored`),
   KEY `sponsor_ix` (`sponsored_by`),
   KEY `guild_ix` (`guild_id`)
@@ -466,13 +472,12 @@ CREATE TABLE `guilds_sponsoring` (
 -- ----------------------------
 -- Table structure for ignorelist
 -- ----------------------------
-DROP TABLE IF EXISTS `ignorelist`;
 CREATE TABLE `ignorelist` (
   `character_id` mediumint(8) unsigned NOT NULL,
   `ignore_id` mediumint(8) NOT NULL,
   `ignore_galaxy` varchar(50) NOT NULL,
-  `ix` int(10) unsigned NOT NULL auto_increment,
-  PRIMARY KEY  (`ix`),
+  `ix` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ix`),
   KEY `char_id_ix` (`character_id`),
   KEY `ignore_id` (`ignore_id`),
   KEY `ignore_galaxy_ix` (`ignore_galaxy`)
@@ -481,48 +486,45 @@ CREATE TABLE `ignorelist` (
 -- ----------------------------
 -- Table structure for knowledgebase
 -- ----------------------------
-DROP TABLE IF EXISTS `knowledgebase`;
 CREATE TABLE `knowledgebase` (
-  `article_id` int(11) NOT NULL auto_increment,
-  `article_title` varchar(45) NOT NULL default 'Empty Title',
-  `article_text` varchar(255) NOT NULL default 'Empty Body',
-  PRIMARY KEY  (`article_id`)
+  `article_id` int(11) NOT NULL AUTO_INCREMENT,
+  `article_title` varchar(45) NOT NULL DEFAULT 'Empty Title',
+  `article_text` varchar(255) NOT NULL DEFAULT 'Empty Body',
+  PRIMARY KEY (`article_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for lootgroup_weight
 -- ----------------------------
-DROP TABLE IF EXISTS `lootgroup_weight`;
 CREATE TABLE `lootgroup_weight` (
   `lootgroup` int(4) unsigned NOT NULL,
-  `weight` tinyint(3) default NULL,
-  `max_drop_from_this_group` tinyint(3) unsigned NOT NULL default '3',
-  PRIMARY KEY  (`lootgroup`)
+  `weight` tinyint(3) DEFAULT NULL,
+  `max_drop_from_this_group` tinyint(3) unsigned NOT NULL DEFAULT '3',
+  PRIMARY KEY (`lootgroup`)
 ) ENGINE=MyISAM AUTO_INCREMENT=608 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for loottable
 -- ----------------------------
-DROP TABLE IF EXISTS `loottable`;
 CREATE TABLE `loottable` (
-  `lootgroup` tinyint(4) default NULL,
+  `lootgroup` tinyint(4) DEFAULT NULL,
   `name` text NOT NULL,
   `template_crc` bigint(20) unsigned NOT NULL,
   `template_type` int(10) unsigned NOT NULL,
-  `template_name` varchar(50) default '',
-  `container` bigint(20) unsigned NOT NULL default '0',
+  `template_name` varchar(50) DEFAULT '',
+  `container` bigint(20) unsigned NOT NULL DEFAULT '0',
   `attributes` text NOT NULL,
   `appearance` mediumtext NOT NULL,
-  `chance` int(10) unsigned NOT NULL default '100',
-  `level` int(10) unsigned NOT NULL default '0',
-  `lastdropstamp` varchar(20) NOT NULL default '0',
-  `dontdropbefore` varchar(20) NOT NULL default '0',
-  `unique` int(10) unsigned NOT NULL default '0',
-  `notrade` int(10) unsigned NOT NULL default '0',
-  `race` varchar(150) NOT NULL default 'all',
-  `pix` int(10) unsigned NOT NULL auto_increment,
-  `itemMask` smallint(5) unsigned NOT NULL default '65535',
-  PRIMARY KEY  (`pix`),
+  `chance` int(10) unsigned NOT NULL DEFAULT '100',
+  `level` int(10) unsigned NOT NULL DEFAULT '0',
+  `lastdropstamp` varchar(20) NOT NULL DEFAULT '0',
+  `dontdropbefore` varchar(20) NOT NULL DEFAULT '0',
+  `unique` int(10) unsigned NOT NULL DEFAULT '0',
+  `notrade` int(10) unsigned NOT NULL DEFAULT '0',
+  `race` varchar(150) NOT NULL DEFAULT 'all',
+  `pix` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `itemMask` smallint(5) unsigned NOT NULL DEFAULT '65535',
+  PRIMARY KEY (`pix`),
   KEY `lootgroup_ix` (`lootgroup`),
   KEY `chance_ix` (`chance`),
   KEY `lootlevel_ix` (`level`),
@@ -532,23 +534,21 @@ CREATE TABLE `loottable` (
 -- ----------------------------
 -- Table structure for mail
 -- ----------------------------
-DROP TABLE IF EXISTS `mail`;
 CREATE TABLE `mail` (
-  `mail_id` int(11) NOT NULL auto_increment,
+  `mail_id` int(11) NOT NULL AUTO_INCREMENT,
   `sender_name` text NOT NULL,
   `recv_name` text NOT NULL,
   `subject` text NOT NULL,
   `body` text,
-  `time` int(10) unsigned default NULL,
-  `attachment_id` mediumint(8) unsigned default NULL,
-  `read` tinyint(1) NOT NULL default '0',
-  PRIMARY KEY  (`mail_id`)
+  `time` int(10) unsigned DEFAULT NULL,
+  `attachment_id` mediumint(8) unsigned DEFAULT NULL,
+  `read` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`mail_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for mail_attachment
 -- ----------------------------
-DROP TABLE IF EXISTS `mail_attachment`;
 CREATE TABLE `mail_attachment` (
   `attachment_id` mediumint(8) unsigned NOT NULL,
   `planet_id` mediumint(8) unsigned NOT NULL,
@@ -557,13 +557,12 @@ CREATE TABLE `mail_attachment` (
   `x` float(10,6) NOT NULL,
   `y` float(10,6) NOT NULL,
   `z` float(10,6) NOT NULL,
-  PRIMARY KEY  (`attachment_id`)
+  PRIMARY KEY (`attachment_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for no_build_areas
 -- ----------------------------
-DROP TABLE IF EXISTS `no_build_areas`;
 CREATE TABLE `no_build_areas` (
   `zoneid` tinyint(3) unsigned NOT NULL,
   `x` float NOT NULL,
@@ -574,74 +573,70 @@ CREATE TABLE `no_build_areas` (
 -- ----------------------------
 -- Table structure for no_build_zones
 -- ----------------------------
-DROP TABLE IF EXISTS `no_build_zones`;
 CREATE TABLE `no_build_zones` (
-  `nbz_id` int(11) unsigned NOT NULL auto_increment,
-  `planet_id` int(11) NOT NULL default '0',
-  `zone_name` char(255) default 'region_name',
-  `zone_file` char(255) default 'region_file',
-  `zone_type` char(255) default NULL,
-  `x` float NOT NULL default '0',
-  `z` float NOT NULL default '0',
-  `radius` float NOT NULL default '0',
-  PRIMARY KEY  (`nbz_id`)
+  `nbz_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `planet_id` int(11) NOT NULL DEFAULT '0',
+  `zone_name` char(255) DEFAULT 'region_name',
+  `zone_file` char(255) DEFAULT 'region_file',
+  `zone_type` char(255) DEFAULT NULL,
+  `x` float NOT NULL DEFAULT '0',
+  `z` float NOT NULL DEFAULT '0',
+  `radius` float NOT NULL DEFAULT '0',
+  PRIMARY KEY (`nbz_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=182 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for npc_faction
 -- ----------------------------
-DROP TABLE IF EXISTS `npc_faction`;
 CREATE TABLE `npc_faction` (
-  `npc_group_id` int(10) unsigned NOT NULL auto_increment,
-  `faction_id` int(4) unsigned NOT NULL default '0',
-  `value` int(5) NOT NULL default '0',
-  PRIMARY KEY  (`npc_group_id`,`faction_id`)
+  `npc_group_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `faction_id` int(4) unsigned NOT NULL DEFAULT '0',
+  `value` int(5) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`npc_group_id`,`faction_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for object_crc_string_table
 -- ----------------------------
-DROP TABLE IF EXISTS `object_crc_string_table`;
 CREATE TABLE `object_crc_string_table` (
-  `decimal` bigint(20) NOT NULL default '0',
-  `hex` varchar(15) NOT NULL default '',
-  `path` varchar(255) default NULL,
-  PRIMARY KEY  (`decimal`,`hex`)
+  `decimal` bigint(20) NOT NULL DEFAULT '0',
+  `hex` varchar(15) NOT NULL DEFAULT '',
+  `path` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`decimal`,`hex`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for performance
 -- ----------------------------
-DROP TABLE IF EXISTS `performance`;
 CREATE TABLE `performance` (
-  `performanceName` varchar(11) default NULL,
-  `instrumentAudioId` int(10) unsigned default NULL,
-  `requiredSong` varchar(21) default NULL,
-  `requiredInstrument` varchar(11) default NULL,
-  `requiredDance` varchar(22) default NULL,
-  `danceVisualId` int(10) unsigned default NULL,
-  `actionPointsPerLoop` int(10) unsigned default NULL,
-  `loopDuration` float default NULL,
-  `type` int(11) default NULL,
-  `baseXp` int(10) unsigned default NULL,
-  `flourishXpMod` int(10) unsigned default NULL,
-  `healMindWound` int(10) unsigned default NULL,
-  `healShockWound` int(10) unsigned default NULL,
-  `requiredSkillMod` varchar(21) default NULL,
-  `requiredSkillModValue` int(10) unsigned default NULL,
-  `mainloop` varchar(40) default NULL,
-  `flourish1` varchar(46) default NULL,
-  `flourish2` varchar(46) default NULL,
-  `flourish3` varchar(46) default NULL,
-  `flourish4` varchar(46) default NULL,
-  `flourish5` varchar(46) default NULL,
-  `flourish6` varchar(46) default NULL,
-  `flourish7` varchar(46) default NULL,
-  `flourish8` varchar(46) default NULL,
-  `intro` varchar(41) default NULL,
-  `outro` varchar(41) default NULL,
-  `ix` int(10) unsigned NOT NULL auto_increment,
-  PRIMARY KEY  (`ix`),
+  `performanceName` varchar(11) DEFAULT NULL,
+  `instrumentAudioId` int(10) unsigned DEFAULT NULL,
+  `requiredSong` varchar(21) DEFAULT NULL,
+  `requiredInstrument` varchar(11) DEFAULT NULL,
+  `requiredDance` varchar(22) DEFAULT NULL,
+  `danceVisualId` int(10) unsigned DEFAULT NULL,
+  `actionPointsPerLoop` int(10) unsigned DEFAULT NULL,
+  `loopDuration` float DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `baseXp` int(10) unsigned DEFAULT NULL,
+  `flourishXpMod` int(10) unsigned DEFAULT NULL,
+  `healMindWound` int(10) unsigned DEFAULT NULL,
+  `healShockWound` int(10) unsigned DEFAULT NULL,
+  `requiredSkillMod` varchar(21) DEFAULT NULL,
+  `requiredSkillModValue` int(10) unsigned DEFAULT NULL,
+  `mainloop` varchar(40) DEFAULT NULL,
+  `flourish1` varchar(46) DEFAULT NULL,
+  `flourish2` varchar(46) DEFAULT NULL,
+  `flourish3` varchar(46) DEFAULT NULL,
+  `flourish4` varchar(46) DEFAULT NULL,
+  `flourish5` varchar(46) DEFAULT NULL,
+  `flourish6` varchar(46) DEFAULT NULL,
+  `flourish7` varchar(46) DEFAULT NULL,
+  `flourish8` varchar(46) DEFAULT NULL,
+  `intro` varchar(41) DEFAULT NULL,
+  `outro` varchar(41) DEFAULT NULL,
+  `ix` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ix`),
   KEY `iAudio_ix` (`instrumentAudioId`),
   KEY `iDance_ix` (`danceVisualId`)
 ) ENGINE=MyISAM AUTO_INCREMENT=155 DEFAULT CHARSET=latin1;
@@ -649,33 +644,30 @@ CREATE TABLE `performance` (
 -- ----------------------------
 -- Table structure for performance_effect
 -- ----------------------------
-DROP TABLE IF EXISTS `performance_effect`;
 CREATE TABLE `performance_effect` (
-  `effectName` varchar(14) default NULL,
-  `performanceType` varchar(11) default NULL,
-  `requiredSkillModValue` int(10) unsigned default NULL,
-  `requiredPerforming` tinyint(1) default NULL,
-  `targetType` varchar(10) default NULL,
-  `effectDuration` float default NULL,
-  `effectActionCost` int(10) unsigned default NULL
+  `effectName` varchar(14) DEFAULT NULL,
+  `performanceType` varchar(11) DEFAULT NULL,
+  `requiredSkillModValue` int(10) unsigned DEFAULT NULL,
+  `requiredPerforming` tinyint(1) DEFAULT NULL,
+  `targetType` varchar(10) DEFAULT NULL,
+  `effectDuration` float DEFAULT NULL,
+  `effectActionCost` int(10) unsigned DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for planet
 -- ----------------------------
-DROP TABLE IF EXISTS `planet`;
 CREATE TABLE `planet` (
   `planet_id` int(2) NOT NULL,
   `name` varchar(25) NOT NULL,
-  PRIMARY KEY  (`planet_id`)
+  PRIMARY KEY (`planet_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for planetmap
 -- ----------------------------
-DROP TABLE IF EXISTS `planetmap`;
 CREATE TABLE `planetmap` (
-  `index` int(10) unsigned NOT NULL auto_increment,
+  `index` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `planet` varchar(45) NOT NULL,
   `location_name` varchar(65) NOT NULL,
   `x` float NOT NULL,
@@ -683,13 +675,12 @@ CREATE TABLE `planetmap` (
   `type1` int(10) unsigned NOT NULL,
   `type2` int(10) unsigned NOT NULL,
   `type3` int(10) unsigned NOT NULL,
-  PRIMARY KEY  (`index`)
+  PRIMARY KEY (`index`)
 ) ENGINE=MyISAM AUTO_INCREMENT=722 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for player_storage
 -- ----------------------------
-DROP TABLE IF EXISTS `player_storage`;
 CREATE TABLE `player_storage` (
   `item_id` bigint(20) unsigned NOT NULL,
   `structure_id` bigint(20) unsigned NOT NULL,
@@ -697,7 +688,7 @@ CREATE TABLE `player_storage` (
   `template_crc` bigint(20) unsigned NOT NULL,
   `template_type` int(10) unsigned NOT NULL,
   `template_name` tinytext NOT NULL,
-  `container` bigint(20) unsigned NOT NULL default '0',
+  `container` bigint(20) unsigned NOT NULL DEFAULT '0',
   `parent_id` bigint(20) unsigned NOT NULL,
   `attributes` text NOT NULL,
   `appearance` mediumtext NOT NULL,
@@ -709,9 +700,9 @@ CREATE TABLE `player_storage` (
   `oY` float NOT NULL,
   `oZ` float NOT NULL,
   `oW` float NOT NULL,
-  `dropped_by_character` mediumint(8) unsigned NOT NULL default '0',
+  `dropped_by_character` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `optionsBitmask` int(10) unsigned NOT NULL,
-  PRIMARY KEY  (`item_id`),
+  PRIMARY KEY (`item_id`),
   KEY `structure_ix` (`structure_id`),
   KEY `container_ix` (`container`),
   KEY `parent_ix` (`parent_id`)
@@ -720,62 +711,59 @@ CREATE TABLE `player_storage` (
 -- ----------------------------
 -- Table structure for profession
 -- ----------------------------
-DROP TABLE IF EXISTS `profession`;
 CREATE TABLE `profession` (
-  `profession_id` int(4) unsigned NOT NULL auto_increment,
-  `name` varchar(45) NOT NULL default '',
-  PRIMARY KEY  (`profession_id`)
+  `profession_id` int(4) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL DEFAULT '',
+  PRIMARY KEY (`profession_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for recruiters
 -- ----------------------------
-DROP TABLE IF EXISTS `recruiters`;
 CREATE TABLE `recruiters` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `planet_id` tinyint(1) unsigned NOT NULL,
   `x` float NOT NULL,
   `y` float NOT NULL,
   `z` float NOT NULL,
   `oY` float NOT NULL,
   `oW` float NOT NULL,
-  `cell_id` bigint(20) unsigned NOT NULL default '0',
+  `cell_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `type` tinyint(1) unsigned NOT NULL COMMENT '1 = imperial 2= rebel',
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   KEY `SECONDARY` (`planet_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for resource_data
 -- ----------------------------
-DROP TABLE IF EXISTS `resource_data`;
 CREATE TABLE `resource_data` (
-  `INDEX` int(11) NOT NULL auto_increment,
+  `INDEX` int(11) NOT NULL AUTO_INCREMENT,
   `resource_name` varchar(255) NOT NULL,
   `resource_type` varchar(255) NOT NULL,
-  `class_1` varchar(255) default NULL,
-  `class_2` varchar(255) default NULL,
-  `class_3` varchar(255) default NULL,
-  `class_4` varchar(255) default NULL,
-  `class_5` varchar(255) default NULL,
-  `class_6` varchar(255) default NULL,
-  `class_7` varchar(255) default NULL,
-  `res_decay_resist` varchar(255) default '0',
-  `res_quality` varchar(255) default '0',
-  `res_flavor` varchar(255) default '0',
-  `res_potential_energy` varchar(255) default '0',
-  `res_malleability` varchar(255) default '0',
-  `res_toughness` varchar(255) default '0',
-  `res_shock_resistance` varchar(255) default '0',
-  `res_cold_resist` varchar(255) default '0',
-  `res_heat_resist` varchar(255) default '0',
-  `res_conductivity` varchar(255) default '0',
-  `entangle_resistance` varchar(255) default '0',
+  `class_1` varchar(255) DEFAULT NULL,
+  `class_2` varchar(255) DEFAULT NULL,
+  `class_3` varchar(255) DEFAULT NULL,
+  `class_4` varchar(255) DEFAULT NULL,
+  `class_5` varchar(255) DEFAULT NULL,
+  `class_6` varchar(255) DEFAULT NULL,
+  `class_7` varchar(255) DEFAULT NULL,
+  `res_decay_resist` varchar(255) DEFAULT '0',
+  `res_quality` varchar(255) DEFAULT '0',
+  `res_flavor` varchar(255) DEFAULT '0',
+  `res_potential_energy` varchar(255) DEFAULT '0',
+  `res_malleability` varchar(255) DEFAULT '0',
+  `res_toughness` varchar(255) DEFAULT '0',
+  `res_shock_resistance` varchar(255) DEFAULT '0',
+  `res_cold_resist` varchar(255) DEFAULT '0',
+  `res_heat_resist` varchar(255) DEFAULT '0',
+  `res_conductivity` varchar(255) DEFAULT '0',
+  `entangle_resistance` varchar(255) DEFAULT '0',
   `shiftedIn` bigint(20) NOT NULL,
-  `shiftedOut` bigint(20) NOT NULL default '0',
+  `shiftedOut` bigint(20) NOT NULL DEFAULT '0',
   `container` varchar(255) NOT NULL,
   `containerCRC` bigint(20) NOT NULL,
-  PRIMARY KEY  (`INDEX`),
+  PRIMARY KEY (`INDEX`),
   KEY `name_ix` (`resource_name`),
   KEY `class_ix_1` (`class_1`),
   KEY `class_ix_2` (`class_2`),
@@ -789,9 +777,8 @@ CREATE TABLE `resource_data` (
 -- ----------------------------
 -- Table structure for resource_spawns
 -- ----------------------------
-DROP TABLE IF EXISTS `resource_spawns`;
 CREATE TABLE `resource_spawns` (
-  `INDEX` int(11) NOT NULL auto_increment,
+  `INDEX` int(11) NOT NULL AUTO_INCREMENT,
   `resource_name` varchar(255) NOT NULL,
   `planet_id` smallint(6) NOT NULL,
   `x` float NOT NULL,
@@ -800,7 +787,7 @@ CREATE TABLE `resource_spawns` (
   `max` float NOT NULL,
   `despawn` bigint(20) NOT NULL,
   `pool` varchar(255) NOT NULL,
-  PRIMARY KEY  (`INDEX`),
+  PRIMARY KEY (`INDEX`),
   KEY `resName` (`resource_name`),
   KEY `despawn_ix` (`despawn`),
   KEY `name_ix` (`resource_name`),
@@ -810,32 +797,31 @@ CREATE TABLE `resource_spawns` (
 -- ----------------------------
 -- Table structure for resource_tree
 -- ----------------------------
-DROP TABLE IF EXISTS `resource_tree`;
 CREATE TABLE `resource_tree` (
-  `INDEX` int(11) NOT NULL auto_increment,
+  `INDEX` int(11) NOT NULL AUTO_INCREMENT,
   `resource_type` varchar(255) NOT NULL,
-  `class_1` varchar(255) default NULL,
-  `class_2` varchar(255) default NULL,
-  `class_3` varchar(255) default NULL,
-  `class_4` varchar(255) default NULL,
-  `class_5` varchar(255) default NULL,
-  `class_6` varchar(255) default NULL,
-  `class_7` varchar(255) default NULL,
+  `class_1` varchar(255) DEFAULT NULL,
+  `class_2` varchar(255) DEFAULT NULL,
+  `class_3` varchar(255) DEFAULT NULL,
+  `class_4` varchar(255) DEFAULT NULL,
+  `class_5` varchar(255) DEFAULT NULL,
+  `class_6` varchar(255) DEFAULT NULL,
+  `class_7` varchar(255) DEFAULT NULL,
   `Max_types` smallint(6) NOT NULL,
   `Min_types` smallint(6) NOT NULL,
   `Min_pools` smallint(6) NOT NULL,
-  `Max_Pools` smallint(6) default NULL,
-  `Attribute_1` varchar(255) default NULL,
-  `Attribute_2` varchar(255) default NULL,
-  `Attribute_3` varchar(255) default NULL,
-  `Attribute_4` varchar(255) default NULL,
-  `Attribute_5` varchar(255) default NULL,
-  `Attribute_6` varchar(255) default NULL,
-  `Attribute_7` varchar(255) default NULL,
-  `Attribute_8` varchar(255) default NULL,
-  `Attribute_9` varchar(255) default NULL,
-  `Attribute_10` varchar(255) default NULL,
-  `Attribute_11` varchar(255) default NULL,
+  `Max_Pools` smallint(6) DEFAULT NULL,
+  `Attribute_1` varchar(255) DEFAULT NULL,
+  `Attribute_2` varchar(255) DEFAULT NULL,
+  `Attribute_3` varchar(255) DEFAULT NULL,
+  `Attribute_4` varchar(255) DEFAULT NULL,
+  `Attribute_5` varchar(255) DEFAULT NULL,
+  `Attribute_6` varchar(255) DEFAULT NULL,
+  `Attribute_7` varchar(255) DEFAULT NULL,
+  `Attribute_8` varchar(255) DEFAULT NULL,
+  `Attribute_9` varchar(255) DEFAULT NULL,
+  `Attribute_10` varchar(255) DEFAULT NULL,
+  `Attribute_11` varchar(255) DEFAULT NULL,
   `Att_1_min` smallint(6) NOT NULL,
   `Att_1_max` smallint(6) NOT NULL,
   `Att_2_min` smallint(6) NOT NULL,
@@ -860,54 +846,52 @@ CREATE TABLE `resource_tree` (
   `Att_11_max` smallint(6) NOT NULL,
   `Resource_Container_Type` varchar(255) NOT NULL,
   `Resource_Container_CRC` bigint(11) NOT NULL,
-  `Random_Name_Class` varchar(255) default NULL,
+  `Random_Name_Class` varchar(255) DEFAULT NULL,
   `weight` smallint(6) NOT NULL,
-  PRIMARY KEY  (`INDEX`)
+  PRIMARY KEY (`INDEX`)
 ) ENGINE=MyISAM AUTO_INCREMENT=906 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Table structure for skills
 -- ----------------------------
-DROP TABLE IF EXISTS `skills`;
 CREATE TABLE `skills` (
-  `skill_id` int(10) unsigned NOT NULL auto_increment,
-  `skill_name` varchar(52) default NULL,
-  `skill_parent` varchar(52) default NULL,
-  `skill_graph_type` varchar(10) default NULL,
-  `skill_god_only` tinyint(1) default NULL,
-  `skill_is_title` tinyint(1) default NULL,
-  `skill_is_profession` tinyint(1) default NULL,
-  `skill_is_hidden` tinyint(1) default NULL,
-  `skill_money_required` int(10) unsigned default NULL,
-  `skill_points_required` int(10) unsigned default NULL,
-  `skill_requirements_count` int(10) unsigned default NULL,
-  `skill_requirements` varchar(201) default NULL,
-  `skill_preclusions` varchar(50) default NULL,
-  `skill_xp_type` varchar(40) default NULL,
-  `skill_xp_cost` int(10) unsigned default NULL,
-  `skill_xp_cap` int(10) unsigned default NULL,
-  `skill_required_missions` varchar(1) default NULL,
-  `skill_apprenticeships_required` int(10) unsigned default NULL,
-  `skill_stats_required` varchar(1) default NULL,
-  `skill_species_required` varchar(56) default NULL,
-  `skill_jedi_state_required` varchar(16) default NULL,
-  `skill_abilities` varchar(1) default NULL,
+  `skill_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `skill_name` varchar(52) DEFAULT NULL,
+  `skill_parent` varchar(52) DEFAULT NULL,
+  `skill_graph_type` varchar(10) DEFAULT NULL,
+  `skill_god_only` tinyint(1) DEFAULT NULL,
+  `skill_is_title` tinyint(1) DEFAULT NULL,
+  `skill_is_profession` tinyint(1) DEFAULT NULL,
+  `skill_is_hidden` tinyint(1) DEFAULT NULL,
+  `skill_money_required` int(10) unsigned DEFAULT NULL,
+  `skill_points_required` int(10) unsigned DEFAULT NULL,
+  `skill_requirements_count` int(10) unsigned DEFAULT NULL,
+  `skill_requirements` varchar(201) DEFAULT NULL,
+  `skill_preclusions` varchar(50) DEFAULT NULL,
+  `skill_xp_type` varchar(40) DEFAULT NULL,
+  `skill_xp_cost` int(10) unsigned DEFAULT NULL,
+  `skill_xp_cap` int(10) unsigned DEFAULT NULL,
+  `skill_required_missions` varchar(1) DEFAULT NULL,
+  `skill_apprenticeships_required` int(10) unsigned DEFAULT NULL,
+  `skill_stats_required` varchar(1) DEFAULT NULL,
+  `skill_species_required` varchar(56) DEFAULT NULL,
+  `skill_jedi_state_required` varchar(16) DEFAULT NULL,
+  `skill_abilities` varchar(1) DEFAULT NULL,
   `skill_commands` text,
   `skill_mods` text,
-  `skill_schematics_granted` varchar(123) default NULL,
-  `skill_schematics_revoked` varchar(1) default NULL,
-  `skill_is_searchable` tinyint(1) default NULL,
-  `skill_ender` int(10) unsigned default NULL,
-  PRIMARY KEY  (`skill_id`),
+  `skill_schematics_granted` varchar(123) DEFAULT NULL,
+  `skill_schematics_revoked` varchar(1) DEFAULT NULL,
+  `skill_is_searchable` tinyint(1) DEFAULT NULL,
+  `skill_ender` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`skill_id`),
   UNIQUE KEY `skill_id` (`skill_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1069 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for starting_location
 -- ----------------------------
-DROP TABLE IF EXISTS `starting_location`;
 CREATE TABLE `starting_location` (
-  `location_id` int(2) unsigned NOT NULL auto_increment,
+  `location_id` int(2) unsigned NOT NULL AUTO_INCREMENT,
   `location` varchar(45) NOT NULL,
   `planet_id` float NOT NULL,
   `x` float(10,6) NOT NULL,
@@ -916,13 +900,12 @@ CREATE TABLE `starting_location` (
   `description` varchar(45) NOT NULL,
   `radius` float(2,0) unsigned NOT NULL,
   `heading` int(3) unsigned NOT NULL,
-  PRIMARY KEY  (`location_id`)
+  PRIMARY KEY (`location_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for staticobjects
 -- ----------------------------
-DROP TABLE IF EXISTS `staticobjects`;
 CREATE TABLE `staticobjects` (
   `zoneid` tinyint(4) NOT NULL,
   `objectid` bigint(20) NOT NULL,
@@ -936,8 +919,8 @@ CREATE TABLE `staticobjects` (
   `Z` float NOT NULL,
   `Y` float NOT NULL,
   `type` float NOT NULL,
-  `client` tinyint(1) NOT NULL default '1',
-  PRIMARY KEY  (`objectid`),
+  `client` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`objectid`),
   KEY `zone_id` (`zoneid`),
   FULLTEXT KEY `file_ix` (`file`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -945,9 +928,8 @@ CREATE TABLE `staticobjects` (
 -- ----------------------------
 -- Table structure for statictangibleobjects
 -- ----------------------------
-DROP TABLE IF EXISTS `statictangibleobjects`;
 CREATE TABLE `statictangibleobjects` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `zoneid` tinyint(4) NOT NULL,
   `parentid` bigint(20) NOT NULL,
   `name` varchar(255) NOT NULL,
@@ -961,7 +943,7 @@ CREATE TABLE `statictangibleobjects` (
   `X` float NOT NULL,
   `Z` float NOT NULL,
   `Y` float NOT NULL,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   KEY `zone_id` (`zoneid`),
   FULLTEXT KEY `file_ix` (`template_file`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
@@ -969,39 +951,36 @@ CREATE TABLE `statictangibleobjects` (
 -- ----------------------------
 -- Table structure for template_items
 -- ----------------------------
-DROP TABLE IF EXISTS `template_items`;
 CREATE TABLE `template_items` (
-  `template_id` mediumint(8) unsigned NOT NULL auto_increment,
+  `template_id` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(128) NOT NULL,
-  PRIMARY KEY  (`template_id`)
+  PRIMARY KEY (`template_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=7150 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for terminals
 -- ----------------------------
-DROP TABLE IF EXISTS `terminals`;
 CREATE TABLE `terminals` (
-  `id` int(11) NOT NULL auto_increment,
-  `parentid` bigint(20) NOT NULL default '0',
-  `type` tinyint(4) NOT NULL default '0',
-  `oX` float NOT NULL default '0',
-  `oZ` float NOT NULL default '0',
-  `oY` float NOT NULL default '0',
-  `oW` float NOT NULL default '0',
-  `X` float NOT NULL default '0',
-  `Z` float NOT NULL default '0',
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `parentid` bigint(20) NOT NULL DEFAULT '0',
+  `type` tinyint(4) NOT NULL DEFAULT '0',
+  `oX` float NOT NULL DEFAULT '0',
+  `oZ` float NOT NULL DEFAULT '0',
+  `oY` float NOT NULL DEFAULT '0',
+  `oW` float NOT NULL DEFAULT '0',
+  `X` float NOT NULL DEFAULT '0',
+  `Z` float NOT NULL DEFAULT '0',
   `Y` float NOT NULL,
-  `zoneid` tinyint(4) NOT NULL default '0',
+  `zoneid` tinyint(4) NOT NULL DEFAULT '0',
   `attributes` text NOT NULL,
-  PRIMARY KEY  USING BTREE (`id`)
+  PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=MyISAM AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for ticket_collectors
 -- ----------------------------
-DROP TABLE IF EXISTS `ticket_collectors`;
 CREATE TABLE `ticket_collectors` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `transport_id` int(11) NOT NULL,
   `parent` bigint(20) unsigned NOT NULL,
   `pos_x` float NOT NULL,
@@ -1009,16 +988,15 @@ CREATE TABLE `ticket_collectors` (
   `pos_z` float NOT NULL,
   `dir_y` float NOT NULL,
   `dir_w` float NOT NULL,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   KEY `SECONDARY` (`transport_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for ticket_terminals
 -- ----------------------------
-DROP TABLE IF EXISTS `ticket_terminals`;
 CREATE TABLE `ticket_terminals` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `transport_id` int(11) NOT NULL,
   `parent` bigint(20) unsigned NOT NULL,
   `pos_x` float NOT NULL,
@@ -1026,42 +1004,40 @@ CREATE TABLE `ticket_terminals` (
   `pos_z` float NOT NULL,
   `dir_y` float NOT NULL,
   `dir_w` float NOT NULL,
-  PRIMARY KEY  (`id`),
+  PRIMARY KEY (`id`),
   KEY `SECONDARY` (`transport_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=106 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for trainers
 -- ----------------------------
-DROP TABLE IF EXISTS `trainers`;
 CREATE TABLE `trainers` (
-  `Location` varchar(64) default NULL,
-  `Trainer Type` varchar(64) default NULL,
+  `Location` varchar(64) DEFAULT NULL,
+  `Trainer Type` varchar(64) DEFAULT NULL,
   `Profession` varchar(64) NOT NULL,
-  `CRC1` varchar(16) default NULL,
-  `CRC2` varchar(16) default NULL,
-  `CRC3` varchar(16) default NULL,
-  `Planet` smallint(6) default NULL,
-  `Cell` bigint(20) default '0',
-  `X` double default NULL,
-  `Y` double default NULL,
-  `Z` double default '0',
-  `oY` double default '0',
-  `oW` double default '0',
-  `pix` int(10) unsigned NOT NULL auto_increment,
-  PRIMARY KEY  (`pix`),
+  `CRC1` varchar(16) DEFAULT NULL,
+  `CRC2` varchar(16) DEFAULT NULL,
+  `CRC3` varchar(16) DEFAULT NULL,
+  `Planet` smallint(6) DEFAULT NULL,
+  `Cell` bigint(20) DEFAULT '0',
+  `X` double DEFAULT NULL,
+  `Y` double DEFAULT NULL,
+  `Z` double DEFAULT '0',
+  `oY` double DEFAULT '0',
+  `oW` double DEFAULT '0',
+  `pix` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`pix`),
   KEY `planetIX` (`Planet`)
 ) ENGINE=MyISAM AUTO_INCREMENT=537 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for transports
 -- ----------------------------
-DROP TABLE IF EXISTS `transports`;
 CREATE TABLE `transports` (
-  `id` int(10) unsigned NOT NULL auto_increment,
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `planet_id` tinyint(3) unsigned NOT NULL,
   `name` varchar(45) NOT NULL,
-  `parent` bigint(20) unsigned NOT NULL default '0',
+  `parent` bigint(20) unsigned NOT NULL DEFAULT '0',
   `pos_x` float NOT NULL,
   `pos_y` float NOT NULL,
   `pos_z` float NOT NULL,
@@ -1070,45 +1046,43 @@ CREATE TABLE `transports` (
   `spawn_x` float NOT NULL,
   `spawn_y` float NOT NULL,
   `spawn_z` float NOT NULL,
-  `starport` tinyint(1) NOT NULL default '0',
-  `tax` int(10) unsigned NOT NULL default '0',
-  `crc` bigint(20) unsigned NOT NULL default '1984806965',
-  PRIMARY KEY  (`id`),
+  `starport` tinyint(1) NOT NULL DEFAULT '0',
+  `tax` int(10) unsigned NOT NULL DEFAULT '0',
+  `crc` bigint(20) unsigned NOT NULL DEFAULT '1984806965',
+  PRIMARY KEY (`id`),
   KEY `SECONDARY` (`planet_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for warp
 -- ----------------------------
-DROP TABLE IF EXISTS `warp`;
 CREATE TABLE `warp` (
-  `warp_id` int(2) unsigned NOT NULL auto_increment,
+  `warp_id` int(2) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
   `planet_id` int(2) NOT NULL,
   `x` float(10,6) NOT NULL,
   `y` float(10,6) NOT NULL,
   `z` float(10,6) NOT NULL,
   `description` varchar(45) NOT NULL,
-  `radius` float(2,0) unsigned NOT NULL default '3',
-  `heading` int(3) unsigned NOT NULL default '180',
-  PRIMARY KEY  (`warp_id`)
+  `radius` float(2,0) unsigned NOT NULL DEFAULT '3',
+  `heading` int(3) unsigned NOT NULL DEFAULT '180',
+  PRIMARY KEY (`warp_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=59 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for waypoints
 -- ----------------------------
-DROP TABLE IF EXISTS `waypoints`;
 CREATE TABLE `waypoints` (
   `waypoint_id` bigint(20) unsigned NOT NULL,
   `owner_id` mediumint(8) unsigned NOT NULL,
   `waypoint_name` text NOT NULL,
-  `x` float(10,6) default NULL,
-  `y` float(10,6) default NULL,
+  `x` float(10,6) DEFAULT NULL,
+  `y` float(10,6) DEFAULT NULL,
   `planet_name` text NOT NULL,
-  `active` tinyint(1) NOT NULL default '1',
+  `active` tinyint(1) NOT NULL DEFAULT '1',
   `internal_note` text,
-  `ix` int(10) unsigned NOT NULL auto_increment,
-  PRIMARY KEY  (`ix`),
+  `ix` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ix`),
   KEY `objplid` (`waypoint_id`,`owner_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=190 DEFAULT CHARSET=latin1;
 
