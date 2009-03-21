@@ -973,7 +973,7 @@ CREATE TABLE `terminals` (
   `Y` float NOT NULL,
   `zoneid` tinyint(4) NOT NULL DEFAULT '0',
   `attributes` text NOT NULL,
-  PRIMARY KEY (`id`) USING BTREE
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
