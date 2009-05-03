@@ -42,30 +42,19 @@ this exception also makes it possible to release a modified version
 which carries forward this exception.
 */
 
-#ifndef RESOURCECONTAINEROBJECTMESSAGE6_H_
-#define RESOURCECONTAINEROBJECTMESSAGE6_H_
+#ifndef RESOURCECONTAINEROBJECTMESSAGE8_H_
+#define RESOURCECONTAINEROBJECTMESSAGE8_H_
 
 #include "../../objects/tangible/resource/ResourceContainer.h"
 #include "../BaseLineMessage.h"
 
-class ResourceContainerObjectMessage6 : public BaseLineMessage {
+class ResourceContainerObjectMessage8 : public BaseLineMessage {
 public:
-	ResourceContainerObjectMessage6(ResourceContainer* rcno)
-			: BaseLineMessage(rcno->getObjectID(), 0x52434E4F, 6, 0x05) {
-		insertAscii(""); // Resource Container: "resource_container_d"
-		insertInt(0);
-		insertAscii(""); // Resource Type: "organic_food_small"
-		UnicodeString u_str = UnicodeString("");
-		insertUnicode(u_str); // Container Name
-		insertInt(rcno->getMaxContents()); // Max stack size
-		insertAscii(rcno->getStfName()); // Resource Type: planet specific
-		insertUnicode(rcno->getCustomName());  // Resource name.
-
-		insertInt(0);
-		insertInt(0);
+	ResourceContainerObjectMessage8(ResourceContainer* rcno)
+			: BaseLineMessage(rcno->getObjectID(), 0x52434E4F, 8, 0x05) {
 
 		setSize();
 	}
 };
 
-#endif /*RESOURCECONTAINEROBJECTMESSAGE6_H_*/
+#endif /*RESOURCECONTAINEROBJECTMESSAGE8_H_*/
