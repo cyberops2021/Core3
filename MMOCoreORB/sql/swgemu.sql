@@ -4,11 +4,12 @@ MySQL - 5.0.67-0ubuntu6 : Database - swgemu
 *********************************************************************
 */
 /*!40101 SET NAMES utf8 */;
-gh
+
+/*!40101 SET SQL_MODE=''*/;
 
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-resource
+
 CREATE DATABASE /*!32312 IF NOT EXISTS*/`swgemu` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
 USE `swgemu`;
@@ -19583,7 +19584,7 @@ insert  into `recruiters`(`id`,`planet_id`,`x`,`y`,`z`,`oY`,`oW`,`cell_id`,`type
 DROP TABLE IF EXISTS `resource_data`;
 
 CREATE TABLE `resource_data` (
-  `obje` int(11) NOT NULL auto_increment,
+  `objectID` int(11) NOT NULL auto_increment,
   `resource_name` varchar(255) NOT NULL,
   `resource_type` varchar(255) NOT NULL,
   `class_1` varchar(255) default NULL,
@@ -19608,7 +19609,7 @@ CREATE TABLE `resource_data` (
   `shiftedOut` bigint(20) NOT NULL default '0',
   `container` varchar(255) NOT NULL,
   `containerCRC` bigint(20) NOT NULL,
-  PRIMARY KEY  (`INDEX`),
+  PRIMARY KEY  (`objectID`),
   KEY `name_ix` (`resource_name`),
   KEY `class_ix_1` (`class_1`),
   KEY `class_ix_2` (`class_2`),
