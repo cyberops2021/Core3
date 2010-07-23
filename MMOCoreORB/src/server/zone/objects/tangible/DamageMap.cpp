@@ -58,3 +58,27 @@ uint32 DamageMap::getTotalDamage() {
 
 	return totalDamage;
 }
+
+PlayerCreature* DamageMap::getHighestDamagePlayer() {
+	uint32 maxDamage = 0;
+	PlayerCreature* player = NULL;
+
+	for (int i = 0; i < size(); ++i) {
+		DamageMapEntry* entry = &elementAt(i).getValue();
+
+		uint32 totalDamage = 0;
+
+		for (int j = 0; j < entry->size(); ++j) {
+			uint32 damage = entry->elementAt(j).getValue();
+
+			totalDamage += damage;
+		}
+
+		if (totalDamage > maxDamage) {
+			maxDamage = totalDamage;
+			player = elementAt(i).getKey();
+		}
+	}
+
+	return player;
+}

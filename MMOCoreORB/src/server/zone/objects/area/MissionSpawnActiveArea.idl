@@ -40,52 +40,50 @@ it is their choice whether to do so. The GNU Lesser General Public License
 gives permission to release a modified version without this exception;
 this exception also makes it possible to release a modified version
 which carries forward this exception.
- */
+*/
 
-package server.zone.managers.mission;
+package server.zone.objects.area;
 
-import server.zone.objects.mission.MissionObject;
-include engine.core.ManagedObject;
-import server.zone.objects.scene.Observer;
-import server.zone.objects.tangible.terminal.mission.MissionTerminal;
+import server.zone.objects.scene.SceneObject;
 import server.zone.objects.player.PlayerCreature;
-import server.zone.ZoneServer;
-include server.zone.managers.mission.LairObjectsToSpawnMap;
+import server.zone.objects.area.ActiveArea;
+import server.zone.objects.mission.GeneralMissionObjective;
 
-class MissionManager extends Observer implements Logger {
+class MissionSpawnActiveArea extends ActiveArea {
 	@weakReference
-	protected ZoneServer server;
+	protected GeneralMissionObjective generalMissionObjective;
 	
-	@dereferenced
-	protected LairObjectsToSpawnMap lairObjectTemplatesToSpawn;
-	
-	public MissionManager(ZoneServer srv) {
-		server = srv;
-		Logger.setLoggingName("MissionManager");
+	public MissionSpawnActiveArea() {
+		generalMissionObjective = null;
 		
-		lairObjectTemplatesToSpawn.setNoDuplicateInsertPlan();
+		Logger.setLoggingName("MissionSpawnActiveArea");
+	}
+
+	public void notifyEnter(SceneObject player) {
+		Logger.info("notifyEnter mission spawn", true);
 		
-		loadLairObjectsToSpawn();
+		if (!player.isPlayerCreature()) {
+			return;
+		} else {
+			if (generalMissionObjective != null) {
+				//Logger.info("objective not null", true);
+				
+				PlayerCreature missionOwner = generalMissionObjective.getPlayerOwner();
+				
+				if ((PlayerCreature) player == missionOwner) {
+					//Logger.info("player == missionOwner", true);
+					generalMissionObjective.spawnLair();
+					
+					//super.removeFromZone();
+				}
+			} else {
+				super.removeFromZone();
+			}
+		}
 	}
 	
-	public native void loadLairObjectsToSpawn();
-	
-	public native void handleMissionListRequest(MissionTerminal missionTerminal, PlayerCreature player, int counter);
-	public native void handleMissionAccept(MissionTerminal missionTerminal, MissionObject mission, PlayerCreature player);
-	public native void handleMissionAbort(MissionObject mission, PlayerCreature player);
-	
-	public native void removeMission(MissionObject mission, PlayerCreature player);
-	
-	public native void populateGeneralMissionList(MissionTerminal missionTerminal, PlayerCreature player, int counter);
-	public native void populateArtisanMissionList(MissionTerminal missionTerminal, PlayerCreature player, int counter);
-	
-	
-	public native void randomizeSurveyMission(PlayerCreature player, MissionObject mission);
-	public native void randomizeGeneralMission(PlayerCreature player, MissionObject mission);
-	
-	public native void createMissionObjectives(MissionObject mission, MissionTerminal missionTerminal, PlayerCreature player);
-	public native void createSurveyMissionObjectives(MissionObject mission, MissionTerminal missionTerminal, PlayerCreature player);
-	public native void createGeneralMissionObjectives(MissionObject mission, MissionTerminal missionTerminal, PlayerCreature player);
-	
-	public native boolean hasSurveyMission(PlayerCreature player, final string spawn);
+	public void setMissionObjective(GeneralMissionObjective mission) {
+		generalMissionObjective = mission;
+	}
 }
+

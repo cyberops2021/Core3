@@ -75,6 +75,8 @@ public:
 
 	void dropDamage(PlayerCreature* player);
 
+	PlayerCreature* getHighestDamagePlayer();
+
 	uint32 getTotalDamage();
 };
 

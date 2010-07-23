@@ -94,6 +94,16 @@ CREATE TABLE `characters` (
   KEY `acc_idx` (`account_id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=4676 DEFAULT CHARSET=latin1;
 
+DROP TABLE IF EXISTS `mission_manager_spawn_lairs`;
+
+CREATE TABLE `mission_manager_spawn_lairs` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `template` varchar(250) DEFAULT NULL,
+  `planets` varchar(45) DEFAULT '-1',
+  `level_range` varchar(45) DEFAULT '5-10',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
 -- ----------------------------
 -- Table structure for clientregion_corellia
 -- ----------------------------
@@ -1196,6 +1206,14 @@ CREATE TABLE `waypoints` (
 -- ----------------------------
 -- Records 
 -- ----------------------------
+
+INSERT INTO `mission_manager_spawn_lairs`
+(`template`)mission_manager_spawn_lairs
+VALUES
+(
+'object/tangible/lair/cu_pa/lair_cu_pa.iff'
+);
+
 INSERT INTO `account` VALUES ('2219', 'theanswer', '76af7efae0d034d1e3335ed1b90f24b6cadf2bf1', '2362859311', '0', '0', 'ChangeMe@email.com', '2009-09-29 20:33:55', '2009-09-29 12:33:55', '1', '4');
 INSERT INTO `badge` VALUES ('1', 'unused', '...received an unused badge for an unknown reason.');
 INSERT INTO `badge` VALUES ('2', 'count_5', '...has acquired 5 badges.');
