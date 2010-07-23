@@ -1208,8 +1208,7 @@ CREATE TABLE `waypoints` (
 -- ----------------------------
 
 INSERT INTO `mission_manager_spawn_lairs`
-(`template`)mission_manager_spawn_lairs
-VALUES
+(`template`) VALUES
 (
 'object/tangible/lair/cu_pa/lair_cu_pa.iff'
 );
