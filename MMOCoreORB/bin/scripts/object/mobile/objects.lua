@@ -1260,7 +1260,7 @@ object_mobile_shared_aqualish_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -1338,7 +1338,7 @@ object_mobile_shared_aqualish_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -1416,7 +1416,7 @@ object_mobile_shared_aqualish_s02_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -1572,7 +1572,7 @@ object_mobile_shared_aqualish_s03_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -1650,7 +1650,7 @@ object_mobile_shared_aqualish_s03_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -3678,7 +3678,7 @@ object_mobile_shared_bith_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -3756,7 +3756,7 @@ object_mobile_shared_bith_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -6720,7 +6720,7 @@ object_mobile_shared_bothan_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -6798,7 +6798,7 @@ object_mobile_shared_bothan_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -7656,7 +7656,7 @@ object_mobile_shared_captain_hassk = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -7968,7 +7968,7 @@ object_mobile_shared_chadra_fan_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.49, 0.51},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -8046,7 +8046,7 @@ object_mobile_shared_chadra_fan_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.5, 0.55},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -11790,7 +11790,7 @@ object_mobile_shared_devaronian_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -12492,7 +12492,7 @@ object_mobile_shared_drall_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -12882,7 +12882,7 @@ object_mobile_shared_dressed_2handsword_trainer_02 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13038,7 +13038,7 @@ object_mobile_shared_dressed_aakuan_champion_zabrak_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13116,7 +13116,7 @@ object_mobile_shared_dressed_aakuan_champion_zabrak_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13272,7 +13272,7 @@ object_mobile_shared_dressed_aakuan_defender_human_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13350,7 +13350,7 @@ object_mobile_shared_dressed_aakuan_follower_trandoshan_female_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13428,7 +13428,7 @@ object_mobile_shared_dressed_aakuan_follower_trandoshan_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13506,7 +13506,7 @@ object_mobile_shared_dressed_aakuan_guardian_trandoshan_female_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13584,7 +13584,7 @@ object_mobile_shared_dressed_aakuan_guardian_trandoshan_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13662,7 +13662,7 @@ object_mobile_shared_dressed_aakuan_keeper_zabrak_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13740,7 +13740,7 @@ object_mobile_shared_dressed_aakuan_keeper_zabrak_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13818,7 +13818,7 @@ object_mobile_shared_dressed_aakuan_sentinal_rodian_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -13896,7 +13896,7 @@ object_mobile_shared_dressed_aakuan_sentinal_rodian_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -14052,7 +14052,7 @@ object_mobile_shared_dressed_aakuan_steward_human_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -14130,7 +14130,7 @@ object_mobile_shared_dressed_aakuan_warder_zabrak_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -14208,7 +14208,7 @@ object_mobile_shared_dressed_aakuan_warder_zabrak_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -14832,7 +14832,7 @@ object_mobile_shared_dressed_armorsmith_trainer_03 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -15255,7 +15255,7 @@ object_mobile_shared_dressed_assassin_mission_giver_01 = SharedCreatureObjectTem
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -15366,7 +15366,7 @@ object_mobile_shared_dressed_assassin_mission_giver_02 = SharedCreatureObjectTem
 			{"/shared_owner/blend_skinny", 0, 0, 256}, 
 			{"/shared_owner/index_texture_1", 0, 0, 21}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -15470,7 +15470,7 @@ object_mobile_shared_dressed_assassin_mission_giver_03 = SharedCreatureObjectTem
 			{"/shared_owner/blend_sensor_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -15581,7 +15581,7 @@ object_mobile_shared_dressed_assassin_mission_giver_imp_hum_m_01 = SharedCreatur
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -15692,7 +15692,7 @@ object_mobile_shared_dressed_assassin_mission_giver_imp_hum_m_02 = SharedCreatur
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -15803,7 +15803,7 @@ object_mobile_shared_dressed_assassin_mission_giver_imp_hum_m_03 = SharedCreatur
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -15901,7 +15901,7 @@ object_mobile_shared_dressed_assassin_mission_giver_reb_01 = SharedCreatureObjec
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -16129,7 +16129,7 @@ object_mobile_shared_dressed_assassin_mission_giver_reb_03 = SharedCreatureObjec
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -16594,7 +16594,7 @@ object_mobile_shared_dressed_bestine_artist01 = SharedCreatureObjectTemplate:new
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -16672,7 +16672,7 @@ object_mobile_shared_dressed_bestine_artist02 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -16750,7 +16750,7 @@ object_mobile_shared_dressed_bestine_artist03 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -16828,7 +16828,7 @@ object_mobile_shared_dressed_bestine_artist04 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -16906,7 +16906,7 @@ object_mobile_shared_dressed_bestine_artist05 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -16984,7 +16984,7 @@ object_mobile_shared_dressed_bestine_artist06 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17062,7 +17062,7 @@ object_mobile_shared_dressed_bestine_capitol01 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17140,7 +17140,7 @@ object_mobile_shared_dressed_bestine_capitol02 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17218,7 +17218,7 @@ object_mobile_shared_dressed_bestine_capitol03 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17296,7 +17296,7 @@ object_mobile_shared_dressed_bestine_capitol04 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17374,7 +17374,7 @@ object_mobile_shared_dressed_bestine_rumor01 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17485,7 +17485,7 @@ object_mobile_shared_dressed_bestine_rumor02 = SharedCreatureObjectTemplate:new 
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17641,7 +17641,7 @@ object_mobile_shared_dressed_bestine_rumor04 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17719,7 +17719,7 @@ object_mobile_shared_dressed_bestine_rumor05 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17797,7 +17797,7 @@ object_mobile_shared_dressed_bestine_rumor06 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17875,7 +17875,7 @@ object_mobile_shared_dressed_bestine_rumor07 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -17953,7 +17953,7 @@ object_mobile_shared_dressed_bestine_rumor08 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18031,7 +18031,7 @@ object_mobile_shared_dressed_bestine_rumor09 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18109,7 +18109,7 @@ object_mobile_shared_dressed_bestine_rumor10 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18220,7 +18220,7 @@ object_mobile_shared_dressed_bestine_rumor11 = SharedCreatureObjectTemplate:new 
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18298,7 +18298,7 @@ object_mobile_shared_dressed_bestine_rumor12 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18376,7 +18376,7 @@ object_mobile_shared_dressed_binayre_bruiser_rodian_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18454,7 +18454,7 @@ object_mobile_shared_dressed_binayre_bruiser_rodian_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18610,7 +18610,7 @@ object_mobile_shared_dressed_binayre_chief_human_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18688,7 +18688,7 @@ object_mobile_shared_dressed_binayre_goon_bith_female_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18766,7 +18766,7 @@ object_mobile_shared_dressed_binayre_goon_bith_male_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18844,7 +18844,7 @@ object_mobile_shared_dressed_binayre_hoodlum_zabrak_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -18922,7 +18922,7 @@ object_mobile_shared_dressed_binayre_hoodlum_zabrak_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19000,7 +19000,7 @@ object_mobile_shared_dressed_binayre_hooligan_zabrak_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19078,7 +19078,7 @@ object_mobile_shared_dressed_binayre_hooligan_zabrak_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19156,7 +19156,7 @@ object_mobile_shared_dressed_binayre_pirate_zabrak_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19234,7 +19234,7 @@ object_mobile_shared_dressed_binayre_pirate_zabrak_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19312,7 +19312,7 @@ object_mobile_shared_dressed_binayre_prowler_trandoshan_female_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19390,7 +19390,7 @@ object_mobile_shared_dressed_binayre_prowler_trandoshan_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19468,7 +19468,7 @@ object_mobile_shared_dressed_binayre_ruffian_trandoshan_female_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19546,7 +19546,7 @@ object_mobile_shared_dressed_binayre_ruffian_trandoshan_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19624,7 +19624,7 @@ object_mobile_shared_dressed_binayre_scalawag_twk_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19702,7 +19702,7 @@ object_mobile_shared_dressed_binayre_scalawag_twk_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19780,7 +19780,7 @@ object_mobile_shared_dressed_binayre_smuggler_trandoshan_female_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19858,7 +19858,7 @@ object_mobile_shared_dressed_binayre_smuggler_trandoshan_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -19936,7 +19936,7 @@ object_mobile_shared_dressed_binayre_swindler_zabrak_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -20014,7 +20014,7 @@ object_mobile_shared_dressed_binayre_swindler_zabrak_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -20092,7 +20092,7 @@ object_mobile_shared_dressed_binayre_thief_twk_female_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -20170,7 +20170,7 @@ object_mobile_shared_dressed_binayre_thief_twk_male_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -20404,7 +20404,7 @@ object_mobile_shared_dressed_bioengineer_trainer_03 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -20482,7 +20482,7 @@ object_mobile_shared_dressed_biribas_tarun = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -20872,7 +20872,7 @@ object_mobile_shared_dressed_blood_crazed_plains_marauder = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -21028,7 +21028,7 @@ object_mobile_shared_dressed_blood_razor_pirate_berzerker_hum_m = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -21106,7 +21106,7 @@ object_mobile_shared_dressed_blood_razor_pirate_berzerker_rod_m = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -21184,7 +21184,7 @@ object_mobile_shared_dressed_blood_razor_pirate_berzerker_tran_m = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -21262,7 +21262,7 @@ object_mobile_shared_dressed_blood_razor_pirate_captain_hum_m = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -21574,7 +21574,7 @@ object_mobile_shared_dressed_blood_razor_pirate_cutthroat_hum_m = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -21652,7 +21652,7 @@ object_mobile_shared_dressed_blood_razor_pirate_cutthroat_nikto_m = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -21730,7 +21730,7 @@ object_mobile_shared_dressed_blood_razor_pirate_cutthroat_tran_m = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -21808,7 +21808,7 @@ object_mobile_shared_dressed_blood_razor_pirate_cutthroat_wee_m = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -21964,7 +21964,7 @@ object_mobile_shared_dressed_blood_razor_pirate_destroyer_hum_m = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -22042,7 +22042,7 @@ object_mobile_shared_dressed_blood_razor_pirate_destroyer_nikto_m = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -22120,7 +22120,7 @@ object_mobile_shared_dressed_blood_razor_pirate_destroyer_tran_m = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -22276,7 +22276,7 @@ object_mobile_shared_dressed_blood_razor_pirate_elite_hum_m = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -22354,7 +22354,7 @@ object_mobile_shared_dressed_blood_razor_pirate_elite_nikto_m = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -22432,7 +22432,7 @@ object_mobile_shared_dressed_blood_razor_pirate_elite_tran_m = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -22510,7 +22510,7 @@ object_mobile_shared_dressed_blood_razor_pirate_elite_wee_m = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -22666,7 +22666,7 @@ object_mobile_shared_dressed_blood_razor_pirate_guard_hum_m = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -22744,7 +22744,7 @@ object_mobile_shared_dressed_blood_razor_pirate_guard_nikto_m = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -22822,7 +22822,7 @@ object_mobile_shared_dressed_blood_razor_pirate_guard_rod_m = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -22978,7 +22978,7 @@ object_mobile_shared_dressed_blood_razor_pirate_hum_m = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -23056,7 +23056,7 @@ object_mobile_shared_dressed_blood_razor_pirate_nikto_m = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -23212,7 +23212,7 @@ object_mobile_shared_dressed_blood_razor_pirate_officer_hum_m = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -23290,7 +23290,7 @@ object_mobile_shared_dressed_blood_razor_pirate_officer_nikto_m = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -23368,7 +23368,7 @@ object_mobile_shared_dressed_blood_razor_pirate_officer_rod_m = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -23446,7 +23446,7 @@ object_mobile_shared_dressed_blood_razor_pirate_officer_wee_m = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -23524,7 +23524,7 @@ object_mobile_shared_dressed_blood_razor_pirate_rod_m = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -23680,7 +23680,7 @@ object_mobile_shared_dressed_blood_razor_pirate_scout_hum_m = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -23758,7 +23758,7 @@ object_mobile_shared_dressed_blood_razor_pirate_scout_rod_m = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -23836,7 +23836,7 @@ object_mobile_shared_dressed_blood_razor_pirate_scout_tran_m = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -23992,7 +23992,7 @@ object_mobile_shared_dressed_blood_razor_pirate_strong_hum_m = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24070,7 +24070,7 @@ object_mobile_shared_dressed_blood_razor_pirate_strong_nikto_m = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24148,7 +24148,7 @@ object_mobile_shared_dressed_blood_razor_pirate_strong_rod_m = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24226,7 +24226,7 @@ object_mobile_shared_dressed_blood_razor_pirate_strong_tran_m = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24304,7 +24304,7 @@ object_mobile_shared_dressed_blood_razor_pirate_strong_wee_m = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24382,7 +24382,7 @@ object_mobile_shared_dressed_blood_razor_pirate_strong_zab_m = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24460,7 +24460,7 @@ object_mobile_shared_dressed_blood_razor_pirate_tran_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24616,7 +24616,7 @@ object_mobile_shared_dressed_blood_razor_pirate_weak_hum_m = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24694,7 +24694,7 @@ object_mobile_shared_dressed_blood_razor_pirate_weak_nikto_m = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24772,7 +24772,7 @@ object_mobile_shared_dressed_blood_razor_pirate_weak_rod_m = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24850,7 +24850,7 @@ object_mobile_shared_dressed_blood_razor_pirate_weak_wee_m = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -24928,7 +24928,7 @@ object_mobile_shared_dressed_blood_razor_pirate_weak_zab_m = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -25006,7 +25006,7 @@ object_mobile_shared_dressed_blood_razor_pirate_wee_m = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -25084,7 +25084,7 @@ object_mobile_shared_dressed_blood_razor_pirate_zab_m = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -25162,7 +25162,7 @@ object_mobile_shared_dressed_borvos_bruiser = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -25240,7 +25240,7 @@ object_mobile_shared_dressed_borvos_champion = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -25318,7 +25318,7 @@ object_mobile_shared_dressed_borvos_mercenary = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -25396,7 +25396,7 @@ object_mobile_shared_dressed_borvos_soldier = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -25474,7 +25474,7 @@ object_mobile_shared_dressed_borvos_thief = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -25552,7 +25552,7 @@ object_mobile_shared_dressed_borvos_thug = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -25630,7 +25630,7 @@ object_mobile_shared_dressed_bounty_hunter_zabrak_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -26488,7 +26488,7 @@ object_mobile_shared_dressed_brigade_captain_human_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -26644,7 +26644,7 @@ object_mobile_shared_dressed_brigade_general_human_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -26722,7 +26722,7 @@ object_mobile_shared_dressed_brigade_gunner_bith_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -26800,7 +26800,7 @@ object_mobile_shared_dressed_brigade_gunner_bith_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -26956,7 +26956,7 @@ object_mobile_shared_dressed_brigade_infiltrator_human_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27034,7 +27034,7 @@ object_mobile_shared_dressed_brigade_marine_trandoshan_female_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27112,7 +27112,7 @@ object_mobile_shared_dressed_brigade_marine_trandoshan_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27190,7 +27190,7 @@ object_mobile_shared_dressed_brigade_officer_rodian_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27268,7 +27268,7 @@ object_mobile_shared_dressed_brigade_officer_rodian_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27346,7 +27346,7 @@ object_mobile_shared_dressed_brigade_scout_trandoshan_female_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27424,7 +27424,7 @@ object_mobile_shared_dressed_brigade_scout_trandoshan_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27502,7 +27502,7 @@ object_mobile_shared_dressed_brigade_sergeant_zabrak_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27580,7 +27580,7 @@ object_mobile_shared_dressed_brigade_sergeant_zabrak_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27736,7 +27736,7 @@ object_mobile_shared_dressed_brigade_technician_human_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27814,7 +27814,7 @@ object_mobile_shared_dressed_brigade_trooper_bith_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -27892,7 +27892,7 @@ object_mobile_shared_dressed_brigade_trooper_bith_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -28282,7 +28282,7 @@ object_mobile_shared_dressed_businessman_human_male_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -28360,7 +28360,7 @@ object_mobile_shared_dressed_capt_ric_olie = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -28438,7 +28438,7 @@ object_mobile_shared_dressed_captain_eso = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -28516,7 +28516,7 @@ object_mobile_shared_dressed_captain_gilad_pellaeon = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -28627,7 +28627,7 @@ object_mobile_shared_dressed_captain_tish = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -28861,7 +28861,7 @@ object_mobile_shared_dressed_carbine_trainer_03 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -29439,7 +29439,7 @@ object_mobile_shared_dressed_champhra_biahin = SharedCreatureObjectTemplate:new 
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -29517,7 +29517,7 @@ object_mobile_shared_dressed_chef_trainer_devaronian_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -29673,7 +29673,7 @@ object_mobile_shared_dressed_chef_trainer_human_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -29751,7 +29751,7 @@ object_mobile_shared_dressed_cobral_assassin_twk_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -29829,7 +29829,7 @@ object_mobile_shared_dressed_cobral_assassin_twk_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -29907,7 +29907,7 @@ object_mobile_shared_dressed_cobral_bandit_bith_female_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -29985,7 +29985,7 @@ object_mobile_shared_dressed_cobral_bandit_bith_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -30063,7 +30063,7 @@ object_mobile_shared_dressed_cobral_boss_twk_female_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -30141,7 +30141,7 @@ object_mobile_shared_dressed_cobral_boss_twk_male_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -30297,7 +30297,7 @@ object_mobile_shared_dressed_cobral_hitman_human_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -30375,7 +30375,7 @@ object_mobile_shared_dressed_cobral_hooligan_bith_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -30453,7 +30453,7 @@ object_mobile_shared_dressed_cobral_hooligan_bith_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -30609,7 +30609,7 @@ object_mobile_shared_dressed_cobral_mugger_human_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -30765,7 +30765,7 @@ object_mobile_shared_dressed_cobral_overlord_human_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -30843,7 +30843,7 @@ object_mobile_shared_dressed_cobral_runner_trandoshan_female_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -30921,7 +30921,7 @@ object_mobile_shared_dressed_cobral_runner_trandoshan_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31077,7 +31077,7 @@ object_mobile_shared_dressed_cobral_thief_human_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31155,7 +31155,7 @@ object_mobile_shared_dressed_cobral_thug_rodian_female_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31233,7 +31233,7 @@ object_mobile_shared_dressed_cobral_thug_rodian_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31389,7 +31389,7 @@ object_mobile_shared_dressed_combatmedic_trainer_human_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31467,7 +31467,7 @@ object_mobile_shared_dressed_combatmedic_trainer_rodian_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31545,7 +31545,7 @@ object_mobile_shared_dressed_commander_xalox_guul = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31623,7 +31623,7 @@ object_mobile_shared_dressed_commando_trainer_human_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31701,7 +31701,7 @@ object_mobile_shared_dressed_commando_trainer_rodian_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31779,7 +31779,7 @@ object_mobile_shared_dressed_commando_trainer_trandoshan_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31859,7 +31859,7 @@ object_mobile_shared_dressed_commoner_artisan_bith_male_01 = SharedCreatureObjec
 			{"/shared_owner/blend_muscle", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -31939,7 +31939,7 @@ object_mobile_shared_dressed_commoner_artisan_sullustan_male_01 = SharedCreature
 			{"/shared_owner/blend_muscle", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -32037,7 +32037,7 @@ object_mobile_shared_dressed_commoner_artisan_trandoshan_male_01 = SharedCreatur
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33051,7 +33051,7 @@ object_mobile_shared_dressed_commoner_naboo_bothan_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33129,7 +33129,7 @@ object_mobile_shared_dressed_commoner_naboo_bothan_female_02 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33207,7 +33207,7 @@ object_mobile_shared_dressed_commoner_naboo_bothan_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33285,7 +33285,7 @@ object_mobile_shared_dressed_commoner_naboo_bothan_male_02 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33363,7 +33363,7 @@ object_mobile_shared_dressed_commoner_naboo_human_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33441,7 +33441,7 @@ object_mobile_shared_dressed_commoner_naboo_human_female_02 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33519,7 +33519,7 @@ object_mobile_shared_dressed_commoner_naboo_human_female_03 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33597,7 +33597,7 @@ object_mobile_shared_dressed_commoner_naboo_human_female_04 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33675,7 +33675,7 @@ object_mobile_shared_dressed_commoner_naboo_human_female_05 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33753,7 +33753,7 @@ object_mobile_shared_dressed_commoner_naboo_human_female_06 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33831,7 +33831,7 @@ object_mobile_shared_dressed_commoner_naboo_human_female_07 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33909,7 +33909,7 @@ object_mobile_shared_dressed_commoner_naboo_human_female_08 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -33987,7 +33987,7 @@ object_mobile_shared_dressed_commoner_naboo_human_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34065,7 +34065,7 @@ object_mobile_shared_dressed_commoner_naboo_human_male_02 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34143,7 +34143,7 @@ object_mobile_shared_dressed_commoner_naboo_human_male_03 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34221,7 +34221,7 @@ object_mobile_shared_dressed_commoner_naboo_human_male_04 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34299,7 +34299,7 @@ object_mobile_shared_dressed_commoner_naboo_human_male_05 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34377,7 +34377,7 @@ object_mobile_shared_dressed_commoner_naboo_human_male_06 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34455,7 +34455,7 @@ object_mobile_shared_dressed_commoner_naboo_human_male_07 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34533,7 +34533,7 @@ object_mobile_shared_dressed_commoner_naboo_human_male_08 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34611,7 +34611,7 @@ object_mobile_shared_dressed_commoner_naboo_moncal_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34689,7 +34689,7 @@ object_mobile_shared_dressed_commoner_naboo_moncal_female_02 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34767,7 +34767,7 @@ object_mobile_shared_dressed_commoner_naboo_moncal_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34845,7 +34845,7 @@ object_mobile_shared_dressed_commoner_naboo_moncal_male_02 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -34923,7 +34923,7 @@ object_mobile_shared_dressed_commoner_naboo_twilek_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35001,7 +35001,7 @@ object_mobile_shared_dressed_commoner_naboo_twilek_female_02 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35079,7 +35079,7 @@ object_mobile_shared_dressed_commoner_naboo_twilek_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35157,7 +35157,7 @@ object_mobile_shared_dressed_commoner_naboo_twilek_male_02 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35235,7 +35235,7 @@ object_mobile_shared_dressed_commoner_naboo_zabrak_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35313,7 +35313,7 @@ object_mobile_shared_dressed_commoner_naboo_zabrak_female_02 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35391,7 +35391,7 @@ object_mobile_shared_dressed_commoner_naboo_zabrak_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35469,7 +35469,7 @@ object_mobile_shared_dressed_commoner_naboo_zabrak_male_02 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35703,7 +35703,7 @@ object_mobile_shared_dressed_commoner_old_human_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35781,7 +35781,7 @@ object_mobile_shared_dressed_commoner_old_human_male_02 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35859,7 +35859,7 @@ object_mobile_shared_dressed_commoner_old_twilek_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -35937,7 +35937,7 @@ object_mobile_shared_dressed_commoner_old_twilek_female_02 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36015,7 +36015,7 @@ object_mobile_shared_dressed_commoner_old_twilek_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36093,7 +36093,7 @@ object_mobile_shared_dressed_commoner_old_twilek_male_02 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36171,7 +36171,7 @@ object_mobile_shared_dressed_commoner_old_zabrak_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36249,7 +36249,7 @@ object_mobile_shared_dressed_commoner_old_zabrak_female_02 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36327,7 +36327,7 @@ object_mobile_shared_dressed_commoner_old_zabrak_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36405,7 +36405,7 @@ object_mobile_shared_dressed_commoner_old_zabrak_male_02 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36483,7 +36483,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_female_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36561,7 +36561,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_female_02 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36639,7 +36639,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_female_03 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36717,7 +36717,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_female_04 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36795,7 +36795,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_female_05 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36873,7 +36873,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_female_06 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -36951,7 +36951,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_female_07 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37029,7 +37029,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_female_08 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37107,7 +37107,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37185,7 +37185,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_male_02 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37263,7 +37263,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_male_03 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37341,7 +37341,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_male_04 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37419,7 +37419,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_male_05 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37497,7 +37497,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_male_06 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37575,7 +37575,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_male_07 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37653,7 +37653,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_male_08 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37731,7 +37731,7 @@ object_mobile_shared_dressed_commoner_tatooine_aqualish_male_09 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37809,7 +37809,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37887,7 +37887,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_female_02 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -37965,7 +37965,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_female_03 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -38043,7 +38043,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_female_04 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -38121,7 +38121,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_female_05 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -38199,7 +38199,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_female_06 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -38277,7 +38277,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -38355,7 +38355,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_male_02 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -38433,7 +38433,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_male_03 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -38511,7 +38511,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_male_04 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -38589,7 +38589,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_male_05 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -38667,7 +38667,7 @@ object_mobile_shared_dressed_commoner_tatooine_bith_male_06 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -39057,7 +39057,7 @@ object_mobile_shared_dressed_commoner_tatooine_ishitib_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -39291,7 +39291,7 @@ object_mobile_shared_dressed_commoner_tatooine_nikto_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -39369,7 +39369,7 @@ object_mobile_shared_dressed_commoner_tatooine_nikto_male_02 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -39447,7 +39447,7 @@ object_mobile_shared_dressed_commoner_tatooine_nikto_male_03 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -39915,7 +39915,7 @@ object_mobile_shared_dressed_commoner_tatooine_rodian_female_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -39993,7 +39993,7 @@ object_mobile_shared_dressed_commoner_tatooine_rodian_female_02 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40071,7 +40071,7 @@ object_mobile_shared_dressed_commoner_tatooine_rodian_female_03 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40149,7 +40149,7 @@ object_mobile_shared_dressed_commoner_tatooine_rodian_female_04 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40227,7 +40227,7 @@ object_mobile_shared_dressed_commoner_tatooine_rodian_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40305,7 +40305,7 @@ object_mobile_shared_dressed_commoner_tatooine_rodian_male_02 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40383,7 +40383,7 @@ object_mobile_shared_dressed_commoner_tatooine_rodian_male_03 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40461,7 +40461,7 @@ object_mobile_shared_dressed_commoner_tatooine_rodian_male_04 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40539,7 +40539,7 @@ object_mobile_shared_dressed_commoner_tatooine_sullustan_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40617,7 +40617,7 @@ object_mobile_shared_dressed_commoner_tatooine_sullustan_male_02 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40695,7 +40695,7 @@ object_mobile_shared_dressed_commoner_tatooine_sullustan_male_03 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40773,7 +40773,7 @@ object_mobile_shared_dressed_commoner_tatooine_sullustan_male_04 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40851,7 +40851,7 @@ object_mobile_shared_dressed_commoner_tatooine_sullustan_male_05 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -40929,7 +40929,7 @@ object_mobile_shared_dressed_commoner_tatooine_sullustan_male_06 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -41319,7 +41319,7 @@ object_mobile_shared_dressed_commoner_tatooine_trandoshan_male_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -41397,7 +41397,7 @@ object_mobile_shared_dressed_commoner_tatooine_trandoshan_male_02 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -41553,7 +41553,7 @@ object_mobile_shared_dressed_corellia_cec_officer = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -41631,7 +41631,7 @@ object_mobile_shared_dressed_corellia_corran_horn = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -41709,7 +41709,7 @@ object_mobile_shared_dressed_corellia_hal_horn = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -41943,7 +41943,7 @@ object_mobile_shared_dressed_corran_horn = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -42021,7 +42021,7 @@ object_mobile_shared_dressed_corsair_captain_hum_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -42099,7 +42099,7 @@ object_mobile_shared_dressed_corsair_captain_nikto_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -42177,7 +42177,7 @@ object_mobile_shared_dressed_corsair_captain_wee_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -42255,7 +42255,7 @@ object_mobile_shared_dressed_corsair_captain_zab_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -42411,7 +42411,7 @@ object_mobile_shared_dressed_corsair_cutthroat_hum_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -42489,7 +42489,7 @@ object_mobile_shared_dressed_corsair_cutthroat_wee_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -42567,7 +42567,7 @@ object_mobile_shared_dressed_corsair_cutthroat_zab_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -42723,7 +42723,7 @@ object_mobile_shared_dressed_corsair_destroyer_hum_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -42801,7 +42801,7 @@ object_mobile_shared_dressed_corsair_destroyer_wee_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -42879,7 +42879,7 @@ object_mobile_shared_dressed_corsair_destroyer_zab_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43035,7 +43035,7 @@ object_mobile_shared_dressed_corsair_elite_hum_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43113,7 +43113,7 @@ object_mobile_shared_dressed_corsair_elite_nikto_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43191,7 +43191,7 @@ object_mobile_shared_dressed_corsair_elite_wee_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43269,7 +43269,7 @@ object_mobile_shared_dressed_corsair_elite_zab_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43425,7 +43425,7 @@ object_mobile_shared_dressed_corsair_guard_hum_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43503,7 +43503,7 @@ object_mobile_shared_dressed_corsair_guard_nikto_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43581,7 +43581,7 @@ object_mobile_shared_dressed_corsair_guard_rod_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43737,7 +43737,7 @@ object_mobile_shared_dressed_corsair_pirate_elite_hum_m = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43815,7 +43815,7 @@ object_mobile_shared_dressed_corsair_pirate_elite_nikto_m = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43893,7 +43893,7 @@ object_mobile_shared_dressed_corsair_pirate_elite_rod_m = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -43971,7 +43971,7 @@ object_mobile_shared_dressed_corsair_pirate_elite_wee_m = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -44049,7 +44049,7 @@ object_mobile_shared_dressed_corsair_pirate_elite_zab_m = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -44205,7 +44205,7 @@ object_mobile_shared_dressed_corsair_pirate_strong_hum_m = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -44283,7 +44283,7 @@ object_mobile_shared_dressed_corsair_pirate_strong_nikto_m = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -44361,7 +44361,7 @@ object_mobile_shared_dressed_corsair_pirate_strong_zab_m = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -44517,7 +44517,7 @@ object_mobile_shared_dressed_corsair_pirate_weak_hum_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -44595,7 +44595,7 @@ object_mobile_shared_dressed_corsair_pirate_weak_rod_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -44751,7 +44751,7 @@ object_mobile_shared_dressed_corsair_scout_hum_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -44829,7 +44829,7 @@ object_mobile_shared_dressed_corsair_scout_rod_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -44907,7 +44907,7 @@ object_mobile_shared_dressed_corsair_scout_wee_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -45063,7 +45063,7 @@ object_mobile_shared_dressed_corsec_captain_human_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -45219,7 +45219,7 @@ object_mobile_shared_dressed_corsec_detective_human_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -45375,7 +45375,7 @@ object_mobile_shared_dressed_corsec_officer_human_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -45531,7 +45531,7 @@ object_mobile_shared_dressed_corsec_pilot_human_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -45765,7 +45765,7 @@ object_mobile_shared_dressed_corvette_imperial_velso = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -45843,7 +45843,7 @@ object_mobile_shared_dressed_corvette_neutral_bronell = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -45921,7 +45921,7 @@ object_mobile_shared_dressed_corvette_neutral_bruce = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -45999,7 +45999,7 @@ object_mobile_shared_dressed_corvette_neutral_yondalla = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -46077,7 +46077,7 @@ object_mobile_shared_dressed_corvette_rebel_adar = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -46155,7 +46155,7 @@ object_mobile_shared_dressed_corvette_rebel_crowley = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -46233,7 +46233,7 @@ object_mobile_shared_dressed_corvette_rebel_pashna = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -46857,7 +46857,7 @@ object_mobile_shared_dressed_creaturehandler_trainer_human_male_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -46935,7 +46935,7 @@ object_mobile_shared_dressed_creaturehandler_trainer_rodian_female_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -47013,7 +47013,7 @@ object_mobile_shared_dressed_creaturehandler_trainer_zabrak_male_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -47091,7 +47091,7 @@ object_mobile_shared_dressed_crev_bombaasa = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -47169,7 +47169,7 @@ object_mobile_shared_dressed_crider_trant = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -47325,7 +47325,7 @@ object_mobile_shared_dressed_criminal_assassin_human_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -47481,7 +47481,7 @@ object_mobile_shared_dressed_criminal_organized_human_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -47559,7 +47559,7 @@ object_mobile_shared_dressed_criminal_organized_twilek_female_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -47637,7 +47637,7 @@ object_mobile_shared_dressed_criminal_organized_twilek_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -47793,7 +47793,7 @@ object_mobile_shared_dressed_criminal_pirate_human_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -47949,7 +47949,7 @@ object_mobile_shared_dressed_criminal_slicer_human_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -48105,7 +48105,7 @@ object_mobile_shared_dressed_criminal_smuggler_human_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -48261,7 +48261,7 @@ object_mobile_shared_dressed_criminal_swooper_human_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -48339,7 +48339,7 @@ object_mobile_shared_dressed_criminal_swooper_zabrak_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -48417,7 +48417,7 @@ object_mobile_shared_dressed_criminal_swooper_zabrak_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -48495,7 +48495,7 @@ object_mobile_shared_dressed_criminal_thug_aqualish_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -48573,7 +48573,7 @@ object_mobile_shared_dressed_criminal_thug_aqualish_female_02 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -48651,7 +48651,7 @@ object_mobile_shared_dressed_criminal_thug_aqualish_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -48807,7 +48807,7 @@ object_mobile_shared_dressed_criminal_thug_bothan_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -48885,7 +48885,7 @@ object_mobile_shared_dressed_criminal_thug_bothan_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49119,7 +49119,7 @@ object_mobile_shared_dressed_criminal_thug_human_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49197,7 +49197,7 @@ object_mobile_shared_dressed_criminal_thug_human_male_02 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49275,7 +49275,7 @@ object_mobile_shared_dressed_criminal_thug_rodian_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49353,7 +49353,7 @@ object_mobile_shared_dressed_criminal_thug_rodian_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49431,7 +49431,7 @@ object_mobile_shared_dressed_criminal_thug_trandoshan_female_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49509,7 +49509,7 @@ object_mobile_shared_dressed_criminal_thug_trandoshan_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49587,7 +49587,7 @@ object_mobile_shared_dressed_criminal_thug_zabrak_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49665,7 +49665,7 @@ object_mobile_shared_dressed_criminal_thug_zabrak_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49743,7 +49743,7 @@ object_mobile_shared_dressed_crook_zabrak_female_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49821,7 +49821,7 @@ object_mobile_shared_dressed_crook_zabrak_male_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49899,7 +49899,7 @@ object_mobile_shared_dressed_cx_425 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -49977,7 +49977,7 @@ object_mobile_shared_dressed_daclif_gallamby = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -50367,7 +50367,7 @@ object_mobile_shared_dressed_dancer_trainer_twk_female_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -50445,7 +50445,7 @@ object_mobile_shared_dressed_dark_force_crystal_hunter = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -50669,7 +50669,7 @@ object_mobile_shared_dressed_dark_jedi_human_male_01 = SharedCreatureObjectTempl
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -50747,7 +50747,7 @@ object_mobile_shared_dressed_dark_side_savage = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -50903,7 +50903,7 @@ object_mobile_shared_dressed_darklighter_niece = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -54725,7 +54725,7 @@ object_mobile_shared_dressed_denell_kelvannon = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -54803,7 +54803,7 @@ object_mobile_shared_dressed_desperado_bith_female_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -54881,7 +54881,7 @@ object_mobile_shared_dressed_desperado_bith_male_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55064,7 +55064,7 @@ object_mobile_shared_dressed_diplomat_human_female_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55142,7 +55142,7 @@ object_mobile_shared_dressed_diplomat_human_female_02 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55220,7 +55220,7 @@ object_mobile_shared_dressed_diplomat_human_female_03 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55298,7 +55298,7 @@ object_mobile_shared_dressed_diplomat_human_male_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55376,7 +55376,7 @@ object_mobile_shared_dressed_diplomat_human_male_02 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55454,7 +55454,7 @@ object_mobile_shared_dressed_diplomat_human_male_03 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55532,7 +55532,7 @@ object_mobile_shared_dressed_diplomat_trando_female_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55610,7 +55610,7 @@ object_mobile_shared_dressed_diplomat_trando_male_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55688,7 +55688,7 @@ object_mobile_shared_dressed_diplomat_zabrak_female_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55766,7 +55766,7 @@ object_mobile_shared_dressed_diplomat_zabrak_female_02 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55844,7 +55844,7 @@ object_mobile_shared_dressed_diplomat_zabrak_male_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -55922,7 +55922,7 @@ object_mobile_shared_dressed_diplomat_zabrak_male_02 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -56078,7 +56078,7 @@ object_mobile_shared_dressed_diva_human_female_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -56156,7 +56156,7 @@ object_mobile_shared_dressed_doak_sif = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -56312,7 +56312,7 @@ object_mobile_shared_dressed_doctor_trainer_moncal_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -56390,7 +56390,7 @@ object_mobile_shared_dressed_doctor_trainer_moncal_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -56468,7 +56468,7 @@ object_mobile_shared_dressed_doctor_vacca = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -56768,7 +56768,7 @@ object_mobile_shared_dressed_dr_vacca = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -56846,7 +56846,7 @@ object_mobile_shared_dressed_drakka_judarrl = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -57002,7 +57002,7 @@ object_mobile_shared_dressed_drenn_zebber = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -57080,7 +57080,7 @@ object_mobile_shared_dressed_droidengineer_trainer_human_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -57314,7 +57314,7 @@ object_mobile_shared_dressed_durgur_pyne = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -57392,7 +57392,7 @@ object_mobile_shared_dressed_eisley_harburik_human_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -57470,7 +57470,7 @@ object_mobile_shared_dressed_eisley_officer_aqualish_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -57548,7 +57548,7 @@ object_mobile_shared_dressed_eisley_officer_aqualish_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -57626,7 +57626,7 @@ object_mobile_shared_dressed_eisley_officer_bothan_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -57704,7 +57704,7 @@ object_mobile_shared_dressed_eisley_officer_bothan_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -57860,7 +57860,7 @@ object_mobile_shared_dressed_eisley_officer_human_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -58016,7 +58016,7 @@ object_mobile_shared_dressed_eisley_officer_rodian_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -58094,7 +58094,7 @@ object_mobile_shared_dressed_eisley_officer_rodian_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -58172,7 +58172,7 @@ object_mobile_shared_dressed_eisley_officer_trandoshan_female_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -58250,7 +58250,7 @@ object_mobile_shared_dressed_eisley_officer_trandoshan_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -58328,7 +58328,7 @@ object_mobile_shared_dressed_eisley_officer_twilek_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -58406,7 +58406,7 @@ object_mobile_shared_dressed_eisley_officer_twilek_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -58484,7 +58484,7 @@ object_mobile_shared_dressed_eisley_officer_zabrak_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -58562,7 +58562,7 @@ object_mobile_shared_dressed_eisley_officer_zabrak_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -58786,7 +58786,7 @@ object_mobile_shared_dressed_emperors_hand_human_male_01 = SharedCreatureObjectT
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -58897,7 +58897,7 @@ object_mobile_shared_dressed_emperors_hand_human_male_02 = SharedCreatureObjectT
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -59008,7 +59008,7 @@ object_mobile_shared_dressed_emperors_hand_zabrak_male_01 = SharedCreatureObject
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -59164,7 +59164,7 @@ object_mobile_shared_dressed_entertainer_trainer_twk_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -59242,7 +59242,7 @@ object_mobile_shared_dressed_entertainer_trainer_twk_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -61348,7 +61348,7 @@ object_mobile_shared_dressed_farmer_husband_of_tatooine = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -61426,7 +61426,7 @@ object_mobile_shared_dressed_farmer_wife_of_tatooine = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -61722,7 +61722,7 @@ object_mobile_shared_dressed_fed_dub_captain_twk_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -61800,7 +61800,7 @@ object_mobile_shared_dressed_fed_dub_captain_twk_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -61878,7 +61878,7 @@ object_mobile_shared_dressed_fed_dub_commander_bith_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -61956,7 +61956,7 @@ object_mobile_shared_dressed_fed_dub_commander_bith_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -62034,7 +62034,7 @@ object_mobile_shared_dressed_fed_dub_constable_twk_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -62112,7 +62112,7 @@ object_mobile_shared_dressed_fed_dub_constable_twk_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -62190,7 +62190,7 @@ object_mobile_shared_dressed_fed_dub_investigator_twk_female_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -62268,7 +62268,7 @@ object_mobile_shared_dressed_fed_dub_investigator_twk_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -62346,7 +62346,7 @@ object_mobile_shared_dressed_fed_dub_patrol_man_human_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -62502,7 +62502,7 @@ object_mobile_shared_dressed_fed_dub_patrolman_human_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -62658,7 +62658,7 @@ object_mobile_shared_dressed_fed_dub_supporter_human_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -62736,7 +62736,7 @@ object_mobile_shared_dressed_feinu_zerk = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.86, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -62814,7 +62814,7 @@ object_mobile_shared_dressed_feral_force_wielder = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -62892,7 +62892,7 @@ object_mobile_shared_dressed_feral_marauder = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63048,7 +63048,7 @@ object_mobile_shared_dressed_force_sensitive_crypt_crawler = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63126,7 +63126,7 @@ object_mobile_shared_dressed_force_sensitive_renegade = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63204,7 +63204,7 @@ object_mobile_shared_dressed_force_trained_archaist = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63282,7 +63282,7 @@ object_mobile_shared_dressed_forsaken_force_drifter = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63360,7 +63360,7 @@ object_mobile_shared_dressed_frenzied_marauder = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63438,7 +63438,7 @@ object_mobile_shared_dressed_fs_converter = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63516,7 +63516,7 @@ object_mobile_shared_dressed_fs_trainer = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63672,7 +63672,7 @@ object_mobile_shared_dressed_fs_village_elder = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63750,7 +63750,7 @@ object_mobile_shared_dressed_fs_village_enemies_daktar = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63828,7 +63828,7 @@ object_mobile_shared_dressed_fs_village_enemy_daktar = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.24, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -63984,7 +63984,7 @@ object_mobile_shared_dressed_fs_village_enemy_kylaena = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64062,7 +64062,7 @@ object_mobile_shared_dressed_fs_village_enemy_mellichae = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64140,7 +64140,7 @@ object_mobile_shared_dressed_fs_village_farmer = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64218,7 +64218,7 @@ object_mobile_shared_dressed_fs_village_intro_woman = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64374,7 +64374,7 @@ object_mobile_shared_dressed_fs_village_oldman = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64530,7 +64530,7 @@ object_mobile_shared_dressed_fs_village_sad = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64608,7 +64608,7 @@ object_mobile_shared_dressed_fs_village_surveyor = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64686,7 +64686,7 @@ object_mobile_shared_dressed_fs_village_whip = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64764,7 +64764,7 @@ object_mobile_shared_dressed_garm_bel_iblis = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64842,7 +64842,7 @@ object_mobile_shared_dressed_garyn_dragoon_bith_female_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64920,7 +64920,7 @@ object_mobile_shared_dressed_garyn_dragoon_bith_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -64998,7 +64998,7 @@ object_mobile_shared_dressed_garyn_lieutenant_zabrak_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65076,7 +65076,7 @@ object_mobile_shared_dressed_garyn_lieutenant_zabrak_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65154,7 +65154,7 @@ object_mobile_shared_dressed_garyn_marauder_zabrak_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65232,7 +65232,7 @@ object_mobile_shared_dressed_garyn_marauder_zabrak_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65310,7 +65310,7 @@ object_mobile_shared_dressed_garyn_mugger_twk_female_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65388,7 +65388,7 @@ object_mobile_shared_dressed_garyn_mugger_twk_male_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65466,7 +65466,7 @@ object_mobile_shared_dressed_garyn_pirate_zabrak_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65544,7 +65544,7 @@ object_mobile_shared_dressed_garyn_pirate_zabrak_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65622,7 +65622,7 @@ object_mobile_shared_dressed_garyn_prowler_trandoshan_female_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65700,7 +65700,7 @@ object_mobile_shared_dressed_garyn_prowler_trandoshan_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65778,7 +65778,7 @@ object_mobile_shared_dressed_garyn_raider_twk_female_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65856,7 +65856,7 @@ object_mobile_shared_dressed_garyn_raider_twk_male_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -65934,7 +65934,7 @@ object_mobile_shared_dressed_garyn_theif_zabrak_female_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -66012,7 +66012,7 @@ object_mobile_shared_dressed_garyn_theif_zabrak_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -66090,7 +66090,7 @@ object_mobile_shared_dressed_garyn_vigo_bith_female_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -66168,7 +66168,7 @@ object_mobile_shared_dressed_garyn_vigo_bith_male_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -66246,7 +66246,7 @@ object_mobile_shared_dressed_gavyn_sykes = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -67104,7 +67104,7 @@ object_mobile_shared_dressed_gerrio_coronis = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -67260,7 +67260,7 @@ object_mobile_shared_dressed_giker_budz = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -67416,7 +67416,7 @@ object_mobile_shared_dressed_gins_darone = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -67494,7 +67494,7 @@ object_mobile_shared_dressed_goon_twk_female_01 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -67572,7 +67572,7 @@ object_mobile_shared_dressed_goon_twk_male_01 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -67650,7 +67650,7 @@ object_mobile_shared_dressed_goru_rainstealer = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -67806,7 +67806,7 @@ object_mobile_shared_dressed_graf_zapalo = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -68044,7 +68044,7 @@ object_mobile_shared_dressed_grassland_blood_marauder = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -68122,7 +68122,7 @@ object_mobile_shared_dressed_gravin_attal = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -68278,7 +68278,7 @@ object_mobile_shared_dressed_hagrin_zeed = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -68434,7 +68434,7 @@ object_mobile_shared_dressed_hefsen_zindalai = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -68512,7 +68512,7 @@ object_mobile_shared_dressed_herald_biogenic_01 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -68590,7 +68590,7 @@ object_mobile_shared_dressed_herald_biogenic_02 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -68668,7 +68668,7 @@ object_mobile_shared_dressed_herald_biogenic_03 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -68746,7 +68746,7 @@ object_mobile_shared_dressed_herald_corellia_01 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -68824,7 +68824,7 @@ object_mobile_shared_dressed_herald_corellia_02 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69058,7 +69058,7 @@ object_mobile_shared_dressed_herald_dathomir_nsister_cave_olof = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69214,7 +69214,7 @@ object_mobile_shared_dressed_herald_lok_01 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69292,7 +69292,7 @@ object_mobile_shared_dressed_herald_lok_02 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69370,7 +69370,7 @@ object_mobile_shared_dressed_herald_naboo_01 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69448,7 +69448,7 @@ object_mobile_shared_dressed_herald_naboo_02 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69526,7 +69526,7 @@ object_mobile_shared_dressed_herald_noble_twk_female_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69604,7 +69604,7 @@ object_mobile_shared_dressed_herald_nsister_rancor_cave_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69682,7 +69682,7 @@ object_mobile_shared_dressed_herald_nsister_rancor_cave_02 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69760,7 +69760,7 @@ object_mobile_shared_dressed_herald_pirate_naboo_human_male = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69838,7 +69838,7 @@ object_mobile_shared_dressed_herald_servant_naboo_human_male = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69916,7 +69916,7 @@ object_mobile_shared_dressed_herald_tatooine_01 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -69994,7 +69994,7 @@ object_mobile_shared_dressed_herald_tatooine_02 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -70072,7 +70072,7 @@ object_mobile_shared_dressed_hermit_of_tatooine = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -70306,7 +70306,7 @@ object_mobile_shared_dressed_hirsch_sif = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -70384,7 +70384,7 @@ object_mobile_shared_dressed_hoodlum_zabrak_female_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -70462,7 +70462,7 @@ object_mobile_shared_dressed_hoodlum_zabrak_male_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -70540,7 +70540,7 @@ object_mobile_shared_dressed_hooligan_rodian_female_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -70618,7 +70618,7 @@ object_mobile_shared_dressed_hooligan_rodian_male_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -70852,7 +70852,7 @@ object_mobile_shared_dressed_hutt_expedition_force_leader = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -70930,7 +70930,7 @@ object_mobile_shared_dressed_hutt_expedition_force_member = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -71008,7 +71008,7 @@ object_mobile_shared_dressed_hutt_informant_quest = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -71086,7 +71086,7 @@ object_mobile_shared_dressed_hutt_medic1_zabrak_female_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -71164,7 +71164,7 @@ object_mobile_shared_dressed_hutt_medic2_twilek_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -71242,7 +71242,7 @@ object_mobile_shared_dressed_igbi_freemo = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -71476,7 +71476,7 @@ object_mobile_shared_dressed_image_designer_trainer_02 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -71554,7 +71554,7 @@ object_mobile_shared_dressed_image_designer_trainer_03 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -71710,7 +71710,7 @@ object_mobile_shared_dressed_imperial_admiral_m = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -71788,7 +71788,7 @@ object_mobile_shared_dressed_imperial_admiral_m_2 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -71866,7 +71866,7 @@ object_mobile_shared_dressed_imperial_atat_pilot_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -71944,7 +71944,7 @@ object_mobile_shared_dressed_imperial_captain_m = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72022,7 +72022,7 @@ object_mobile_shared_dressed_imperial_cold_m = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72100,7 +72100,7 @@ object_mobile_shared_dressed_imperial_colonel_m = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72178,7 +72178,7 @@ object_mobile_shared_dressed_imperial_commander_m = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72367,7 +72367,7 @@ object_mobile_shared_dressed_imperial_exterminator = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72445,7 +72445,7 @@ object_mobile_shared_dressed_imperial_general_m = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72523,7 +72523,7 @@ object_mobile_shared_dressed_imperial_gunner_m = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72601,7 +72601,7 @@ object_mobile_shared_dressed_imperial_inquisitor_human_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72679,7 +72679,7 @@ object_mobile_shared_dressed_imperial_lieutenant_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72757,7 +72757,7 @@ object_mobile_shared_dressed_imperial_major_cold_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72835,7 +72835,7 @@ object_mobile_shared_dressed_imperial_major_m = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -72913,7 +72913,7 @@ object_mobile_shared_dressed_imperial_medic1_human_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -73069,7 +73069,7 @@ object_mobile_shared_dressed_imperial_medic3_human_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -73147,7 +73147,7 @@ object_mobile_shared_dressed_imperial_moff1_m = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -73225,7 +73225,7 @@ object_mobile_shared_dressed_imperial_moff_m = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -73381,7 +73381,7 @@ object_mobile_shared_dressed_imperial_officer_m = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -73492,7 +73492,7 @@ object_mobile_shared_dressed_imperial_officer_m_2 = SharedCreatureObjectTemplate
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -73603,7 +73603,7 @@ object_mobile_shared_dressed_imperial_officer_m_3 = SharedCreatureObjectTemplate
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -73714,7 +73714,7 @@ object_mobile_shared_dressed_imperial_officer_m_4 = SharedCreatureObjectTemplate
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -73825,7 +73825,7 @@ object_mobile_shared_dressed_imperial_officer_m_5 = SharedCreatureObjectTemplate
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -73936,7 +73936,7 @@ object_mobile_shared_dressed_imperial_officer_m_6 = SharedCreatureObjectTemplate
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -74092,7 +74092,7 @@ object_mobile_shared_dressed_imperial_soldier_m = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -74716,7 +74716,7 @@ object_mobile_shared_dressed_indigo_siyan = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -74872,7 +74872,7 @@ object_mobile_shared_dressed_industrialist_trainer_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -74950,7 +74950,7 @@ object_mobile_shared_dressed_industrialist_trainer_02 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -75290,7 +75290,7 @@ object_mobile_shared_dressed_jadam_questrel = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -75524,7 +75524,7 @@ object_mobile_shared_dressed_jatrian_lytus = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -75602,7 +75602,7 @@ object_mobile_shared_dressed_jazeen_thurmm = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -75680,7 +75680,7 @@ object_mobile_shared_dressed_jedi_trainer_chiss_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -75758,7 +75758,7 @@ object_mobile_shared_dressed_jedi_trainer_nikto_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -75836,7 +75836,7 @@ object_mobile_shared_dressed_jedi_trainer_old_human_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -75914,7 +75914,7 @@ object_mobile_shared_dressed_jedi_trainer_twilek_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -75992,7 +75992,7 @@ object_mobile_shared_dressed_jowir_arlensa = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -76148,7 +76148,7 @@ object_mobile_shared_dressed_jusani_zhord = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -76409,7 +76409,7 @@ object_mobile_shared_dressed_karlaina_goldlight = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -76585,7 +76585,7 @@ object_mobile_shared_dressed_kathikiis_ruwahurr = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -76897,7 +76897,7 @@ object_mobile_shared_dressed_kobola_assassin_zabrak_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -76975,7 +76975,7 @@ object_mobile_shared_dressed_kobola_assassin_zabrak_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77053,7 +77053,7 @@ object_mobile_shared_dressed_kobola_guard_trandoshan_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77131,7 +77131,7 @@ object_mobile_shared_dressed_kobola_guard_trandoshan_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77287,7 +77287,7 @@ object_mobile_shared_dressed_kobola_miner_human_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77365,7 +77365,7 @@ object_mobile_shared_dressed_kobola_pitboss_trandoshan_female_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77443,7 +77443,7 @@ object_mobile_shared_dressed_kobola_pitboss_trandoshan_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77521,7 +77521,7 @@ object_mobile_shared_dressed_kobola_smuggler_trandoshan_female_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77599,7 +77599,7 @@ object_mobile_shared_dressed_kobola_smuggler_trandoshan_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77677,7 +77677,7 @@ object_mobile_shared_dressed_kobola_thief_rodian_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77755,7 +77755,7 @@ object_mobile_shared_dressed_kobola_thief_rodian_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77833,7 +77833,7 @@ object_mobile_shared_dressed_kobola_underboss_bith_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -77911,7 +77911,7 @@ object_mobile_shared_dressed_kobola_underboss_bith_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -78067,7 +78067,7 @@ object_mobile_shared_dressed_lasha_bindari = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -78379,7 +78379,7 @@ object_mobile_shared_dressed_lethin_bludder = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -78457,7 +78457,7 @@ object_mobile_shared_dressed_lian_byrne = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -78535,7 +78535,7 @@ object_mobile_shared_dressed_liberation_activist_rodian_female_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -78613,7 +78613,7 @@ object_mobile_shared_dressed_liberation_activist_rodian_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -78691,7 +78691,7 @@ object_mobile_shared_dressed_liberation_fanatic_bith_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -78769,7 +78769,7 @@ object_mobile_shared_dressed_liberation_fanatic_bith_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -78847,7 +78847,7 @@ object_mobile_shared_dressed_liberation_loyalist_bith_female_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -78925,7 +78925,7 @@ object_mobile_shared_dressed_liberation_loyalist_bith_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -79003,7 +79003,7 @@ object_mobile_shared_dressed_liberation_partisan_rodian_female_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -79081,7 +79081,7 @@ object_mobile_shared_dressed_liberation_partisan_rodian_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -79159,7 +79159,7 @@ object_mobile_shared_dressed_liberation_patriot_rodian_female_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -79237,7 +79237,7 @@ object_mobile_shared_dressed_liberation_patriot_rodian_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -79393,7 +79393,7 @@ object_mobile_shared_dressed_liberation_reactionist_human_male_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -79471,7 +79471,7 @@ object_mobile_shared_dressed_liberation_volunteer_rodian_female_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -79549,7 +79549,7 @@ object_mobile_shared_dressed_liberation_volunteer_rodian_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -79627,7 +79627,7 @@ object_mobile_shared_dressed_lieutenant_lance = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -79861,7 +79861,7 @@ object_mobile_shared_dressed_lord_nyax = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -79939,7 +79939,7 @@ object_mobile_shared_dressed_lord_sloan_rusper = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80017,7 +80017,7 @@ object_mobile_shared_dressed_lord_throme_gormengal = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80095,7 +80095,7 @@ object_mobile_shared_dressed_lost_aqualish_bomber_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80173,7 +80173,7 @@ object_mobile_shared_dressed_lost_aqualish_bomber_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80251,7 +80251,7 @@ object_mobile_shared_dressed_lost_aqualish_captain_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80407,7 +80407,7 @@ object_mobile_shared_dressed_lost_aqualish_commando_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80485,7 +80485,7 @@ object_mobile_shared_dressed_lost_aqualish_commando_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80563,7 +80563,7 @@ object_mobile_shared_dressed_lost_aqualish_infiltrator_female_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80641,7 +80641,7 @@ object_mobile_shared_dressed_lost_aqualish_infiltrator_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80719,7 +80719,7 @@ object_mobile_shared_dressed_lost_aqualish_lookout_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80875,7 +80875,7 @@ object_mobile_shared_dressed_lost_aqualish_marksman_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -80953,7 +80953,7 @@ object_mobile_shared_dressed_lost_aqualish_marksman_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81031,7 +81031,7 @@ object_mobile_shared_dressed_lost_aqualish_marshal_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81109,7 +81109,7 @@ object_mobile_shared_dressed_lost_aqualish_marshal_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81187,7 +81187,7 @@ object_mobile_shared_dressed_lost_aqualish_outrider_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81265,7 +81265,7 @@ object_mobile_shared_dressed_lost_aqualish_outrider_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81343,7 +81343,7 @@ object_mobile_shared_dressed_lost_aqualish_scout_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81421,7 +81421,7 @@ object_mobile_shared_dressed_lost_aqualish_scout_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81499,7 +81499,7 @@ object_mobile_shared_dressed_lost_aqualish_soldier_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81577,7 +81577,7 @@ object_mobile_shared_dressed_lost_aqualish_soldier_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81655,7 +81655,7 @@ object_mobile_shared_dressed_lost_aqualish_warchief_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81733,7 +81733,7 @@ object_mobile_shared_dressed_lost_aqualish_warchief_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81811,7 +81811,7 @@ object_mobile_shared_dressed_lost_aqualish_warrior_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -81967,7 +81967,7 @@ object_mobile_shared_dressed_lt_oron_wintree = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -82201,7 +82201,7 @@ object_mobile_shared_dressed_luthik_uwyr = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -82357,7 +82357,7 @@ object_mobile_shared_dressed_lx_466 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -82435,7 +82435,7 @@ object_mobile_shared_dressed_lyda_skims = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -82513,7 +82513,7 @@ object_mobile_shared_dressed_magur_torigai = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -82591,7 +82591,7 @@ object_mobile_shared_dressed_mand_bunker_crazed_miner = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -82669,7 +82669,7 @@ object_mobile_shared_dressed_mand_bunker_foreman = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -82747,7 +82747,7 @@ object_mobile_shared_dressed_mand_bunker_technician = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -82825,7 +82825,7 @@ object_mobile_shared_dressed_mand_miner_aqualish = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -82903,7 +82903,7 @@ object_mobile_shared_dressed_mand_miner_bith = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -82981,7 +82981,7 @@ object_mobile_shared_dressed_mand_miner_hum_01 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83059,7 +83059,7 @@ object_mobile_shared_dressed_mand_miner_hum_02 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83137,7 +83137,7 @@ object_mobile_shared_dressed_mand_miner_hum_03 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83215,7 +83215,7 @@ object_mobile_shared_dressed_marauder = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83293,7 +83293,7 @@ object_mobile_shared_dressed_marksman_trainer_01 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83371,7 +83371,7 @@ object_mobile_shared_dressed_marksman_trainer_02 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83449,7 +83449,7 @@ object_mobile_shared_dressed_marksman_trainer_03 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83527,7 +83527,7 @@ object_mobile_shared_dressed_marooned_pirate_bith_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83605,7 +83605,7 @@ object_mobile_shared_dressed_marooned_pirate_captain_hum_m = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83683,7 +83683,7 @@ object_mobile_shared_dressed_marooned_pirate_captain_nikto_m = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83761,7 +83761,7 @@ object_mobile_shared_dressed_marooned_pirate_captain_tran_m = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83839,7 +83839,7 @@ object_mobile_shared_dressed_marooned_pirate_captain_wee_m = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -83917,7 +83917,7 @@ object_mobile_shared_dressed_marooned_pirate_engr1_bith_m = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -84073,7 +84073,7 @@ object_mobile_shared_dressed_marooned_pirate_engr1_hum_m = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -84151,7 +84151,7 @@ object_mobile_shared_dressed_marooned_pirate_engr1_sull_m = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -84229,7 +84229,7 @@ object_mobile_shared_dressed_marooned_pirate_engr_bith_m = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -84385,7 +84385,7 @@ object_mobile_shared_dressed_marooned_pirate_engr_hum_m = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -84463,7 +84463,7 @@ object_mobile_shared_dressed_marooned_pirate_engr_sull_m = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -84619,7 +84619,7 @@ object_mobile_shared_dressed_marooned_pirate_first_mate_hum_m = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -84697,7 +84697,7 @@ object_mobile_shared_dressed_marooned_pirate_first_mate_nikto_m = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -84775,7 +84775,7 @@ object_mobile_shared_dressed_marooned_pirate_first_mate_rod_m = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -84853,7 +84853,7 @@ object_mobile_shared_dressed_marooned_pirate_first_mate_tran_m = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85009,7 +85009,7 @@ object_mobile_shared_dressed_marooned_pirate_hum_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85087,7 +85087,7 @@ object_mobile_shared_dressed_marooned_pirate_nikto_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85165,7 +85165,7 @@ object_mobile_shared_dressed_marooned_pirate_rod_f = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85243,7 +85243,7 @@ object_mobile_shared_dressed_marooned_pirate_rod_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85321,7 +85321,7 @@ object_mobile_shared_dressed_marooned_pirate_tran_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85399,7 +85399,7 @@ object_mobile_shared_dressed_mauler = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85477,7 +85477,7 @@ object_mobile_shared_dressed_mauler_acolyte = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85555,7 +85555,7 @@ object_mobile_shared_dressed_mauler_apprentice = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85633,7 +85633,7 @@ object_mobile_shared_dressed_mauler_lord = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85711,7 +85711,7 @@ object_mobile_shared_dressed_mauler_master = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85789,7 +85789,7 @@ object_mobile_shared_dressed_mayor = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -85867,7 +85867,7 @@ object_mobile_shared_dressed_medic_trainer_01 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86023,7 +86023,7 @@ object_mobile_shared_dressed_medic_trainer_03 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86101,7 +86101,7 @@ object_mobile_shared_dressed_mercenary_commander_hum_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86179,7 +86179,7 @@ object_mobile_shared_dressed_mercenary_commander_nikto_m = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86257,7 +86257,7 @@ object_mobile_shared_dressed_mercenary_commander_wee_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86335,7 +86335,7 @@ object_mobile_shared_dressed_mercenary_commander_zab_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86491,7 +86491,7 @@ object_mobile_shared_dressed_mercenary_destroyer_hum_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86569,7 +86569,7 @@ object_mobile_shared_dressed_mercenary_destroyer_nikto_m = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86647,7 +86647,7 @@ object_mobile_shared_dressed_mercenary_destroyer_wee_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86803,7 +86803,7 @@ object_mobile_shared_dressed_mercenary_elite_hum_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86881,7 +86881,7 @@ object_mobile_shared_dressed_mercenary_elite_medic_human_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -86959,7 +86959,7 @@ object_mobile_shared_dressed_mercenary_elite_nikto_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87037,7 +87037,7 @@ object_mobile_shared_dressed_mercenary_elite_rod_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87115,7 +87115,7 @@ object_mobile_shared_dressed_mercenary_elite_wee_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87193,7 +87193,7 @@ object_mobile_shared_dressed_mercenary_medic_rodian_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87349,7 +87349,7 @@ object_mobile_shared_dressed_mercenary_messanger_hum_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87427,7 +87427,7 @@ object_mobile_shared_dressed_mercenary_messanger_rod_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87505,7 +87505,7 @@ object_mobile_shared_dressed_mercenary_messanger_sullustan_m = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87661,7 +87661,7 @@ object_mobile_shared_dressed_mercenary_strong_hum_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87739,7 +87739,7 @@ object_mobile_shared_dressed_mercenary_strong_rod_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87817,7 +87817,7 @@ object_mobile_shared_dressed_mercenary_strong_tran_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87895,7 +87895,7 @@ object_mobile_shared_dressed_mercenary_warlord_hum_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -87973,7 +87973,7 @@ object_mobile_shared_dressed_mercenary_warlord_nikto_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -88051,7 +88051,7 @@ object_mobile_shared_dressed_mercenary_warlord_wee_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -88207,7 +88207,7 @@ object_mobile_shared_dressed_mercenary_weak_hum_m = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -88285,7 +88285,7 @@ object_mobile_shared_dressed_mercenary_weak_rod_m = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -88363,7 +88363,7 @@ object_mobile_shared_dressed_merchant_trainer_01 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -88519,7 +88519,7 @@ object_mobile_shared_dressed_merchant_trainer_03 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -88597,7 +88597,7 @@ object_mobile_shared_dressed_mountain_villager = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -88675,7 +88675,7 @@ object_mobile_shared_dressed_mourno_draver = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -88864,7 +88864,7 @@ object_mobile_shared_dressed_mugger = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -89020,7 +89020,7 @@ object_mobile_shared_dressed_murder_mystery_alonarg = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -89098,7 +89098,7 @@ object_mobile_shared_dressed_murder_mystery_ardol = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -89176,7 +89176,7 @@ object_mobile_shared_dressed_murder_mystery_captain_harrigan = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -89254,7 +89254,7 @@ object_mobile_shared_dressed_murder_mystery_car_nistran = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -89410,7 +89410,7 @@ object_mobile_shared_dressed_murder_mystery_dareth_faerine = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -89488,7 +89488,7 @@ object_mobile_shared_dressed_murder_mystery_gevers = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -89566,7 +89566,7 @@ object_mobile_shared_dressed_murder_mystery_rezden = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -89644,7 +89644,7 @@ object_mobile_shared_dressed_murder_mystery_thanik_santilis = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -89722,7 +89722,7 @@ object_mobile_shared_dressed_musician_trainer_01 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -90034,7 +90034,7 @@ object_mobile_shared_dressed_naboo_captain_dallows = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -90112,7 +90112,7 @@ object_mobile_shared_dressed_naboo_dissident = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -90190,7 +90190,7 @@ object_mobile_shared_dressed_naboo_govenor_ian_lago = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -90268,7 +90268,7 @@ object_mobile_shared_dressed_naboo_gunrunner = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -90346,7 +90346,7 @@ object_mobile_shared_dressed_naboo_holy_man = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -90502,7 +90502,7 @@ object_mobile_shared_dressed_naboo_kadil_nurugen = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -90658,7 +90658,7 @@ object_mobile_shared_dressed_naboo_lt_porro_dolphe = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -90736,7 +90736,7 @@ object_mobile_shared_dressed_naboo_mal_sikander = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -90892,7 +90892,7 @@ object_mobile_shared_dressed_naboo_nomad = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -90970,7 +90970,7 @@ object_mobile_shared_dressed_naboo_police = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -91048,7 +91048,7 @@ object_mobile_shared_dressed_naboo_police_chief = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -91438,7 +91438,7 @@ object_mobile_shared_dressed_naboo_vrir_unglan = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -91516,7 +91516,7 @@ object_mobile_shared_dressed_narmle_captain_bith_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -91594,7 +91594,7 @@ object_mobile_shared_dressed_narmle_captain_bith_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -91672,7 +91672,7 @@ object_mobile_shared_dressed_narmle_colonel_rodian_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -91750,7 +91750,7 @@ object_mobile_shared_dressed_narmle_colonel_rodian_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -91828,7 +91828,7 @@ object_mobile_shared_dressed_narmle_commander_rodian_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -91906,7 +91906,7 @@ object_mobile_shared_dressed_narmle_commander_rodian_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92062,7 +92062,7 @@ object_mobile_shared_dressed_narmle_commando_human_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92218,7 +92218,7 @@ object_mobile_shared_dressed_narmle_ensign_human_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92296,7 +92296,7 @@ object_mobile_shared_dressed_narmle_grenadier_zabrak_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92374,7 +92374,7 @@ object_mobile_shared_dressed_narmle_grenadier_zabrak_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92452,7 +92452,7 @@ object_mobile_shared_dressed_narmle_guard_rodian_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92530,7 +92530,7 @@ object_mobile_shared_dressed_narmle_guard_rodian_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92608,7 +92608,7 @@ object_mobile_shared_dressed_narmle_lieutenant_twk_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92686,7 +92686,7 @@ object_mobile_shared_dressed_narmle_lieutenant_twk_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92764,7 +92764,7 @@ object_mobile_shared_dressed_narmle_major_twk_female_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92842,7 +92842,7 @@ object_mobile_shared_dressed_narmle_major_twk_male_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92920,7 +92920,7 @@ object_mobile_shared_dressed_narmle_rifleman_rodian_female_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -92998,7 +92998,7 @@ object_mobile_shared_dressed_narmle_rifleman_rodian_male_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -93154,7 +93154,7 @@ object_mobile_shared_dressed_noble_bothan_female_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -93232,7 +93232,7 @@ object_mobile_shared_dressed_noble_bothan_male_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -93466,7 +93466,7 @@ object_mobile_shared_dressed_noble_fat_human_male_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -93544,7 +93544,7 @@ object_mobile_shared_dressed_noble_fat_human_male_02 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -93622,7 +93622,7 @@ object_mobile_shared_dressed_noble_fat_twilek_female_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -93700,7 +93700,7 @@ object_mobile_shared_dressed_noble_fat_twilek_female_02 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -93778,7 +93778,7 @@ object_mobile_shared_dressed_noble_fat_twilek_male_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -93856,7 +93856,7 @@ object_mobile_shared_dressed_noble_fat_twilek_male_02 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -93934,7 +93934,7 @@ object_mobile_shared_dressed_noble_fat_zabrak_female_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94012,7 +94012,7 @@ object_mobile_shared_dressed_noble_fat_zabrak_female_02 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94090,7 +94090,7 @@ object_mobile_shared_dressed_noble_fat_zabrak_male_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94168,7 +94168,7 @@ object_mobile_shared_dressed_noble_fat_zabrak_male_02 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94246,7 +94246,7 @@ object_mobile_shared_dressed_noble_human_female_01 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94324,7 +94324,7 @@ object_mobile_shared_dressed_noble_human_female_02 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94402,7 +94402,7 @@ object_mobile_shared_dressed_noble_human_female_03 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94480,7 +94480,7 @@ object_mobile_shared_dressed_noble_human_female_04 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94558,7 +94558,7 @@ object_mobile_shared_dressed_noble_human_male_01 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94636,7 +94636,7 @@ object_mobile_shared_dressed_noble_human_male_02 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94714,7 +94714,7 @@ object_mobile_shared_dressed_noble_human_male_03 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94792,7 +94792,7 @@ object_mobile_shared_dressed_noble_human_male_04 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94870,7 +94870,7 @@ object_mobile_shared_dressed_noble_naboo_twilek_female_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -94948,7 +94948,7 @@ object_mobile_shared_dressed_noble_naboo_twilek_female_02 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95026,7 +95026,7 @@ object_mobile_shared_dressed_noble_naboo_twilek_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95260,7 +95260,7 @@ object_mobile_shared_dressed_noble_old_human_male_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95338,7 +95338,7 @@ object_mobile_shared_dressed_noble_old_human_male_02 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95416,7 +95416,7 @@ object_mobile_shared_dressed_noble_old_twk_female_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95494,7 +95494,7 @@ object_mobile_shared_dressed_noble_old_twk_female_02 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95572,7 +95572,7 @@ object_mobile_shared_dressed_noble_old_twk_male_01 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95650,7 +95650,7 @@ object_mobile_shared_dressed_noble_old_twk_male_02 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95728,7 +95728,7 @@ object_mobile_shared_dressed_noble_old_zabrak_female_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95806,7 +95806,7 @@ object_mobile_shared_dressed_noble_old_zabrak_female_02 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95884,7 +95884,7 @@ object_mobile_shared_dressed_noble_old_zabrak_male_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -95962,7 +95962,7 @@ object_mobile_shared_dressed_noble_old_zabrak_male_02 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96040,7 +96040,7 @@ object_mobile_shared_dressed_noble_rodian_female_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96118,7 +96118,7 @@ object_mobile_shared_dressed_noble_rodian_male_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96196,7 +96196,7 @@ object_mobile_shared_dressed_noble_trandoshan_female_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96274,7 +96274,7 @@ object_mobile_shared_dressed_noble_trandoshan_male_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96352,7 +96352,7 @@ object_mobile_shared_dressed_noble_twilek_female_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96430,7 +96430,7 @@ object_mobile_shared_dressed_noble_twilek_male_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96508,7 +96508,7 @@ object_mobile_shared_dressed_noble_zabrak_female_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96586,7 +96586,7 @@ object_mobile_shared_dressed_noble_zabrak_male_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96664,7 +96664,7 @@ object_mobile_shared_dressed_nomad_chief = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96820,7 +96820,7 @@ object_mobile_shared_dressed_nurla_slinthiss = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -96976,7 +96976,7 @@ object_mobile_shared_dressed_nym_bodyguard_hum_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97054,7 +97054,7 @@ object_mobile_shared_dressed_nym_bodyguard_rod_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97210,7 +97210,7 @@ object_mobile_shared_dressed_nym_brawler_hum_m = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97288,7 +97288,7 @@ object_mobile_shared_dressed_nym_brawler_nikto_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97366,7 +97366,7 @@ object_mobile_shared_dressed_nym_brawler_rod_f = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97444,7 +97444,7 @@ object_mobile_shared_dressed_nym_brawler_rod_m = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97522,7 +97522,7 @@ object_mobile_shared_dressed_nym_brawler_tran_m = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97600,7 +97600,7 @@ object_mobile_shared_dressed_nym_destroyer_hum_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97678,7 +97678,7 @@ object_mobile_shared_dressed_nym_destroyer_nikto_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97756,7 +97756,7 @@ object_mobile_shared_dressed_nym_destroyer_rod_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97834,7 +97834,7 @@ object_mobile_shared_dressed_nym_destroyer_wee_m = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97912,7 +97912,7 @@ object_mobile_shared_dressed_nym_guard_elite_hum_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -97990,7 +97990,7 @@ object_mobile_shared_dressed_nym_guard_elite_nikto_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -98068,7 +98068,7 @@ object_mobile_shared_dressed_nym_guard_elite_rod_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -98224,7 +98224,7 @@ object_mobile_shared_dressed_nym_guard_strong_hum_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -98302,7 +98302,7 @@ object_mobile_shared_dressed_nym_guard_strong_nikto_m = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -98380,7 +98380,7 @@ object_mobile_shared_dressed_nym_guard_strong_rod_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -98536,7 +98536,7 @@ object_mobile_shared_dressed_nym_guard_weak_hum_m = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -98614,7 +98614,7 @@ object_mobile_shared_dressed_nym_guard_weak_nikto_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -98692,7 +98692,7 @@ object_mobile_shared_dressed_nym_guard_weak_rod_m = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -98770,7 +98770,7 @@ object_mobile_shared_dressed_nym_patrol_elite_hum_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -98848,7 +98848,7 @@ object_mobile_shared_dressed_nym_patrol_elite_nikto_m = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -98926,7 +98926,7 @@ object_mobile_shared_dressed_nym_patrol_elite_rod_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -99082,7 +99082,7 @@ object_mobile_shared_dressed_nym_patrol_strong_hum_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -99160,7 +99160,7 @@ object_mobile_shared_dressed_nym_patrol_strong_nikto_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -99238,7 +99238,7 @@ object_mobile_shared_dressed_nym_patrol_strong_rod_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -99394,7 +99394,7 @@ object_mobile_shared_dressed_nym_patrol_weak_hum_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -99472,7 +99472,7 @@ object_mobile_shared_dressed_nym_patrol_weak_nikto_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -99550,7 +99550,7 @@ object_mobile_shared_dressed_nym_patrol_weak_rod_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -99628,7 +99628,7 @@ object_mobile_shared_dressed_nym_pirate_elite_hum_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -99706,7 +99706,7 @@ object_mobile_shared_dressed_nym_pirate_elite_nikto_m = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -99784,7 +99784,7 @@ object_mobile_shared_dressed_nym_pirate_elite_rod_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -99862,7 +99862,7 @@ object_mobile_shared_dressed_nym_pirate_elite_wee_m = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100018,7 +100018,7 @@ object_mobile_shared_dressed_nym_pirate_strong_hum_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100096,7 +100096,7 @@ object_mobile_shared_dressed_nym_pirate_strong_nikto_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100174,7 +100174,7 @@ object_mobile_shared_dressed_nym_pirate_strong_rod_f = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100252,7 +100252,7 @@ object_mobile_shared_dressed_nym_pirate_strong_rod_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100330,7 +100330,7 @@ object_mobile_shared_dressed_nym_pirate_strong_wee_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100486,7 +100486,7 @@ object_mobile_shared_dressed_nym_pirate_weak_hum_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100564,7 +100564,7 @@ object_mobile_shared_dressed_nym_pirate_weak_nikto_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100642,7 +100642,7 @@ object_mobile_shared_dressed_nym_pirate_weak_rod_f = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100720,7 +100720,7 @@ object_mobile_shared_dressed_nym_pirate_weak_rod_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100876,7 +100876,7 @@ object_mobile_shared_dressed_nym_surveyer_hum_m = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -100954,7 +100954,7 @@ object_mobile_shared_dressed_nym_surveyer_rod_f = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -101032,7 +101032,7 @@ object_mobile_shared_dressed_nym_surveyer_rod_m = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -101188,7 +101188,7 @@ object_mobile_shared_dressed_nym_technician_2 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -101266,7 +101266,7 @@ object_mobile_shared_dressed_nym_technician_3 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -101500,7 +101500,7 @@ object_mobile_shared_dressed_oxil_sarban = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -101578,7 +101578,7 @@ object_mobile_shared_dressed_palace_guard = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -101734,7 +101734,7 @@ object_mobile_shared_dressed_palu_zerk = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -101812,7 +101812,7 @@ object_mobile_shared_dressed_patron_chiss_f_01 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -101890,7 +101890,7 @@ object_mobile_shared_dressed_patron_chiss_m_01 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -101968,7 +101968,7 @@ object_mobile_shared_dressed_patron_devaronian_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102046,7 +102046,7 @@ object_mobile_shared_dressed_patron_ishi_tib_01 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102124,7 +102124,7 @@ object_mobile_shared_dressed_patron_klaatu_01 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102202,7 +102202,7 @@ object_mobile_shared_dressed_patron_nikto_01 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102280,7 +102280,7 @@ object_mobile_shared_dressed_patron_quarren_01 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102358,7 +102358,7 @@ object_mobile_shared_dressed_patron_sullustan_01 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102436,7 +102436,7 @@ object_mobile_shared_dressed_philosopher = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102514,7 +102514,7 @@ object_mobile_shared_dressed_pirate_leader_of_tatooine = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102592,7 +102592,7 @@ object_mobile_shared_dressed_pistol_trainer_01 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102670,7 +102670,7 @@ object_mobile_shared_dressed_pistol_trainer_02 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102748,7 +102748,7 @@ object_mobile_shared_dressed_pistol_trainer_03 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -102982,7 +102982,7 @@ object_mobile_shared_dressed_plasma_thief = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -103060,7 +103060,7 @@ object_mobile_shared_dressed_plasma_thief_leader = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -103372,7 +103372,7 @@ object_mobile_shared_dressed_polearm_trainer_01 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -103450,7 +103450,7 @@ object_mobile_shared_dressed_polearm_trainer_02 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -103528,7 +103528,7 @@ object_mobile_shared_dressed_polearm_trainer_03 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -103762,7 +103762,7 @@ object_mobile_shared_dressed_prowler = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -103918,7 +103918,7 @@ object_mobile_shared_dressed_queen_kylantha = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -103996,7 +103996,7 @@ object_mobile_shared_dressed_quest_farmer = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104074,7 +104074,7 @@ object_mobile_shared_dressed_quest_farmer_child = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.6, 0.7},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104152,7 +104152,7 @@ object_mobile_shared_dressed_quest_farmer_wife = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104230,7 +104230,7 @@ object_mobile_shared_dressed_quest_liar_01 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104308,7 +104308,7 @@ object_mobile_shared_dressed_quest_liar_02 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104386,7 +104386,7 @@ object_mobile_shared_dressed_quest_liar_bh = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104464,7 +104464,7 @@ object_mobile_shared_dressed_radlee_mathiss = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104542,7 +104542,7 @@ object_mobile_shared_dressed_raglith = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104620,7 +104620,7 @@ object_mobile_shared_dressed_raider_trandoshan_female_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104698,7 +104698,7 @@ object_mobile_shared_dressed_raider_trandoshan_male_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104854,7 +104854,7 @@ object_mobile_shared_dressed_ranger_trainer_01 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -104932,7 +104932,7 @@ object_mobile_shared_dressed_ranger_trainer_02 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -105010,7 +105010,7 @@ object_mobile_shared_dressed_ranger_trainer_03 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -105166,7 +105166,7 @@ object_mobile_shared_dressed_ravager_human_male_01 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -105244,7 +105244,7 @@ object_mobile_shared_dressed_raxa_binn = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -105348,7 +105348,7 @@ object_mobile_shared_dressed_rebel_army_captain_bothan_male = SharedCreatureObje
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -105426,7 +105426,7 @@ object_mobile_shared_dressed_rebel_army_captain_human_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -105504,7 +105504,7 @@ object_mobile_shared_dressed_rebel_army_captain_moncal_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -105714,7 +105714,7 @@ object_mobile_shared_dressed_rebel_army_captain_twk_male = SharedCreatureObjectT
 			{"/shared_owner/blend_skinny", 0, 0, 256}, 
 			{"/shared_owner/index_texture_1", 0, 0, 21}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -105829,7 +105829,7 @@ object_mobile_shared_dressed_rebel_army_captain_zabrak_female = SharedCreatureOb
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -106022,7 +106022,7 @@ object_mobile_shared_dressed_rebel_brigadier_general_bith_male = SharedCreatureO
 			{"/shared_owner/blend_muscle", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -106208,7 +106208,7 @@ object_mobile_shared_dressed_rebel_brigadier_general_moncal_female = SharedCreat
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -106286,7 +106286,7 @@ object_mobile_shared_dressed_rebel_brigadier_general_rodian_female_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -106366,7 +106366,7 @@ object_mobile_shared_dressed_rebel_brigadier_general_sullustan_male = SharedCrea
 			{"/shared_owner/blend_muscle", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -106465,7 +106465,7 @@ object_mobile_shared_dressed_rebel_brigadier_general_trandoshan_female = SharedC
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -106569,7 +106569,7 @@ object_mobile_shared_dressed_rebel_colonel_bothan_male = SharedCreatureObjectTem
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -106758,7 +106758,7 @@ object_mobile_shared_dressed_rebel_colonel_moncal_female = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -106949,7 +106949,7 @@ object_mobile_shared_dressed_rebel_colonel_sullustan_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -107027,7 +107027,7 @@ object_mobile_shared_dressed_rebel_colonel_twk_male_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -107183,7 +107183,7 @@ object_mobile_shared_dressed_rebel_commando_human_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -107288,7 +107288,7 @@ object_mobile_shared_dressed_rebel_commando_moncal_male_01 = SharedCreatureObjec
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -107392,7 +107392,7 @@ object_mobile_shared_dressed_rebel_commando_rodian_male_01 = SharedCreatureObjec
 			{"/shared_owner/blend_sensor_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -107508,7 +107508,7 @@ object_mobile_shared_dressed_rebel_commando_twilek_female_01 = SharedCreatureObj
 			{"/shared_owner/blend_skinny", 0, 0, 256}, 
 			{"/shared_owner/index_texture_1", 0, 0, 21}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -107623,7 +107623,7 @@ object_mobile_shared_dressed_rebel_commando_zabrak_female_01 = SharedCreatureObj
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -107703,7 +107703,7 @@ object_mobile_shared_dressed_rebel_corporal_bith_female_01 = SharedCreatureObjec
 			{"/shared_owner/blend_muscle", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -107807,7 +107807,7 @@ object_mobile_shared_dressed_rebel_corporal_bothan_male_01 = SharedCreatureObjec
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -107990,7 +107990,7 @@ object_mobile_shared_dressed_rebel_corporal_moncal_male_01 = SharedCreatureObjec
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -108068,7 +108068,7 @@ object_mobile_shared_dressed_rebel_corporal_rodian_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -108148,7 +108148,7 @@ object_mobile_shared_dressed_rebel_corporal_sullustan_male_01 = SharedCreatureOb
 			{"/shared_owner/blend_muscle", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -108304,7 +108304,7 @@ object_mobile_shared_dressed_rebel_corvette_commando_human_male_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -108382,7 +108382,7 @@ object_mobile_shared_dressed_rebel_corvette_commando_moncal_male_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -108460,7 +108460,7 @@ object_mobile_shared_dressed_rebel_corvette_commando_rodian_male_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -108538,7 +108538,7 @@ object_mobile_shared_dressed_rebel_corvette_commando_twilek_female_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -108616,7 +108616,7 @@ object_mobile_shared_dressed_rebel_corvette_commando_zabrak_female_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -109188,7 +109188,7 @@ object_mobile_shared_dressed_rebel_first_lieutenant_bothan_male_01 = SharedCreat
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -109301,7 +109301,7 @@ object_mobile_shared_dressed_rebel_first_lieutenant_human_female_01 = SharedCrea
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -109412,7 +109412,7 @@ object_mobile_shared_dressed_rebel_first_lieutenant_human_male_01 = SharedCreatu
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -109490,7 +109490,7 @@ object_mobile_shared_dressed_rebel_first_lieutenant_moncal_female_01 = SharedCre
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -109568,7 +109568,7 @@ object_mobile_shared_dressed_rebel_first_lieutenant_moncal_female_02 = SharedCre
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -109646,7 +109646,7 @@ object_mobile_shared_dressed_rebel_first_lieutenant_sullustan_male_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -110026,7 +110026,7 @@ object_mobile_shared_dressed_rebel_general_moncal_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -110137,7 +110137,7 @@ object_mobile_shared_dressed_rebel_general_old_twilek_male_01 = SharedCreatureOb
 			{"/shared_owner/blend_skinny", 0, 0, 256}, 
 			{"/shared_owner/index_texture_1", 0, 0, 21}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -110242,7 +110242,7 @@ object_mobile_shared_dressed_rebel_general_rodian_female_01 = SharedCreatureObje
 			{"/shared_owner/blend_sensor_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -110433,7 +110433,7 @@ object_mobile_shared_dressed_rebel_high_general_human_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -110544,7 +110544,7 @@ object_mobile_shared_dressed_rebel_high_general_human_male_02 = SharedCreatureOb
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -110622,7 +110622,7 @@ object_mobile_shared_dressed_rebel_high_general_moncal_male_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -110738,7 +110738,7 @@ object_mobile_shared_dressed_rebel_high_general_old_twilek_female_01 = SharedCre
 			{"/shared_owner/blend_skinny", 0, 0, 256}, 
 			{"/shared_owner/index_texture_1", 0, 0, 21}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -110816,7 +110816,7 @@ object_mobile_shared_dressed_rebel_high_general_sullustan_male_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -110972,7 +110972,7 @@ object_mobile_shared_dressed_rebel_lance_corporal_human_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -111080,7 +111080,7 @@ object_mobile_shared_dressed_rebel_lance_corporal_moncal_female_01 = SharedCreat
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -111184,7 +111184,7 @@ object_mobile_shared_dressed_rebel_lance_corporal_rodian_male_01 = SharedCreatur
 			{"/shared_owner/blend_sensor_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -111262,7 +111262,7 @@ object_mobile_shared_dressed_rebel_lance_corporal_twk_female_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -111340,7 +111340,7 @@ object_mobile_shared_dressed_rebel_lance_corporal_twk_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -111451,7 +111451,7 @@ object_mobile_shared_dressed_rebel_lieutenant_colonel_human_male_01 = SharedCrea
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -111562,7 +111562,7 @@ object_mobile_shared_dressed_rebel_lieutenant_colonel_human_male_02 = SharedCrea
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -111670,7 +111670,7 @@ object_mobile_shared_dressed_rebel_lieutenant_colonel_moncal_female_01 = SharedC
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -111748,7 +111748,7 @@ object_mobile_shared_dressed_rebel_lieutenant_colonel_rodian_female_01 = SharedC
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -111826,7 +111826,7 @@ object_mobile_shared_dressed_rebel_lieutenant_colonel_rodian_male_01 = SharedCre
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -111937,7 +111937,7 @@ object_mobile_shared_dressed_rebel_lieutenant_colonel_zabrak_male_01 = SharedCre
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -112048,7 +112048,7 @@ object_mobile_shared_dressed_rebel_lieutenant_general_human_male_01 = SharedCrea
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -112126,7 +112126,7 @@ object_mobile_shared_dressed_rebel_lieutenant_general_moncal_female_01 = SharedC
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -112204,7 +112204,7 @@ object_mobile_shared_dressed_rebel_lieutenant_general_moncal_male_01 = SharedCre
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -112308,7 +112308,7 @@ object_mobile_shared_dressed_rebel_lieutenant_general_rodian_male_01 = SharedCre
 			{"/shared_owner/blend_sensor_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -112424,7 +112424,7 @@ object_mobile_shared_dressed_rebel_lieutenant_general_twilek_female_01 = SharedC
 			{"/shared_owner/blend_skinny", 0, 0, 256}, 
 			{"/shared_owner/index_texture_1", 0, 0, 21}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -112535,7 +112535,7 @@ object_mobile_shared_dressed_rebel_lieutenant_general_twilek_male_01 = SharedCre
 			{"/shared_owner/blend_skinny", 0, 0, 256}, 
 			{"/shared_owner/index_texture_1", 0, 0, 21}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -112691,7 +112691,7 @@ object_mobile_shared_dressed_rebel_major_human_male_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -112769,7 +112769,7 @@ object_mobile_shared_dressed_rebel_major_moncal_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -112847,7 +112847,7 @@ object_mobile_shared_dressed_rebel_major_twilek_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -112925,7 +112925,7 @@ object_mobile_shared_dressed_rebel_major_zabrak_female_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -113003,7 +113003,7 @@ object_mobile_shared_dressed_rebel_major_zabrak_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -113081,7 +113081,7 @@ object_mobile_shared_dressed_rebel_master_sergeant_sullustan_male_01 = SharedCre
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -113159,7 +113159,7 @@ object_mobile_shared_dressed_rebel_medic1_bothan_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -113315,7 +113315,7 @@ object_mobile_shared_dressed_rebel_medic3_moncal_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -113393,7 +113393,7 @@ object_mobile_shared_dressed_rebel_pilot_human_female_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.91, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -113471,7 +113471,7 @@ object_mobile_shared_dressed_rebel_pilot_human_male_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.91, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -113549,7 +113549,7 @@ object_mobile_shared_dressed_rebel_pilot_human_male_02 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.91, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -113627,7 +113627,7 @@ object_mobile_shared_dressed_rebel_pilot_rodian_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -113705,7 +113705,7 @@ object_mobile_shared_dressed_rebel_pilot_sullustan_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.91, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -113966,7 +113966,7 @@ object_mobile_shared_dressed_rebel_recruiter_moncal_male_01 = SharedCreatureObje
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -114082,7 +114082,7 @@ object_mobile_shared_dressed_rebel_recruiter_twilek_female_01 = SharedCreatureOb
 			{"/shared_owner/blend_skinny", 0, 0, 256}, 
 			{"/shared_owner/index_texture_1", 0, 0, 21}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -114160,7 +114160,7 @@ object_mobile_shared_dressed_rebel_ris_01 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -114316,7 +114316,7 @@ object_mobile_shared_dressed_rebel_ris_03 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -114394,7 +114394,7 @@ object_mobile_shared_dressed_rebel_ris_04 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -114498,7 +114498,7 @@ object_mobile_shared_dressed_rebel_scout_bothan_male_01 = SharedCreatureObjectTe
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -114732,7 +114732,7 @@ object_mobile_shared_dressed_rebel_scout_human_male_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -114836,7 +114836,7 @@ object_mobile_shared_dressed_rebel_scout_rodian_male_01 = SharedCreatureObjectTe
 			{"/shared_owner/blend_sensor_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -114951,7 +114951,7 @@ object_mobile_shared_dressed_rebel_scout_zabrak_female_01 = SharedCreatureObject
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -115064,7 +115064,7 @@ object_mobile_shared_dressed_rebel_second_lieutenant_human_female_01 = SharedCre
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -115168,7 +115168,7 @@ object_mobile_shared_dressed_rebel_second_lieutenant_rodian_male_01 = SharedCrea
 			{"/shared_owner/blend_sensor_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -115266,7 +115266,7 @@ object_mobile_shared_dressed_rebel_second_lieutenant_trandoshan_male_01 = Shared
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -115344,7 +115344,7 @@ object_mobile_shared_dressed_rebel_second_lieutenant_twk_female_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -115422,7 +115422,7 @@ object_mobile_shared_dressed_rebel_second_lieutenant_twk_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -115537,7 +115537,7 @@ object_mobile_shared_dressed_rebel_second_lieutenant_zabrak_female_01 = SharedCr
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -115693,7 +115693,7 @@ object_mobile_shared_dressed_rebel_sergeant_human_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -115771,7 +115771,7 @@ object_mobile_shared_dressed_rebel_sergeant_major_bothan_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -115849,7 +115849,7 @@ object_mobile_shared_dressed_rebel_sergeant_major_human_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -115927,7 +115927,7 @@ object_mobile_shared_dressed_rebel_sergeant_major_moncal_female_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116005,7 +116005,7 @@ object_mobile_shared_dressed_rebel_sergeant_major_moncal_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116116,7 +116116,7 @@ object_mobile_shared_dressed_rebel_sergeant_major_old_zabrak_male_01 = SharedCre
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116194,7 +116194,7 @@ object_mobile_shared_dressed_rebel_sergeant_major_rodian_female_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116272,7 +116272,7 @@ object_mobile_shared_dressed_rebel_sergeant_moncal_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116350,7 +116350,7 @@ object_mobile_shared_dressed_rebel_sergeant_rodian_female_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116428,7 +116428,7 @@ object_mobile_shared_dressed_rebel_sergeant_rodian_male_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116506,7 +116506,7 @@ object_mobile_shared_dressed_rebel_sergeant_twilek_female_old_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116662,7 +116662,7 @@ object_mobile_shared_dressed_rebel_specforce_captain_human_male_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116740,7 +116740,7 @@ object_mobile_shared_dressed_rebel_specforce_captain_moncal_female_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116818,7 +116818,7 @@ object_mobile_shared_dressed_rebel_specforce_captain_rodian_female_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -116896,7 +116896,7 @@ object_mobile_shared_dressed_rebel_specforce_captain_trandoshan_male_01 = Shared
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117007,7 +117007,7 @@ object_mobile_shared_dressed_rebel_specforce_captain_zabrak_male_01 = SharedCrea
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117085,7 +117085,7 @@ object_mobile_shared_dressed_rebel_specforce_general_bothan_male_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117163,7 +117163,7 @@ object_mobile_shared_dressed_rebel_specforce_general_sullustan_male_01 = SharedC
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117241,7 +117241,7 @@ object_mobile_shared_dressed_rebel_specforce_general_twk_female_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117319,7 +117319,7 @@ object_mobile_shared_dressed_rebel_specforce_guerilla_human_male_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117424,7 +117424,7 @@ object_mobile_shared_dressed_rebel_specforce_guerilla_moncal_male_01 = SharedCre
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117502,7 +117502,7 @@ object_mobile_shared_dressed_rebel_specforce_guerrilla_human_female_01 = SharedC
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117580,7 +117580,7 @@ object_mobile_shared_dressed_rebel_specforce_guerrilla_rodian_female_01 = Shared
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117658,7 +117658,7 @@ object_mobile_shared_dressed_rebel_specforce_guerrilla_rodian_male_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117773,7 +117773,7 @@ object_mobile_shared_dressed_rebel_specforce_guerrilla_zabrak_female_01 = Shared
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117851,7 +117851,7 @@ object_mobile_shared_dressed_rebel_specforce_pathfinder_human_male_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -117929,7 +117929,7 @@ object_mobile_shared_dressed_rebel_specforce_pathfinder_moncal_female_01 = Share
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118007,7 +118007,7 @@ object_mobile_shared_dressed_rebel_specforce_pathfinder_rodian_female_01 = Share
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118085,7 +118085,7 @@ object_mobile_shared_dressed_rebel_specforce_pathfinder_twk_female_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118163,7 +118163,7 @@ object_mobile_shared_dressed_rebel_specforce_pathfinder_twk_male_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118319,7 +118319,7 @@ object_mobile_shared_dressed_rebel_specforce_sergeant_bothan_male_01 = SharedCre
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118397,7 +118397,7 @@ object_mobile_shared_dressed_rebel_specforce_sergeant_human_male_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118475,7 +118475,7 @@ object_mobile_shared_dressed_rebel_specforce_sergeant_moncal_female_01 = SharedC
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118553,7 +118553,7 @@ object_mobile_shared_dressed_rebel_specforce_sergeant_moncal_male_01 = SharedCre
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118631,7 +118631,7 @@ object_mobile_shared_dressed_rebel_specforce_sergeant_trandoshan_male_01 = Share
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118709,7 +118709,7 @@ object_mobile_shared_dressed_rebel_specforce_sergeant_twk_female_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118787,7 +118787,7 @@ object_mobile_shared_dressed_rebel_staff_corporal_bith_female_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -118865,7 +118865,7 @@ object_mobile_shared_dressed_rebel_staff_corporal_bothan_female_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119021,7 +119021,7 @@ object_mobile_shared_dressed_rebel_staff_corporal_human_male_01 = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119099,7 +119099,7 @@ object_mobile_shared_dressed_rebel_staff_corporal_rodian_female_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119177,7 +119177,7 @@ object_mobile_shared_dressed_rebel_staff_sergeant_sullustan_male_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119255,7 +119255,7 @@ object_mobile_shared_dressed_rebel_surface_marshal_human_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119333,7 +119333,7 @@ object_mobile_shared_dressed_rebel_surface_marshal_moncal_female_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119411,7 +119411,7 @@ object_mobile_shared_dressed_rebel_surface_marshal_rodian_female_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119489,7 +119489,7 @@ object_mobile_shared_dressed_rebel_surface_marshal_rodian_male_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119645,7 +119645,7 @@ object_mobile_shared_dressed_rebel_surface_marshal_zabrak_male_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119723,7 +119723,7 @@ object_mobile_shared_dressed_rebel_trooper_bith_m_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119801,7 +119801,7 @@ object_mobile_shared_dressed_rebel_trooper_human_female_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119879,7 +119879,7 @@ object_mobile_shared_dressed_rebel_trooper_human_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -119957,7 +119957,7 @@ object_mobile_shared_dressed_rebel_trooper_sullustan_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -120035,7 +120035,7 @@ object_mobile_shared_dressed_rebel_trooper_twk_female_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -120113,7 +120113,7 @@ object_mobile_shared_dressed_rebel_trooper_twk_male_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -120191,7 +120191,7 @@ object_mobile_shared_dressed_rifleman_trainer_01 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -120269,7 +120269,7 @@ object_mobile_shared_dressed_rifleman_trainer_02 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -120347,7 +120347,7 @@ object_mobile_shared_dressed_rifleman_trainer_03 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -120451,7 +120451,7 @@ object_mobile_shared_dressed_ris_inventor_bothan_male = SharedCreatureObjectTemp
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -120607,7 +120607,7 @@ object_mobile_shared_dressed_robber_human_male_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -120685,7 +120685,7 @@ object_mobile_shared_dressed_robber_twk_female_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -120763,7 +120763,7 @@ object_mobile_shared_dressed_robber_twk_male_01 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -120919,7 +120919,7 @@ object_mobile_shared_dressed_royal_counterintelligence_human_male_01 = SharedCre
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -121075,7 +121075,7 @@ object_mobile_shared_dressed_royal_officer_human_male_01 = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -121231,7 +121231,7 @@ object_mobile_shared_dressed_royal_pilot_human_male_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -121387,7 +121387,7 @@ object_mobile_shared_dressed_royal_security_human_male_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -121699,7 +121699,7 @@ object_mobile_shared_dressed_rsf_pilot = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -121933,7 +121933,7 @@ object_mobile_shared_dressed_rsf_tier2_trainer = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122011,7 +122011,7 @@ object_mobile_shared_dressed_ruffian_zabrak_female_01 = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122089,7 +122089,7 @@ object_mobile_shared_dressed_ruffian_zabrak_male_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122167,7 +122167,7 @@ object_mobile_shared_dressed_ruwan_tokai = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122245,7 +122245,7 @@ object_mobile_shared_dressed_sargeant_tarl = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122323,7 +122323,7 @@ object_mobile_shared_dressed_scarab_pirate_general_human_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122401,7 +122401,7 @@ object_mobile_shared_dressed_scarab_pirate_general_twilek_male_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122479,7 +122479,7 @@ object_mobile_shared_dressed_scholar_szingo = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122557,7 +122557,7 @@ object_mobile_shared_dressed_scolex_grath = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122635,7 +122635,7 @@ object_mobile_shared_dressed_scout_trainer_01 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122713,7 +122713,7 @@ object_mobile_shared_dressed_scout_trainer_02 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122791,7 +122791,7 @@ object_mobile_shared_dressed_scout_trainer_03 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122869,7 +122869,7 @@ object_mobile_shared_dressed_scout_trooper_black_black = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.09, 1.09},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -122947,7 +122947,7 @@ object_mobile_shared_dressed_scout_trooper_m = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -123025,7 +123025,7 @@ object_mobile_shared_dressed_scout_trooper_white_white = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.09, 1.09},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -123103,7 +123103,7 @@ object_mobile_shared_dressed_sean_contact_quest = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -123181,7 +123181,7 @@ object_mobile_shared_dressed_sean_questn_university = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -123259,7 +123259,7 @@ object_mobile_shared_dressed_sean_questp_house = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -123415,7 +123415,7 @@ object_mobile_shared_dressed_sean_trenwell = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -123493,7 +123493,7 @@ object_mobile_shared_dressed_seans_historian = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -125443,7 +125443,7 @@ object_mobile_shared_dressed_sennex_pirate_01 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -125521,7 +125521,7 @@ object_mobile_shared_dressed_sennex_pirate_02 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -125599,7 +125599,7 @@ object_mobile_shared_dressed_sennex_pirate_03 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -125677,7 +125677,7 @@ object_mobile_shared_dressed_sennex_pirate_04 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -125755,7 +125755,7 @@ object_mobile_shared_dressed_sennex_pirate_05 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -125833,7 +125833,7 @@ object_mobile_shared_dressed_sennex_pirate_06 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -125911,7 +125911,7 @@ object_mobile_shared_dressed_sennex_pirate_07 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -125989,7 +125989,7 @@ object_mobile_shared_dressed_sennex_pirate_08 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -126067,7 +126067,7 @@ object_mobile_shared_dressed_sennex_pirate_09 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -126145,7 +126145,7 @@ object_mobile_shared_dressed_sennex_pirate_10 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -126223,7 +126223,7 @@ object_mobile_shared_dressed_sennex_pirate_11 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -126301,7 +126301,7 @@ object_mobile_shared_dressed_sennex_pirate_12 = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -126457,7 +126457,7 @@ object_mobile_shared_dressed_sg_567 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -126723,7 +126723,7 @@ object_mobile_shared_dressed_sidoras_bey = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -126801,7 +126801,7 @@ object_mobile_shared_dressed_sigrix_slix = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127061,7 +127061,7 @@ object_mobile_shared_dressed_sith_shadow_aqualish_f_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127139,7 +127139,7 @@ object_mobile_shared_dressed_sith_shadow_aqualish_f_02 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127217,7 +127217,7 @@ object_mobile_shared_dressed_sith_shadow_aqualish_m_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127295,7 +127295,7 @@ object_mobile_shared_dressed_sith_shadow_aqualish_m_02 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127373,7 +127373,7 @@ object_mobile_shared_dressed_sith_shadow_hum_f_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127451,7 +127451,7 @@ object_mobile_shared_dressed_sith_shadow_hum_f_02 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.18},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127529,7 +127529,7 @@ object_mobile_shared_dressed_sith_shadow_hum_f_03 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.18},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127607,7 +127607,7 @@ object_mobile_shared_dressed_sith_shadow_hum_m_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127685,7 +127685,7 @@ object_mobile_shared_dressed_sith_shadow_hum_m_02 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127763,7 +127763,7 @@ object_mobile_shared_dressed_sith_shadow_hum_m_03 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.24, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127841,7 +127841,7 @@ object_mobile_shared_dressed_sith_shadow_hum_m_nco = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.24, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127919,7 +127919,7 @@ object_mobile_shared_dressed_sith_shadow_nikto_m_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -127997,7 +127997,7 @@ object_mobile_shared_dressed_sith_shadow_nikto_m_02 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.9, 0.98},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128075,7 +128075,7 @@ object_mobile_shared_dressed_sith_shadow_nikto_m_03 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.95, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128153,7 +128153,7 @@ object_mobile_shared_dressed_sith_shadow_nikto_m_nco = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.95, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128231,7 +128231,7 @@ object_mobile_shared_dressed_sith_shadow_rodian_f_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128309,7 +128309,7 @@ object_mobile_shared_dressed_sith_shadow_rodian_f_02 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128387,7 +128387,7 @@ object_mobile_shared_dressed_sith_shadow_rodian_m_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128465,7 +128465,7 @@ object_mobile_shared_dressed_sith_shadow_rodian_m_02 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128543,7 +128543,7 @@ object_mobile_shared_dressed_sith_shadow_trn_f_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.1, 1.22},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128621,7 +128621,7 @@ object_mobile_shared_dressed_sith_shadow_trn_m_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128699,7 +128699,7 @@ object_mobile_shared_dressed_sith_shadow_trn_m_02 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128777,7 +128777,7 @@ object_mobile_shared_dressed_sith_shadow_trn_m_03 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128855,7 +128855,7 @@ object_mobile_shared_dressed_sith_shadow_zab_f_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.92, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -128933,7 +128933,7 @@ object_mobile_shared_dressed_sith_shadow_zab_f_02 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.98, 1.04},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129011,7 +129011,7 @@ object_mobile_shared_dressed_sith_shadow_zab_f_nco = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.98, 1.04},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129089,7 +129089,7 @@ object_mobile_shared_dressed_sith_shadow_zab_m_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129167,7 +129167,7 @@ object_mobile_shared_dressed_sith_shadow_zab_m_02 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129245,7 +129245,7 @@ object_mobile_shared_dressed_sith_shadow_zab_m_03 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.03, 1.09},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129323,7 +129323,7 @@ object_mobile_shared_dressed_skinkner = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129401,7 +129401,7 @@ object_mobile_shared_dressed_slooni_long = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129479,7 +129479,7 @@ object_mobile_shared_dressed_smuggler_trainer_01 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129557,7 +129557,7 @@ object_mobile_shared_dressed_smuggler_trainer_02 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129635,7 +129635,7 @@ object_mobile_shared_dressed_smuggler_trainer_03 = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129713,7 +129713,7 @@ object_mobile_shared_dressed_solcar_dienbel = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129791,7 +129791,7 @@ object_mobile_shared_dressed_space_comm_chiss_assassin_f = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -129869,7 +129869,7 @@ object_mobile_shared_dressed_space_comm_chiss_assassin_m = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -130181,7 +130181,7 @@ object_mobile_shared_dressed_spice_collective_courier_rodian_female_01 = SharedC
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -130259,7 +130259,7 @@ object_mobile_shared_dressed_spice_collective_courier_rodian_male_01 = SharedCre
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -130337,7 +130337,7 @@ object_mobile_shared_dressed_spice_collective_eliteguard_zabrak_female_01 = Shar
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -130415,7 +130415,7 @@ object_mobile_shared_dressed_spice_collective_eliteguard_zabrak_male_01 = Shared
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -130493,7 +130493,7 @@ object_mobile_shared_dressed_spice_collective_foreman_trandoshan_female_01 = Sha
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -130571,7 +130571,7 @@ object_mobile_shared_dressed_spice_collective_foreman_trandoshan_male_01 = Share
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -130649,7 +130649,7 @@ object_mobile_shared_dressed_spice_collective_heavyguard_zabrak_female_01 = Shar
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -130727,7 +130727,7 @@ object_mobile_shared_dressed_spice_collective_heavyguard_zabrak_male_01 = Shared
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -130883,7 +130883,7 @@ object_mobile_shared_dressed_spice_collective_miner_human_male_01 = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -130961,7 +130961,7 @@ object_mobile_shared_dressed_spice_collective_sentry_twk_female_01 = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131039,7 +131039,7 @@ object_mobile_shared_dressed_spice_collective_sentry_twk_male_01 = SharedCreatur
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131117,7 +131117,7 @@ object_mobile_shared_dressed_spice_collective_workchief_twk_female_01 = SharedCr
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131195,7 +131195,7 @@ object_mobile_shared_dressed_spice_collective_workchief_twk_male_01 = SharedCrea
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131273,7 +131273,7 @@ object_mobile_shared_dressed_squad_leader_trainer_01 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131351,7 +131351,7 @@ object_mobile_shared_dressed_squad_leader_trainer_02 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131429,7 +131429,7 @@ object_mobile_shared_dressed_squad_leader_trainer_03 = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131507,7 +131507,7 @@ object_mobile_shared_dressed_statesman_human_male = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131585,7 +131585,7 @@ object_mobile_shared_dressed_stoos_olko = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131663,7 +131663,7 @@ object_mobile_shared_dressed_stormtrooper_assault_trooper_m = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131741,7 +131741,7 @@ object_mobile_shared_dressed_stormtrooper_black_black = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131819,7 +131819,7 @@ object_mobile_shared_dressed_stormtrooper_black_blue = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131897,7 +131897,7 @@ object_mobile_shared_dressed_stormtrooper_black_gold = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -131975,7 +131975,7 @@ object_mobile_shared_dressed_stormtrooper_black_green = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132053,7 +132053,7 @@ object_mobile_shared_dressed_stormtrooper_black_grey = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132131,7 +132131,7 @@ object_mobile_shared_dressed_stormtrooper_black_red = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132209,7 +132209,7 @@ object_mobile_shared_dressed_stormtrooper_black_white = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132287,7 +132287,7 @@ object_mobile_shared_dressed_stormtrooper_bombardier_m = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132365,7 +132365,7 @@ object_mobile_shared_dressed_stormtrooper_captain_black_black = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132443,7 +132443,7 @@ object_mobile_shared_dressed_stormtrooper_captain_black_gold = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132521,7 +132521,7 @@ object_mobile_shared_dressed_stormtrooper_captain_white_white = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132599,7 +132599,7 @@ object_mobile_shared_dressed_stormtrooper_commander_black_black = SharedCreature
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132677,7 +132677,7 @@ object_mobile_shared_dressed_stormtrooper_commander_black_gold = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132755,7 +132755,7 @@ object_mobile_shared_dressed_stormtrooper_commando1_m = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132833,7 +132833,7 @@ object_mobile_shared_dressed_stormtrooper_commando_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132911,7 +132911,7 @@ object_mobile_shared_dressed_stormtrooper_groupleader_m = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -132989,7 +132989,7 @@ object_mobile_shared_dressed_stormtrooper_m = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133067,7 +133067,7 @@ object_mobile_shared_dressed_stormtrooper_medic_m = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133145,7 +133145,7 @@ object_mobile_shared_dressed_stormtrooper_rifleman_m = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133223,7 +133223,7 @@ object_mobile_shared_dressed_stormtrooper_sand_trooper_m = SharedCreatureObjectT
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133301,7 +133301,7 @@ object_mobile_shared_dressed_stormtrooper_sniper_m = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133379,7 +133379,7 @@ object_mobile_shared_dressed_stormtrooper_squad_leader_black_black = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133457,7 +133457,7 @@ object_mobile_shared_dressed_stormtrooper_squad_leader_black_gold = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133535,7 +133535,7 @@ object_mobile_shared_dressed_stormtrooper_squad_leader_white_gold = SharedCreatu
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133613,7 +133613,7 @@ object_mobile_shared_dressed_stormtrooper_squad_leader_white_white = SharedCreat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133691,7 +133691,7 @@ object_mobile_shared_dressed_stormtrooper_white_black = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133769,7 +133769,7 @@ object_mobile_shared_dressed_stormtrooper_white_blue = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133847,7 +133847,7 @@ object_mobile_shared_dressed_stormtrooper_white_gold = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -133925,7 +133925,7 @@ object_mobile_shared_dressed_stormtrooper_white_green = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -134003,7 +134003,7 @@ object_mobile_shared_dressed_stormtrooper_white_grey = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -134081,7 +134081,7 @@ object_mobile_shared_dressed_stormtrooper_white_red = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -134159,7 +134159,7 @@ object_mobile_shared_dressed_stormtrooper_white_white = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -135173,7 +135173,7 @@ object_mobile_shared_dressed_stranded_imperial_officer = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -135251,7 +135251,7 @@ object_mobile_shared_dressed_stranded_imperial_pilot = SharedCreatureObjectTempl
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -135329,7 +135329,7 @@ object_mobile_shared_dressed_stranded_imperial_soldier = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -135407,7 +135407,7 @@ object_mobile_shared_dressed_stranded_rebel_officer = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -135641,7 +135641,7 @@ object_mobile_shared_dressed_supervisor_zogor_sturm = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -135749,7 +135749,7 @@ object_mobile_shared_dressed_surlin_rolei = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -135827,7 +135827,7 @@ object_mobile_shared_dressed_swamp_rat = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -135905,7 +135905,7 @@ object_mobile_shared_dressed_swamp_trooper = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -135983,7 +135983,7 @@ object_mobile_shared_dressed_swamp_trooper_m = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -136061,7 +136061,7 @@ object_mobile_shared_dressed_swamp_villager = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -136139,7 +136139,7 @@ object_mobile_shared_dressed_tailor_trainer_01 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -136295,7 +136295,7 @@ object_mobile_shared_dressed_tailor_trainer_03 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -136373,7 +136373,7 @@ object_mobile_shared_dressed_talon_karrde = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -136451,7 +136451,7 @@ object_mobile_shared_dressed_talus_sif_mercenary_rodian_01 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -136529,7 +136529,7 @@ object_mobile_shared_dressed_talus_sif_mercenary_rodian_02 = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -136607,7 +136607,7 @@ object_mobile_shared_dressed_talus_sif_mercenary_trand_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -136685,7 +136685,7 @@ object_mobile_shared_dressed_talus_sif_mercenary_trand_02 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -140897,7 +140897,7 @@ object_mobile_shared_dressed_tatooine_lilas_dinhint = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.25, 1.26},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -143709,7 +143709,7 @@ object_mobile_shared_dressed_tatooine_valarian_assassin = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -145427,7 +145427,7 @@ object_mobile_shared_dressed_terminator_human_male = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -145505,7 +145505,7 @@ object_mobile_shared_dressed_theed_palace_chamberlain = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -145661,7 +145661,7 @@ object_mobile_shared_dressed_tie_fighter_m = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -145739,7 +145739,7 @@ object_mobile_shared_dressed_tieykna_mercenary_human_female_01 = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -145817,7 +145817,7 @@ object_mobile_shared_dressed_tieykna_mercenary_human_male_03 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -145895,7 +145895,7 @@ object_mobile_shared_dressed_tieykna_mercenary_zabrak_male_01 = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -145973,7 +145973,7 @@ object_mobile_shared_dressed_tieykna_miner_bith_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -146051,7 +146051,7 @@ object_mobile_shared_dressed_tieykna_miner_bothan_female_01 = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.76, 0.88},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -146129,7 +146129,7 @@ object_mobile_shared_dressed_tieykna_miner_sullustan_male_01 = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -146207,7 +146207,7 @@ object_mobile_shared_dressed_trade_federation_avenger = SharedCreatureObjectTemp
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -146285,7 +146285,7 @@ object_mobile_shared_dressed_trade_federation_loyalist = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -146519,7 +146519,7 @@ object_mobile_shared_dressed_unarmed_trainer_01 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -146597,7 +146597,7 @@ object_mobile_shared_dressed_unarmed_trainer_02 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -146675,7 +146675,7 @@ object_mobile_shared_dressed_unarmed_trainer_03 = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -147483,7 +147483,7 @@ object_mobile_shared_dressed_victor_questn_cantina = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -147561,7 +147561,7 @@ object_mobile_shared_dressed_victor_questn_capitol = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -147717,7 +147717,7 @@ object_mobile_shared_dressed_victor_questp_slums = SharedCreatureObjectTemplate:
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -147795,7 +147795,7 @@ object_mobile_shared_dressed_victor_visalis = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -147873,7 +147873,7 @@ object_mobile_shared_dressed_villain_trandoshan_female_01 = SharedCreatureObject
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -147951,7 +147951,7 @@ object_mobile_shared_dressed_villain_trandoshan_male_01 = SharedCreatureObjectTe
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -148218,7 +148218,7 @@ object_mobile_shared_dressed_vordin_sildor = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -148296,7 +148296,7 @@ object_mobile_shared_dressed_vraker_orde = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -148558,7 +148558,7 @@ object_mobile_shared_dressed_wandering_desert_marauder = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -148792,7 +148792,7 @@ object_mobile_shared_dressed_weaponsmith_trainer_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -148870,7 +148870,7 @@ object_mobile_shared_dressed_weaponsmith_trainer_02 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -148948,7 +148948,7 @@ object_mobile_shared_dressed_weaponsmith_trainer_03 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -149026,7 +149026,7 @@ object_mobile_shared_dressed_xaan_talmaron = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -149215,7 +149215,7 @@ object_mobile_shared_dressed_yith_seenath = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -149293,7 +149293,7 @@ object_mobile_shared_dressed_zeelius_kraymunder = SharedCreatureObjectTemplate:n
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -149633,7 +149633,7 @@ object_mobile_shared_dulok_female = SharedCreatureObjectTemplate:new {
 	race = 2,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.72, 0.74},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -149711,7 +149711,7 @@ object_mobile_shared_dulok_male = SharedCreatureObjectTemplate:new {
 	race = 2,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.74, 0.78},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -151115,7 +151115,7 @@ object_mobile_shared_emperor_royal_guard = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -158915,7 +158915,7 @@ object_mobile_shared_gungan_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -158993,7 +158993,7 @@ object_mobile_shared_gungan_outcast = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -159071,7 +159071,7 @@ object_mobile_shared_gungan_s02_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -159149,7 +159149,7 @@ object_mobile_shared_gungan_s03_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -159227,7 +159227,7 @@ object_mobile_shared_gungan_s04_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -161099,7 +161099,7 @@ object_mobile_shared_human_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -161255,7 +161255,7 @@ object_mobile_shared_hutt_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -161333,7 +161333,7 @@ object_mobile_shared_hutt_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -162113,7 +162113,7 @@ object_mobile_shared_ishi_tib_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -162191,7 +162191,7 @@ object_mobile_shared_ithorian_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.9, 1.3},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -162581,7 +162581,7 @@ object_mobile_shared_jinda_female = SharedCreatureObjectTemplate:new {
 	race = 3,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.72, 0.74},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -162659,7 +162659,7 @@ object_mobile_shared_jinda_female_01 = SharedCreatureObjectTemplate:new {
 	race = 3,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.72, 0.74},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -162737,7 +162737,7 @@ object_mobile_shared_jinda_male = SharedCreatureObjectTemplate:new {
 	race = 3,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.72, 0.74},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -162815,7 +162815,7 @@ object_mobile_shared_jinda_male_01 = SharedCreatureObjectTemplate:new {
 	race = 3,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.72, 0.74},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -163283,7 +163283,7 @@ object_mobile_shared_junk_nathan = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -163439,7 +163439,7 @@ object_mobile_shared_junk_quich = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -163595,7 +163595,7 @@ object_mobile_shared_junk_sheani = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -163673,7 +163673,7 @@ object_mobile_shared_junk_sneg = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -167651,7 +167651,7 @@ object_mobile_shared_lieutenant_heb_nee = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -167729,7 +167729,7 @@ object_mobile_shared_lieutenant_ori = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -168119,7 +168119,7 @@ object_mobile_shared_malakili = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.86, 0.86},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -169055,7 +169055,7 @@ object_mobile_shared_marauder_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -169133,7 +169133,7 @@ object_mobile_shared_marauder_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -169211,7 +169211,7 @@ object_mobile_shared_marauder_male_02 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -169289,7 +169289,7 @@ object_mobile_shared_marauder_male_03 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.89, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -170537,7 +170537,7 @@ object_mobile_shared_moncal_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -170615,7 +170615,7 @@ object_mobile_shared_moncal_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -170771,7 +170771,7 @@ object_mobile_shared_mordran = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.35, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -170849,7 +170849,7 @@ object_mobile_shared_mos_taike_cantina_owner = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.875},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -173891,7 +173891,7 @@ object_mobile_shared_nikto_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.95},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -180131,7 +180131,7 @@ object_mobile_shared_rodian_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -180209,7 +180209,7 @@ object_mobile_shared_rodian_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -181535,7 +181535,7 @@ object_mobile_shared_selonian_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -181769,7 +181769,7 @@ object_mobile_shared_shalera = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -184421,7 +184421,7 @@ object_mobile_shared_space_comm_blacksun_01 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -184499,7 +184499,7 @@ object_mobile_shared_space_comm_blacksun_02 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -184577,7 +184577,7 @@ object_mobile_shared_space_comm_blacksun_03 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -185123,7 +185123,7 @@ object_mobile_shared_space_comm_hutt_01 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -185201,7 +185201,7 @@ object_mobile_shared_space_comm_hutt_02 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -185279,7 +185279,7 @@ object_mobile_shared_space_comm_hutt_03 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -185435,7 +185435,7 @@ object_mobile_shared_space_comm_imperial_officer_01 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -185513,7 +185513,7 @@ object_mobile_shared_space_comm_imperial_officer_02 = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -185591,7 +185591,7 @@ object_mobile_shared_space_comm_imperial_tiefighter_01 = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -186059,7 +186059,7 @@ object_mobile_shared_space_comm_rebel_transport_01 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -186137,7 +186137,7 @@ object_mobile_shared_space_comm_rebel_transport_02 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -186215,7 +186215,7 @@ object_mobile_shared_space_comm_rebel_transport_03 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -186293,7 +186293,7 @@ object_mobile_shared_space_comm_rebel_transport_04 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -186371,7 +186371,7 @@ object_mobile_shared_space_comm_rebel_transport_05 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -186449,7 +186449,7 @@ object_mobile_shared_space_comm_rebel_transport_06 = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -186527,7 +186527,7 @@ object_mobile_shared_space_comm_rebel_xwing_01 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -186605,7 +186605,7 @@ object_mobile_shared_space_comm_rebel_xwing_02 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -186683,7 +186683,7 @@ object_mobile_shared_space_comm_rebel_xwing_03 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -186761,7 +186761,7 @@ object_mobile_shared_space_comm_rebel_xwing_04 = SharedCreatureObjectTemplate:ne
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -187775,7 +187775,7 @@ object_mobile_shared_space_comm_witchblood_ace_01 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -187853,7 +187853,7 @@ object_mobile_shared_space_comm_witchblood_ace_02 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -187931,7 +187931,7 @@ object_mobile_shared_space_comm_witchblood_ace_03 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -188009,7 +188009,7 @@ object_mobile_shared_space_comm_witchblood_ace_04 = SharedCreatureObjectTemplate
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -188165,7 +188165,7 @@ object_mobile_shared_space_greeter_coronet_merchant = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.8},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -188399,7 +188399,7 @@ object_mobile_shared_space_greeter_dantooine_brother_imperial = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.9, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -188477,7 +188477,7 @@ object_mobile_shared_space_greeter_dantooine_brother_neutral = SharedCreatureObj
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.9, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -188555,7 +188555,7 @@ object_mobile_shared_space_greeter_dantooine_brother_rebel = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.9, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -188633,7 +188633,7 @@ object_mobile_shared_space_greeter_dantooine_imperial_officer = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.8},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -188711,7 +188711,7 @@ object_mobile_shared_space_greeter_dantooine_imperial_pilot = SharedCreatureObje
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.8},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -188789,7 +188789,7 @@ object_mobile_shared_space_greeter_dantooine_old_pilot = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.85, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -189134,7 +189134,7 @@ object_mobile_shared_space_greeter_moenia_undercover_rebel = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.9, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -189290,7 +189290,7 @@ object_mobile_shared_space_greeter_mos_eisley_smuggler_nervous = SharedCreatureO
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.9, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -189368,7 +189368,7 @@ object_mobile_shared_space_greeter_mos_eisley_smuggler_skinny = SharedCreatureOb
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.9, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -189524,7 +189524,7 @@ object_mobile_shared_space_greeter_theed_freighter_captain = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.9, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -189602,7 +189602,7 @@ object_mobile_shared_space_greeter_tyrena_disgraced_corsec = SharedCreatureObjec
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.9, 0.9},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -189680,7 +189680,7 @@ object_mobile_shared_space_greeter_tyrena_pilot_friend = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -189836,7 +189836,7 @@ object_mobile_shared_space_imperial_tier2_corellia = SharedCreatureObjectTemplat
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.8, 0.8},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -194750,7 +194750,7 @@ object_mobile_shared_stormtrooper = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -194828,7 +194828,7 @@ object_mobile_shared_stormtrooper_groupleader = SharedCreatureObjectTemplate:new
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -194984,7 +194984,7 @@ object_mobile_shared_sullustan_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.88, 1.1},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -195842,7 +195842,7 @@ object_mobile_shared_theme_park_record_keeper_imperial = SharedCreatureObjectTem
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -195998,7 +195998,7 @@ object_mobile_shared_theme_park_record_keeper_rebel = SharedCreatureObjectTempla
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -196700,7 +196700,7 @@ object_mobile_shared_trandoshan_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -196778,7 +196778,7 @@ object_mobile_shared_trandoshan_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.24},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -197246,7 +197246,7 @@ object_mobile_shared_twilek_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -197324,7 +197324,7 @@ object_mobile_shared_twilek_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -200242,7 +200242,7 @@ object_mobile_shared_warren_bors_teraud = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -200353,7 +200353,7 @@ object_mobile_shared_warren_crazed_imperial = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -200855,7 +200855,7 @@ object_mobile_shared_warren_cyborg_worker = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -200966,7 +200966,7 @@ object_mobile_shared_warren_dim_u_loyalist = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -201155,7 +201155,7 @@ object_mobile_shared_warren_dying_loyalist = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -201266,7 +201266,7 @@ object_mobile_shared_warren_escapee = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -201377,7 +201377,7 @@ object_mobile_shared_warren_imperial_officer_s01 = SharedCreatureObjectTemplate:
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -201488,7 +201488,7 @@ object_mobile_shared_warren_imperial_officer_s02 = SharedCreatureObjectTemplate:
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -201599,7 +201599,7 @@ object_mobile_shared_warren_imperial_officer_s03 = SharedCreatureObjectTemplate:
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -201710,7 +201710,7 @@ object_mobile_shared_warren_imperial_worker_s01 = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -201821,7 +201821,7 @@ object_mobile_shared_warren_imperial_worker_s02 = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -201932,7 +201932,7 @@ object_mobile_shared_warren_imperial_worker_s03 = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -202043,7 +202043,7 @@ object_mobile_shared_warren_imperial_worker_s04 = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -202154,7 +202154,7 @@ object_mobile_shared_warren_imperial_worker_s05 = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -202265,7 +202265,7 @@ object_mobile_shared_warren_imperial_worker_s06 = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -202376,7 +202376,7 @@ object_mobile_shared_warren_insane_comp_sci = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -202487,7 +202487,7 @@ object_mobile_shared_warren_irradiated_worker_s01 = SharedCreatureObjectTemplate
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -202598,7 +202598,7 @@ object_mobile_shared_warren_irradiated_worker_s02 = SharedCreatureObjectTemplate
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -202709,7 +202709,7 @@ object_mobile_shared_warren_irradiated_worker_s03 = SharedCreatureObjectTemplate
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -202822,7 +202822,7 @@ object_mobile_shared_warren_janna_bel_arde = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -202933,7 +202933,7 @@ object_mobile_shared_warren_jerrd_sonclim = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -203044,7 +203044,7 @@ object_mobile_shared_warren_knag_garhun = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -203155,7 +203155,7 @@ object_mobile_shared_warren_loyalist_commander = SharedCreatureObjectTemplate:ne
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -203268,7 +203268,7 @@ object_mobile_shared_warren_mirla = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -203379,7 +203379,7 @@ object_mobile_shared_warren_phy_hudgen = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -203490,7 +203490,7 @@ object_mobile_shared_warren_research_scientist = SharedCreatureObjectTemplate:ne
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -203601,7 +203601,7 @@ object_mobile_shared_warren_scientist_s01 = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -203712,7 +203712,7 @@ object_mobile_shared_warren_scientist_s02 = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -203823,7 +203823,7 @@ object_mobile_shared_warren_scientist_s03 = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -203901,7 +203901,7 @@ object_mobile_shared_warren_stormtrooper = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.12, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -204012,7 +204012,7 @@ object_mobile_shared_warren_technician = SharedCreatureObjectTemplate:new {
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -204123,7 +204123,7 @@ object_mobile_shared_warren_teraud_loyalist_cyborg_s01 = SharedCreatureObjectTem
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -204234,7 +204234,7 @@ object_mobile_shared_warren_teraud_loyalist_cyborg_s02 = SharedCreatureObjectTem
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -204345,7 +204345,7 @@ object_mobile_shared_warren_teraud_loyalist_cyborg_s03 = SharedCreatureObjectTem
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -204456,7 +204456,7 @@ object_mobile_shared_warren_teraud_loyalist_cyborg_s04 = SharedCreatureObjectTem
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -204567,7 +204567,7 @@ object_mobile_shared_warren_teraud_loyalist_s01 = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -204678,7 +204678,7 @@ object_mobile_shared_warren_teraud_loyalist_s02 = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -204789,7 +204789,7 @@ object_mobile_shared_warren_teraud_loyalist_s03 = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -204900,7 +204900,7 @@ object_mobile_shared_warren_teraud_loyalist_s04 = SharedCreatureObjectTemplate:n
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -205011,7 +205011,7 @@ object_mobile_shared_warren_teraud_loyalist_scientist = SharedCreatureObjectTemp
 			{"/shared_owner/blend_nosewidth_1", 0, 0, 256}, 
 			{"/shared_owner/blend_skinny", 0, 0, 256}},
 
-	scale = 1,
+	scale = {1, 1.12},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -205245,7 +205245,7 @@ object_mobile_shared_weequay_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.75, 0.85},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -205869,7 +205869,7 @@ object_mobile_shared_wookiee_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.24, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -205947,7 +205947,7 @@ object_mobile_shared_wookiee_lifeday_elder = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.24, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -206025,7 +206025,7 @@ object_mobile_shared_wookiee_lifeday_female1 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.24, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -206103,7 +206103,7 @@ object_mobile_shared_wookiee_lifeday_female2 = SharedCreatureObjectTemplate:new 
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.24, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -206181,7 +206181,7 @@ object_mobile_shared_wookiee_lifeday_male1 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.24, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -206259,7 +206259,7 @@ object_mobile_shared_wookiee_lifeday_male2 = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.24, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -206337,7 +206337,7 @@ object_mobile_shared_wookiee_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {1.24, 1.36},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -207351,7 +207351,7 @@ object_mobile_shared_zabrak_female = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
@@ -207429,7 +207429,7 @@ object_mobile_shared_zabrak_male = SharedCreatureObjectTemplate:new {
 	race = 0,
 	rangedIntCustomizationVariables = {},
 
-	scale = 1,
+	scale = {0.94, 1.06},
 	scaleThresholdBeforeExtentTest = 0.5,
 	sendToClient = 1,
 	slopeModAngle = 15,
