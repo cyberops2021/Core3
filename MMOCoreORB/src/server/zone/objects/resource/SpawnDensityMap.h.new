@@ -1,0 +1,181 @@
+/*
+ * SpawnDensityMap.h
+ * Copyright <SWGEmu>
+ * See file COPYING for copying conditions.
+ */
+
+#ifndef SPAWNDENSITYMAP_H_
+#define SPAWNDENSITYMAP_H_
+
+#include "engine/engine.h"
+#include "engine/util/json_utils.h"
+#include "simplexnoise/SimplexNoise.h"
+#include "WaterMaskData.h"
+#include <algorithm>
+#include <cmath>
+#include <vector>
+
+class SpawnDensityMap : public Serializable {
+protected:
+    uint32 seed;
+    float modifier;
+    float density;
+    float minX, maxX, minY, maxY;
+    uint32 totalUnits;
+    uint32 unitsHarvested;
+
+public:
+    enum { HIGHDENSITY = 1, MEDIUMDENSITY = 2, LOWDENSITY = 3 };
+
+    SpawnDensityMap() : Object(), Serializable() { addSerializableVariables(); }
+    
+    SpawnDensityMap(const SpawnDensityMap& map) : Object(), Serializable() {
+        *this = map;
+        addSerializableVariables();
+    }
+
+    SpawnDensityMap(bool ore, short concentration, float minx, float maxx, float miny, float maxy) : Object(), Serializable() {
+        initialize(ore, concentration);
+        minX = minx; maxX = maxx; minY = miny; maxY = maxy;
+    }
+
+    ~SpawnDensityMap() {}
+
+    uint32 getSeed() const { return seed; }
+    float getDensity() const { return density; }
+    float getModifier() const { return modifier; }
+
+    friend void to_json(nlohmann::json& j, const SpawnDensityMap& m);
+
+    // --- PEAK FINDER (Unchanged) ---
+    String findBestLocations(const String& planetName) const {
+        struct Point { float val; float x; float y; };
+        std::vector<Point> candidates;
+        
+        for (float y = minY; y < maxY; y += 128) {
+            for (float x = minX; x < maxX; x += 128) {
+                if (WaterMaskData::isWater(planetName, x, y)) continue;
+                float tx = x - minX;
+                float ty = maxY - y;
+                float val = SimplexNoise::noise(tx * modifier, ty * modifier, seed * modifier);
+                if (val > 0.3f) candidates.push_back({val, x, y});
+            }
+        }
+        
+        std::sort(candidates.begin(), candidates.end(), [](const Point& a, const Point& b) {
+            return a.val > b.val; 
+        });
+
+        StringBuffer sb;
+        sb << "{";
+        int count = 0;
+        std::vector<Point> finalPeaks;
+
+        for (const auto& p : candidates) {
+            if (count >= 10) break;
+            bool tooClose = false;
+            for (const auto& existing : finalPeaks) {
+                float dist = std::sqrt(std::pow(p.x - existing.x, 2) + std::pow(p.y - existing.y, 2));
+                if (dist < 500.0f) { tooClose = true; break; }
+            }
+            
+            if (!tooClose) {
+                float refinedVal = p.val;
+                float refinedX = p.x;
+                float refinedY = p.y;
+                
+                for(float fy = p.y - 140; fy < p.y + 140; fy += 16) {
+                    for(float fx = p.x - 140; fx < p.x + 140; fx += 16) {
+                        if (WaterMaskData::isWater(planetName, fx, fy)) continue;
+                        float ftx = fx - minX;
+                        float fty = maxY - fy;
+                        float fval = SimplexNoise::noise(ftx * modifier, fty * modifier, seed * modifier);
+                        if (fval > refinedVal) { refinedVal = fval; refinedX = fx; refinedY = fy; }
+                    }
+                }
+
+                finalPeaks.push_back({refinedVal, refinedX, refinedY});
+                if (count > 0) sb << ", ";
+                int concPct = (int)((refinedVal * density) * 100);
+                if (concPct > 100) concPct = 100;
+                sb << "{" << (int)refinedX << "," << (int)refinedY << "," << concPct << "}";
+                count++;
+            }
+        }
+        sb << "}";
+        return sb.toString();
+    }
+
+    // --- DEBUGGED DENSITY CALCULATOR ---
+    float getDensityAt(float x, float y) const {
+        float tx = x - minX;
+        float ty = maxY - y;
+        
+        float noise_x = tx * modifier;
+        float noise_y = ty * modifier;
+        float noise_z = seed * modifier;
+
+        float val = SimplexNoise::noise(noise_x, noise_y, noise_z);
+        
+        // --- DEBUG OUTPUT ---
+        float finalConc = (val < 0) ? 0 : (val * density);
+        int finalPct = (int)(finalConc * 100);
+        
+        StringBuffer msg;
+        msg << "\n[SURVEY]--------------------------------------\n";
+        msg << "Location:     " << x << ", " << y << "\n";
+        msg << "Seed:         " << seed << "\n";
+        msg << "Modifier:     " << modifier << "\n";
+        msg << "Raw Noise:    " << val << "\n";
+        msg << "Max Density:  " << density << "\n";
+        msg << "ACTUAL CONC:  " << finalPct << "%\n"; // <--- THIS IS THE NUMBER YOU WANT
+        msg << "------------------------------------------\n";
+        System::out << msg.toString();
+        // --------------------
+
+        if(val < 0) return 0;
+        return finalConc;
+    }
+    
+    SpawnDensityMap& operator=(const SpawnDensityMap& map) {
+        if (this == &map) return *this;
+        seed = map.seed; modifier = map.modifier; density = map.density;
+        minX = map.minX; maxX = map.maxX; minY = map.minY; maxY = map.maxY;
+        totalUnits = map.totalUnits; unitsHarvested = map.unitsHarvested;
+        return *this;
+    }
+    
+    void addSerializableVariables() {
+        addSerializableVariable("seed", &seed);
+        addSerializableVariable("modifier", &modifier);
+        addSerializableVariable("density", &density);
+        addSerializableVariable("totalUnits", &totalUnits);
+        addSerializableVariable("unitsHarvested", &unitsHarvested);
+        addSerializableVariable("minX", &minX);
+        addSerializableVariable("maxX", &maxX);
+        addSerializableVariable("minY", &minY);
+        addSerializableVariable("maxY", &maxY);
+    }
+    
+private:
+    void initialize(bool ore, short concentration) {
+        seed = System::random(time(0));
+        modifier = ore ? .00015f : .0006f;
+        switch(concentration) {
+            case 1: density = (System::random(9) + 90) / 100.0f; break;
+            case 2: density = (System::random(20) + 75) / 100.0f; break;
+            case 3: density = (System::random(25) + 50) / 100.0f; break;
+            default: density = (System::random(25) + 50) / 100.0f;
+        }
+        totalUnits = System::random(5000000) + 5000000;
+        addSerializableVariables();
+    }
+};
+
+inline void to_json(nlohmann::json& j, const SpawnDensityMap& m) {
+    j["seed"] = m.seed; j["modifier"] = m.modifier; j["density"] = m.density;
+    j["totalUnits"] = m.totalUnits; j["unitsHarvested"] = m.unitsHarvested;
+    j["minX"] = m.minX; j["maxX"] = m.maxX; j["minY"] = m.minY; j["maxY"] = m.maxY;
+}
+
+#endif /* SPAWNDENSITYMAP_H_ */

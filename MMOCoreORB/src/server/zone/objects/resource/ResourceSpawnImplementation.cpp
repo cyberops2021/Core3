@@ -134,7 +134,15 @@ void ResourceSpawnImplementation::createSpawnMaps(bool jtl, int minpool, int max
 		if (zone == nullptr)
 			continue;
 
-		SpawnDensityMap newMap(isType("ore"), concentration, zone->getMinX(),
+		// FIX: Broaden the check to include Gemstones and Minerals as "Ore-like"
+		bool useLowFreq = isType("ore") || isType("gemstone") || isType("mineral");
+
+		// Exception: Amorphous Gemstones seem to behave like High Freq in your testing
+		if (isType("amorphous") || isType("armophous")) {
+			useLowFreq = false;
+		}
+
+		SpawnDensityMap newMap(useLowFreq, concentration, zone->getMinX(),
 				zone->getMaxX(), zone->getMinY(), zone->getMaxY());
 
 		spawnMaps.put(zonenames.get(i), newMap);
@@ -293,4 +301,42 @@ void ResourceSpawnImplementation::print() const {
 	}
 
 	info("***********************", true);
+}
+
+unsigned int ResourceSpawnImplementation::getSpawnSeed(int index) const {
+
+	// Safety check to prevent crashing if index is out of bounds
+	if (index < 0 || index >= spawnMaps.size())
+		return 0;
+
+	// Get the first map (usually the only one active for a specific zone)
+	return spawnMaps.get(index).getSeed();
+}
+
+float ResourceSpawnImplementation::getSpawnDensity(int index) const {
+	if (index < 0 || index >= spawnMaps.size())
+		return 0;
+	return spawnMaps.get(index).getDensity();
+}
+
+float ResourceSpawnImplementation::getSpawnModifier(int index) const {
+	if (index < 0 || index >= spawnMaps.size())
+		return 0;
+	return spawnMaps.get(index).getModifier();
+}
+
+/*String ResourceSpawnImplementation::getPeaks(int index)  {
+
+	if (index < 0 || index >= spawnMaps.size())
+		return "{}";
+
+    return spawnMaps.get(index).findBestLocations(planet);
+
+}*/
+
+String ResourceSpawnImplementation::getBestPeaks(int index, const String& planetName) {
+	if (index < 0 || index >= spawnMaps.size())
+		return "{}";
+
+	return spawnMaps.get(index).findBestLocations(planetName);
 }

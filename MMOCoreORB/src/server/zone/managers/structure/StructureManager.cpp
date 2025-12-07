@@ -1344,8 +1344,8 @@ void StructureManager::payMaintenance(StructureObject* structure, CreatureObject
 
 	int currentMaint = structure->getSurplusMaintenance();
 
-	if (currentMaint + amount > 100000000 || currentMaint + amount < currentMaint) {
-		creature->sendSystemMessage("The maximum maintenance a house can hold is 100.000.000");
+	if (currentMaint + amount > 1000000000 || currentMaint + amount < currentMaint) {
+		creature->sendSystemMessage("The maximum maintenance a house can hold is 100,000,000");
 		return;
 	}
 

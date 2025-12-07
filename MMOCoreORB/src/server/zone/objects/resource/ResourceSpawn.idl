@@ -322,4 +322,17 @@ class ResourceSpawn extends SceneObject {
 
 	@read
 	public native void print();
+
+	@read
+	public native unsigned int getSpawnSeed(int index);
+
+	@read
+	public native float getSpawnDensity(int index);
+
+	@read
+	public native float getSpawnModifier(int index);
+
+	public native string getBestPeaks(int index, final string planetName);
+
+	// public native string getPeaks(int index);
 }

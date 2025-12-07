@@ -318,6 +318,43 @@ bool ResourceSpawner::writeAllSpawnsToScript() {
 			writer->writeLine("		name = \"" + spawn->getName() + "\",");
 			writer->writeLine("		type = \"" + spawn->getType() + "\",");
 
+
+			// --- NEW "GOD MODE" EXPORT ---
+			writer->writeLine("		maps = {");
+
+			// DEBUG: Print total planets found
+			System::out << "DEBUG: Exporting " << spawn->getName() << " - Found " << spawn->getSpawnMapSize() << " planets.\n";
+
+			for(int j = 0; j < spawn->getSpawnMapSize(); ++j) {
+
+				String planet = spawn->getSpawnMapZone(j);
+
+				// DEBUG: Print current planet
+				System::out << "DEBUG: Processing planet " << j << ": " << planet << "\n";
+
+
+				// 1. Calculate Peaks (Instant)
+				String peaks = spawn->getBestPeaks(j, spawn->getSpawnMapZone(j));
+
+				// 2. Write the Standard Line
+				StringBuffer mapLine;
+				mapLine << "						{ \"" << spawn->getSpawnMapZone(j) << "\", " 
+						  << spawn->getSpawnSeed(j) << ", " 
+						  << spawn->getSpawnDensity(j) << ", " 
+						  << spawn->getSpawnModifier(j) << " },";
+
+				writer->writeLine(mapLine.toString());
+
+
+				// 3. Write the Cheat Line (Commented out so Lua ignores it, but Python sees it)
+				String cheatLine = "						-- PEAKS: " + peaks;
+				writer->writeLine(cheatLine);
+
+			}
+
+			writer->writeLine("		},");
+			// --- END ADDED CODE ---
+
 			writer->writeLine("		classes = {");
 			for(int i = 0; i < 8; ++i) {
 				String spawnClass = spawn->getClass(i);

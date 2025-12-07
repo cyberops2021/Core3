@@ -59,7 +59,7 @@ Core3 = {
 	DBPort = 3306,
 	DBName = "swgemu",
 	DBUser = "swgemu",
-	DBPass = "123456",
+	DBPass = "Pa22w0rd",
 	DBInstances = 2,
 	DBSecret = "swgemus3cr37!", -- Change this! This value should be unique and of reasonable length.
 
@@ -74,7 +74,7 @@ Core3 = {
 	MantisPort = 3306,
 	MantisName = "swgemu",
 	MantisUser = "swgemu",
-	MantisPass = "123456",
+	MantisPass = "Pa22w0rd",
 	MantisPrfx = "mantis_", -- The prefix for your mantis tables.
 
 	------Metrics Server Config------
