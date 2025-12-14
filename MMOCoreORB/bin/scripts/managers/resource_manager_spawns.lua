@@ -17059,8 +17059,6 @@ resources = {
 		name = "Birade",
 		type = "hide_bristley_naboo",
 		maps = {
-						{ "naboo", 1289202689, 0.83, 0.0006 },
-						-- PEAKS: {{-3572,484,80}, {1428,-4516,80}, {3224,6536,80}, {4268,2400,79}, {2600,732,79}, {4972,-7658,79}, {6548,4844,79}, {996,2756,79}, {-2348,4396,78}, {-7346,4400,78}, {2612,5108,77}, {1544,436,77}, {-700,6040,77}, {-3768,-4880,77}, {1548,5436,77}, {228,-316,77}, {-3428,4032,77}, {2592,-4860,76}, {4260,6804,76}, {-7942,-1208,76}}
 		},
 		classes = {
 			{"Organic", "organic"},
@@ -243069,6 +243067,33 @@ resources = {
 	},
 
 	{
+		name = "Riste",
+		type = "seafood_crustacean_yavin4",
+		maps = {
+						{ "yavin4", 285233475, 0.93, 0.0006 },
+						-- PEAKS: {{-4276,2356,90}, {3840,-2156,90}, {964,-2396,90}, {136,-6918,90}, {-3916,6464,89}, {4528,-364,87}, {176,808,87}, {-7614,-5988,86}, {-7942,6968,86}, {-1256,984,85}, {2400,4040,85}, {-4288,-2104,85}, {5728,7892,84}, {5116,-3440,84}, {-960,4908,84}, {2112,-5732,84}, {1792,2604,84}, {-5392,-1532,84}, {6844,6940,84}, {-1588,-5688,84}}
+		},
+		classes = {
+			{"Organic", "organic"},
+			{"Creature Resources", "creature_resources"},
+			{"Creature Food", "creature_food"},
+			{"Meat", "meat"},
+			{"Seafood", "seafood"},
+			{"Crustacean", "seafood_crustacean"},
+			{"Yavinian Crustacean Meat", "seafood_crustacean_yavin4"},
+		},
+		attributes = {
+			{"res_decay_resist", 180},
+			{"res_flavor", 726},
+			{"res_potential_energy", 87},
+			{"res_quality", 612},
+		},
+		zoneRestriction = "yavin4",
+		surveyToolType = -1,
+		containerCRC = 1349101341,
+	},
+
+	{
 		name = "Riswihemide",
 		type = "petrochem_fuel_liquid_type4",
 		maps = {
@@ -255919,8 +255944,6 @@ resources = {
 		name = "Sletaitao",
 		type = "seafood_crustacean_yavin4",
 		maps = {
-						{ "yavin4", 417778887, 0.8, 0.0006 },
-						-- PEAKS: {{-2028,1848,77}, {-1588,-1580,77}, {-7450,-2484,77}, {7548,2516,77}, {3760,-5076,76}, {-5640,6272,76}, {-608,-3756,76}, {1784,-2076,76}, {2584,1036,76}, {-1244,4280,75}, {7068,-6798,75}, {-4600,-3464,75}, {-7934,-6794,75}, {4336,-4340,75}, {396,2936,75}, {-2940,-5400,75}, {1288,4048,75}, {-5664,-4336,75}, {-3996,7332,75}, {7672,-1000,75}}
 		},
 		classes = {
 			{"Organic", "organic"},
@@ -317889,6 +317912,33 @@ resources = {
 		zoneRestriction = "lok",
 		surveyToolType = -1,
 		containerCRC = 1349101341,
+	},
+
+	{
+		name = "Woedi",
+		type = "hide_bristley_naboo",
+		maps = {
+						{ "naboo", 839687714, 0.78, 0.0006 },
+						-- PEAKS: {{5644,6204,75}, {-1976,3600,75}, {2764,-7806,75}, {-1932,-1356,75}, {-7942,-3516,75}, {2600,-4268,75}, {1600,-964,74}, {940,-6570,74}, {-1016,5708,74}, {2712,3676,74}, {2848,1868,74}, {2136,-2284,73}, {7648,-6298,73}, {-6994,-1340,73}, {-5100,1768,73}, {-140,-6802,73}, {-4044,2656,73}, {5960,-952,73}, {-1768,100,73}, {-7362,5096,73}}
+		},
+		classes = {
+			{"Organic", "organic"},
+			{"Creature Resources", "creature_resources"},
+			{"Creature Structural", "creature_structural"},
+			{"Hide", "hide"},
+			{"Bristley Hide", "hide_bristley"},
+			{"Nabooian Bristley Hide", "hide_bristley_naboo"},
+		},
+		attributes = {
+			{"res_decay_resist", 737},
+			{"res_malleability", 254},
+			{"res_quality", 262},
+			{"res_shock_resistance", 190},
+			{"res_toughness", 522},
+		},
+		zoneRestriction = "naboo",
+		surveyToolType = -1,
+		containerCRC = 1856171731,
 	},
 
 	{

@@ -7,6 +7,58 @@ local shuttleContacts = {
 	rebel = { planet = "corellia", x = -6518.5, y = 6044.1, name = "Lt. Lance" }
 }
 
+-- Intel locations for all 9 quest givers (from original SOE data)
+local intelLocations = {
+	-- NEUTRAL QUESTS
+	ticketGiverYondalla = {  -- Rescue
+		{ planet = "talus", x = -4820, y = -4743, name = "Kahmurra Bio Facility" },
+		{ planet = "corellia", x = 1353, y = -329, name = "Lord Nyax Hideout" },
+		{ planet = "endor", x = 2134, y = 3686, name = "Korga Cave" }
+	},
+	ticketGiverBruce = {  -- Destroy
+		{ planet = "naboo", x = 2455, y = -3869, name = "Mauler Stronghold" },
+		{ planet = "corellia", x = 5765, y = 1585, name = "Rogue CorSec Base" },
+		{ planet = "dathomir", x = -3782, y = -84, name = "Nightsister Slave Camp" }
+	},
+	ticketGiverBronell = {  -- Assassin
+		{ planet = "talus", x = -2475, y = -3886, name = "Binayre Pirate Bunker" },
+		{ planet = "naboo", x = -1507, y = -1729, name = "Pirate Bunker" },
+		{ planet = "lok", x = -3824, y = -464, name = "Canyon Corsair Stronghold" }
+	},
+	-- IMPERIAL QUESTS
+	ticketGiverSabol = {  -- Assassin
+		{ planet = "corellia", x = -2557, y = 3005, name = "Afarathu Cave" },
+		{ planet = "dantooine", x = -6676, y = 5557, name = "Abandoned Rebel Base" },
+		{ planet = "dathomir", x = 5693, y = 1934, name = "Downed Ship" }
+	},
+	ticketGiverDarkstone = {  -- Rescue
+		{ planet = "yavin4", x = -291, y = 4856, name = "Woolamander Palace" },
+		{ planet = "corellia", x = 5765, y = 1585, name = "Rogue CorSec Base" },
+		{ planet = "lok", x = 3350, y = -4690, name = "Droid Engineer Cave" }
+	},
+	ticketGiverVelso = {  -- Destroy
+		{ planet = "naboo", x = -5936, y = -6270, name = "Weapons Depot" },
+		{ planet = "talus", x = -2235, y = 2303, name = "Detainment Center" },
+		{ planet = "rori", x = -1635, y = -3721, name = "Rebel Outpost" }
+	},
+	-- REBEL QUESTS
+	ticketGiverPashna = {  -- Assassin
+		{ planet = "dantooine", x = -4195, y = -2376, name = "Mokk Stronghold" },
+		{ planet = "yavin4", x = -6485, y = -447, name = "Geonosian Lab" },
+		{ planet = "tatooine", x = -3939, y = 6323, name = "Fort Tusken" }
+	},
+	ticketGiverTallon = {  -- Rescue
+		{ planet = "naboo", x = 4660, y = -4682, name = "Imperial vs. Gungan Battle" },
+		{ planet = "dathomir", x = -6309, y = 753, name = "Dathomir Prison" },
+		{ planet = "yavin4", x = 5070, y = 5537, name = "Massassi Temple" }
+	},
+	ticketGiverCrowley = {  -- Destroy
+		{ planet = "corellia", x = -4654, y = -2644, name = "Hidden Bunker" },
+		{ planet = "dathomir", x = -6309, y = 753, name = "Dathomir Prison" },
+		{ planet = "rori", x = 5451, y = 5025, name = "Cobral Hideout" }
+	}
+}
+
 CorvetteTicketGiverConvoHandler = conv_handler:new {
 	ticketGiver = nil
 }
@@ -53,12 +105,27 @@ function CorvetteTicketGiverConvoHandler:removeQuestWaypoint(pPlayer)
 	end
 end
 
--- Add waypoint to shuttle contact when quest starts
+-- Add waypoint to shuttle contact when player has ticket
 function CorvetteTicketGiverConvoHandler:addShuttleContactWaypoint(pPlayer)
 	local faction = self.ticketGiver.ticketInfo.faction or "neutral"
 	local contact = shuttleContacts[faction]
 	if contact ~= nil then
-		self:addQuestWaypoint(pPlayer, "Corvette Contact: " .. contact.name, contact.planet, contact.x, contact.y)
+		self:addQuestWaypoint(pPlayer, "Corvette Boarding: " .. contact.name, contact.planet, contact.x, contact.y)
+	end
+end
+
+-- Add waypoint to intel location based on location number (1, 2, or 3)
+function CorvetteTicketGiverConvoHandler:addIntelLocationWaypoint(pPlayer, locationNumber)
+	local giverName = self.ticketGiver.giverName
+	local locations = intelLocations[giverName]
+	
+	if locations == nil then
+		return
+	end
+	
+	local loc = locations[locationNumber]
+	if loc ~= nil then
+		self:addQuestWaypoint(pPlayer, "Intel: " .. loc.name, loc.planet, loc.x, loc.y)
 	end
 end
 
@@ -73,8 +140,8 @@ function CorvetteTicketGiverConvoHandler:runScreenHandlers(pConvoTemplate, pPlay
 		setQuestStatus(playerID .. ":activeCorvetteQuestType", self.ticketGiver.ticketInfo.missionType)
 		setQuestStatus(playerID .. ":activeCorvetteStep", "1")
 		self.ticketGiver:randomizeIntelLocs(pPlayer)
-		-- Add waypoint to shuttle contact
-		self:addShuttleContactWaypoint(pPlayer)
+		-- Add waypoint to first intel location by default
+		self:addIntelLocationWaypoint(pPlayer, 1)
 	elseif (screenID == "back_already") then
 		pConvoScreen = self:handleScreenBackAlready(pConvoTemplate, pPlayer, pNpc, selectedOption, pConvoScreen)
 	elseif (screenID == "has_intel") or  screenID == "other_documents" then
@@ -99,12 +166,18 @@ function CorvetteTicketGiverConvoHandler:runScreenHandlers(pConvoTemplate, pPlay
 	elseif (screenID == "first_location") then
 		setQuestStatus(playerID .. ":heardLocation1",1)
 		pConvoScreen = self:handleScreenHeardLocations(pConvoTemplate, pPlayer, pNpc, selectedOption, pConvoScreen)
+		-- Add waypoint to first intel location
+		self:addIntelLocationWaypoint(pPlayer, 1)
 	elseif (screenID == "second_location") then
 		setQuestStatus(playerID .. ":heardLocation2",1)
 		pConvoScreen = self:handleScreenHeardLocations(pConvoTemplate, pPlayer, pNpc, selectedOption, pConvoScreen)
+		-- Add waypoint to second intel location
+		self:addIntelLocationWaypoint(pPlayer, 2)
 	elseif (screenID == "third_location") then
 		setQuestStatus(playerID .. ":heardLocation3",1)
 		pConvoScreen = self:handleScreenHeardLocations(pConvoTemplate, pPlayer, pNpc, selectedOption, pConvoScreen)
+		-- Add waypoint to third intel location
+		self:addIntelLocationWaypoint(pPlayer, 3)
 	elseif (screenID == "bad_intel_1") then
 		self.ticketGiver:removeIntel(pPlayer, 1)
 		self.ticketGiver:giveCompensation(pPlayer)
@@ -123,6 +196,8 @@ function CorvetteTicketGiverConvoHandler:runScreenHandlers(pConvoTemplate, pPlay
 		self.ticketGiver:removeIntel(pPlayer, 3)
 		self.ticketGiver:giveTicket(pPlayer)
 		pConvoScreen = self:handleScreenGoodIntel(pConvoTemplate, pPlayer, pNpc, selectedOption, pConvoScreen)
+		-- Now add waypoint to shuttle contact since player has ticket
+		self:addShuttleContactWaypoint(pPlayer)
 	elseif (screenID == "still_here") then
 		pConvoScreen = self:handleScreenStillHere(pConvoTemplate, pPlayer, pNpc, selectedOption, pConvoScreen)
 	elseif (screenID == "earned_reward") then
