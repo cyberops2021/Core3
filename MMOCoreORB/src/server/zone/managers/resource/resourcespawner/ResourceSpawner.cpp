@@ -323,14 +323,14 @@ bool ResourceSpawner::writeAllSpawnsToScript() {
 			writer->writeLine("		maps = {");
 
 			// DEBUG: Print total planets found
-			System::out << "DEBUG: Exporting " << spawn->getName() << " - Found " << spawn->getSpawnMapSize() << " planets.\n";
+			//System::out << "DEBUG: Exporting " << spawn->getName() << " - Found " << spawn->getSpawnMapSize() << " planets.\n";
 
 			for(int j = 0; j < spawn->getSpawnMapSize(); ++j) {
 
 				String planet = spawn->getSpawnMapZone(j);
 
 				// DEBUG: Print current planet
-				System::out << "DEBUG: Processing planet " << j << ": " << planet << "\n";
+				//System::out << "DEBUG: Processing planet " << j << ": " << planet << "\n";
 
 
 				// 1. Calculate Peaks (Instant)

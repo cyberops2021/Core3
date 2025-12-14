@@ -1,65 +1,11 @@
 local ObjectManager = require("managers.object.object_manager")
 
--- Shuttle contact locations by faction for waypoint tracking
-local shuttleContacts = {
-	neutral = { planet = "tatooine", x = -6178.8, y = -6381.5, name = "Klaatu" },
-	imperial = { planet = "naboo", x = 2447.5, y = -3898.0, name = "DS-297" },
-	rebel = { planet = "corellia", x = -6518.5, y = 6044.1, name = "Lt. Lance" }
-}
-
 CorvetteTicketGiverConvoHandler = conv_handler:new {
 	ticketGiver = nil
 }
 
 function CorvetteTicketGiverConvoHandler:setTicketGiver(giver)
 	self.ticketGiver = giver
-end
-
--- Add a quest waypoint for the corvette mission
-function CorvetteTicketGiverConvoHandler:addQuestWaypoint(pPlayer, waypointName, planet, x, y)
-	local pGhost = CreatureObject(pPlayer):getPlayerObject()
-	if pGhost == nil then
-		return nil
-	end
-
-	-- Remove any existing corvette quest waypoint first
-	self:removeQuestWaypoint(pPlayer)
-
-	-- Add new waypoint using standard purple quest waypoint
-	local waypointID = PlayerObject(pGhost):addWaypoint(planet, waypointName, "", x, 0, y, WAYPOINT_PURPLE, true, true, 0, 0)
-
-	if waypointID ~= nil and waypointID ~= 0 then
-		-- Store the waypoint ID for later removal
-		local playerID = SceneObject(pPlayer):getObjectID()
-		setQuestStatus(playerID .. ":corvetteQuestWaypointID", waypointID)
-	end
-
-	return waypointID
-end
-
--- Remove the corvette quest waypoint
-function CorvetteTicketGiverConvoHandler:removeQuestWaypoint(pPlayer)
-	local pGhost = CreatureObject(pPlayer):getPlayerObject()
-	if pGhost == nil then
-		return
-	end
-
-	local playerID = SceneObject(pPlayer):getObjectID()
-	local waypointID = getQuestStatus(playerID .. ":corvetteQuestWaypointID")
-
-	if waypointID ~= nil and waypointID ~= "" then
-		PlayerObject(pGhost):removeWaypoint(tonumber(waypointID), true)
-		removeQuestStatus(playerID .. ":corvetteQuestWaypointID")
-	end
-end
-
--- Add waypoint to shuttle contact when quest starts
-function CorvetteTicketGiverConvoHandler:addShuttleContactWaypoint(pPlayer)
-	local faction = self.ticketGiver.ticketInfo.faction or "neutral"
-	local contact = shuttleContacts[faction]
-	if contact ~= nil then
-		self:addQuestWaypoint(pPlayer, "Corvette Contact: " .. contact.name, contact.planet, contact.x, contact.y)
-	end
 end
 
 function CorvetteTicketGiverConvoHandler:runScreenHandlers(pConvoTemplate, pPlayer, pNpc, selectedOption, pConvoScreen)
@@ -73,8 +19,6 @@ function CorvetteTicketGiverConvoHandler:runScreenHandlers(pConvoTemplate, pPlay
 		setQuestStatus(playerID .. ":activeCorvetteQuestType", self.ticketGiver.ticketInfo.missionType)
 		setQuestStatus(playerID .. ":activeCorvetteStep", "1")
 		self.ticketGiver:randomizeIntelLocs(pPlayer)
-		-- Add waypoint to shuttle contact
-		self:addShuttleContactWaypoint(pPlayer)
 	elseif (screenID == "back_already") then
 		pConvoScreen = self:handleScreenBackAlready(pConvoTemplate, pPlayer, pNpc, selectedOption, pConvoScreen)
 	elseif (screenID == "has_intel") or  screenID == "other_documents" then
@@ -89,8 +33,6 @@ function CorvetteTicketGiverConvoHandler:runScreenHandlers(pConvoTemplate, pPlay
 		removeQuestStatus(playerID .. ":heardLocation2")
 		removeQuestStatus(playerID .. ":heardLocation3")
 		self.ticketGiver:removeDocuments(pPlayer)
-		-- Remove quest waypoint when quest is abandoned
-		self:removeQuestWaypoint(pPlayer)
 	elseif (screenID == "which_planet") or (screenID == "quest_start") then
 		removeQuestStatus(playerID .. ":heardLocation1")
 		removeQuestStatus(playerID .. ":heardLocation2")
@@ -133,8 +75,6 @@ function CorvetteTicketGiverConvoHandler:runScreenHandlers(pConvoTemplate, pPlay
 		removeQuestStatus(playerID .. ":activeCorvetteQuestType")
 		self.ticketGiver:removeDocuments(pPlayer)
 		self.ticketGiver:giveReward(pPlayer)
-		-- Remove quest waypoint when quest is complete
-		self:removeQuestWaypoint(pPlayer)
 	end
 	return pConvoScreen
 end
