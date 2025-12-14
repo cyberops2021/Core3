@@ -483,6 +483,7 @@ filterWords = {
 	{ "\\b^j[ie]*di.*\\b", DECLINED_RESERVED }, -- jedi\Jeedi
 	{ "\\bjehov[ah].*\\b", DECLINED_RESERVED }, -- Jehova\Jehovah
 	{ "\\bjes[ui]s.*\\b", DECLINED_RESERVED }, -- jesus
+	{ "\\bje[w|s]+.*\\b", DECLINED_RESERVED }, -- Jew
 	{ "\\bkaas.?city\\b", DECLINED_RESERVED }, -- Kaas City
 	{ "\\bkryat\\b", DECLINED_RESERVED }, -- kryat
 	{ "\\blaura.?dern\\b", DECLINED_RESERVED }, -- Laura Dern

@@ -66,7 +66,6 @@ public:
 	static const int SCOUTTROOPER = 12; // XX-123
 	static const int DARKTROOPER = 13;	// XX-123
 	static const int SWAMPTROOPER = 14; // XX-123
-	static const int TIEPILOT = 15; // XX-123
 
 	static const int GUILD_NAME = 31;
 	static const int GUILD_ABBREV = 32;
@@ -108,7 +107,6 @@ class NameManager : public Singleton<NameManager>, public Logger, public Object 
 	Vector<String> scouttrooperPrefixes;
 	Vector<String> darktrooperPrefixes;
 	Vector<String> swamptrooperPrefixes;
-	Vector<String> tiepilotPrefixes;
 
 private:
 	void initialize();
