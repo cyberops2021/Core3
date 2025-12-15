@@ -624,3 +624,21 @@ creature_test = {
 	planetObjects = {
 	}
 }
+
+kashyyyk_main = {
+	weatherEnabled = 1,
+	gcwEnabled = 0,
+
+	planetTravelPoints = {
+		{name = "Kachirho Starport", x = 148.0, z = 18.0, y = 64.0, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1, landingRange = 6},
+	},
+
+	badgeAreas = {
+	},
+
+	navAreas = {
+	},
+
+	planetObjects = {
+	}
+}

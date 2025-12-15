@@ -6477,8 +6477,6 @@ resources = {
 		name = "Ami",
 		type = "energy_renewable_unlimited_solar_rori",
 		maps = {
-						{ "rori", 1244867828, 0.6, 0.0006 },
-						-- PEAKS: {{-1264,-1856,58}, {1604,-6598,58}, {-7122,-1348,58}, {-3532,7020,58}, {6436,-7942,58}, {-3184,-3768,58}, {5152,4584,57}, {3256,76,57}, {-1256,3180,57}, {3020,6016,57}, {7068,6516,57}, {-6330,6880,56}, {-5452,-6206,55}, {7876,-2880,55}, {-4880,4556,55}, {3456,-7102,55}, {-4876,-5428,55}, {6824,-160,55}, {6556,3428,55}, {-108,-3240,55}}
 		},
 		classes = {
 			{"Energy", "energy"},
@@ -50374,8 +50372,6 @@ resources = {
 		name = "Dofapa",
 		type = "bone_horn_yavin4",
 		maps = {
-						{ "yavin4", 707773647, 0.94, 0.0006 },
-						-- PEAKS: {{-3484,1556,90}, {6872,-7942,90}, {-1460,7868,90}, {4080,4256,90}, {-1500,-6470,89}, {4372,992,89}, {1528,-3440,89}, {-2668,-1672,89}, {6816,-3780,89}, {672,2304,89}, {5672,-7694,89}, {-3212,3208,88}, {-936,-5736,88}, {124,6544,88}, {-6550,-2100,88}, {7392,2608,88}, {-2320,4328,87}, {-4868,-3468,87}, {2392,-2388,87}, {-2612,-7390,87}}
 		},
 		classes = {
 			{"Organic", "organic"},
@@ -53372,8 +53368,6 @@ resources = {
 		name = "Drofi",
 		type = "hide_scaley_tatooine",
 		maps = {
-						{ "tatooine", 1688922680, 0.85, 0.0006 },
-						-- PEAKS: {{2320,2888,82}, {652,-3788,82}, {-5128,-6834,82}, {7940,-7830,82}, {-2332,-5588,82}, {-3996,2748,81}, {-6778,116,81}, {-7330,4392,81}, {7272,-6004,80}, {2308,-2136,80}, {-7862,-7306,80}, {-124,-3208,80}, {-3460,-6546,80}, {1540,-1544,80}, {3208,5124,80}, {-5124,6796,80}, {4876,6796,80}, {-736,7400,80}, {-3188,5136,80}, {4268,-7598,80}}
 		},
 		classes = {
 			{"Organic", "organic"},
@@ -85550,6 +85544,33 @@ resources = {
 		zoneRestriction = "yavin4",
 		surveyToolType = 3,
 		containerCRC = 1808675396,
+	},
+
+	{
+		name = "Fyewa",
+		type = "hide_scaley_tatooine",
+		maps = {
+						{ "tatooine", 1459172064, 0.88, 0.0006 },
+						-- PEAKS: {{6476,-1312,85}, {-2468,-624,85}, {7536,-4140,85}, {-5860,-2536,85}, {-5860,7464,85}, {-1200,-2392,84}, {2052,7940,84}, {2084,2268,84}, {2640,-6234,84}, {6280,-7614,83}, {-4024,-2900,83}, {-7666,-968,83}, {-7358,4324,83}, {5980,7656,82}, {-7354,7940,82}, {-1588,7916,82}, {5416,-80,82}, {4332,5984,82}, {5380,-5696,82}, {-5664,5984,82}}
+		},
+		classes = {
+			{"Organic", "organic"},
+			{"Creature Resources", "creature_resources"},
+			{"Creature Structural", "creature_structural"},
+			{"Hide", "hide"},
+			{"Scaley Hide", "hide_scaley"},
+			{"Tatooinian Scaley Hide", "hide_scaley_tatooine"},
+		},
+		attributes = {
+			{"res_decay_resist", 712},
+			{"res_malleability", 832},
+			{"res_quality", 915},
+			{"res_shock_resistance", 897},
+			{"res_toughness", 669},
+		},
+		zoneRestriction = "tatooine",
+		surveyToolType = -1,
+		containerCRC = 210849868,
 	},
 
 	{
@@ -117739,8 +117760,6 @@ resources = {
 		name = "Iha",
 		type = "hide_bristley_dantooine",
 		maps = {
-						{ "dantooine", 1079971121, 0.78, 0.0006 },
-						-- PEAKS: {{1068,356,75}, {-4040,-3984,75}, {-7310,-2220,75}, {7612,-7350,75}, {-724,4304,74}, {-2388,2652,74}, {4180,164,74}, {4284,-4280,74}, {1280,5684,73}, {-3428,1768,73}, {4504,-7838,73}, {7836,-4504,73}, {7940,2360,73}, {5976,-4024,72}, {-5140,5744,72}, {7360,7352,72}, {5960,6784,71}, {-5492,6852,71}, {6524,-1168,71}, {-7374,-6538,71}}
 		},
 		classes = {
 			{"Organic", "organic"},
@@ -118181,6 +118200,33 @@ resources = {
 		zoneRestriction = "dathomir",
 		surveyToolType = 3,
 		containerCRC = 1001781097,
+	},
+
+	{
+		name = "Ihope",
+		type = "corn_wild_rori",
+		maps = {
+						{ "rori", 890272123, 0.8, 0.0006 },
+						-- PEAKS: {{4812,2024,77}, {-2292,7940,77}, {-6294,-6016,77}, {1004,660,76}, {4408,-5428,76}, {-1292,-5376,76}, {5444,4940,76}, {-2892,-3424,75}, {-5676,-996,75}, {-2660,-976,75}, {-692,5996,75}, {-7358,-672,75}, {2048,7940,75}, {116,4572,75}, {-2656,-5980,75}, {980,7656,75}, {-5684,-4012,75}, {2648,4324,75}, {-1568,6784,75}, {-4612,676,75}}
+		},
+		classes = {
+			{"Organic", "organic"},
+			{"Flora Resources", "flora_resources"},
+			{"Flora Food", "flora_food"},
+			{"Cereal", "cereal"},
+			{"Corn", "corn"},
+			{"Wild Corn", "corn_wild"},
+			{"Rori Wild Corn", "corn_wild_rori"},
+		},
+		attributes = {
+			{"res_decay_resist", 998},
+			{"res_flavor", 951},
+			{"res_potential_energy", 87},
+			{"res_quality", 316},
+		},
+		zoneRestriction = "rori",
+		surveyToolType = 3,
+		containerCRC = 2868134971,
 	},
 
 	{
@@ -120878,6 +120924,33 @@ resources = {
 		zoneRestriction = "corellia",
 		surveyToolType = 3,
 		containerCRC = 1001781097,
+	},
+
+	{
+		name = "Ioni",
+		type = "hide_bristley_dantooine",
+		maps = {
+						{ "dantooine", 1675850968, 0.85, 0.0006 },
+						-- PEAKS: {{-3660,-4700,82}, {4700,-1340,82}, {2876,5612,82}, {7720,456,82}, {-6794,4824,82}, {-112,-3472,81}, {3220,-1552,81}, {-2332,2752,81}, {5924,7412,81}, {7596,-928,80}, {-3456,1792,80}, {-136,780,80}, {7300,-7670,79}, {7668,2684,79}, {2668,2700,79}, {1532,-3200,79}, {-6032,-1004,79}, {1004,1016,79}, {6032,-5856,79}, {-1804,-6530,79}}
+		},
+		classes = {
+			{"Organic", "organic"},
+			{"Creature Resources", "creature_resources"},
+			{"Creature Structural", "creature_structural"},
+			{"Hide", "hide"},
+			{"Bristley Hide", "hide_bristley"},
+			{"Dantooine Bristley Hide", "hide_bristley_dantooine"},
+		},
+		attributes = {
+			{"res_decay_resist", 52},
+			{"res_malleability", 981},
+			{"res_quality", 433},
+			{"res_shock_resistance", 979},
+			{"res_toughness", 803},
+		},
+		zoneRestriction = "dantooine",
+		surveyToolType = -1,
+		containerCRC = 1856171731,
 	},
 
 	{
@@ -124029,6 +124102,32 @@ resources = {
 		zoneRestriction = "",
 		surveyToolType = 6,
 		containerCRC = 3684838486,
+	},
+
+	{
+		name = "Ivekie",
+		type = "milk_wild_lok",
+		maps = {
+						{ "lok", 831003437, 0.76, 0.0006 },
+						-- PEAKS: {{-7798,-5340,74}, {536,2992,74}, {-2336,-720,73}, {4064,5708,72}, {6480,404,72}, {-2080,1852,72}, {6480,5392,71}, {-1540,-804,71}, {-3204,-7470,71}, {3764,-1424,71}, {-4596,-2348,71}, {2084,6920,71}, {5688,-2072,70}, {-4312,2928,70}, {-7922,-700,70}, {-2248,-4460,70}, {-6378,-3624,70}, {-948,-3756,70}, {-3208,7604,69}, {132,932,68}}
+		},
+		classes = {
+			{"Organic", "organic"},
+			{"Creature Resources", "creature_resources"},
+			{"Creature Food", "creature_food"},
+			{"Milk", "milk"},
+			{"Wild Milk", "milk_wild"},
+			{"Lokian Wild Milk", "milk_wild_lok"},
+		},
+		attributes = {
+			{"res_decay_resist", 587},
+			{"res_flavor", 646},
+			{"res_potential_energy", 515},
+			{"res_quality", 211},
+		},
+		zoneRestriction = "lok",
+		surveyToolType = -1,
+		containerCRC = 2928137621,
 	},
 
 	{
@@ -211461,6 +211560,29 @@ resources = {
 	},
 
 	{
+		name = "Pesoism",
+		type = "energy_renewable_unlimited_solar_naboo",
+		maps = {
+						{ "naboo", 1138413820, 0.5, 0.0006 },
+						-- PEAKS: {{-7890,-6666,48}, {-7910,-6112,48}, {1476,-4644,48}, {7236,1160,48}, {-4364,-880,48}, {-2036,-4320,48}, {5652,-5912,48}, {-400,2332,48}, {3752,620,47}, {2088,-6048,47}, {2044,-1000,47}, {376,-7670,47}, {-2892,3272,47}, {-1244,620,47}, {-5700,2664,47}, {-7942,-380,47}, {-5672,5676,47}, {-2328,4032,47}, {5984,-1268,47}, {5992,7344,47}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Nabooian Solar Renewable Energy", "energy_renewable_unlimited_solar_naboo"},
+		},
+		attributes = {
+			{"res_potential_energy", 554},
+			{"res_quality", 500},
+		},
+		zoneRestriction = "naboo",
+		surveyToolType = 1,
+		containerCRC = 10768890,
+	},
+
+	{
 		name = "Pesota",
 		type = "meat_herbivore_corellia",
 		maps = {
@@ -217118,8 +217240,6 @@ resources = {
 		name = "Podoe",
 		type = "corn_wild_rori",
 		maps = {
-						{ "rori", 2003116, 0.89, 0.0006 },
-						-- PEAKS: {{2132,7668,86}, {-5604,3216,86}, {-2420,-5752,86}, {752,2420,86}, {-3140,4808,86}, {-7162,6500,85}, {-1532,-7814,85}, {-4896,-568,84}, {-4900,-5568,84}, {2148,-2308,84}, {180,-1228,83}, {-7106,-7894,83}, {7900,-7894,82}, {2900,-7894,82}, {-3172,-164,82}, {-4132,-7470,82}, {-4132,2532,82}, {6772,1880,82}, {4584,-6838,82}, {4604,2368,82}}
 		},
 		classes = {
 			{"Organic", "organic"},
@@ -241167,6 +241287,29 @@ resources = {
 		zoneRestriction = "lok",
 		surveyToolType = 3,
 		containerCRC = 1001781097,
+	},
+
+	{
+		name = "Rhihahaic",
+		type = "energy_renewable_unlimited_solar_rori",
+		maps = {
+						{ "rori", 699086221, 0.68, 0.0006 },
+						-- PEAKS: {{4940,5072,66}, {-5232,-6570,66}, {1472,352,66}, {-6186,7696,66}, {5152,-7082,65}, {2996,-752,63}, {3852,-4736,63}, {2644,-2384,63}, {1212,-1224,62}, {-3176,-1824,62}, {-6510,-160,62}, {-3696,-7498,62}, {-4844,-3488,62}, {-1356,5212,62}, {6560,6776,61}, {980,5940,61}, {-4160,6836,61}, {4312,-1236,61}, {-6490,1760,61}, {6008,-4048,61}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Rori Solar Renewable Energy", "energy_renewable_unlimited_solar_rori"},
+		},
+		attributes = {
+			{"res_potential_energy", 312},
+			{"res_quality", 500},
+		},
+		zoneRestriction = "rori",
+		surveyToolType = 1,
+		containerCRC = 10768890,
 	},
 
 	{
@@ -304944,8 +305087,6 @@ resources = {
 		name = "Vouco",
 		type = "milk_wild_lok",
 		maps = {
-						{ "lok", 865103301, 0.9, 0.0006 },
-						-- PEAKS: {{-1108,3464,87}, {-3456,6100,87}, {3700,4112,87}, {7556,-2032,87}, {-4068,-2432,87}, {-1332,-5092,87}, {-6330,-5092,87}, {460,-5456,86}, {-3616,1284,85}, {-112,-6182,85}, {420,-3456,85}, {-2916,-1788,85}, {-6506,6804,85}, {-6506,-3196,85}, {3776,7884,85}, {-5132,-6208,85}, {-7898,-1796,84}, {5132,6232,84}, {-2900,3204,84}, {-6818,1516,84}}
 		},
 		classes = {
 			{"Organic", "organic"},
@@ -311476,6 +311617,32 @@ resources = {
 		zoneRestriction = "talus",
 		surveyToolType = -1,
 		containerCRC = 1349101341,
+	},
+
+	{
+		name = "Wati",
+		type = "bone_horn_yavin4",
+		maps = {
+						{ "yavin4", 888357701, 0.95, 0.0006 },
+						-- PEAKS: {{-2680,2888,92}, {3828,5660,92}, {-2344,-28,92}, {2120,-7318,92}, {-300,328,92}, {-1920,7160,92}, {-6794,-3504,91}, {3312,-4316,91}, {-2400,-4268,91}, {5996,7756,90}, {-1204,-620,90}, {7652,-604,90}, {-6064,680,90}, {1512,5452,90}, {424,-3972,90}, {208,3488,90}, {2532,156,89}, {6544,436,89}, {1868,156,88}, {-4624,7128,87}}
+		},
+		classes = {
+			{"Organic", "organic"},
+			{"Creature Resources", "creature_resources"},
+			{"Creature Structural", "creature_structural"},
+			{"Horn", "bone_horn"},
+			{"Yavinian Horn", "bone_horn_yavin4"},
+		},
+		attributes = {
+			{"res_decay_resist", 354},
+			{"res_malleability", 147},
+			{"res_quality", 650},
+			{"res_shock_resistance", 698},
+			{"res_toughness", 46},
+		},
+		zoneRestriction = "yavin4",
+		surveyToolType = -1,
+		containerCRC = 1001781097,
 	},
 
 	{
@@ -344542,8 +344709,6 @@ resources = {
 		name = "Youppaide",
 		type = "energy_renewable_unlimited_solar_naboo",
 		maps = {
-						{ "naboo", 959225296, 0.72, 0.0006 },
-						-- PEAKS: {{1212,5656,70}, {-2680,488,70}, {-6838,-124,70}, {1776,-6522,68}, {-4260,2592,68}, {-6866,4824,68}, {1816,7884,68}, {3160,4848,68}, {5736,-2396,68}, {-2604,4264,68}, {7108,3192,68}, {140,-3776,68}, {-1516,172,68}, {3468,-440,67}, {-652,-7338,67}, {-6338,7940,67}, {2680,-4008,67}, {-7810,2812,67}, {-2812,-7190,67}, {6012,-5672,67}}
 		},
 		classes = {
 			{"Energy", "energy"},

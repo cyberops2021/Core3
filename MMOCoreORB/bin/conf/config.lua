@@ -105,7 +105,8 @@ Core3 = {
 	"talus",
 	"tatooine",
 	"tutorial",
-	"yavin4"
+	"yavin4",
+	"kashyyyk_main"
 	-------- TEST ZONES -------
 	--"09",
 	--"10",
@@ -253,4 +254,3 @@ Core3 = {
 -- NOTE: conf/config-local.lua is parsed after this file if it exists
 
 -- Reduce shuttle boot delay from 5 min to 30 sec
-Core3 = { ShuttleZoneComponent = { BootDelay = 30000 } }
