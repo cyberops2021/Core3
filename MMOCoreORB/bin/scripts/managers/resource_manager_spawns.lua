@@ -91898,6 +91898,29 @@ resources = {
 	},
 
 	{
+		name = "Gibeaide",
+		type = "energy_renewable_unlimited_solar_endor",
+		maps = {
+						{ "endor", 1531408439, 0.6, 0.0006 },
+						-- PEAKS: {{4312,5972,58}, {7616,-5740,58}, {-4512,-5476,58}, {2880,624,58}, {-3788,3956,58}, {-4716,2984,58}, {-6318,-3620,58}, {-6822,7100,57}, {-6718,1460,57}, {-7378,-5708,57}, {2612,-5708,57}, {5948,1344,57}, {6500,5408,57}, {-144,5148,56}, {-5456,-6542,55}, {-1236,-5736,55}, {7100,-7398,55}, {3784,-7106,55}, {3784,-2104,55}, {-5960,4300,55}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Endorian Solar Renewable Energy", "energy_renewable_unlimited_solar_endor"},
+		},
+		attributes = {
+			{"res_potential_energy", 355},
+			{"res_quality", 500},
+		},
+		zoneRestriction = "endor",
+		surveyToolType = 1,
+		containerCRC = 10768890,
+	},
+
+	{
 		name = "Gibrapivo",
 		type = "wood_deciduous_dathomir",
 		maps = {
@@ -301843,8 +301866,6 @@ resources = {
 		name = "Vimiium",
 		type = "energy_renewable_unlimited_solar_endor",
 		maps = {
-						{ "endor", 1380373625, 0.71, 0.0006 },
-						-- PEAKS: {{-3996,-1216,69}, {1784,6832,69}, {-760,4808,69}, {1860,2424,69}, {-1056,-2212,68}, {-3088,-5308,68}, {-1860,-7942,68}, {-6278,6016,68}, {5204,-5464,68}, {3540,2868,68}, {-2868,-3540,68}, {2396,7604,68}, {7480,-6834,68}, {6784,6804,67}, {-5892,4860,67}, {4040,1256,67}, {-960,6260,67}, {-2620,4588,67}, {-7890,6524,67}, {5716,-2080,67}}
 		},
 		classes = {
 			{"Energy", "energy"},
