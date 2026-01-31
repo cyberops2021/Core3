@@ -73,6 +73,10 @@ public:
 
 		Locker crossLocker(aiAgent, creature);
 
+		// Notify observers for Lua-based NPC reactions (regardless of faction)
+		// This allows custom NPCs to react to social commands like /kiss, /flirt, etc.
+		aiAgent->notifyObservers(ObserverEventType::AIMESSAGE, creature, emoteid);
+
 		if (aiAgent->isMonster()) {
 			// If target is a pet, enqueue command to handle it
 			if (aiAgent->isPet()) {

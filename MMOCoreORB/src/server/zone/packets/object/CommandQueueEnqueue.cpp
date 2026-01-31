@@ -59,6 +59,13 @@ void CommandQueueEnqueueCallback::run() {
 			commandCooldown->updateToCurrentTime();
 		}
 
+				if (actionCRC == 0) {
+					player->info(true) << "Dropping CommandQueueEnqueue: actionCRC=0"
+					                   << " actionCount=" << actionCount
+					                   << " targetID=" << targetID;
+					return;
+				}
+
 		player->enqueueCommand(actionCRC, actionCount, targetID, arguments, priority, actionCount&0x3FFFFFFF);
 	}
 }

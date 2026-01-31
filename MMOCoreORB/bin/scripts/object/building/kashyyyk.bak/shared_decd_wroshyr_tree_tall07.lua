@@ -1,0 +1,5 @@
+object_building_kashyyyk_shared_decd_wroshyr_tree_tall07 = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_decd_wroshyr_tree_tall07.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_decd_wroshyr_tree_tall07, "object/building/kashyyyk/shared_decd_wroshyr_tree_tall07.iff")

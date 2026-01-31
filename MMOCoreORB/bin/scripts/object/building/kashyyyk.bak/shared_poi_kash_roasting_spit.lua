@@ -1,0 +1,5 @@
+object_building_kashyyyk_shared_poi_kash_roasting_spit = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_poi_kash_roasting_spit.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_poi_kash_roasting_spit, "object/building/kashyyyk/shared_poi_kash_roasting_spit.iff")

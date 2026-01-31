@@ -75,7 +75,7 @@ TargaBitmap::~TargaBitmap() {
 	if (pixelData != nullptr) {
 		for (int i = 0; i < header.width; ++i) {
 			for (int j = 0; j < header.height; ++j) {
-				delete pixelData[i * header.width + j];
+				delete pixelData[i * header.height + j];
 			}
 		}
 
@@ -123,9 +123,8 @@ void TargaBitmap::readObject(ObjectInputStream* stream) {
 
 	int read = header.bitsperpixel / 8;
 	int n = 0;
-
-	for (int i = header.width - 1; i >= 0; --i) {
-		for (int j = 0; j < header.height; ++j) {
+	for (int i = header.height - 1; i >= 0; --i) {
+		for (int j = 0; j < header.width; ++j) {
 			pixelData[i * header.width + j]->read(stream, read);
 		}
 	}

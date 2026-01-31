@@ -46,18 +46,18 @@
 
 -- Server Objects
 includeFile("tangible/component/armor/armor_layer.lua")
-includeFile("tangible/component/armor/armor_layer_acid.lua")
-includeFile("tangible/component/armor/armor_layer_blast.lua")
-includeFile("tangible/component/armor/armor_layer_cold.lua")
-includeFile("tangible/component/armor/armor_layer_electrical.lua")
-includeFile("tangible/component/armor/armor_layer_energy.lua")
+--includeFile("tangible/component/armor/armor_layer_acid.lua") -- CU content
+--includeFile("tangible/component/armor/armor_layer_blast.lua") -- CU content
+--includeFile("tangible/component/armor/armor_layer_cold.lua") -- CU content
+--includeFile("tangible/component/armor/armor_layer_electrical.lua") -- CU content
+--includeFile("tangible/component/armor/armor_layer_energy.lua") -- CU content
 includeFile("tangible/component/armor/armor_layer_environmental.lua")
-includeFile("tangible/component/armor/armor_layer_heat.lua")
-includeFile("tangible/component/armor/armor_layer_kinetic.lua")
-includeFile("tangible/component/armor/armor_layer_nightsister.lua")
+--includeFile("tangible/component/armor/armor_layer_heat.lua") -- CU content
+--includeFile("tangible/component/armor/armor_layer_kinetic.lua") -- CU content
+--includeFile("tangible/component/armor/armor_layer_nightsister.lua") -- CU content
 includeFile("tangible/component/armor/armor_layer_restraint.lua")
 includeFile("tangible/component/armor/armor_layer_ris.lua")
-includeFile("tangible/component/armor/armor_layer_stun.lua")
+--includeFile("tangible/component/armor/armor_layer_stun.lua") -- CU content
 includeFile("tangible/component/armor/armor_module_heavy.lua")
 includeFile("tangible/component/armor/armor_module_light.lua")
 includeFile("tangible/component/armor/armor_segment.lua")
@@ -77,16 +77,16 @@ includeFile("tangible/component/armor/armor_segment_chitin_sharnaff.lua")
 includeFile("tangible/component/armor/armor_segment_composite.lua")
 includeFile("tangible/component/armor/armor_segment_composite_advanced.lua")
 includeFile("tangible/component/armor/armor_segment_composite_krayt.lua")
-includeFile("tangible/component/armor/armor_segment_enhancement_brackaset.lua")
-includeFile("tangible/component/armor/armor_segment_enhancement_dragonet.lua")
-includeFile("tangible/component/armor/armor_segment_enhancement_fambaa.lua")
-includeFile("tangible/component/armor/armor_segment_enhancement_janta.lua")
-includeFile("tangible/component/armor/armor_segment_enhancement_kimogila.lua")
-includeFile("tangible/component/armor/armor_segment_enhancement_krayt.lua")
-includeFile("tangible/component/armor/armor_segment_enhancement_nightsister.lua")
-includeFile("tangible/component/armor/armor_segment_enhancement_rancor.lua")
-includeFile("tangible/component/armor/armor_segment_enhancement_sharnaff.lua")
-includeFile("tangible/component/armor/armor_segment_enhancement_voritor_lizard.lua")
+--includeFile("tangible/component/armor/armor_segment_enhancement_brackaset.lua") -- CU content
+--includeFile("tangible/component/armor/armor_segment_enhancement_dragonet.lua") -- CU content
+--includeFile("tangible/component/armor/armor_segment_enhancement_fambaa.lua") -- CU content
+--includeFile("tangible/component/armor/armor_segment_enhancement_janta.lua") -- CU content
+--includeFile("tangible/component/armor/armor_segment_enhancement_kimogila.lua") -- CU content
+--includeFile("tangible/component/armor/armor_segment_enhancement_krayt.lua") -- CU content
+--includeFile("tangible/component/armor/armor_segment_enhancement_nightsister.lua") -- CU content
+--includeFile("tangible/component/armor/armor_segment_enhancement_rancor.lua") -- CU content
+--includeFile("tangible/component/armor/armor_segment_enhancement_sharnaff.lua") -- CU content
+--includeFile("tangible/component/armor/armor_segment_enhancement_voritor_lizard.lua") -- CU content
 includeFile("tangible/component/armor/armor_segment_kashyyykian_black_mtn.lua")
 includeFile("tangible/component/armor/armor_segment_kashyyykian_black_mtn_advanced.lua")
 includeFile("tangible/component/armor/armor_segment_kashyyykian_ceremonial.lua")

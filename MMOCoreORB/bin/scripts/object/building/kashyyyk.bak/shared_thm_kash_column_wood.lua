@@ -1,0 +1,5 @@
+object_building_kashyyyk_shared_thm_kash_column_wood = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_thm_kash_column_wood.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_thm_kash_column_wood, "object/building/kashyyyk/shared_thm_kash_column_wood.iff")

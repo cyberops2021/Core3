@@ -1,0 +1,5 @@
+object_building_kashyyyk_shared_rock_kashyyyk_small_s01 = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_rock_kashyyyk_small_s01.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_rock_kashyyyk_small_s01, "object/building/kashyyyk/shared_rock_kashyyyk_small_s01.iff")

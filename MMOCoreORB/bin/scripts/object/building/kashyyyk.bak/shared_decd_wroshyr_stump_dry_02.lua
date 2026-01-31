@@ -1,0 +1,5 @@
+object_building_kashyyyk_shared_decd_wroshyr_stump_dry_02 = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_decd_wroshyr_stump_dry_02.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_decd_wroshyr_stump_dry_02, "object/building/kashyyyk/shared_decd_wroshyr_stump_dry_02.iff")

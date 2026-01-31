@@ -1,0 +1,5 @@
+object_building_kashyyyk_shared_mun_kash_tree_door_level_ground = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_mun_kash_tree_door_level_ground.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_mun_kash_tree_door_level_ground, "object/building/kashyyyk/shared_mun_kash_tree_door_level_ground.iff")

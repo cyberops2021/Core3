@@ -554,6 +554,11 @@ Reference<SceneObject*> PlanetManagerImplementation::loadSnapshotObject(WorldSna
 
 	object = zoneServer->createClientObject(serverTemplate.hashCode(), objectID);
 
+	if (object == nullptr) {
+		warning() << "Failed to load snapshot object: " << templateName << " (server template: " << serverTemplate << ")";
+		return nullptr;
+	}
+
 	Locker locker(object);
 
 	object->initializePosition(position.getX(), position.getZ(), position.getY());
@@ -1461,8 +1466,11 @@ bool PlanetManagerImplementation::checkShuttleStatus(CreatureObject* creature, C
 
 	Reference<ShuttleDepartureTask*> task = shuttleMap.get(shuttle->getObjectID());
 
-	if (task == nullptr)
+	if (task == nullptr) {
+
+		creature->sendSystemMessage("DEBUG: Shuttle task not found in shuttleMap for OID: " + String::valueOf(shuttle->getObjectID()));
 		return false;
+	}
 
 	int seconds = task->getSecondsRemaining();
 

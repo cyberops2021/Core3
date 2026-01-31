@@ -1,0 +1,5 @@
+object_building_kashyyyk_shared_frn_kash_table_operating = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_frn_kash_table_operating.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_frn_kash_table_operating, "object/building/kashyyyk/shared_frn_kash_table_operating.iff")

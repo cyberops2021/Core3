@@ -1,0 +1,5 @@
+object_building_kashyyyk_shared_mun_kachirho_starport = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_mun_kachirho_starport.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_mun_kachirho_starport, "object/building/kashyyyk/shared_mun_kachirho_starport.iff")

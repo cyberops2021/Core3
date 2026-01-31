@@ -1,0 +1,5 @@
+object_building_kashyyyk_shared_frn_chair_wookiee_ceremonial = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_frn_chair_wookiee_ceremonial.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_frn_chair_wookiee_ceremonial, "object/building/kashyyyk/shared_frn_chair_wookiee_ceremonial.iff")

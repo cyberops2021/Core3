@@ -210,3 +210,5 @@ includeFile("corellia/wrix.lua")
 includeFile("corellia/zealot_of_lord_nyax.lua")
 
 
+includeFile("corellia/nyxara_syn.lua")
+includeFile("corellia/karima_ghazlani.lua")

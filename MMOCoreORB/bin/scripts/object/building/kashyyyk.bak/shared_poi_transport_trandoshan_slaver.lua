@@ -1,0 +1,5 @@
+object_building_kashyyyk_shared_poi_transport_trandoshan_slaver = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_poi_transport_trandoshan_slaver.iff"
+}
+
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_poi_transport_trandoshan_slaver, "object/building/kashyyyk/shared_poi_transport_trandoshan_slaver.iff")
