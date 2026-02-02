@@ -24,7 +24,8 @@ public:
 	virtual ~GeneticLabratory();
 
 	void initialize(ZoneServer* server);
-	void setInitialCraftingValues(TangibleObject* prototype, ManufactureSchematic* manufactureSchematic, int assemblySuccess);
+	// AHAZI: Added expSkill and stationEffectiveness for Step 2
+	void setInitialCraftingValues(TangibleObject* prototype, ManufactureSchematic* manufactureSchematic, int assemblySuccess, int expSkill, float stationEffectiveness, float toolEffectiveness);
 	void experimentRow(CraftingValues* craftingValues,int rowEffected, int pointsAttempted, float failure, int experimentationResult);
 	void recalculateResistances(CraftingValues* craftingValues, float fortitudeChange);
 	int getCreationCount(ManufactureSchematic* manufactureSchematic);

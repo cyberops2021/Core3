@@ -36,7 +36,8 @@ void ResourceLabratory::initialize(ZoneServer* server) {
 	bioModsTable.pop();
 
 }
-void ResourceLabratory::setInitialCraftingValues(TangibleObject* prototype, ManufactureSchematic* manufactureSchematic, int assemblySuccess) {
+// AHAZI: Added expSkill and stationEffectiveness for Step 2
+void ResourceLabratory::setInitialCraftingValues(TangibleObject* prototype, ManufactureSchematic* manufactureSchematic, int assemblySuccess, int expSkill, float stationEffectiveness, float toolEffectiveness) {
 #ifdef DEBUG_RESOURCE_LAB
 	info(true) << "---------- ResourceLabratory::setInitialCraftingValues --------";
 #endif // DEBUG_RESOURCE_LAB
@@ -89,12 +90,40 @@ void ResourceLabratory::setInitialCraftingValues(TangibleObject* prototype, Manu
 		// > 0 ensures that we don't add things when there is NaN value
 		if (weightedSum > 0) {
 
-			// This is the formula for max experimenting percentages
-			maxPercentage = ((weightedSum / 10.0f) * .01f);
+                        // AHAZI Step 2: Base max from resources (the ceiling)
+				float baseMaxPercentage = ((weightedSum / 10.0f) * .01f);
 
-			// Based on the weighted sum, we can get the initial %
-			currentPercentage = getAssemblyPercentage(weightedSum) * modifier;
-			craftingValues->setCurrentPercentage(attribute, currentPercentage, maxPercentage);
+				// AHAZI Step 2: Calculate gap to perfection
+				float gap = 1.0f - baseMaxPercentage;
+
+				// AHAZI Step 2: Skill bonus - 15% closure at master level (expSkill 100+)
+				float skillClosure = Math::min(expSkill / 666.0f, 0.15f);
+
+
+				// AHAZI Step 2: Station bonus - 15% closure at FR 45
+				float stationClosure = Math::min((stationEffectiveness - 25.0f) / 133.0f, 0.15f);
+
+				// AHAZI Step 2: Tool bonus - 10% closure at effectiveness 15
+							float toolClosure = Math::min(toolEffectiveness / 150.0f, 0.10f);
+							// AHAZI Step 2+3: City and buff bonuses (TODO: implement detection)
+				float cityClosure = 0.0f;  // Step 3: up to 10%
+				float buffClosure = 0.0f;  // Step 3: up to 10%
+
+				// AHAZI Step 2: Base closure capped at 50% (without rare components)
+				float baseClosure = Math::min(skillClosure + stationClosure + toolClosure + cityClosure + buffClosure, 0.50f);
+
+				// AHAZI Step 4: Rare component bonus (TODO: implement component slot)
+				float componentClosure = 0.0f;  // Step 4: 10-50% from rare components
+
+				// AHAZI: Total closure, capped at 100%
+				float totalClosure = Math::min(baseClosure + componentClosure, 1.0f);
+
+				// AHAZI: Final max percentage using gap-closure formula
+				maxPercentage = baseMaxPercentage + (gap * totalClosure);
+
+				// Based on the weighted sum, we can get the initial %
+				currentPercentage = getAssemblyPercentage(weightedSum) * modifier;
+				craftingValues->setCurrentPercentage(attribute, currentPercentage, maxPercentage);
 		}
 	}
 

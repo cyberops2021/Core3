@@ -23,13 +23,15 @@ public:
 	SharedLabratory();
 	virtual ~SharedLabratory();
 	// setup the initial combine values
-	virtual void setInitialCraftingValues(TangibleObject* prototype, ManufactureSchematic* manufactureSchematic, int assemblySuccess) = 0;
+	// AHAZI: Added expSkill and stationEffectiveness for Step 2
+	virtual void setInitialCraftingValues(TangibleObject* prototype, ManufactureSchematic* manufactureSchematic, int assemblySuccess, int expSkill, float stationEffectiveness, float toolEffectiveness) = 0;
 	// allow each lab to handle the experimation results. You can callback to the crafting manage to determine changes if you wish
 	virtual void experimentRow(CraftingValues* craftingValues,int rowEffected, int pointsAttempted, float failure, int experimentationResult) = 0;
 	virtual void initialize(ZoneServer* server);
 	virtual float getWeightedValue(ManufactureSchematic* manufactureSchematic, int type);
 	virtual int getCreationCount(ManufactureSchematic* manufactureSchematic) = 0;
-	virtual int calculateAssemblySuccess(CreatureObject* player,DraftSchematic* draftSchematic, float effectiveness);
+	// AHAZI: Added stationEffectiveness parameter for Step 1c
+	virtual int calculateAssemblySuccess(CreatureObject* player, DraftSchematic* draftSchematic, float effectiveness, float stationEffectiveness);
 protected:
 	ManagedReference<ZoneServer*> zoneServer;
 	float calculateExperimentationValueModifier(int experimentationResult, int pointsAttempted);

@@ -314,6 +314,12 @@ int StructureManager::placeStructureFromDeed(CreatureObject* creature, Structure
 		return 1;
 	}
 
+	// AHAZI: Block harvester placement on Kashyyyk (hand-sampling only)
+	if (zone->getZoneName() == "kashyyyk_main" && deed->getExtractionRate() > 0) {
+		creature->sendSystemMessage("Harvesters cannot be placed on Kashyyyk. You must hand-sample resources here.");
+		return 1;
+	}
+
 	if (!planetManager->isBuildingPermittedAt(x, y, creature)) {
 		creature->sendSystemMessage("@player_structure:not_permitted"); // Building is not permitted here.
 		return 1;

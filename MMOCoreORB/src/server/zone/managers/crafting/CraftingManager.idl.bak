@@ -70,8 +70,7 @@ class CraftingManager extends ZoneManager {
 	
 	public native void sendResourceWeightsTo(CreatureObject player, unsigned int schematicID);
 	
-	// AHAZI: Added stationEffectiveness parameter for Step 1c
-	public native int calculateAssemblySuccess(CreatureObject player, DraftSchematic draftSchematic, float effectiveness, float stationEffectiveness);
+	public native int calculateAssemblySuccess(CreatureObject player, DraftSchematic draftSchematic, float effectiveness);
 	
 	@local
 	public native void experimentRow(ManufactureSchematic schematic, CraftingValues craftingValues, int rowEffected, int pointsAttempted, 
@@ -79,19 +78,12 @@ class CraftingManager extends ZoneManager {
 	
 	public native int calculateExperimentationFailureRate(CreatureObject player, ManufactureSchematic manufactureSchematic, int pointsUsed);
 	
-		/**
-	 * AHAZI MODIFICATION - Step 1: Station Functionality Rating
-	 * Date: 2026-01-31
-	 * Added stationEffectiveness parameter (0-45 range) to factor in crafting station quality.
-	 * Public/NPC stations = 25, player-crafted = 0-45 based on experimentation.
-	 */
-	public native int calculateExperimentationSuccess(CreatureObject player, DraftSchematic draftSchematic, float effectiveness, float stationEffectiveness);
+	public native int calculateExperimentationSuccess(CreatureObject player, DraftSchematic draftSchematic, float effectiveness);
 	
 	public native string generateSerial();
 	
 	private native void configureLabratories();
 	
-	// AHAZI: Added expSkill and stationEffectiveness for Step 2
-	public native void setInitialCraftingValues(TangibleObject prototype, ManufactureSchematic manufactureSchematic, int assemblySuccess, int expSkill, float stationEffectiveness, float toolEffectiveness);
+	public native void setInitialCraftingValues(TangibleObject prototype, ManufactureSchematic manufactureSchematic, int assemblySuccess);
 	public native int getCreationCount(ManufactureSchematic manufactureSchematic);
 }

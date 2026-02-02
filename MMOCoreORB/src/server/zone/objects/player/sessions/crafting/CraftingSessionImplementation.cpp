@@ -761,8 +761,10 @@ void CraftingSessionImplementation::initialAssembly(int clientCounter) {
 	String custskill = draftSchematic->getCustomizationSkill();
 	int custpoints = int(crafter->getSkillMod(custskill));
 
-	// Determine the outcome of the craft, Amazing through Critical
-	assemblyResult = craftingManager->calculateAssemblySuccess(crafter, draftSchematic, craftingTool->getEffectiveness());
+        // Determine the outcome of the craft, Amazing through Critical
+	// AHAZI: Pass station effectiveness to assembly calculation
+	float stationEffectiveness = (craftingStation != nullptr) ? craftingStation->getEffectiveness() : 25.0f;
+	assemblyResult = craftingManager->calculateAssemblySuccess(crafter, draftSchematic, craftingTool->getEffectiveness(), stationEffectiveness);
 
 	if (assemblyResult != CraftingManager::AMAZINGSUCCESS && craftingTool->getForceCriticalAssembly() > 0) {
 		assemblyResult = CraftingManager::AMAZINGSUCCESS;
@@ -772,7 +774,9 @@ void CraftingSessionImplementation::initialAssembly(int clientCounter) {
 	Locker locker(prototype);
 
 	// Set initial crafting percentages
-	craftingManager->setInitialCraftingValues(prototype, manufactureSchematic, assemblyResult);
+        // AHAZI: Pass expSkill and stationEffectiveness for Step 2
+	int expSkillMod = crafter->getSkillMod(expskill);
+	craftingManager->setInitialCraftingValues(prototype, manufactureSchematic, assemblyResult, expSkillMod, stationEffectiveness, craftingTool->getEffectiveness());
 	// prototype->setInitialCraftingValues(manufactureSchematic, assemblyResult);
 
 	Reference<CraftingValues*> craftingValues = manufactureSchematic->getCraftingValues();
@@ -1023,6 +1027,8 @@ void CraftingSessionImplementation::experiment(int rowsAttempted, const String& 
 	ManagedReference<ManufactureSchematic*> manufactureSchematic = this->manufactureSchematic.get();
 	ManagedReference<TangibleObject*> prototype = this->prototype.get();
 	ManagedReference<CraftingManager*> craftingManager = this->craftingManager.get();
+        // AHAZI: Get crafting station for functionality rating
+	ManagedReference<CraftingStation*> craftingStation = this->craftingStation.get();
 
 	if (manufactureSchematic == nullptr) {
 		sendSlotMessage(0, IngredientSlot::NOSCHEMATIC);
@@ -1092,8 +1098,10 @@ void CraftingSessionImplementation::experiment(int rowsAttempted, const String& 
 		failure = craftingManager->calculateExperimentationFailureRate(crafter, manufactureSchematic, pointsAttempted);
 
 		if (experimentationPointsUsed <= experimentationPointsTotal) {
-			// Set the experimentation result ie:  Amazing Success
-			experimentationResult = craftingManager->calculateExperimentationSuccess(crafter, manufactureSchematic->getDraftSchematic(), failure);
+                        // Set the experimentation result ie:  Amazing Success
+			// AHAZI: Pass station effectiveness (default 25 if no station)
+			float stationEffectiveness = (craftingStation != nullptr) ? craftingStation->getEffectiveness() : 25.0f;
+			experimentationResult = craftingManager->calculateExperimentationSuccess(crafter, manufactureSchematic->getDraftSchematic(), failure, stationEffectiveness);
 
 			if (experimentationResult != CraftingManager::AMAZINGSUCCESS && craftingTool->getForceCriticalExperiment() > 0) {
 				// We are going to mutute the tool, lock it

@@ -119,7 +119,8 @@ public:
 			Locker locker(prototype);
 			Locker mlock(manuSchematic, prototype);
 
-			craftingManager->setInitialCraftingValues(prototype, manuSchematic, CraftingManager::GREATSUCCESS);
+				// AHAZI: Using defaults for generate command (no skill bonus, public station)
+				craftingManager->setInitialCraftingValues(prototype, manuSchematic, CraftingManager::GREATSUCCESS, 0, 25.0f, 0.0f);
 
 			Reference<CraftingValues*> craftingValues = manuSchematic->getCraftingValues();
 			craftingValues->setManufactureSchematic(manuSchematic);

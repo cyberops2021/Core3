@@ -573,7 +573,8 @@ void SuiManager::handleCharacterBuilderSelectItem(CreatureObject* player, SuiBox
 				Locker locker(prototypeChassis);
 				Locker mlock(manuSchematic, prototypeChassis);
 
-				craftingManager->setInitialCraftingValues(prototypeChassis, manuSchematic, CraftingManager::GREATSUCCESS);
+						// AHAZI: Using defaults for ship chassis builder (no skill bonus, public station)
+						craftingManager->setInitialCraftingValues(prototypeChassis, manuSchematic, CraftingManager::GREATSUCCESS, 0, 25.0f, 0.0f);
 
 				Reference<CraftingValues*> craftingValues = manuSchematic->getCraftingValues();
 				craftingValues->setManufactureSchematic(manuSchematic);

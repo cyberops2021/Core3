@@ -34,9 +34,10 @@ void CraftingManagerImplementation::sendResourceWeightsTo(CreatureObject* player
 	schematicMap->sendResourceWeightsTo(player, schematicID);
 }
 
-int CraftingManagerImplementation::calculateAssemblySuccess(CreatureObject* player,	DraftSchematic* draftSchematic, float effectiveness) {
+// AHAZI: Added stationEffectiveness parameter for Step 1c
+int CraftingManagerImplementation::calculateAssemblySuccess(CreatureObject* player, DraftSchematic* draftSchematic, float effectiveness, float stationEffectiveness) {
 	SharedLabratory* lab = labs.get(draftSchematic->getLabratory());
-	return lab->calculateAssemblySuccess(player,draftSchematic,effectiveness);
+	return lab->calculateAssemblySuccess(player, draftSchematic, effectiveness, stationEffectiveness);
 }
 
 
@@ -60,8 +61,9 @@ int CraftingManagerImplementation::getCreationCount(ManufactureSchematic* manufa
 	return lab->getCreationCount(manufactureSchematic);
 }
 
+// AHAZI: Added stationEffectiveness parameter for Step 1a
 int CraftingManagerImplementation::calculateExperimentationSuccess(CreatureObject* player,
-		DraftSchematic* draftSchematic, float effectiveness) {
+		DraftSchematic* draftSchematic, float effectiveness, float stationEffectiveness) {
 
 	float cityBonus = player->getSkillMod("private_spec_experimentation");
 
@@ -94,9 +96,14 @@ int CraftingManagerImplementation::calculateExperimentationSuccess(CreatureObjec
 	}
 
 	/// Range 0-100
+        // AHAZI: Station effectiveness modifier for experimentation
+	// FR 25 (public): 1.0x, FR 45 (max): 1.2x bonus
+	float stationModifier = 1.0f + ((stationEffectiveness - 25.0f) / 100.0f);
 	int luckRoll = System::random(100) + cityBonus;
 
-	if(luckRoll > ((95 - expbonus) - forceSkill))
+        // AHAZI: Station effectiveness affects Amazing Success threshold
+	float amazingThreshold = 95.0f - expbonus - forceSkill - ((stationEffectiveness - 25.0f) / 5.0f);
+	if(luckRoll > amazingThreshold)
 		return AMAZINGSUCCESS;
 
 	if(luckRoll < (5 - expbonus - failMitigate))
@@ -108,7 +115,8 @@ int CraftingManagerImplementation::calculateExperimentationSuccess(CreatureObjec
 	luckRoll += System::random(player->getSkillMod("luck") + player->getSkillMod("force_luck"));
 
 	///
-	int experimentRoll = (toolModifier * (luckRoll + (experimentingPoints * 4)));
+	// AHAZI: Apply station modifier to experiment roll
+	int experimentRoll = (toolModifier * stationModifier * (luckRoll + (experimentingPoints * 4)));
 
 	if (experimentRoll > 70)
 		return GREATSUCCESS;
@@ -177,10 +185,11 @@ void CraftingManagerImplementation::configureLabratories() {
 	labs.put(static_cast<int>(DraftSchematicObjectTemplate::DROID_LAB), droidLab); //DROID_LAB
 }
 
-void CraftingManagerImplementation::setInitialCraftingValues(TangibleObject* prototype, ManufactureSchematic* manufactureSchematic, int assemblySuccess) {
+// AHAZI: Added expSkill and stationEffectiveness for Step 2
+void CraftingManagerImplementation::setInitialCraftingValues(TangibleObject* prototype, ManufactureSchematic* manufactureSchematic, int assemblySuccess, int expSkill, float stationEffectiveness, float toolEffectiveness) {
 	if(manufactureSchematic == nullptr || manufactureSchematic->getDraftSchematic() == nullptr)
 		return;
 	int labratory = manufactureSchematic->getLabratory();
 	SharedLabratory* lab = labs.get(labratory);
-	lab->setInitialCraftingValues(prototype,manufactureSchematic,assemblySuccess);
+	lab->setInitialCraftingValues(prototype, manufactureSchematic, assemblySuccess, expSkill, stationEffectiveness, toolEffectiveness);
 }

@@ -184,7 +184,8 @@ void GeneticLabratory::recalculateResistances(CraftingValues* craftingValues, fl
 #endif
 }
 
-void GeneticLabratory::setInitialCraftingValues(TangibleObject* prototype, ManufactureSchematic* manufactureSchematic, int assemblySuccess) {
+// AHAZI: Added expSkill and stationEffectiveness for Step 2 (not used in genetic lab currently)
+void GeneticLabratory::setInitialCraftingValues(TangibleObject* prototype, ManufactureSchematic* manufactureSchematic, int assemblySuccess, int expSkill, float stationEffectiveness, float toolEffectiveness) {
 	if (prototype == nullptr || manufactureSchematic == nullptr)
 		return;
 

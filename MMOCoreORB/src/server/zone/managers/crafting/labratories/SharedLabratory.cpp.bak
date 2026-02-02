@@ -140,8 +140,7 @@ float SharedLabratory::getWeightedValue(ManufactureSchematic* manufactureSchemat
 
 	return weightedAverage;
 }
-// AHAZI: Added stationEffectiveness parameter for Step 1c
-int SharedLabratory::calculateAssemblySuccess(CreatureObject* player, DraftSchematic* draftSchematic, float effectiveness, float stationEffectiveness) {
+int SharedLabratory::calculateAssemblySuccess(CreatureObject* player,DraftSchematic* draftSchematic, float effectiveness){
 	// assemblyPoints is 0-12
 	/// City bonus should be 10
 	float cityBonus = player->getSkillMod("private_spec_assembly");
@@ -172,14 +171,9 @@ int SharedLabratory::calculateAssemblySuccess(CreatureObject* player, DraftSchem
 		}
 	}
 
-        // AHAZI: Station effectiveness modifier for assembly
-	// FR 25 (public): 1.0x, FR 45 (max): 1.2x bonus
-	float stationModifier = 1.0f + ((stationEffectiveness - 25.0f) / 100.0f);
-
 	int luckRoll = System::random(100) + cityBonus;
-        // AHAZI: Station effectiveness affects Amazing Success threshold
-	float amazingThreshold = 95.0f - craftbonus - ((stationEffectiveness - 25.0f) / 5.0f);
-	if(luckRoll > amazingThreshold)
+
+	if(luckRoll > (95 - craftbonus))
 		return CraftingManager::AMAZINGSUCCESS;
 
 	if(luckRoll < (5 - craftbonus - failMitigate))
@@ -190,8 +184,7 @@ int SharedLabratory::calculateAssemblySuccess(CreatureObject* player, DraftSchem
 
 	luckRoll += System::random(player->getSkillMod("luck") + player->getSkillMod("force_luck"));
 
-	// AHAZI: Apply station modifier to assembly roll
-	int assemblyRoll = (toolModifier * stationModifier * (luckRoll + (assemblyPoints * 5)));
+	int assemblyRoll = (toolModifier * (luckRoll + (assemblyPoints * 5)));
 
 	if (assemblyRoll > 70)
 		return CraftingManager::GREATSUCCESS;
