@@ -6,3 +6,5 @@ luacov.stats.out
 compile_commands.json
 MMOCoreORB/bin/core
 *.core
+MMOCoreORB/bin/core
+*.core
