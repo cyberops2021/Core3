@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_thm_all_humanoid_bone_pile_s02 = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_thm_all_humanoid_bone_pile_s02.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_thm_all_humanoid_bone_pile_s02, "object/building/kashyyyk/shared_thm_all_humanoid_bone_pile_s02.iff")

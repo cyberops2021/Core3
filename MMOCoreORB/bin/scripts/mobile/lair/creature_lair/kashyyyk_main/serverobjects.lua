@@ -1,0 +1,7 @@
+includeFile("lair/creature_lair/kashyyyk_main/kashyyyk_bantha_herd_neutral_medium.lua")
+includeFile("lair/creature_lair/kashyyyk_main/kashyyyk_bolotaur_pack_neutral_medium.lua")
+includeFile("lair/creature_lair/kashyyyk_main/kashyyyk_jyykle_flock_neutral_none.lua")
+includeFile("lair/creature_lair/kashyyyk_main/kashyyyk_pug_jumper_swarm_neutral_none.lua")
+includeFile("lair/creature_lair/kashyyyk_main/kashyyyk_roroo_warren_neutral_small.lua")
+includeFile("lair/creature_lair/kashyyyk_main/kashyyyk_varactyl_nest_neutral_large.lua")
+includeFile("lair/creature_lair/kashyyyk_main/kashyyyk_varactyl_nest_neutral_medium.lua")

@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_decd_wroshyr_tree_broken_dead = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_decd_wroshyr_tree_broken_dead.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_decd_wroshyr_tree_broken_dead, "object/building/kashyyyk/shared_decd_wroshyr_tree_broken_dead.iff")

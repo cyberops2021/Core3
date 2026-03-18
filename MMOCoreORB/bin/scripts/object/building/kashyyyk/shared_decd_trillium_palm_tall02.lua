@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_decd_trillium_palm_tall02 = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_decd_trillium_palm_tall02.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_decd_trillium_palm_tall02, "object/building/kashyyyk/shared_decd_trillium_palm_tall02.iff")

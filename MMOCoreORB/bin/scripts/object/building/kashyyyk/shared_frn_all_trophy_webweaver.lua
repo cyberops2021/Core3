@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_frn_all_trophy_webweaver = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_frn_all_trophy_webweaver.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_frn_all_trophy_webweaver, "object/building/kashyyyk/shared_frn_all_trophy_webweaver.iff")

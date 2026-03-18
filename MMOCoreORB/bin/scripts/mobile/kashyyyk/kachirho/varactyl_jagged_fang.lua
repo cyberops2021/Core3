@@ -1,0 +1,45 @@
+varactyl_jagged_fang = Creature:new {
+	objectName = "@monster_name:varactyl",
+	customName = "Jagged Fang",
+	socialGroup = "varactyl",
+	faction = "",
+	mobType = MOB_CARNIVORE,
+	level = 221,
+	chanceHit = 19.0,
+	damageMin = 1645,
+	damageMax = 3000,
+	baseXp = 21151,
+	baseHAM = 385000,
+	baseHAMmax = 471000,
+	armor = 2,
+	resists = {165, 165, 165, 165, 165, 165, 165, -1, -1},
+	meatType = "meat_herbivore",
+	meatAmount = 750,
+	hideType = "hide_scaley",
+	hideAmount = 650,
+	boneType = "bone_avian",
+	boneAmount = 550,
+	milk = 0,
+	tamingChance = 0,
+	ferocity = 20,
+	pvpBitmask = AGGRESSIVE + ATTACKABLE + ENEMY,
+	creatureBitmask = PACK + STALKER + KILLER,
+	optionsBitmask = AIENABLED,
+	diet = CARNIVORE,
+	scale = 1.4,
+	templates = {
+		"object/mobile/varactyl.iff"
+	},
+	lootGroups = {},
+	conversationTemplate = "",
+	primaryWeapon = "unarmed",
+	secondaryWeapon = "none",
+	primaryAttacks = {
+		{"posturedownattack", ""},
+		{"stunattack", ""},
+		{"knockdownattack", ""},
+		{"creatureareacombo", ""}
+	},
+	secondaryAttacks = {}
+}
+CreatureTemplates:addCreatureTemplate(varactyl_jagged_fang, "varactyl_jagged_fang")

@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_frn_centerpiece_wookiee_ceremonial = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_frn_centerpiece_wookiee_ceremonial.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_frn_centerpiece_wookiee_ceremonial, "object/building/kashyyyk/shared_frn_centerpiece_wookiee_ceremonial.iff")

@@ -836,3 +836,6 @@ includeFile("weapon/ranged/objects.lua")
 includeFile("weapon/trap/objects.lua")
 includeFile("weapon/objects.lua")
 
+includeFile("tangible/collection/objects.lua")
+includeFile("tangible/door/objects.lua")
+includeFile("tangible/item/ep3/objects.lua")

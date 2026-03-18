@@ -40,3 +40,38 @@
 --this exception also makes it possible to release a modified version
 --which carries forward this exception.
 
+
+object_tangible_quest_shared_kachirho_destroyed_camp = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/quest/shared_kachirho_destroyed_camp.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_quest_shared_kachirho_destroyed_camp, "object/tangible/quest/shared_kachirho_destroyed_camp.iff")
+
+object_tangible_quest_shared_kachirho_varactyl_egg = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/quest/shared_kachirho_varactyl_egg.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_quest_shared_kachirho_varactyl_egg, "object/tangible/quest/shared_kachirho_varactyl_egg.iff")
+
+object_tangible_quest_shared_survey_data = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/quest/shared_survey_data.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_quest_shared_survey_data, "object/tangible/quest/shared_survey_data.iff")
+
+object_tangible_quest_shared_survey_data_02 = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/quest/shared_survey_data_02.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_quest_shared_survey_data_02, "object/tangible/quest/shared_survey_data_02.iff")
+
+object_tangible_quest_shared_survey_data_04 = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/quest/shared_survey_data_04.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_quest_shared_survey_data_04, "object/tangible/quest/shared_survey_data_04.iff")
+
+object_tangible_quest_shared_survey_data_05 = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/quest/shared_survey_data_05.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_quest_shared_survey_data_05, "object/tangible/quest/shared_survey_data_05.iff")
+
+object_tangible_quest_shared_survey_data_03 = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/quest/shared_survey_data_03.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_quest_shared_survey_data_03, "object/tangible/quest/shared_survey_data_03.iff")

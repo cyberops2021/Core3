@@ -47,7 +47,7 @@ public:
 		insertInt(100); //Population
 		insertInt(0x00000CB2);
 		insertInt(0x00000008);
-		insertInt(0xFFFF8F80);
+		insertInt(0xFFFF8F84);
 		insertInt(0x00000002); //status
 		insertByte(0);
 	}

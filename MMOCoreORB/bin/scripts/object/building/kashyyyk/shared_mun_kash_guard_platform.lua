@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_mun_kash_guard_platform = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_mun_kash_guard_platform.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_mun_kash_guard_platform, "object/building/kashyyyk/shared_mun_kash_guard_platform.iff")

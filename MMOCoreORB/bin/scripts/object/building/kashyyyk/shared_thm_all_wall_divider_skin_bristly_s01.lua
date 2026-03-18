@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_thm_all_wall_divider_skin_bristly_s01 = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_thm_all_wall_divider_skin_bristly_s01.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_thm_all_wall_divider_skin_bristly_s01, "object/building/kashyyyk/shared_thm_all_wall_divider_skin_bristly_s01.iff")

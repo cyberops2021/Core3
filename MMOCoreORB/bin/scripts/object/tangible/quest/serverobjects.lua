@@ -46,3 +46,10 @@
 includeFile("tangible/quest/quest_start/serverobjects.lua")
 
 -- Server Objects
+includeFile("tangible/quest/kachirho_destroyed_camp.lua")
+includeFile("tangible/quest/kachirho_varactyl_egg.lua")
+includeFile("tangible/quest/survey_data.lua")
+includeFile("tangible/quest/survey_data_02.lua")
+includeFile("tangible/quest/survey_data_04.lua")
+includeFile("tangible/quest/survey_data_05.lua")
+includeFile("tangible/quest/survey_data_03.lua")

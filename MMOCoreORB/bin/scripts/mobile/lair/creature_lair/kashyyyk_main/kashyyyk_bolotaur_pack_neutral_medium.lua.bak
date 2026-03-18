@@ -1,0 +1,10 @@
+kashyyyk_bolotaur_pack_neutral_medium = Lair:new {
+	mobiles = {{"bolotaur", 3}},
+	spawnLimit = 9,
+	buildingsVeryEasy = {"object/tangible/lair/base/poi_all_lair_thicket_large.iff"},
+	buildingsEasy = {"object/tangible/lair/base/poi_all_lair_thicket_large.iff"},
+	buildingsMedium = {"object/tangible/lair/base/poi_all_lair_thicket_large.iff"},
+	buildingsHard = {"object/tangible/lair/base/poi_all_lair_thicket_large.iff"},
+	buildingsVeryHard = {"object/tangible/lair/base/poi_all_lair_thicket_large.iff"},
+}
+addLairTemplate("kashyyyk_bolotaur_pack_neutral_medium", kashyyyk_bolotaur_pack_neutral_medium)

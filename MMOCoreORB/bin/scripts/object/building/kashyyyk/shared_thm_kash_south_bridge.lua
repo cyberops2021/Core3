@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_thm_kash_south_bridge = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_thm_kash_south_bridge.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_thm_kash_south_bridge, "object/building/kashyyyk/shared_thm_kash_south_bridge.iff")

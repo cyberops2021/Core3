@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_thm_kash_zonegate_fence_elaborate = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_thm_kash_zonegate_fence_elaborate.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_thm_kash_zonegate_fence_elaborate, "object/building/kashyyyk/shared_thm_kash_zonegate_fence_elaborate.iff")

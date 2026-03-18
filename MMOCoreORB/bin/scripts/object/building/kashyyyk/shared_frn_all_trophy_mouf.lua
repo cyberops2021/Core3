@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_frn_all_trophy_mouf = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_frn_all_trophy_mouf.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_frn_all_trophy_mouf, "object/building/kashyyyk/shared_frn_all_trophy_mouf.iff")

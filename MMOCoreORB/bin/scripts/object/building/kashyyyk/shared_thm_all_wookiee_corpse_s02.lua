@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_thm_all_wookiee_corpse_s02 = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_thm_all_wookiee_corpse_s02.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_thm_all_wookiee_corpse_s02, "object/building/kashyyyk/shared_thm_all_wookiee_corpse_s02.iff")

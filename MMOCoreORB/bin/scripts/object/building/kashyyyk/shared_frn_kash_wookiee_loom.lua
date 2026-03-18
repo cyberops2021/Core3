@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_frn_kash_wookiee_loom = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_frn_kash_wookiee_loom.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_frn_kash_wookiee_loom, "object/building/kashyyyk/shared_frn_kash_wookiee_loom.iff")

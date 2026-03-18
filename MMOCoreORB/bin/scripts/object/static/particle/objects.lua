@@ -11996,3 +11996,18 @@ object_static_particle_shared_pt_webber = SharedStaticObjectTemplate:new {
 }
 
 ObjectTemplates:addClientTemplate(object_static_particle_shared_pt_webber, "object/static/particle/shared_pt_webber.iff")
+
+object_static_particle_shared_pt_waterfall_kashyyyk_20x33 = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/static/particle/shared_pt_waterfall_kashyyyk_20x33.iff"
+}
+ObjectTemplates:addClientTemplate(object_static_particle_shared_pt_waterfall_kashyyyk_20x33, "object/static/particle/shared_pt_waterfall_kashyyyk_20x33.iff")
+
+object_static_particle_shared_pt_waterfall_kashyyyk_20x43 = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/static/particle/shared_pt_waterfall_kashyyyk_20x43.iff"
+}
+ObjectTemplates:addClientTemplate(object_static_particle_shared_pt_waterfall_kashyyyk_20x43, "object/static/particle/shared_pt_waterfall_kashyyyk_20x43.iff")
+
+object_static_particle_shared_pt_waterfall_kashyyyk_5x30 = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/static/particle/shared_pt_waterfall_kashyyyk_5x30.iff"
+}
+ObjectTemplates:addClientTemplate(object_static_particle_shared_pt_waterfall_kashyyyk_5x30, "object/static/particle/shared_pt_waterfall_kashyyyk_5x30.iff")

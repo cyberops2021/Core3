@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_mun_kash_tree_door_level2_main = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_mun_kash_tree_door_level2_main.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_mun_kash_tree_door_level2_main, "object/building/kashyyyk/shared_mun_kash_tree_door_level2_main.iff")

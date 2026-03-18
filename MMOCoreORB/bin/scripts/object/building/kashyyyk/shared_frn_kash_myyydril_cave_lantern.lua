@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_frn_kash_myyydril_cave_lantern = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_frn_kash_myyydril_cave_lantern.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_frn_kash_myyydril_cave_lantern, "object/building/kashyyyk/shared_frn_kash_myyydril_cave_lantern.iff")

@@ -1,0 +1,4 @@
+object_building_kashyyyk_shared_poi_kash_hunting_camp_tent = SharedStaticObjectTemplate:new {
+	clientTemplateFileName = "object/building/kashyyyk/shared_poi_kash_hunting_camp_tent.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_kashyyyk_shared_poi_kash_hunting_camp_tent, "object/building/kashyyyk/shared_poi_kash_hunting_camp_tent.iff")
