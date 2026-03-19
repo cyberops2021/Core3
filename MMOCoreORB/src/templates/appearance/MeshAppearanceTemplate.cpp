@@ -86,6 +86,9 @@ bool MeshAppearanceTemplate::testCollide(float x, float z, float y, float radius
 
 	//Logger::console.info("checking collide in mesh", true);
 
+	if (aabbTree == nullptr)
+		return false;
+
 	return aabbTree->testCollide(sphere);
 }
 

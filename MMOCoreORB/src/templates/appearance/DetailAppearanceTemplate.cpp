@@ -43,7 +43,8 @@ void DetailAppearanceTemplate::parse(IffStream* iffStream) {
 		iffStream->getString(meshFile);
 
 		if (i == subChunks - 1) {
-			AppearanceTemplate* templ = TemplateManager::instance()->getAppearanceTemplate("appearance/" + meshFile);
+			String fullPath = meshFile.beginsWith("appearance/") ? meshFile : "appearance/" + meshFile;
+			AppearanceTemplate* templ = TemplateManager::instance()->getAppearanceTemplate(fullPath);
 			firstMesh = templ;
 		}
 

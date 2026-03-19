@@ -70,6 +70,9 @@ public:
 	}
 
 	virtual bool testCollide(const Sphere& testsphere) const {
+		if (aabbTree == nullptr)
+			return false;
+
 		return aabbTree->testCollide(testsphere);
 	}
 
@@ -78,6 +81,9 @@ public:
 	 * @return intersectionDistance, triangle which it intersects
 	 */
 	virtual bool intersects(const Ray& ray, float distance, float& intersectionDistance, Triangle*& triangle, bool checkPrimitives = false) const {
+		if (aabbTree == nullptr)
+			return false;
+
 		return aabbTree->intersects(ray, distance, intersectionDistance, triangle, checkPrimitives);
 	}
 
@@ -85,6 +91,9 @@ public:
 	 * Checks for all intersections
 	 */
 	virtual int intersects(const Ray& ray, float maxDistance, SortedVector<IntersectionResult>& result) const {
+		if (aabbTree == nullptr)
+			return 0;
+
 		return aabbTree->intersects(ray, maxDistance, result);
 	}
 

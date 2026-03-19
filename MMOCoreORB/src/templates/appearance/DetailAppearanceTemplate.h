@@ -31,6 +31,9 @@ public:
 	void parse(IffStream* iffStream);
 
 	virtual bool testCollide(const Sphere& testsphere) const {
+		if (firstMesh == nullptr)
+			return false;
+
 		return firstMesh->testCollide(testsphere);
 	}
 
@@ -39,6 +42,9 @@ public:
 	 * @return intersectionDistance, triangle which it intersects
 	 */
 	virtual bool intersects(const Ray& ray, float distance, float& intersectionDistance, Triangle*& triangle, bool checkPrimitives = false) const {
+		if (firstMesh == nullptr)
+			return false;
+
 		return firstMesh->intersects(ray, distance, intersectionDistance, triangle, checkPrimitives);
 	}
 
@@ -46,6 +52,9 @@ public:
 	 * Checks for all intersections
 	 */
 	virtual int intersects(const Ray& ray, float maxDistance, SortedVector<IntersectionResult>& result) const {
+		if (firstMesh == nullptr)
+			return 0;
+
 		return firstMesh->intersects(ray, maxDistance, result);
 	}
 

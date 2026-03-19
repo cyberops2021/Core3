@@ -260,7 +260,13 @@ void PlanetManagerImplementation::loadPlanetObjects(LuaObject* luaObject) {
 
 		ManagedReference<SceneObject*> obj = ObjectManager::instance()->createObject(templateFile.hashCode(), 0, "");
 
-		if (obj != nullptr) {
+		if (obj == nullptr) {
+			error() << "loadPlanetObjects: FAILED to create object for template: " << templateFile << " (CRC: 0x" << hex << templateFile.hashCode() << ")";
+			planetObject.pop();
+			continue;
+		}
+
+		{
 			Locker objLocker(obj);
 
 			float x = planetObject.getFloatField("x");
@@ -289,6 +295,13 @@ void PlanetManagerImplementation::loadPlanetObjects(LuaObject* luaObject) {
 				zone->transferObject(obj, -1, true);
 
 			obj->createChildObjects();
+
+			info() << "loadPlanetObjects: spawned " << templateFile
+				<< " oid=" << obj->getObjectID()
+				<< " gameObjectType=0x" << hex << obj->getGameObjectType()
+				<< " at (" << x << ", " << z << ", " << y << ")"
+				<< " inZone=" << (obj->getZone() != nullptr ? "yes" : "NO")
+				<< " closeObjects=" << (obj->getCloseObjects() != nullptr ? "yes" : "NO");
 		}
 
 		planetObject.pop();

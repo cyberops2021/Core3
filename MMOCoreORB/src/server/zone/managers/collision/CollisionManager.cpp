@@ -449,6 +449,13 @@ float CollisionManager::getWorldFloorCollision(float x, float y, Zone* zone, boo
 	//need to include exclude affectors in the terrain calcs
 	height = terrainManager->getHeight(x, y);
 
+	static int floorLogCount = 0;
+	if (zone->getZoneName() == "kashyyyk_main" && floorLogCount < 20) {
+		zone->info(true) << "getWorldFloorCollision kashyyyk_main (" << x << ", " << y << "): terrainHeight=" << height
+			<< " terrainSize=" << terrainManager->getSize() << " bounds=[" << terrainManager->getMin() << "," << terrainManager->getMax() << "]";
+		floorLogCount++;
+	}
+
 	Vector3 rayStart(x, 16384.f, y);
 	Vector3 rayEnd(x, -16384.f, y);
 

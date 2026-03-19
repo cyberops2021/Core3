@@ -44,6 +44,23 @@ public:
 		}
 
 		if (!nearTravelTerminal) {
+			auto msg = creature->error();
+			msg << "PurchaseTicket FAIL: no TRAVELTERMINAL(0x" << hex << SceneObjectType::TRAVELTERMINAL
+				<< ") in " << dec << closeObjects.size() << " closeObjects. Nearby types:";
+
+			int dumped = 0;
+			for (int i = 0; i < closeObjects.size() && dumped < 20; i++) {
+				SceneObject* obj = cast<SceneObject*>(closeObjects.get(i));
+				if (obj != nullptr && checkDistance(creature, obj, 16.f)) {
+					msg << " [oid=" << obj->getObjectID()
+						<< " got=0x" << hex << obj->getGameObjectType()
+						<< " tpl=" << obj->getObjectTemplate()->getFullTemplateString()
+						<< " dist=" << dec << (int)creature->getWorldPosition().distanceTo(obj->getWorldPosition()) << "m]";
+					dumped++;
+				}
+			}
+			msg.flush();
+
 			creature->sendSystemMessage("@travel:too_far"); // You are too far from the terminal to purchase a ticket.
 			return GENERALERROR;
 		}
@@ -65,6 +82,7 @@ public:
 		ManagedReference<SceneObject*> inventory = creature->getInventory();
 
 		if (inventory == nullptr) {
+			creature->error("PurchaseTicket FAIL: inventory nullptr");
 			return GENERALERROR;
 		}
 
@@ -87,6 +105,7 @@ public:
 				}
 			}
 		} catch (Exception& e) {
+			creature->error() << "PurchaseTicket FAIL: tokenizer exception: " << e.getMessage();
 			return INVALIDPARAMETERS;
 		}
 
@@ -104,9 +123,13 @@ public:
 			arrivalPlanet = "kashyyyk_main";
 		}
 
+		creature->info() << "PurchaseTicket: departure=" << departurePlanet << ":'" << departurePoint
+			<< "' arrival=" << arrivalPlanet << ":'" << arrivalPoint << "' roundTrip=" << roundTrip;
+
 		auto zoneServer = server->getZoneServer();
 
 		if (zoneServer == nullptr) {
+			creature->error("PurchaseTicket FAIL: zoneServer nullptr");
 			return GENERALERROR;
 		}
 

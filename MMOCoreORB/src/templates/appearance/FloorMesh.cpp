@@ -391,6 +391,9 @@ bool FloorMesh::testCollide(float x, float z, float y, float radius) const {
 
 	Sphere sphere(point, radius);
 
+	if (aabbTree == nullptr)
+		return false;
+
 	return aabbTree->testCollide(sphere);
 }
 
