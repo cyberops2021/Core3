@@ -586,8 +586,9 @@ kashyyyk_main = {
 	weatherEnabled = 1,
 	gcwEnabled = 0,
 
+
 	planetTravelPoints = {
-		{name = "Kachirho Starport", x = -665.0, z = 35.0, y = -150.0, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1, landingRange = 6},
+		{name = "Kachirho Starport", x = -665.0, z = 18.82, y = -150.0, interplanetaryTravelAllowed = 1, incomingTravelAllowed = 1, landingRange = 6},
 	},
 
 	badgeAreas = {
@@ -599,6 +600,7 @@ kashyyyk_main = {
 	planetObjects = {
 		{templateFile = "object/tangible/terminal/terminal_travel.iff", ox = 0, oy = 0, oz = 0, ow = 1, x = -678, z = 18.82, y = -160, parentid = 0},
 		{templateFile = "object/creature/npc/theme_park/player_transport.iff", ox = 0, oy = 0.707, oz = 0, ow = 0.707, x = -665, z = 35, y = -150, parentid = 0},
+		{templateFile = "object/tangible/travel/ticket_collector/ticket_collector.iff", ox = 0, oy = 0, oz = 0, ow = 1, x = -673.27, z = 18.82, y = -159.98, parentid = 0},
 }
 
 }
