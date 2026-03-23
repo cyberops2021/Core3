@@ -26,6 +26,12 @@ int PlaceStructureComponent::notifyStructurePlaced(StructureDeed* deed, Creature
 	structureObject->setSurplusMaintenance(deed->getSurplusMaintenance());
 	structureObject->setSurplusPower(deed->getSurplusPower());
 
+	// Transfer crafted maintenance modifier (from Operational Efficiency experimentation)
+	float maintMod = deed->getMaintenanceModifier();
+	if (maintMod > 0.0f && maintMod < 1.0f) {
+		structureObject->setMaintenanceModifier(maintMod);
+	}
+
 	if (structureObject->isInstallationObject()) {
 		InstallationObject* installationObject = cast<InstallationObject*>(structureObject);
 		installationObject->setExtractionRate(deed->getExtractionRate());

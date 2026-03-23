@@ -330,7 +330,7 @@ void SharedObjectTemplate::loadDerv(IffStream* stream) {
 
 		delete dervStream;
 	} else {
-		warning() << "could not open derv: " << file;
+		debug() << "could not open derv: " << file;
 	}
 
 	// now server lua
@@ -370,7 +370,7 @@ void SharedObjectTemplate::readObject(IffStream* iffStream) {
 	uint32 nextType = iffStream->getNextFormType();
 
 	if (nextType != 'SHOT') {
-		warning() << "expecting SHOT got " << getType(nextType) << " in " << iffStream->getFileName();
+		debug() << "expecting SHOT got " << getType(nextType) << " in " << iffStream->getFileName();
 
 		iffStream->openForm(nextType);
 		iffStream->closeForm(nextType);

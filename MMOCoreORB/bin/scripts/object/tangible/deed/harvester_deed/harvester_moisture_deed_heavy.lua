@@ -48,15 +48,15 @@ object_tangible_deed_harvester_deed_harvester_moisture_deed_heavy = object_tangi
 
 
 
-	numberExperimentalProperties = {1, 1, 3, 2, 1},
-	experimentalProperties = {"XX", "XX", "HR", "SR", "UT", "MA", "UT", "XX"},
-	experimentalWeights = {1, 1, 1, 1, 2, 1, 2, 1},
-	experimentalGroupTitles = {"null", "null", "expEffeciency", "expStorage", "null"},
-	experimentalSubGroupTitles = {"null", "null", "extractrate", "hoppersize", "hitpoints"},
-	experimentalMin = {0, 0, 3, 100000, 1000},
-	experimentalMax = {0, 0, 7, 150000, 1000},
-	experimentalPrecision = {0, 0, 0, 0, 0},
-	experimentalCombineType = {0, 0, 1, 1, 4},
+	numberExperimentalProperties = {1, 1, 3, 2, 2, 1},
+	experimentalProperties = {"XX", "XX", "HR", "SR", "UT", "MA", "UT", "OQ", "UT", "XX"},
+	experimentalWeights = {1, 1, 1, 1, 2, 1, 2, 1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "expEffeciency", "expStorage", "exp_efficiency", "null"},
+	experimentalSubGroupTitles = {"null", "null", "extractrate", "hoppersize", "maintenancecost", "hitpoints"},
+	experimentalMin = {0, 0, 3, 100000, 50, 1000},
+	experimentalMax = {0, 0, 7, 150000, 100, 1000},
+	experimentalPrecision = {0, 0, 0, 0, 0, 0},
+	experimentalCombineType = {0, 0, 1, 1, 4, 4},
 }
 
 ObjectTemplates:addTemplate(object_tangible_deed_harvester_deed_harvester_moisture_deed_heavy, "object/tangible/deed/harvester_deed/harvester_moisture_deed_heavy.iff")

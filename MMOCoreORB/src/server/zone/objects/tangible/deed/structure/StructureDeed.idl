@@ -17,6 +17,7 @@ class StructureDeed extends Deed {
 	protected unsigned int surplusPower;
 	protected float extractionRate;
 	protected float hopperSizeMax;
+	protected float maintenanceModifier;  // Crafted maintenance cost multiplier (0.5 to 1.0)
 
 	protected transient PlaceStructureComponent placeStructureComponent;
 
@@ -27,6 +28,7 @@ class StructureDeed extends Deed {
 		surplusPower = 0;
 		extractionRate = 0;
 		hopperSizeMax = 0;
+		maintenanceModifier = 1.0;
 	}
 
 	@local
@@ -90,6 +92,15 @@ class StructureDeed extends Deed {
 	@read
 	public float getHopperSize() {
 		return hopperSizeMax;
+	}
+
+	public void setMaintenanceModifier(float modifier) {
+		maintenanceModifier = modifier;
+	}
+
+	@read
+	public float getMaintenanceModifier() {
+		return maintenanceModifier;
 	}
 
 	@dirty

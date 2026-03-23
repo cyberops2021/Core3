@@ -321,6 +321,11 @@ float StructureObjectImplementation::getMaintenanceRate() const {
 	rate *= 10000.0f; // Make structures really expensive
 #endif // DEBUG_STRUCTURE_RAPID_DECAY
 
+	// Apply crafted maintenance modifier (0.5 to 1.0, from Operational Efficiency experimentation)
+	if (maintenanceModifier > 0.0f && maintenanceModifier < 1.0f) {
+		rate *= maintenanceModifier;
+	}
+
 	if (maintenanceReduced) {
 		rate *= 0.8f;
 	}

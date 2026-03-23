@@ -41,6 +41,8 @@ class StructureObject extends TangibleObject {
 	protected float surplusMaintenance;
 	protected float surplusPower;
 
+	protected float maintenanceModifier;  // Crafted maintenance multiplier (0.5 to 1.0, default 1.0)
+
 	protected boolean maintenanceReduced;
 
 	protected boolean permissionsFixed;
@@ -59,6 +61,8 @@ class StructureObject extends TangibleObject {
 		surplusMaintenance = 0;
 
 		surplusPower = 0;
+
+		maintenanceModifier = 1.0;
 
 		structureMaintenanceTask = null;
 
@@ -368,6 +372,15 @@ class StructureObject extends TangibleObject {
 	@preLocked
 	public void setSurplusMaintenance(int surplus) {
 		surplusMaintenance = surplus;
+	}
+
+	public void setMaintenanceModifier(float modifier) {
+		maintenanceModifier = modifier;
+	}
+
+	@read
+	public float getMaintenanceModifier() {
+		return maintenanceModifier;
 	}
 
 	@preLocked

@@ -48,15 +48,15 @@ object_tangible_deed_generator_deed_generator_wind_deed = object_tangible_deed_g
 
 
 
-	numberExperimentalProperties = {1, 1, 3, 2, 1},
-	experimentalProperties = {"XX", "XX", "HR", "SR", "UT", "MA", "UT", "XX"},
-	experimentalWeights = {1, 1, 1, 1, 2, 1, 2, 1},
-	experimentalGroupTitles = {"null", "null", "expEffeciency", "expStorage", "null"},
-	experimentalSubGroupTitles = {"null", "null", "extractrate", "hoppersize", "hitpoints"},
-	experimentalMin = {0, 0, 4, 25000, 1000},
-	experimentalMax = {0, 0, 10, 50000, 1000},
-	experimentalPrecision = {0, 0, 0, 0, 0},
-	experimentalCombineType = {0, 0, 1, 1, 4},
+	numberExperimentalProperties = {1, 1, 3, 2, 2, 1},
+	experimentalProperties = {"XX", "XX", "HR", "SR", "UT", "MA", "UT", "OQ", "UT", "XX"},
+	experimentalWeights = {1, 1, 1, 1, 2, 1, 2, 1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "expEffeciency", "expStorage", "exp_efficiency", "null"},
+	experimentalSubGroupTitles = {"null", "null", "extractrate", "hoppersize", "maintenancecost", "hitpoints"},
+	experimentalMin = {0, 0, 4, 25000, 50, 1000},
+	experimentalMax = {0, 0, 10, 50000, 100, 1000},
+	experimentalPrecision = {0, 0, 0, 0, 0, 0},
+	experimentalCombineType = {0, 0, 1, 1, 4, 4},
 }
 
 ObjectTemplates:addTemplate(object_tangible_deed_generator_deed_generator_wind_deed, "object/tangible/deed/generator_deed/generator_wind_deed.iff")

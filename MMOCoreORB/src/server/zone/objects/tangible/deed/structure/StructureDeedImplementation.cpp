@@ -49,12 +49,18 @@ void StructureDeedImplementation::fillAttributeList(AttributeListMessage* alm, C
 	if (structureTemplate == nullptr)
 		return;
 
-	//Base Maintenance Rate
+	//Base Maintenance Rate (modified by crafted Operational Efficiency)
 	int baseMaintenanceRate = structureTemplate->getBaseMaintenanceRate();
 	int basePowerRate = structureTemplate->getBasePowerRate();
 
-	if (baseMaintenanceRate > 0)
-		alm->insertAttribute("examine_maintenance_rate", String::valueOf(baseMaintenanceRate) + " / hour"); //Base Maintenance Rate
+	if (baseMaintenanceRate > 0) {
+		if (maintenanceModifier > 0.0f && maintenanceModifier < 1.0f) {
+			int effectiveRate = (int)(baseMaintenanceRate * maintenanceModifier);
+			alm->insertAttribute("examine_maintenance_rate", String::valueOf(effectiveRate) + " / hour (base: " + String::valueOf(baseMaintenanceRate) + ")");
+		} else {
+			alm->insertAttribute("examine_maintenance_rate", String::valueOf(baseMaintenanceRate) + " / hour");
+		}
+	}
 
 	if (surplusMaintenance > 0)
 		alm->insertAttribute("examine_maintenance", String::valueOf(surplusMaintenance)); //Surplus Maintenance
@@ -81,4 +87,12 @@ void StructureDeedImplementation::fillAttributeList(AttributeListMessage* alm, C
 void StructureDeedImplementation::updateCraftingValues(CraftingValues* values, bool firstUpdate){
 	setExtractionRate(values->getCurrentValue("extractrate"));
 	setHopperSize(values->getCurrentValue("hoppersize"));
+
+	// Operational Efficiency experimentation → maintenance cost modifier
+	// "maintenancecost" ranges from experimentalMin (e.g. 50) to experimentalMax (100)
+	// A value of 50 means 50% of base maintenance, 100 means full base maintenance
+	float maintCost = values->getCurrentValue("maintenancecost");
+	if (maintCost > 0) {
+		setMaintenanceModifier(maintCost / 100.0f);
+	}
 }
