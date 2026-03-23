@@ -44,7 +44,7 @@
 object_building_player_city_grand_cantina_tatooine = object_building_tatooine_shared_cantina_tatooine:new {
 	lotSize = 10,
 	baseMaintenanceRate = 150,
-	allowedZones = {"dantooine", "lok", "tatooine"},
+	allowedZones = {"corellia", "dantooine", "dathomir", "endor", "lok", "naboo", "rori", "talus", "tatooine", "yavin4"},
 	length = 14,
 	width = 14,
 	planetMapCategory = "cantina",

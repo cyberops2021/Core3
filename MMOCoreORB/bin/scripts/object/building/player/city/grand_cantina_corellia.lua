@@ -44,7 +44,7 @@
 object_building_player_city_grand_cantina_corellia = object_building_corellia_shared_cantina_corellia:new {
 	lotSize = 10,
 	baseMaintenanceRate = 150,
-	allowedZones = {"corellia", "talus"},
+	allowedZones = {"corellia", "dantooine", "dathomir", "endor", "lok", "naboo", "rori", "talus", "tatooine", "yavin4"},
 	length = 14,
 	width = 14,
 	planetMapCategory = "cantina",

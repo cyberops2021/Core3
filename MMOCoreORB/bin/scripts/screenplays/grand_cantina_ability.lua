@@ -40,11 +40,10 @@ function GrandCantinaAbility:checkAbility(pCreature)
 
 	local ghost = LuaPlayerObject(pGhost)
 
-	local hasArchitect = creature:hasSkill("crafting_architect_master")
 	local hasDancer = creature:hasSkill("social_entertainer_dance_master")
 	local hasMusician = creature:hasSkill("social_entertainer_music_master")
 
-	local qualifies = hasArchitect and (hasDancer or hasMusician)
+	local qualifies = hasDancer or hasMusician
 	local hasAbility = ghost:hasAbility("place_grand_cantina")
 
 	if qualifies and not hasAbility then
