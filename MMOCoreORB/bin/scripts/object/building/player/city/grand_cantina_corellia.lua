@@ -61,7 +61,7 @@ object_building_player_city_grand_cantina_corellia = object_building_corellia_sh
 	groundZoneComponent = "StructureZoneComponent",
 	childObjects = {
 		{templateFile = "object/tangible/sign/municipal/municipal_sign_hanging_cantina.iff", x = 8, z = 5, y = 18, ox = 0, oy = 1, oz = 0, ow = 0, cellid = -1, containmentType = -1},
-		{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = 3.0, z = 1.0, y = -5.0, ox = 0, oy = 0, oz = 0, ow = 1, cellid = 1, containmentType = -1}
+		{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -29.16, z = 0.0, y = 14.45, ox = 0, oy = -0.00543, oz = 0, ow = 0.999985, cellid = 13, containmentType = -1}
 	},
 	shopSigns = {
 		{templateFile = "object/tangible/sign/municipal/municipal_sign_hanging_cantina.iff", x = 8, z = 5, y = 18, ox = 0, oy = 1, oz = 0, ow = 0, cellid = -1, containmentType = -1, requiredSkill = "", suiItem = "@player_structure:house_address"},
