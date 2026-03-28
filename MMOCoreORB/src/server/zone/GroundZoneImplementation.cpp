@@ -760,6 +760,14 @@ void GroundZoneImplementation::updatePlanetaryMapIcon(SceneObject* object, byte 
 }
 
 void GroundZoneImplementation::sendMapLocationsTo(CreatureObject* player) {
+	int totalEntries = 0;
+	ReadLocker guard(mapLocations);
+	for (int i = 0; i < mapLocations->size(); ++i) {
+		totalEntries += mapLocations->get(i).size();
+	}
+	guard.release();
+	info(true) << "sendMapLocationsTo: zone=" << zoneName << " totalEntries=" << totalEntries << " categories=" << mapLocations->size() << " player=" << player->getFirstName();
+
 	GetMapLocationsResponseMessage* gmlr = new GetMapLocationsResponseMessage(zoneName, mapLocations, player);
 	player->sendMessage(gmlr);
 }

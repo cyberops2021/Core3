@@ -195,6 +195,11 @@ Core3 = {
 	CleanupMailCount = 25000,
 	DeleteCharacters = 10, -- How often in minutes to purge deleted characters
 
+	------Player Creation Config------
+	PlayerCreationManager = {
+		EnableTutorial = false
+	},
+
 	------Extra Config ------
 	MaxNavMeshJobs = 6,
 	MaxAuctionSearchJobs = 1,

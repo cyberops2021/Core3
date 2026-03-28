@@ -485,6 +485,10 @@ template<> bool CheckIsStalker::check(AiAgent* agent) const {
 	return agent->isStalker();
 }
 
+template<> bool CheckIsBaby::check(AiAgent* agent) const {
+	return (agent->getCreatureBitmask() & ObjectFlag::BABY) != 0;
+}
+
 template<> bool CheckOwnerInRange::check(AiAgent* agent) const {
 	if (agent == nullptr || !agent->isPet())
 		return false;
