@@ -14,6 +14,7 @@ function PlayerTriggers:playerLoggedIn(pPlayer)
 	BestineElection:playerLoggedIn(pPlayer)
 	Logger:log("PlayerTriggers: calling GrandCantinaAbility", LT_INFO)
 	GrandCantinaAbility:onPlayerLogin(pPlayer)
+	KashyyykResourceGuardians:onPlayerLogin(pPlayer)
 	Logger:log("PlayerTriggers: done", LT_INFO)
 end
 
