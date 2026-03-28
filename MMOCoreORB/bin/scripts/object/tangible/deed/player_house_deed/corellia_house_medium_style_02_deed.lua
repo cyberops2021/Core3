@@ -46,6 +46,16 @@ object_tangible_deed_player_house_deed_corellia_house_medium_style_02_deed = obj
 	placeStructureComponent = "PlaceStructureComponent",
 	generatedObjectTemplate = "object/building/player/player_house_corellia_medium_style_02.iff",
 	objectName = "@deed:corellia_house_medium_deed",
+
+	numberExperimentalProperties = {1, 1, 2, 1},
+	experimentalProperties = {"XX", "XX", "OQ", "UT", "DR"},
+	experimentalWeights = {1, 1, 1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "exp_efficiency", "exp_durability"},
+	experimentalSubGroupTitles = {"null", "null", "maintenancecost", "hitpoints"},
+	experimentalMin = {0, 0, 50, 35000},
+	experimentalMax = {0, 0, 100, 75000},
+	experimentalPrecision = {0, 0, 0, 0},
+	experimentalCombineType = {0, 0, 4, 4},
 }
 
 ObjectTemplates:addTemplate(object_tangible_deed_player_house_deed_corellia_house_medium_style_02_deed, "object/tangible/deed/player_house_deed/corellia_house_medium_style_02_deed.iff")

@@ -2,8 +2,9 @@ local Logger = require("utils.logger")
 
 -- Grand Cantina Schematic Grant
 -- Schematics require: Master Architect
--- Placement ability uses the existing "place_cantina" from Master Dancer/Musician/Chef skill data.
--- Checked on login and skill change events.
+-- Placement requires: Master Architect + Master Entertainer (Dancer or Musician)
+-- Grants place_grand_cantina ability when both conditions are met.
+-- Checked on login.
 
 GrandCantinaAbility = ScreenPlay:new {
 	numberOfActs = 1,
@@ -66,5 +67,20 @@ function GrandCantinaAbility:checkSchematics(pCreature)
 			Logger:log("GrandCantinaAbility: REMOVING " .. schematic, LT_INFO)
 			ghost:removeRewardedSchematic(schematic, true)
 		end
+	end
+
+	-- Grant/revoke place_grand_cantina ability
+	-- Requires: Master Architect + Master Entertainer (Dancer or Musician)
+	local hasMasterDancer = creature:hasSkill("social_dancer_master")
+	local hasMasterMusician = creature:hasSkill("social_musician_master")
+	local hasPlaceAbility = ghost:hasAbility("place_grand_cantina")
+	local shouldHave = hasArchitect and (hasMasterDancer or hasMasterMusician)
+
+	if shouldHave and not hasPlaceAbility then
+		Logger:log("GrandCantinaAbility: GRANTING place_grand_cantina to " .. creature:getFirstName(), LT_INFO)
+		ghost:addAbility("place_grand_cantina")
+	elseif not shouldHave and hasPlaceAbility then
+		Logger:log("GrandCantinaAbility: REMOVING place_grand_cantina from " .. creature:getFirstName(), LT_INFO)
+		ghost:removeAbility("place_grand_cantina")
 	end
 end

@@ -54,7 +54,7 @@ object_building_player_city_grand_cantina_tatooine = object_building_tatooine_sh
 	planetMapCategory = "cantina",
 	cityRankRequired = 4,
 	limitToOnePerCity = 1,
-	abilityRequired = "place_cantina",
+	abilityRequired = "place_grand_cantina",
 	skillMods = {
 		{"private_buff_mind", 150},
 		{"private_medical_rating", 150},

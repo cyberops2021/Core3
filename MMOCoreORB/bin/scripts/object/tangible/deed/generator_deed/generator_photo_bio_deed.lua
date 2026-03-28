@@ -44,9 +44,17 @@
 object_tangible_deed_generator_deed_generator_photo_bio_deed = object_tangible_deed_generator_deed_shared_generator_photo_bio_deed:new {
 	templateType = STRUCTUREDEED,
 	placeStructureComponent = "PlaceStructureComponent",
-	generatedObjectTemplate = "object/installation/generators/power_generator_photo_bio_style_1.iff"
+	generatedObjectTemplate = "object/installation/generators/power_generator_photo_bio_style_1.iff",
 
-
+	numberExperimentalProperties = {1, 1, 1, 2, 2, 1},
+	experimentalProperties = {"XX", "XX", "XX", "MA", "UT", "OQ", "UT", "XX"},
+	experimentalWeights = {1, 1, 1, 1, 2, 1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "expEffeciency", "expStorage", "exp_efficiency", "null"},
+	experimentalSubGroupTitles = {"null", "null", "extractrate", "hoppersize", "maintenancecost", "hitpoints"},
+	experimentalMin = {0, 0, 6, 50000, 50, 1000},
+	experimentalMax = {0, 0, 15, 75000, 100, 1000},
+	experimentalPrecision = {0, 0, 0, 0, 0, 0},
+	experimentalCombineType = {0, 0, 1, 1, 4, 4},
 }
 
 ObjectTemplates:addTemplate(object_tangible_deed_generator_deed_generator_photo_bio_deed, "object/tangible/deed/generator_deed/generator_photo_bio_deed.iff")

@@ -45,7 +45,17 @@ object_tangible_deed_player_house_deed_merchant_tent_style_02_deed = object_tang
 	templateType = STRUCTUREDEED,
 	placeStructureComponent = "PlaceStructureComponent",
 	gameObjectType = 8388609,
-	generatedObjectTemplate = "object/building/player/player_merchant_tent_style_02.iff"
+	generatedObjectTemplate = "object/building/player/player_merchant_tent_style_02.iff",
+
+	numberExperimentalProperties = {1, 1, 2, 1},
+	experimentalProperties = {"XX", "XX", "OQ", "UT", "DR"},
+	experimentalWeights = {1, 1, 1, 1, 1},
+	experimentalGroupTitles = {"null", "null", "exp_efficiency", "exp_durability"},
+	experimentalSubGroupTitles = {"null", "null", "maintenancecost", "hitpoints"},
+	experimentalMin = {0, 0, 50, 21000},
+	experimentalMax = {0, 0, 100, 39000},
+	experimentalPrecision = {0, 0, 0, 0},
+	experimentalCombineType = {0, 0, 4, 4},
 }
 
 ObjectTemplates:addTemplate(object_tangible_deed_player_house_deed_merchant_tent_style_02_deed, "object/tangible/deed/player_house_deed/merchant_tent_style_02_deed.iff")
