@@ -54,8 +54,43 @@ public:
 		int value = tokenizer.getIntToken();
 
 		Locker targetLocker(targetCreature, creature);
-		targetCreature->setCustomizationVariable(subCommand, (int16)value, true);
 
+		// Virtual slider expansion — compound sliders that map to multiple real sliders
+		if (subCommand == "blend_face_round") {
+			// Round face: increase fat/cheeks, decrease skinny/muscle
+			targetCreature->setCustomizationVariable("/shared_owner/blend_fat", (int16)Math::clamp((int)(value * 0.6f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_skinny", (int16)Math::clamp(255 - (int)(value * 0.8f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_cheeks_0", (int16)Math::clamp((int)(value * 0.7f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_cheeks_1", (int16)Math::clamp((int)(value * 0.3f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_jaw_0", (int16)Math::clamp((int)(value * 0.4f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_jaw_1", (int16)Math::clamp((int)(value * 0.4f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_muscle", (int16)Math::clamp(255 - (int)(value * 0.5f), 0, 255), true);
+			creature->sendSystemMessage("Applied blend_face_round = " + String::valueOf(value) + " (expanded to 7 sliders)");
+			return 0;
+		} else if (subCommand == "blend_nose_small") {
+			// Small delicate nose: reduce all nose sliders proportionally
+			targetCreature->setCustomizationVariable("/shared_owner/blend_nosewidth_0", (int16)Math::clamp(255 - (int)(value * 0.8f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_nosewidth_1", (int16)Math::clamp(255 - (int)(value * 0.8f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_nosesize_0", (int16)Math::clamp(255 - (int)(value * 0.7f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_nosesize_1", (int16)Math::clamp(255 - (int)(value * 0.7f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_nosedepth_0", (int16)Math::clamp(255 - (int)(value * 0.6f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_nosedepth_1", (int16)Math::clamp(255 - (int)(value * 0.6f), 0, 255), true);
+			creature->sendSystemMessage("Applied blend_nose_small = " + String::valueOf(value) + " (expanded to 6 sliders)");
+			return 0;
+		} else if (subCommand == "blend_eyes_soft") {
+			// Heavy-lidded soft eyes: lower eyeshape, lower eyedirection, moderate size
+			targetCreature->setCustomizationVariable("/shared_owner/blend_eyeshape_0", (int16)Math::clamp(255 - (int)(value * 0.7f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_eyeshape_1", (int16)Math::clamp(255 - (int)(value * 0.7f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_eyedirection_0", (int16)Math::clamp(255 - (int)(value * 0.5f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_eyedirection_1", (int16)Math::clamp(255 - (int)(value * 0.5f), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_eyesize_0", (int16)Math::clamp((int)(value * 0.5f + 90), 0, 255), true);
+			targetCreature->setCustomizationVariable("/shared_owner/blend_eyesize_1", (int16)Math::clamp((int)(value * 0.5f + 90), 0, 255), true);
+			creature->sendSystemMessage("Applied blend_eyes_soft = " + String::valueOf(value) + " (expanded to 6 sliders)");
+			return 0;
+		}
+
+		// Normal single slider
+		targetCreature->setCustomizationVariable(subCommand, (int16)value, true);
 		creature->sendSystemMessage("Set " + targetName + " " + subCommand + " = " + String::valueOf(value));
 		return 0;
 	}

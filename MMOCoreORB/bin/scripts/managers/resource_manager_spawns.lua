@@ -1599,6 +1599,33 @@ resources = {
 	},
 
 	{
+		name = "Acke",
+		type = "bone_avian_kashyyyk_main",
+		maps = {
+						{ "kashyyyk_main", 857401939, 0.53, 0.0006 },
+						-- PEAKS: {{-1508,496,50}, {1480,184,50}, {-760,-804,49}, {-2040,-1004,48}, {-1188,-1924,43}, {488,-2112,42}, {664,-452,42}, {-1200,1196,42}, {1484,-2112,41}, {308,1880,40}, {-56,96,38}, {1020,-64,31}, {-1316,-4,25}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Yavinian Solar Renewable Energy", "energy_renewable_unlimited_solar_yavin4"},
+			{"Kashyyyk Avian Bones", "bone_avian_kashyyyk_main"},
+		},
+		attributes = {
+			{"res_decay_resist", 659},
+			{"res_malleability", 438},
+			{"res_quality", 724},
+			{"res_shock_resistance", 288},
+			{"res_toughness", 493},
+		},
+		zoneRestriction = "kashyyyk_main",
+		surveyToolType = -1,
+		containerCRC = 1001781097,
+	},
+
+	{
 		name = "Aclafyuz",
 		type = "meat_avian_rori",
 		maps = {
@@ -17119,8 +17146,8 @@ resources = {
 		name = "Auste",
 		type = "bone_avian_kashyyyk_main",
 		maps = {
-						{ "kashyyyk_main", 235721654, 0.6, 0.0006 },
-						-- PEAKS: {{-1344,140,58}, {-812,124,58}, {1248,-1556,56}, {-404,1748,56}, {1244,1560,42}, {-2036,-856,40}, {1908,-444,39}, {-2104,2044,38}, {-1408,-1028,20}, {524,-1016,17}, {-1092,960,12}}
+						{ "kashyyyk_main", 768836512, 0.69, 0.0006 },
+						-- PEAKS: {{452,-684,66}, {-1748,-1592,61}, {1584,1744,61}, {-44,1960,60}, {-2112,1948,56}, {124,-2024,42}, {1020,1208,41}, {2044,720,37}, {-664,-584,34}, {36,464,29}, {-1584,-1088,21}, {-1600,2004,21}}
 		},
 		classes = {
 			{"Energy", "energy"},
@@ -49196,6 +49223,8 @@ resources = {
 		name = "Cehi",
 		type = "bone_avian_kashyyyk_main",
 		maps = {
+						{ "kashyyyk_main", 1637088420, 0.56, 0.0006 },
+						-- PEAKS: {{-976,-520,54}, {904,-1312,49}, {-2072,1472,48}, {4,2044,45}, {548,948,43}, {-876,304,39}, {-100,-624,37}, {1984,108,26}, {-516,-1028,21}, {-1028,-1028,18}, {2020,-2112,13}}
 		},
 		classes = {
 			{"Energy", "energy"},
@@ -100648,6 +100677,33 @@ resources = {
 		zoneRestriction = "",
 		surveyToolType = 6,
 		containerCRC = 3684838486,
+	},
+
+	{
+		name = "Eipa",
+		type = "bone_avian_kashyyyk_main",
+		maps = {
+						{ "kashyyyk_main", 762515179, 0.55, 0.0006 },
+						-- PEAKS: {{1292,772,53}, {1272,1472,52}, {-2100,-1836,51}, {204,-208,51}, {-1484,-460,51}, {-116,1804,42}, {1480,-2000,40}, {-876,964,34}, {760,-760,25}, {-516,1472,23}, {-1600,-2052,21}, {-2112,352,14}, {-2112,1548,12}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Yavinian Solar Renewable Energy", "energy_renewable_unlimited_solar_yavin4"},
+			{"Kashyyyk Avian Bones", "bone_avian_kashyyyk_main"},
+		},
+		attributes = {
+			{"res_decay_resist", 311},
+			{"res_malleability", 581},
+			{"res_quality", 401},
+			{"res_shock_resistance", 206},
+			{"res_toughness", 329},
+		},
+		zoneRestriction = "kashyyyk_main",
+		surveyToolType = -1,
+		containerCRC = 1001781097,
 	},
 
 	{
@@ -162649,6 +162705,33 @@ resources = {
 		zoneRestriction = "lok",
 		surveyToolType = -1,
 		containerCRC = 1349101341,
+	},
+
+	{
+		name = "Heoke",
+		type = "bone_avian_kashyyyk_main",
+		maps = {
+						{ "kashyyyk_main", 1340254584, 0.64, 0.0006 },
+						-- PEAKS: {{-380,-984,60}, {-1296,-208,60}, {1308,672,59}, {680,-1280,59}, {-944,2020,59}, {500,2044,41}, {-2112,1616,41}, {-1948,772,34}, {2044,960,31}, {-576,-64,29}, {-620,1532,24}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Yavinian Solar Renewable Energy", "energy_renewable_unlimited_solar_yavin4"},
+			{"Kashyyyk Avian Bones", "bone_avian_kashyyyk_main"},
+		},
+		attributes = {
+			{"res_decay_resist", 242},
+			{"res_malleability", 411},
+			{"res_quality", 665},
+			{"res_shock_resistance", 401},
+			{"res_toughness", 458},
+		},
+		zoneRestriction = "kashyyyk_main",
+		surveyToolType = -1,
+		containerCRC = 1001781097,
 	},
 
 	{
@@ -296908,6 +296991,33 @@ resources = {
 	},
 
 	{
+		name = "Oeschle",
+		type = "bone_avian_kashyyyk_main",
+		maps = {
+						{ "kashyyyk_main", 1651616463, 0.75, 0.0006 },
+						-- PEAKS: {{1864,-1568,73}, {-652,56,69}, {224,1468,48}, {-2040,348,45}, {2044,1204,36}, {1724,2032,35}, {-1620,1000,30}, {1052,1120,25}, {-2084,-2112,24}, {-1072,-1052,21}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Yavinian Solar Renewable Energy", "energy_renewable_unlimited_solar_yavin4"},
+			{"Kashyyyk Avian Bones", "bone_avian_kashyyyk_main"},
+		},
+		attributes = {
+			{"res_decay_resist", 822},
+			{"res_malleability", 157},
+			{"res_quality", 686},
+			{"res_shock_resistance", 286},
+			{"res_toughness", 78},
+		},
+		zoneRestriction = "kashyyyk_main",
+		surveyToolType = -1,
+		containerCRC = 1001781097,
+	},
+
+	{
 		name = "Oesquaboz",
 		type = "meat_herbivore_corellia",
 		maps = {
@@ -322822,6 +322932,33 @@ resources = {
 		zoneRestriction = "endor",
 		surveyToolType = -1,
 		containerCRC = 1349101341,
+	},
+
+	{
+		name = "Pepa",
+		type = "bone_avian_kashyyyk_main",
+		maps = {
+						{ "kashyyyk_main", 403447542, 0.53, 0.0006 },
+						-- PEAKS: {{348,1296,51}, {-600,-736,48}, {-916,684,43}, {-1612,-2112,41}, {512,-96,40}, {-1676,1156,34}, {-96,-2112,34}, {2044,1696,28}, {-4,-64,21}, {-516,1576,19}, {-1552,-1600,18}, {-2112,176,17}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Yavinian Solar Renewable Energy", "energy_renewable_unlimited_solar_yavin4"},
+			{"Kashyyyk Avian Bones", "bone_avian_kashyyyk_main"},
+		},
+		attributes = {
+			{"res_decay_resist", 528},
+			{"res_malleability", 139},
+			{"res_quality", 984},
+			{"res_shock_resistance", 433},
+			{"res_toughness", 109},
+		},
+		zoneRestriction = "kashyyyk_main",
+		surveyToolType = -1,
+		containerCRC = 1001781097,
 	},
 
 	{
@@ -363616,6 +363753,33 @@ resources = {
 	},
 
 	{
+		name = "Rhawo",
+		type = "bone_avian_kashyyyk_main",
+		maps = {
+						{ "kashyyyk_main", 123769609, 0.69, 0.0006 },
+						-- PEAKS: {{1312,-1316,62}, {1840,-2076,59}, {-1752,1768,47}, {1580,112,38}, {-1628,-1640,36}, {-624,-1084,33}, {508,-1884,24}, {-1028,1380,23}, {-1088,-1540,22}, {-244,-96,22}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Yavinian Solar Renewable Energy", "energy_renewable_unlimited_solar_yavin4"},
+			{"Kashyyyk Avian Bones", "bone_avian_kashyyyk_main"},
+		},
+		attributes = {
+			{"res_decay_resist", 114},
+			{"res_malleability", 303},
+			{"res_quality", 145},
+			{"res_shock_resistance", 319},
+			{"res_toughness", 48},
+		},
+		zoneRestriction = "kashyyyk_main",
+		surveyToolType = -1,
+		containerCRC = 1001781097,
+	},
+
+	{
 		name = "Rhecou",
 		type = "seafood_crustacean_talus",
 		maps = {
@@ -399404,6 +399568,33 @@ resources = {
 		zoneRestriction = "talus",
 		surveyToolType = 7,
 		containerCRC = 727105784,
+	},
+
+	{
+		name = "Srafe",
+		type = "bone_avian_kashyyyk_main",
+		maps = {
+						{ "kashyyyk_main", 1449619024, 0.69, 0.0006 },
+						-- PEAKS: {{1520,312,65}, {684,-2016,63}, {492,-512,58}, {-1272,-1276,56}, {36,1136,51}, {920,-1260,50}, {-1636,1788,50}, {2044,-348,47}, {1020,188,33}, {1936,2044,33}, {-1088,1488,27}, {-4,-1968,27}, {448,2044,25}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Yavinian Solar Renewable Energy", "energy_renewable_unlimited_solar_yavin4"},
+			{"Kashyyyk Avian Bones", "bone_avian_kashyyyk_main"},
+		},
+		attributes = {
+			{"res_decay_resist", 722},
+			{"res_malleability", 405},
+			{"res_quality", 26},
+			{"res_shock_resistance", 185},
+			{"res_toughness", 69},
+		},
+		zoneRestriction = "kashyyyk_main",
+		surveyToolType = -1,
+		containerCRC = 1001781097,
 	},
 
 	{
@@ -509069,6 +509260,31 @@ resources = {
 	},
 
 	{
+		name = "Yavo",
+		type = "bone_avian_kashyyyk_main",
+		maps = {
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Yavinian Solar Renewable Energy", "energy_renewable_unlimited_solar_yavin4"},
+			{"Kashyyyk Avian Bones", "bone_avian_kashyyyk_main"},
+		},
+		attributes = {
+			{"res_decay_resist", 575},
+			{"res_malleability", 596},
+			{"res_quality", 214},
+			{"res_shock_resistance", 260},
+			{"res_toughness", 90},
+		},
+		zoneRestriction = "kashyyyk_main",
+		surveyToolType = -1,
+		containerCRC = 1001781097,
+	},
+
+	{
 		name = "Yawa",
 		type = "seafood_mollusk_dantooine",
 		maps = {
@@ -519968,6 +520184,33 @@ resources = {
 		zoneRestriction = "",
 		surveyToolType = 2,
 		containerCRC = 27712471,
+	},
+
+	{
+		name = "Zabi",
+		type = "bone_avian_kashyyyk_main",
+		maps = {
+						{ "kashyyyk_main", 1604252969, 0.51, 0.0006 },
+						-- PEAKS: {{-648,-720,48}, {-2024,676,47}, {720,2020,47}, {-2008,-1328,46}, {-1136,560,36}, {2044,-1156,30}, {-804,2044,26}, {-2088,1556,20}, {328,928,15}}
+		},
+		classes = {
+			{"Energy", "energy"},
+			{"Renewable energy", "energy_renewable"},
+			{"Non Site-Restricted Renewable Energy", "energy_renewable_unlimited"},
+			{"Solar Energy", "energy_renewable_unlimited_solar"},
+			{"Yavinian Solar Renewable Energy", "energy_renewable_unlimited_solar_yavin4"},
+			{"Kashyyyk Avian Bones", "bone_avian_kashyyyk_main"},
+		},
+		attributes = {
+			{"res_decay_resist", 633},
+			{"res_malleability", 377},
+			{"res_quality", 483},
+			{"res_shock_resistance", 292},
+			{"res_toughness", 125},
+		},
+		zoneRestriction = "kashyyyk_main",
+		surveyToolType = -1,
+		containerCRC = 1001781097,
 	},
 
 	{
