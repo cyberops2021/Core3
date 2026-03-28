@@ -640,6 +640,7 @@
 #include "SetpermissionCommand.h"
 #include "SetPlanetLimitCommand.h"
 #include "SetPlayerAppearanceCommand.h"
+#include "SetCustomizationCommand.h"
 #include "SetPlayerStateCommand.h"
 #include "SetprivacyCommand.h"
 #include "SetPublicStateCommand.h"

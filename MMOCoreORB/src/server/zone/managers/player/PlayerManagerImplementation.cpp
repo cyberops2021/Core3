@@ -1105,6 +1105,12 @@ void PlayerManagerImplementation::createTutorialBuilding(CreatureObject* player)
 
 	uint64 cellID = tutorialCell->getObjectID();
 
+	// Set savedTerrainName before switchZone to prevent race condition
+	auto ghost = player->getPlayerObject();
+	if (ghost != nullptr) {
+		ghost->setSavedTerrainName("tutorial");
+	}
+
 	player->switchZone("tutorial", 0, 0, -3, cellID);
 }
 
@@ -1140,6 +1146,14 @@ void PlayerManagerImplementation::insertIntoSkippedTutorialBuilding(CreatureObje
 	position.randomizePosition(5.f, 0.5f);
 
 	uint64 cellID = tutorialCell->getObjectID();
+
+	// Set savedTerrainName before switchZone to prevent race condition where
+	// the zone switch fails silently and the player is saved with an empty zone name,
+	// causing "The planet where your character was stored is disabled!" on next login.
+	auto ghost = player->getPlayerObject();
+	if (ghost != nullptr) {
+		ghost->setSavedTerrainName("tutorial");
+	}
 
 	player->switchZone("tutorial", position.getPositionX(), position.getPositionZ(), position.getPositionY(), cellID);
 

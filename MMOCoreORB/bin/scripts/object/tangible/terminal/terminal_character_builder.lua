@@ -3327,6 +3327,10 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 			--"Yarrock", "object/tangible/food/spice/spice_yarrock.iff"
 			--}
 			},
+			"Crafting Consumables",
+			{
+				"Premium Bespin Port (Max Experiment Buff)", "object/tangible/food/crafted/drink_bespin_port_max.iff",
+			},
 			"Deeds",
 			{
 				"Resource Deed", "object/tangible/veteran_reward/resource.iff",

@@ -274,6 +274,7 @@
 #include "server/zone/objects/creature/commands/SetpermissionCommand.h"
 #include "server/zone/objects/creature/commands/SetPlanetLimitCommand.h"
 #include "server/zone/objects/creature/commands/SetPlayerAppearanceCommand.h"
+#include "server/zone/objects/creature/commands/SetCustomizationCommand.h"
 #include "server/zone/objects/creature/commands/SetPlayerStateCommand.h"
 #include "server/zone/objects/creature/commands/SetprivacyCommand.h"
 #include "server/zone/objects/creature/commands/SetPublicStateCommand.h"
@@ -574,6 +575,7 @@ void CommandConfigManager::registerCommands3() {
 	commandFactory.registerCommand<SetpermissionCommand>(String("setpermission").toLowerCase());
 	commandFactory.registerCommand<SetPlanetLimitCommand>(String("setPlanetLimit").toLowerCase());
 	commandFactory.registerCommand<SetPlayerAppearanceCommand>(String("setPlayerAppearance").toLowerCase());
+	commandFactory.registerCommand<SetCustomizationCommand>(String("setCustomization").toLowerCase());
 	commandFactory.registerCommand<SetPlayerStateCommand>(String("setPlayerState").toLowerCase());
 	commandFactory.registerCommand<SetprivacyCommand>(String("setprivacy").toLowerCase());
 	commandFactory.registerCommand<SetPublicStateCommand>(String("setPublicState").toLowerCase());
