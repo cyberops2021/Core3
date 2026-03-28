@@ -590,6 +590,11 @@ object_building_player_city_shared_cityhall_tatooine = SharedBuildingObjectTempl
 
 ObjectTemplates:addClientTemplate(object_building_player_city_shared_cityhall_tatooine, "object/building/player/city/shared_cityhall_tatooine.iff")
 
+object_building_player_city_shared_grand_cantina_corellia = SharedBuildingObjectTemplate:new {
+	clientTemplateFileName = "object/building/player/city/shared_grand_cantina_corellia.iff"
+}
+ObjectTemplates:addClientTemplate(object_building_player_city_shared_grand_cantina_corellia, "object/building/player/city/shared_grand_cantina_corellia.iff")
+
 object_building_player_city_shared_cloning_corellia = SharedBuildingObjectTemplate:new {
 	clientTemplateFileName = "object/building/player/city/shared_cloning_corellia.iff"
 	--Data below here is deprecated and loaded from the tres, keeping for easy lookups

@@ -395,6 +395,21 @@ object_tangible_deed_city_deed_shared_cantina_tatooine_deed = SharedTangibleObje
 
 ObjectTemplates:addClientTemplate(object_tangible_deed_city_deed_shared_cantina_tatooine_deed, "object/tangible/deed/city_deed/shared_cantina_tatooine_deed.iff")
 
+object_tangible_deed_city_deed_shared_grand_cantina_corellia_deed = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/deed/city_deed/shared_grand_cantina_corellia_deed.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_deed_city_deed_shared_grand_cantina_corellia_deed, "object/tangible/deed/city_deed/shared_grand_cantina_corellia_deed.iff")
+
+object_tangible_deed_city_deed_shared_grand_cantina_naboo_deed = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/deed/city_deed/shared_grand_cantina_naboo_deed.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_deed_city_deed_shared_grand_cantina_naboo_deed, "object/tangible/deed/city_deed/shared_grand_cantina_naboo_deed.iff")
+
+object_tangible_deed_city_deed_shared_grand_cantina_tatooine_deed = SharedTangibleObjectTemplate:new {
+	clientTemplateFileName = "object/tangible/deed/city_deed/shared_grand_cantina_tatooine_deed.iff"
+}
+ObjectTemplates:addClientTemplate(object_tangible_deed_city_deed_shared_grand_cantina_tatooine_deed, "object/tangible/deed/city_deed/shared_grand_cantina_tatooine_deed.iff")
+
 object_tangible_deed_city_deed_shared_cityhall_corellia_deed = SharedTangibleObjectTemplate:new {
 	clientTemplateFileName = "object/tangible/deed/city_deed/shared_cityhall_corellia_deed.iff"
 	--Data below here is deprecated and loaded from the tres, keeping for easy lookups

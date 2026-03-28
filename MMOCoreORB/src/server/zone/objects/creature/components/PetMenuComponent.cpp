@@ -185,8 +185,18 @@ void PetMenuComponent::fillObjectMenuResponse(SceneObject* sceneObject, ObjectMe
 			menuResponse->addRadialMenuItemToRadialID(141, 152, 3, "@pet/pet_menu:menu_transfer" ); // PET_TRANSFER
 		}
 
-		if( player->hasSkill( "outdoors_creaturehandler_support_04") && !controlDevice->isTrainedAsMount() && petManager->checkMountEligibility(controlDevice) == PetManager::CANBEMOUNTTRAINED){
-			menuResponse->addRadialMenuItemToRadialID(141, 207, 3, "@pet/pet_menu:menu_train_mount" ); // Train Pet As A Mount
+		if( !controlDevice->isTrainedAsMount()) {
+			// Check mount eligibility - skip for non-crafted pets (starter mounts)
+			bool canMount = false;
+			PetDeed* petDeed = pet->getPetDeed();
+			if (petDeed != nullptr && petDeed->getCraftersID() == 0) {
+				canMount = true; // Non-crafted pet, always allow mount training
+			} else if (petManager->checkMountEligibility(controlDevice) == PetManager::CANBEMOUNTTRAINED) {
+				canMount = true;
+			}
+			if (canMount) {
+				menuResponse->addRadialMenuItemToRadialID(141, 207, 3, "@pet/pet_menu:menu_train_mount" ); // Train Pet As A Mount
+			}
 		}
 
 		if( pet->isIncapacitated() ){

@@ -42,6 +42,10 @@
 
 
 object_building_player_city_grand_cantina_tatooine = object_building_tatooine_shared_cantina_tatooine:new {
+	structureFootprintFileName = "footprint/building/player/shared_player_city_grand_cantina.sfp",
+	interiorLayoutFileName = "",
+	clearFloraRadius = 30,
+	snapToTerrain = 0,
 	lotSize = 10,
 	baseMaintenanceRate = 150,
 	allowedZones = {"corellia", "dantooine", "dathomir", "endor", "lok", "naboo", "rori", "talus", "tatooine", "yavin4"},
@@ -50,7 +54,7 @@ object_building_player_city_grand_cantina_tatooine = object_building_tatooine_sh
 	planetMapCategory = "cantina",
 	cityRankRequired = 4,
 	limitToOnePerCity = 1,
-	abilityRequired = "place_grand_cantina",
+	abilityRequired = "place_cantina",
 	skillMods = {
 		{"private_buff_mind", 150},
 		{"private_medical_rating", 150},

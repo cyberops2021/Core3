@@ -77,8 +77,8 @@ class PetDeed extends Deed {
 
 	public PetDeed() {
 		Logger.setLoggingName("PetDeed");
-		damageMin = 20;
-		damageMax = 20;
+		damageMin = 2;
+		damageMax = 6;
 		armor = 0;
 		kinResist = 0;
 		blastResist = 0;
@@ -88,14 +88,14 @@ class PetDeed extends Deed {
 		acidResist = 0;
 		stunResist = 0;
 		saberResist = -1;
-		health = 10;
-		action = 10;
-		mind = 10;
+		health = 3000;
+		action = 3000;
+		mind = 3000;
 		special1 = "none";
 		special2 = "none";
 		ranged = false;
-		chanceHit = 0;
-		attackSpeed = 0;
+		chanceHit = 0.1;
+		attackSpeed = 2.0;
 		level = 1;
 
 		// Source DNA of a pet deed
@@ -113,7 +113,7 @@ class PetDeed extends Deed {
 		quality = 7;
 		sampleCount = 0;
 		specialResists = 0;
-		regen = 1;
+		regen = 4;
 	}
 	@dirty
 	public native void setSpecialResist(unsigned int type);

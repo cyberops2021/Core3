@@ -237,6 +237,21 @@ object_draft_schematic_structure_city_shared_cantina_corellia = SharedDraftSchem
 
 ObjectTemplates:addClientTemplate(object_draft_schematic_structure_city_shared_cantina_corellia, "object/draft_schematic/structure/city/shared_cantina_corellia.iff")
 
+object_draft_schematic_structure_city_shared_grand_cantina_corellia = SharedDraftSchematicObjectTemplate:new {
+	clientTemplateFileName = "object/draft_schematic/structure/city/shared_grand_cantina_corellia.iff"
+}
+ObjectTemplates:addClientTemplate(object_draft_schematic_structure_city_shared_grand_cantina_corellia, "object/draft_schematic/structure/city/shared_grand_cantina_corellia.iff")
+
+object_draft_schematic_structure_city_shared_grand_cantina_naboo = SharedDraftSchematicObjectTemplate:new {
+	clientTemplateFileName = "object/draft_schematic/structure/city/shared_grand_cantina_naboo.iff"
+}
+ObjectTemplates:addClientTemplate(object_draft_schematic_structure_city_shared_grand_cantina_naboo, "object/draft_schematic/structure/city/shared_grand_cantina_naboo.iff")
+
+object_draft_schematic_structure_city_shared_grand_cantina_tatooine = SharedDraftSchematicObjectTemplate:new {
+	clientTemplateFileName = "object/draft_schematic/structure/city/shared_grand_cantina_tatooine.iff"
+}
+ObjectTemplates:addClientTemplate(object_draft_schematic_structure_city_shared_grand_cantina_tatooine, "object/draft_schematic/structure/city/shared_grand_cantina_tatooine.iff")
+
 object_draft_schematic_structure_city_shared_cantina_naboo = SharedDraftSchematicObjectTemplate:new {
 	clientTemplateFileName = "object/draft_schematic/structure/city/shared_cantina_naboo.iff"
 	--Data below here is deprecated and loaded from the tres, keeping for easy lookups

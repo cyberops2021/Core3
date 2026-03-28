@@ -42,6 +42,12 @@
 
 
 object_building_player_city_grand_cantina_corellia = object_building_corellia_shared_cantina_corellia:new {
+	clientTemplateFileName = "object/building/player/city/shared_grand_cantina_corellia.iff",
+	totalCellNumber = 15,
+	structureFootprintFileName = "footprint/building/player/shared_player_city_grand_cantina.sfp",
+	interiorLayoutFileName = "",
+	clearFloraRadius = 30,
+	snapToTerrain = 1,
 	lotSize = 10,
 	baseMaintenanceRate = 150,
 	allowedZones = {"corellia", "dantooine", "dathomir", "endor", "lok", "naboo", "rori", "talus", "tatooine", "yavin4"},
@@ -50,7 +56,7 @@ object_building_player_city_grand_cantina_corellia = object_building_corellia_sh
 	planetMapCategory = "cantina",
 	cityRankRequired = 4,
 	limitToOnePerCity = 1,
-	abilityRequired = "place_grand_cantina",
+	abilityRequired = "place_cantina",
 	skillMods = {
 		{"private_buff_mind", 150},
 		{"private_medical_rating", 150},
@@ -61,7 +67,7 @@ object_building_player_city_grand_cantina_corellia = object_building_corellia_sh
 	groundZoneComponent = "StructureZoneComponent",
 	childObjects = {
 		{templateFile = "object/tangible/sign/municipal/municipal_sign_hanging_cantina.iff", x = 8, z = 5, y = 18, ox = 0, oy = 1, oz = 0, ow = 0, cellid = -1, containmentType = -1},
-		{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -29.16, z = 0.0, y = 14.45, ox = 0, oy = -0.00543, oz = 0, ow = 0.999985, cellid = 13, containmentType = -1}
+		{templateFile = "object/tangible/terminal/terminal_player_structure.iff", x = -29.16, z = -1.0, y = 14.45, ox = 0, oy = 1, oz = 0, ow = 0, cellid = 13, containmentType = -1}
 	},
 	shopSigns = {
 		{templateFile = "object/tangible/sign/municipal/municipal_sign_hanging_cantina.iff", x = 8, z = 5, y = 18, ox = 0, oy = 1, oz = 0, ow = 0, cellid = -1, containmentType = -1, requiredSkill = "", suiItem = "@player_structure:house_address"},

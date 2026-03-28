@@ -1336,14 +1336,25 @@ void PetControlDeviceImplementation::setTrainingCommand(unsigned int commandID) 
 }
 
 void PetControlDeviceImplementation::trainAsMount(CreatureObject* player) {
-	if (isTrainedAsMount() || !player->hasSkill("outdoors_creaturehandler_support_04"))
+	if (isTrainedAsMount())
 		return;
 
 	PetManager* petManager = player->getZoneServer()->getPetManager();
 	if (petManager == nullptr)
 		return;
 
-	if (petManager->checkMountEligibility(_this.getReferenceUnsafeStaticCast()) != PetManager::CANBEMOUNTTRAINED)
+	// Skip mount eligibility check for non-crafted pets (starter mounts)
+	ManagedReference<TangibleObject*> ctrlObj = this->controlledObject.get();
+	bool skipEligibility = false;
+	if (ctrlObj != nullptr && ctrlObj->isAiAgent()) {
+		AiAgent* petAgent = cast<AiAgent*>(ctrlObj.get());
+		if (petAgent != nullptr) {
+			PetDeed* deed = petAgent->getPetDeed();
+			if (deed != nullptr && deed->getCraftersID() == 0)
+				skipEligibility = true;
+		}
+	}
+	if (!skipEligibility && petManager->checkMountEligibility(_this.getReferenceUnsafeStaticCast()) != PetManager::CANBEMOUNTTRAINED)
 		return;
 
 	ManagedReference<TangibleObject*> controlledObject = this->controlledObject.get();
@@ -1379,6 +1390,11 @@ bool PetControlDeviceImplementation::isValidPet(AiAgent* pet) {
 	PetDeed* deed = pet->getPetDeed();
 
 	if (deed != nullptr) {
+		// Skip validation for non-crafted deeds (starter pets, granted mounts)
+		if (deed->getCraftersID() == 0) {
+			return true;
+		}
+
 		// time to calculate!
 		int calculatedLevel =  deed->calculatePetLevel();
 

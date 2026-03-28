@@ -3330,6 +3330,10 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 			"Deeds",
 			{
 				"Resource Deed", "object/tangible/veteran_reward/resource.iff",
+				"Pet Deeds",
+				{
+					"Kaadu", "object/tangible/deed/pet_deed/kaadu_deed.iff",
+				},
 				"Vehicle Deeds",
 				{
 					"Swoop", "object/tangible/deed/vehicle_deed/speederbike_swoop_deed.iff",
@@ -3462,6 +3466,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						{
 							"Corellia Bank Deed", "object/tangible/deed/city_deed/bank_corellia_deed.iff",
 							"Corellia Cantina Deed", "object/tangible/deed/city_deed/cantina_corellia_deed.iff",
+							"Corellia Grand Cantina Deed", "object/tangible/deed/city_deed/grand_cantina_corellia_deed.iff",
 							"Corellia Garage Deed", "object/tangible/deed/city_deed/garage_corellia_deed.iff",
 							"Corellia Shuttleport Deed", "object/tangible/deed/city_deed/shuttleport_corellia_deed.iff",
 							"Corellia City Hall Deed", "object/tangible/deed/city_deed/cityhall_corellia_deed.iff",
@@ -3500,6 +3505,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						{
 							"Naboo Bank Deed", "object/tangible/deed/city_deed/bank_naboo_deed.iff",
 							"Naboo Cantina Deed", "object/tangible/deed/city_deed/cantina_naboo_deed.iff",
+							"Naboo Grand Cantina Deed", "object/tangible/deed/city_deed/grand_cantina_naboo_deed.iff",
 							"Naboo Garage Deed", "object/tangible/deed/city_deed/garage_naboo_deed.iff",
 							"Naboo Shuttleport Deed", "object/tangible/deed/city_deed/shuttleport_naboo_deed.iff",
 							"Naboo City Hall Deed", "object/tangible/deed/city_deed/cityhall_naboo_deed.iff",
@@ -3538,6 +3544,7 @@ object_tangible_terminal_terminal_character_builder = object_tangible_terminal_s
 						{
 							"Tatooine Bank Deed", "object/tangible/deed/city_deed/bank_tatooine_deed.iff",
 							"Tatooine Cantina Deed", "object/tangible/deed/city_deed/cantina_tatooine_deed.iff",
+							"Tatooine Grand Cantina Deed", "object/tangible/deed/city_deed/grand_cantina_tatooine_deed.iff",
 							"Tatooine Garage Deed", "object/tangible/deed/city_deed/garage_tatooine_deed.iff",
 							"Tatooine Shuttleport Deed", "object/tangible/deed/city_deed/shuttleport_tatooine_deed.iff",
 							"Tatooine City Hall Deed", "object/tangible/deed/city_deed/cityhall_tatooine_deed.iff",

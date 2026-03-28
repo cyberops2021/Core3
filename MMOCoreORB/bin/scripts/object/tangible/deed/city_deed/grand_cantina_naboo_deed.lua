@@ -41,7 +41,8 @@
 --this exception also makes it possible to release a modified version
 
 
-object_tangible_deed_city_deed_grand_cantina_naboo_deed = object_tangible_deed_city_deed_shared_cantina_naboo_deed:new {
+object_tangible_deed_city_deed_grand_cantina_naboo_deed = object_tangible_deed_city_deed_shared_grand_cantina_naboo_deed:new {
+	customObjectName = "Deed for: Naboo Grand Cantina",
 	templateType = STRUCTUREDEED,
 	placeStructureComponent = "PlaceStructureComponent",
 	gameObjectType = 8388609,

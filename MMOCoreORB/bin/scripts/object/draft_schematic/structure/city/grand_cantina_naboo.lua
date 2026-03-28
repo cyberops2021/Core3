@@ -41,7 +41,7 @@
 --this exception also makes it possible to release a modified version
 
 
-object_draft_schematic_structure_city_grand_cantina_naboo = object_draft_schematic_structure_city_shared_cantina_naboo:new {
+object_draft_schematic_structure_city_grand_cantina_naboo = object_draft_schematic_structure_city_shared_grand_cantina_naboo:new {
 
 	templateType = DRAFTSCHEMATIC,
 
