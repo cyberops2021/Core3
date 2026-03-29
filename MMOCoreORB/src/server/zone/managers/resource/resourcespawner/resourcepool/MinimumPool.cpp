@@ -90,7 +90,7 @@ bool MinimumPool::update() {
 				VectorMapEntry<String, ManagedReference<ResourceSpawn*> > newEntry(resourceType, newSpawn);
 				includedResources.setElementAt(i, newEntry);
 			} else {
-				warning("Couldn't spawn resource type in MinumumPool: " + resourceType);
+				debug() << "Skipping non-existent resource type in MinimumPool: " << resourceType;
 			}
 		}
 	}

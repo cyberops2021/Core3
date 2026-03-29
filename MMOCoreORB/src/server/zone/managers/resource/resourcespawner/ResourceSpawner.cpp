@@ -168,6 +168,12 @@ void ResourceSpawner::loadResourceSpawns() {
 					resourceSpawn->createSpawnMaps(resourceEntry->isJTL(), minPool - spawnMapSize,
 							resourceEntry->getMaxpool() - spawnMapSize, resourceEntry->getZoneRestriction(), activeZones);
 				}
+
+				// Sync survey tool type from resource tree (fixes existing spawns)
+				if (resourceSpawn->getSurveyToolType() != resourceEntry->getSurveyToolType()) {
+					Locker locker(resourceSpawn);
+					resourceSpawn->setSurveyToolType(resourceEntry->getSurveyToolType());
+				}
 			}
 		}
 

@@ -10,6 +10,7 @@
 
 #include "NativePool.h"
 #include "server/zone/managers/resource/resourcespawner/ResourceSpawner.h"
+#include "server/zone/managers/resource/resourcespawner/resourcetree/ResourceTree.h"
 
 NativePool::NativePool(ResourceSpawner* spawner) : ResourcePool(spawner) {
 	setLoggingName("NativePool");
@@ -83,7 +84,7 @@ bool NativePool::update() {
 	for(int i = 0; i < spawnsPerZone.size(); ++i) {
 		VectorMap<String, ManagedReference<ResourceSpawn*> >* spawnZone = &spawnsPerZone.get(i);
 
-		for(int j = 0; j < spawnZone->size(); ++j) {
+		for(int j = spawnZone->size() - 1; j >= 0; --j) {
 
 			String resourceType = spawnZone->elementAt(j).getKey();
 			ManagedReference<ResourceSpawn* > spawn = spawnZone->elementAt(j).getValue();
@@ -94,6 +95,12 @@ bool NativePool::update() {
 					resourceSpawner->despawn(spawn);
 					despawnedCount++;
 					//buffer << "Removing: " << spawn->getName() << " : " << spawn->getType();
+				}
+
+				// Check if type exists in resource tree before attempting spawn
+				if (resourceSpawner->resourceTree->getEntry(resourceType) == nullptr) {
+					spawnZone->remove(j);
+					continue;
 				}
 
 				ManagedReference<ResourceSpawn* > newSpawn = resourceSpawner->createResourceSpawn(resourceType, excludedResources);
@@ -107,7 +114,7 @@ bool NativePool::update() {
 					VectorMapEntry<String, ManagedReference<ResourceSpawn*> > newEntry(resourceType, newSpawn);
 					spawnZone->setElementAt(j, newEntry);
 				} else {
-					warning("Couldn't spawn resource type in NativePool: " + resourceType);
+					debug() << "Skipping non-existent resource type in NativePool: " << resourceType;
 				}
 			}
 		}

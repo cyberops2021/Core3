@@ -50,6 +50,7 @@ bool ResourceTree::buildTreeFromClient() {
 	int intvalue;
 	bool boolValue;
 
+
 	for (int i = 1; i < dtiff.getTotalRows(); ++i) {
 
 		DataTableRow* row = dtiff.getRow(i);
@@ -126,8 +127,6 @@ bool ResourceTree::buildTreeFromClient() {
 		/// Add entry to the tree
 		baseNode->add(entry);
 	}
-	/// Update the Stf Entries now that the tree is built
-	//baseNode->updateEntries();
 
 	return true;
 }
@@ -168,9 +167,24 @@ void ResourceTree::setJtl(ResourceTreeEntry* entry) {
 
 void ResourceTree::setSurveyToolType(ResourceTreeEntry* entry) {
 
+	// Kashyyyk premium types - check by name before class hierarchy
+	String type = entry->getType();
+	if(type.indexOf("wroshyr") != -1) {
+		entry->setSurveyToolType(SurveyTool::FLORA);
+		return;
+	} else if(type.indexOf("webweaver") != -1) {
+		entry->setSurveyToolType(SurveyTool::CHEMICAL);
+		return;
+	} else if(type.indexOf("shadowland") != -1) {
+		entry->setSurveyToolType(SurveyTool::MINERAL);
+		return;
+	} else if(type.indexOf("kkowir") != -1) {
+		entry->setSurveyToolType(SurveyTool::GAS);
+		return;
+	}
+
 	if(entry->isType("energy")) {
 
-		String type = entry->getType();
 		if(type.indexOf("geothermal") != -1)
 			entry->setSurveyToolType(SurveyTool::GEOTHERMAL);
 		else if(type.indexOf("solar") != -1)

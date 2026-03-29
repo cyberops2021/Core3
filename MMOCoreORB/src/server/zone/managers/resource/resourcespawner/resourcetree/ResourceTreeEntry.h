@@ -137,6 +137,14 @@ public:
 	}
 
 	/**
+	 * Clears both class lists
+	 */
+	void clearClasses() {
+		classList.removeAll();
+		stfClassList.removeAll();
+	}
+
+	/**
 	 * Adds class to classList
 	 * \param newclass New class string to add
 	 */
